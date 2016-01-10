@@ -7,6 +7,7 @@
 
 ! 3P share button
 ||addthis.com^
+||addtoany.com^
 ||hellobar.com^
 
 ! Baidu/Hao123/DesktopWeather
@@ -29,7 +30,7 @@
 ||toptools100.com^
 ||wisemana.com^
 
-! Ads Server
+! Ads Server / Malvertising
 ||2mdn.net^
 ||24x7th.com^
 ||adnow.com^
@@ -44,6 +45,7 @@
 ||adsoptimal.com^
 ||adtplatform.com^
 ||bumq.com^
+||connextra.com^
 ||criteo.com^
 ||doubleclick.net^
 ||gammaplatform.com^
@@ -59,6 +61,7 @@
 ||newrelic.com^
 ||nr-data.com^
 ||nr-data.net^
+||oclaserver.com^
 ||onclasrv.com^
 ||onclickads.net^
 ||openxmarket.asia^
@@ -79,32 +82,36 @@
 ||amung.us^
 ||anonymousdemographics.com^
 ||csi.gstatic.com^
+||d-stats.com^
+||feedjit.com^
 ||gbotvisit.com^
-||google-analytics.com^
-||google-analytics.l.google.com^
 ||go2cloud.org^
 ||go2speed.org^
+||google-analytics.l.google.com^
 ||heatmap.it^
 ||histats.com^
 ||inspectlet.com^
-||log.pinterest.com^
 ||luckyorange.com^
 ||m88.com^
-||nipa.co.th^
 ||nytive.com^
+||parkingcrew.com^
+||parkingcrew.net^
+||ping-fast.com^
 ||pixeldigitalstudios.com^
 ||ptengine.com^
 ||revsci.net^
 ||ruu-dee.com^
 ||scorecardresearch.com^
-||stats.in.th^
 ||stats.wp.com^
-||thstats.com^
-||truehits.in.th^
-||truehits.net^
 ||yu0123456.com^
 ||zemanta.com^
 
-
-! Somewhat exclude
+! Allowed only 1P
+||google-analytics.com^$third-party
+||graph.facebook.com^$third-party
 ||lazada.co.th^$third-party
+||nipa.co.th^$third-party
+||stats.in.th^$third-party
+||thstats.com^$third-party
+||truehits.in.th^$third-party
+||truehits.net^$third-party
