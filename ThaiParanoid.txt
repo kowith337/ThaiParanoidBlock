@@ -1,9 +1,22 @@
 [Adblock Plus 2.0]
 ! Title: Thai Paranoid Block
-! Version: 201601152351
+! Version: 201601301329
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
+
+! Generic Filter
+cleothailand.com###survey-popup
+notebookspec.com###overlay_ads
+online-station.net##.os-ads-sp
+||game-tep.com/*/adrotate-pro/*
+||kidjarak.com/*/bsa-pro-scripteo/*
+||notebookspec.com/*/nbs_custom_ads_skin.php
+||siamza.com/js/jquery.cookie.js
+||sistacafe.com/scripts/nytive
+||sistacafe.com/scripts/truehits?
+||thaihitz.com/*/jquery.cookie.js
+||thaijobsgov.com/banner^
 
 ! 3P share button
 ||addthis.com^
@@ -65,9 +78,11 @@
 ||onclasrv.com^
 ||onclickads.net^
 ||openxmarket.asia^
+||padsdel.com^
 ||padstm.com^
 ||popads.net^
 ||popcash.net^
+||reimageplus.com^
 ||s.youtube.com
 ||s0.youtube.com
 ||s1.youtube.com
@@ -117,5 +132,8 @@
 ||truehits.in.th^$third-party
 ||truehits.net^$third-party
 
+! uBlock0 + Firefox (42 and more) Only
+notebookspec.com##script:contains(#overlay_ads)
+
 ! Exclude
-@@||graph.facebook.com^$image
+@@||graph.facebook.com^$image,third-party
