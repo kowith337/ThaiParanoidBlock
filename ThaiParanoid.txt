@@ -1,17 +1,25 @@
 [Adblock Plus 2.0]
 ! Title: Thai Paranoid Block
-! Version: 201605101422
+! Version: 201610281919
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
 ! Generic Filter
+*adnow.com^
 cleothailand.com###survey-popup
 notebookspec.com###overlay_ads
+online-station.net##.os-ads
+online-station.net##.os-ads-banner
 online-station.net##.os-ads-sp
+online-station.net##.os-banner-ads
+online-station.net##.os-page-wallpaper
+online-station.net##div[id=*"div-gpt-ad"]
+online-station.net##script:contains(googletag.cmd.push)
 ||game-tep.com/*/adrotate-pro/*
 ||kidjarak.com/*/bsa-pro-scripteo/*
 ||notebookspec.com/*/nbs_custom_ads_skin.php
+||online-station.net/*/ads_$script,stylesheet
 ||siamza.com/js/jquery.cookie.js
 ||sistacafe.com/scripts/nytive
 ||sistacafe.com/scripts/truehits?
@@ -51,10 +59,8 @@ online-station.net##.os-ads-sp
 ||ads.os.co.th^
 ||ads.siamza.com^
 ||ads.youtube.com^
-||ads1-adnow.com^
-||ads2-adnow.com^
-||ads3-adnow.com^
-||adms.postjung.com^
+||ads.postjung.com^
+||adsniper.ru^
 ||adsoptimal.com^
 ||adtplatform.com^
 ||bumq.com^
@@ -68,6 +74,7 @@ online-station.net##.os-ads-sp
 ||googletagmanager.com^
 ||googletagservices.com^
 ||hotjar.com^
+||innity.com^
 ||innity.net^
 ||kiosked.com^
 ||mtburn.com^
@@ -75,6 +82,9 @@ online-station.net##.os-ads-sp
 ||newrelic.com^
 ||nr-data.com^
 ||nr-data.net^
+||nuffnang.co.th^
+||nuffnang.com^
+||nuffnang.com.my^
 ||oclaserver.com^
 ||onclasrv.com^
 ||onclickads.net^
@@ -97,6 +107,7 @@ online-station.net##.os-ads-sp
 ||accesstrade.in.th^
 ||amung.us^
 ||anonymousdemographics.com^
+||btstatic.com^
 ||csi.gstatic.com^
 ||d-stats.com^
 ||edgesuite.net^
@@ -115,12 +126,15 @@ online-station.net##.os-ads-sp
 ||parkingcrew.net^
 ||ping-fast.com^
 ||pixeldigitalstudios.com^
+||plista.com^
 ||ptengine.com^
 ||revsci.net^
 ||ruu-dee.com^
 ||synergy-e.com^
 ||scorecardresearch.com^
 ||stats.wp.com^
+||taboola.com^
+||tagserve.asia^
 ||yu0123456.com^
 ||zemanta.com^
 
@@ -137,5 +151,9 @@ online-station.net##.os-ads-sp
 ! uBlock0 + Firefox (42 and more) Only
 notebookspec.com##script:contains(#overlay_ads)
 
+! It's OK to show only what things needed, not other things
+||gravatar.com^
+
 ! Exclude
 @@||graph.facebook.com^$image,third-party
+@@||gravatar.com^$image
