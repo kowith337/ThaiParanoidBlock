@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Thai Paranoid Block
-! Version: 201611052133
+! Version: 201611182239
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -141,7 +141,6 @@ online-station.net##script:contains(googletag.cmd.push)
 
 ! Allowed only 1P
 ||google-analytics.com^$third-party
-||graph.facebook.com^$third-party
 ||lazada.co.th^$third-party
 ||nipa.co.th^$third-party
 ||stats.in.th^$third-party
@@ -149,12 +148,18 @@ online-station.net##script:contains(googletag.cmd.push)
 ||truehits.in.th^$third-party
 ||truehits.net^$third-party
 
+! Note: Block Facebook (3P, Messenger and Instagram also count)
+! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
+!            WSJ (Eng) > http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
+!            The Verge (Eng) > http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
+||facebook.com$third-party,domain=~messenger.com|~instagram.com
+||facebook.net$third-party,domain=~facebook.com|~messenger.com|~instagram.com
+||instagram.com$third-party,domain=~facebook.com|~messenger.com
+||messenger.com$third-party,domain=~facebook.com|~instagram.com
+
 ! uBlock0 + Firefox (42 and more) Only
 notebookspec.com##script:contains(#overlay_ads)
 
 ! It's OK to show only what things needed, not other things
 ||gravatar.com^
-
-! Exclude
-@@||graph.facebook.com^$image,third-party
 @@||gravatar.com^$image
