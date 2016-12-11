@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Thai Paranoid Block
-! Version: 201612102346
+! Version: 201612112041
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -25,6 +25,7 @@ pantip.com###ads-tabloid
 ||notebookspec.com/*/nbs_custom_ads_skin.php
 ||online-station.net/*/ads_$script,stylesheet
 ||pantip.com/ads.php
+||pantip.com/adsipmobile.php
 ||siamza.com/js/jquery.cookie.js
 ||sistacafe.com/scripts/nytive
 ||sistacafe.com/scripts/truehits
@@ -154,12 +155,12 @@ pantip.com###ads-tabloid
 ||lazada.co.th$third-party
 ||nipa.co.th$third-party
 
-! Note: Block Facebook (3P, Messenger and Instagram also count)
+! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
 !            WSJ (Eng) > http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
 !            The Verge (Eng) > http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
 ||facebook.com$third-party,domain=~messenger.com|~instagram.com
-||facebook.net$third-party,domain=~facebook.com|~messenger.com|~instagram.com
+||facebook.net$third-party,domain=~facebook.com|~instagram.com|~messenger.com
 ||instagram.com$third-party,domain=~facebook.com|~messenger.com
 ||messenger.com$third-party,domain=~facebook.com|~instagram.com
 
@@ -167,8 +168,8 @@ pantip.com###ads-tabloid
 ! Currently doesn't have element rules for Facebook from me yet, because uBlock0 can handle them.
 ! ^ Only when you're using English (UK/US) language.
 ||analytics.twitter.com
-||facebook.com/ads/^
-||facebook.com/ajax/ads
+||facebook.com/ads/
+||facebook.com/ajax/ads/
 ||facebook.com/ajax/typeahead/record_basic_metrics.php
 ||facebook.com/impression.php
 ||facebook.com/pubcontent/suggestions
@@ -184,16 +185,22 @@ pantip.com###ads-tabloid
 ||syndication.twimg.com
 ||syndication.twitter.com 
 ||twimg.com/*/google_analytics$script
+||twimg.com/i/jot
 ||twitter.com/*/cards/*?advertiser_name
 ||twitter.com/*/google_analytics$script
+||twitter.com/*/recommendations
+||twitter.com/i/cards/*?advertiser_name
+||twitter.com/i/jot
+! ||twitter.com/i/trends
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
 ! Check your advert prefs here > https://www.facebook.com/ads/preferences/edit
-||facebook.com/ads/preferences/edit_interests/?action=add
+||facebook.com/ads/preferences/advertiser_hideall/?*undo=true$important
+||facebook.com/ads/preferences/edit_interests/?action=add$important
 
 ! Unbreak some functional
-@@||facebook.com/ads/preferences/advertiser_hideall
-@@||facebook.com/ads/preferences/edit_interests/?*action=del
+@@||facebook.com/ads/preferences/advertiser_hideall$first-party
+@@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
 @@||facebook.com/ads/preferences/report$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/advertisers$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/interests$xmlhttprequest,first-party
@@ -204,25 +211,35 @@ pantip.com###ads-tabloid
 ! Give the warning if you're using Facebook on some cellular data provider
 ! that can redirect to smartphone-focused site, not an actual version of it.
 ! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version
-! but you get redirected to 'mobile.facebook.com' and forced you to use the likely native app.
+! but you get redirected to 'mobile.facebook.com' and forced you to use the likely native app version instead.
 ||h.facebook.com$document
 ||mobile.facebook.com$document
 ||web.facebook.com$document
 
-! uBlock0 + Firefox Only (also Pale moon / IceCat / Fennec F-droid / Tor)
-m.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
-m.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
-touch.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
-touch.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
+! [Super lightweight Facebook enhancement]
+! It's no need to load anything that not matter to use, because mbasic.facebook.com can work fine
+! without JavaScript, Inline script, iframe and third party resources.
+||mbasic.facebook.com$script,inline-script,websocket
+*$frame,script,domain=mbasic.facebook.com
+
+! [uBlock0]
+pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
+pantip.com##body:has(script[src*="serving-sys.com"])
+
+! [uBlock0 + Firefox Only] (also Pale moon / IceCat / Fennec F-droid / Tor)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(googletag.cmd.push)
-pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
-pantip.com##body:has(script[src*="bs.serving-sys.com"])
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
 pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
 
-! No Recommended video for you!
+! [uBlock0] First party annoyance
+m.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
+m.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
+touch.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
+touch.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
+twitter.com##.dismissible-content
+twitter.com###signin-dropdown
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
 ! It's OK to show only what things needed, not other things
