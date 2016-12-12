@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612122244
+! Version: 201612122302
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -15,8 +15,9 @@ online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##div[id=*"div-gpt-ad"]
+pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
+pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
-pantip.com##img[src^="https://tapestry.tapad.com"]
 pantip.com##.ads-tabloid
 pantip.com###ads-tabloid
 
@@ -223,6 +224,8 @@ pantip.com###ads-tabloid
 *$frame,script,domain=mbasic.facebook.com
 
 ! [uBlock0]
+pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
+pantip.com##.m-bxslider:has(a[href^="http://ads.pantip.com"])
 pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 
