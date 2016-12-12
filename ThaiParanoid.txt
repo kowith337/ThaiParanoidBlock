@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612122302
+! Version: 201612122320
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -19,6 +19,7 @@ pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
 pantip.com##.ads-tabloid
+pantip.com##.post-pick-ad
 pantip.com###ads-tabloid
 
 ||game-tep.com/*/adrotate-pro/*
@@ -116,6 +117,7 @@ pantip.com###ads-tabloid
 ||accesstrade.in.th
 ||amung.us
 ||anonymousdemographics.com
+||atdmt.com
 ||btstatic.com
 ||csi.gstatic.com
 ||d-stats.com
@@ -153,8 +155,8 @@ pantip.com###ads-tabloid
 ||zemanta.com
 
 ! Allowed only 1P
-||lazada.co.th$third-party
-||nipa.co.th$third-party
+||lazada.co.th$third-party,important
+||nipa.co.th$third-party,important
 
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
@@ -170,29 +172,28 @@ pantip.com###ads-tabloid
 ! ^ Only when you're using English (UK/US) language.
 ||analytics.twitter.com
 ||facebook.com/ads/
-||facebook.com/ajax/ads/
-||facebook.com/ajax/typeahead/record_basic_metrics.php
-||facebook.com/impression.php
-||facebook.com/pubcontent/suggestions
-||facebook.com/sem_campaigns
-||facebook.com/suggestions
-||facebook.com/tr?
-||facebook.com/video/autoplay
-||facebook.com/xti.php
-||facebook.com/*/suggestions
-||facebook.net/*ad.js*$script
-||fbcdn.net/*?*facebook.com%2Fads%2F
-||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F
-||syndication.twimg.com
-||syndication.twitter.com 
-||twimg.com/*/google_analytics$script
-||twimg.com/i/jot
-||twitter.com/*/cards/*?advertiser_name
-||twitter.com/*/google_analytics$script
-||twitter.com/*/recommendations
-||twitter.com/i/cards/*?advertiser_name
-||twitter.com/i/jot
-! ||twitter.com/i/trends
+||facebook.com/ajax/ads/$important
+||facebook.com/ajax/typeahead/record_basic_metrics.php$important
+||facebook.com/impression.php$important
+||facebook.com/pubcontent/suggestions$important
+||facebook.com/sem_campaigns$important
+||facebook.com/suggestions$important
+||facebook.com/tr?$important
+||facebook.com/video/autoplay$important
+||facebook.com/xti.php$important
+||facebook.com/*/suggestions$important
+||facebook.net/*/xfbml.ad.js$script,important
+||fbcdn.net/*?*facebook.com%2Fads%2F$important
+||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
+||syndication.twimg.com$important
+||syndication.twitter.com$important
+||twimg.com/*/google_analytics$script,important
+||twimg.com/i/jot$important
+||twitter.com/*/google_analytics$script,important
+||twitter.com/*/recommendations$important
+||twitter.com/i/cards/*?advertiser_name$important
+||twitter.com/i/jot$important
+! ||twitter.com/i/trends$important
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
 ! Check your advert prefs here > https://www.facebook.com/ads/preferences/edit
@@ -213,15 +214,15 @@ pantip.com###ads-tabloid
 ! that can redirect to smartphone-focused site, not an actual version of it.
 ! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version
 ! but you get redirected to 'mobile.facebook.com' and forced you to use the likely native app version instead.
-||h.facebook.com$document
-||mobile.facebook.com$document
-||web.facebook.com$document
+||h.facebook.com$document,important
+||mobile.facebook.com$document,important
+||web.facebook.com$document,important
 
 ! [Super lightweight Facebook enhancement]
-! It's no need to load anything that not matter to use, because mbasic.facebook.com can work fine
+! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine
 ! without JavaScript, Inline script, iframe and third party resources.
 ||mbasic.facebook.com$script,inline-script,websocket
-*$frame,script,domain=mbasic.facebook.com
+*$frame,script,important,domain=mbasic.facebook.com
 
 ! [uBlock0]
 pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
