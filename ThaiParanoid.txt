@@ -1,6 +1,6 @@
-[Adblock Plus 2.0]
+[uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612112041
+! Version: 201612122244
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -234,10 +234,12 @@ pantip.com##script:contains(_comscore)
 pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
 
 ! [uBlock0] First party annoyance
-m.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
-m.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
-touch.facebook.com###u_0_5:has(#m_pages_popup_cta_reg_button)
-touch.facebook.com###u_0_5:has(#m_pages_popup_cta_login_button)
+m.facebook.com##._4b-b:has(#popup_xout)
+m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+mbasic.facebook.com###m_loginbar_login_button
+mbasic.facebook.com###m_loginbar_reg_button
+touch.facebook.com##._4b-b:has(#popup_xout)
+touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
 twitter.com##.dismissible-content
 twitter.com###signin-dropdown
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
