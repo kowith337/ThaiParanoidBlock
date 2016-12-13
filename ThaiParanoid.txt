@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612122320
+! Version: 201612132046
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -15,6 +15,7 @@ online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##div[id=*"div-gpt-ad"]
+online-station.net###video_ads_container
 pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
@@ -22,10 +23,13 @@ pantip.com##.ads-tabloid
 pantip.com##.post-pick-ad
 pantip.com###ads-tabloid
 
+! Network Filter
 ||game-tep.com/*/adrotate-pro/*
 ||kidjarak.com/*/bsa-pro-scripteo/*
 ||notebookspec.com/*/nbs_custom_ads_skin.php
-||online-station.net/*/ads_$script,stylesheet
+||online-station.net/assets/js/ads_$script
+||online-station.net/assets/js/facebook$script
+||online-station.net/assets/js/google^$script
 ||pantip.com/ads.php
 ||pantip.com/adsipmobile.php
 ||siamza.com/js/jquery.cookie.js
@@ -214,18 +218,24 @@ pantip.com###ads-tabloid
 ! that can redirect to smartphone-focused site, not an actual version of it.
 ! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version
 ! but you get redirected to 'mobile.facebook.com' and forced you to use the likely native app version instead.
-||h.facebook.com$document,important
+! Note: I don't know why it redirected to "h.facebook.com" under non-HTTPS? So, I will block everything from it.
+||h.facebook.com$important
 ||mobile.facebook.com$document,important
 ||web.facebook.com$document,important
+
+! I HATE FreakBasics by Facebook, internet.org also...
+||freebasics.com$document,important
+||internet.org$document,important
 
 ! [Super lightweight Facebook enhancement]
 ! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine
 ! without JavaScript, Inline script, iframe and third party resources.
 ||mbasic.facebook.com$script,inline-script,websocket
-*$frame,script,important,domain=mbasic.facebook.com
+*$frame,script,domain=mbasic.facebook.com
 
 ! [uBlock0]
 pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
+pantip.com##.event-datatable-item:has(a[href^="//ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href^="http://ads.pantip.com"])
 pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
@@ -233,6 +243,7 @@ pantip.com##body:has(script[src*="serving-sys.com"])
 ! [uBlock0 + Firefox Only] (also Pale moon / IceCat / Fennec F-droid / Tor)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(googletag.cmd.push)
+online-station.net##script:contains(rand_slot_ads)
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
 pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
