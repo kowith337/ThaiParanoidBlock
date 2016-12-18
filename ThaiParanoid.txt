@@ -1,43 +1,327 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612141147
+! Version: 201612141649
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
-! Generic Filter
-*adnow.com
+! - - - - - - - - - - Common section - - - - - - - - - - !
+
+! Shared filter rules (from ThaiAntiForceLike)
+##.facebook-like-box-pop-up-overlay
+##.fblike
+##.fb_overlay
+##.fb-popup
+##.popup-like
+##.popup-like-box
+##.popup-like-box-backdrop
+###check-also-box
+###facebookpopup-fanback
+###facebook-like-box-pop-up
+###fanback
+###fblikebg
+###fblikepop
+###fbox-background
+###fbpop
+###fbpop_box
+###fbpop_box2
+###fb_box
+###loginModal
+###makingdifferentpopup
+/easy-facebook-likebox
+/facebook-fanbox*
+/facebook-page-promoter-lightbox*
+/facebook_popup*
+/fb-traffic-pop
+/floating-social-bar
+/like-fb
+/like_box*
+/new-facebook-popup-likebox-responsive
+/ud-social
+
+! Element filter rules (merge with ThaiAntiForceLike)
+12sum.com##.item-thumbs .hover-wrap
+animeranku.com###check-also-box
+araidii.com###facebookpopup-fanback
+autocar.in.th###_bz_boxlike
+autocar.in.th###_bz_boxlike_area
+autocar.in.th###_bz_boxlike_bg
+autocar.in.th###_bz_boxlike_footer
+autocar.in.th###makingdifferentpopup
+chujai.com###arevicofancy-loading
+chujai.com###arevicofancy-overlay
+chujai.com###arevicofancy-tmp
+chujai.com###arevicofancy-wrap
 cleothailand.com###survey-popup
+clip-th.com###loginModal
+clip-th.com##div[data-dismiss="modal"]
+coregamerth.com###check-also-box
+dodeden.com###facebookpopup-fanback
+dodeden.com###intro
+doodiza.com###popDiv
+doodiza.com###popup
+dspzeeplus.com###fbox-background
+dspzeeplus.com###fbox-button
+dspzeeplus.com###fbox-close
+dspzeeplus.com###fbox-display
+dspzeeplus.com###fbox-link
+dspzeeplus.com###twist-blogger-fan-page
+dspzeeplus.com##.popup-box
+extremepc.in.th###arevicofancy-loading
+extremepc.in.th###arevicofancy-overlay
+extremepc.in.th###arevicofancy-tmp
+extremepc.in.th###arevicofancy-wrap
+frynn.com###fblikebg
+frynn.com###fblikepop
+ithaihotnews.com###arevicofancy-loading
+ithaihotnews.com###arevicofancy-overlay
+ithaihotnews.com###arevicofancy-tmp
+ithaihotnews.com###arevicofancy-wrap
+itnews24hrs.com###arevicofancy-loading
+itnews24hrs.com###arevicofancy-overlay
+itnews24hrs.com###arevicofancy-tmp
+itnews24hrs.com###arevicofancy-wrap
+itnews24hrs.com###check-also-box
+juropy.com###arevicofancy-loading
+juropy.com###arevicofancy-overlay
+juropy.com###arevicofancy-tmp
+juropy.com###arevicofancy-wrap
+kaijeaw.com###arevicofancy-loading
+kaijeaw.com###arevicofancy-overlay
+kaijeaw.com###arevicofancy-tmp
+kaijeaw.com###arevicofancy-wrap
+kaijeaw.com###fb_box
+kaijeaw.com##.backdrop
+kaijeaw.com##.fb_overlay
+kaijeaw.com##.popup-like
+kaijeaw.com##.popup-like-box
+kaijeaw.com##.popup-like-box-backdrop
+kidjarak.com###spu-1170
+kidjarak.com##.stb-container
+kiitdoo.com##.dgd_stb_box.clean_white
+kodlikes.com##.fancybox-overlay
+kodlikes.com##.fancybox-wrap
+kpmemory.com###overlay
+laughwoo.com###arevicofancy-loading
+laughwoo.com###arevicofancy-overlay
+laughwoo.com###arevicofancy-tmp
+laughwoo.com###arevicofancy-wrap
+liceza.com###cboxOverlay
+liceza.com###cboxWrapper
+liceza.com###colorbox
+liekr.com###showLikePopup
+likessara.com###facebookpopup-fanback
+linkis.com##.deeper-overlay
+linkis.com##.js-forceAuth-popup-light
+linkis.com##.other-pages-holder .left-column
+linkis.com##.other-pages-holder .right-column
+linkis.com##.popup_force-auth
+linkis.com##.theme15-authorize
+lonely-rooyang.com##.fancybox-overlay
+lonely-rooyang.com##.fancybox-wrap
+m.online-station.net###leaderboard_bottom.bottom_banner
+m.online-station.net###leaderboard_bottom.bottom_banner#close_banner
+manyum.com###ui_popup_window_tpl
+manyum.com###win_showLike
+manyum.com###win_showLike_mask
+marketingoops.com###itro_opaco
+marketingoops.com###itro_popup
+marketingoops.com###popup_countdown
+meekhao.com##.dgd_stb_box.clean_white
+meepanda.com###facebookpopup-fanback
+mthai.com###arevicofancy-loading
+mthai.com###arevicofancy-overlay
+mthai.com###arevicofancy-tmp
+mthai.com###arevicofancy-wrap
+mthai.com###coverpage
+newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
+ohlor.com###fanback
+ohlor.com###upprev_box
+ohmpiang.com###check-also-box
+online-station.net##div[id=*"div-gpt-ad"]
+online-station.net##script:contains(googletag.cmd.push)
+online-station.net##.bjqs
+online-station.net##.introjs-helperLayer
+online-station.net##.introjs-overlay
+online-station.net##.introjs-tooltipReferenceLayer
 online-station.net##.os-ads
 online-station.net##.os-ads-banner
 online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
-online-station.net##div[id=*"div-gpt-ad"]
+online-station.net###ads-overlay
+online-station.net###ads-preload-popup
+online-station.net###close-preload
 online-station.net###video_ads_container
+online-station.net###welcome
+oopsmobile.net##.fancybox-overlay
+oopsmobile.net##.fancybox-wrap
 pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
 pantip.com##.ads-tabloid
 pantip.com##.post-pick-ad
 pantip.com###ads-tabloid
+petmaya.com###arevicofancy-loading
+petmaya.com###arevicofancy-overlay
+petmaya.com###arevicofancy-tmp
+petmaya.com###arevicofancy-wrap
+petmaya.com###arvlbdata
+picnic.ly##.essb_bottombar
+picnic.ly##.essb-popup
+pol-ball.com###facebookpopup-fanback
+postjung.com###fbpop_box
+postjung.com###fbpop_box2
+rabbit.co.th##.exit-overlay
+rabbit.co.th##.subscribe-form
+rabbit.co.th##.ui-front.ui-widget-overlay
+share-si.com###fbox-background
+share-si.com###overlay
+siamok.com###lightbox
+siamok.com###lightbox-shadow
+siamza.com###fanback
+sistacafe.com##.fb-popup
+sistacafe.com##.popup
+sistacafe.com##.popup.fblike
+startclip.com###popDiv
+startclip.com###popup
+techmoblog.com###cboxOverlay
+techmoblog.com###cboxWrapper
+techtalkthai.com###check-also-box
+tgpl.in.th###arevicofancy-loading
+tgpl.in.th###arevicofancy-overlay
+tgpl.in.th###arevicofancy-tmp
+tgpl.in.th###arevicofancy-wrap
+thaihitz.com###arevicofancy-loading
+thaihitz.com###arevicofancy-overlay
+thaihitz.com###arevicofancy-tmp
+thaihitz.com###arevicofancy-wrap
+thaihitz.com###facebook-like-box-pop-up
+thaihitz.com###fb_box
+thaihitz.com##.backdrop
+thaihitz.com##.facebook-like-box-pop-up-overlay
+thaihitz.com##.fb_overlay
+thaihitz.com##.popup-like
+thaihitz.com##.popup-like-box
+thaihitz.com##.popup-like-box-backdrop
+thaijobsgov.com##.backdrop
+thaijobsgov.com##.popup-like-box
+thailandbestbeauty.com###cboxOverlay
+thailandbestbeauty.com###colorbox
+thaiza.com###fbpop
+thetechr.com##.jinda-content-block
+thetechr.com##.jinda-facebook-like-box
+thetechr.com##.jinda-overlay-background
+thetechr.com##.jinda-wrapper
+tnews.co.th###myModal
+tnews.co.th##.in.fade.modal-backdrop
+tnews.co.th##.modal
+toritalk.com##.bottomad
+toritalk.com##.jquery-modal.blocker
+toritalk.com##.td-front-end-display-block
+toritalk.com##.topad
+upic.me###basic-modal-content
+upic.me###simplemodal-container
+upic.me###simplemodal-overlay
+worldcosplay.net##.registration-modal-bg
+worldcosplay.net###registerPopup
+zaapmak.com##iframe
 
 ! Network Filter
+*adnow.com
+||4toom.com/*/modal-dialog/*
+||anitime.in.th/*/easy-facebook-likebox/*
+||araideewa.com/*/facebook-fanbox-popup/*
+||araidii.com/*/facebook-popup-box/*
+||aroundnews.net/*/easy-facebook-likebox/*
+||aroundnews.net/*/like-jacking-ninja/*
+||blogger.com/*lightbox_bundle.css$domain=zapver555.com
+||blogger.com/*lbx__th.js$domain=zapver555.com
+||brandbuffet.in.th/*/social-popup/*
+||coregamerth.com/*/jquery-cookie/*
+||coregamerth.com/*/popups/*
+||dspzeeplus.com/*/facebook-page-promoter-lightbox/*
+||everythingisee.in.th/*/facebook-page-promoter-lightbox/*
+||frynn.com/*/fb-traffic-pop/*
 ||game-tep.com/*/adrotate-pro/*
+||game-tep.com/*/fancy-box/*
+||ithaihotnews.com/*/like-jacking-ninja/*
+||itnews24hrs.com/*/facebook-page-promoter-lightbox/*
+||japanexpothailand.org/*/facebook-fanbox-popup/*
+||juropy.com/*/facebook-page-promoter-lightbox/*
+||kaijeaw.com/*/fancybox/*
+||kaijeaw.com/*/like_box*
+||kanomjeeb.com/*/lightbox*
+||khonkaenlink.info/facebook_popup^
 ||kidjarak.com/*/bsa-pro-scripteo/*
+||kidjarak.com/*/easy-facebook-likebox/*
+||ladycee.com/light_ads^
+||laughwoo.com/*/floating-social-bar/*
+||laughwoo.com/*/like-jacking-ninja/*
+||likessara.com/*/like-fb/*
+||lonely-rooyang.com/*/arscode-ninja-popups/*
+||marketingoops.com/popup-ad*
+||marketingoops.com/*/itro-popup/*
+||meekhao.com/*/dreamgrow-scroll-triggered-box/*
+||meepanda.com/*/new-facebook-popup-likebox-responsive/*
+||miruanime.net/*/popups/*
+||miru-anime.net/*/popups/*
+||netdna-ssl.com/*/advanced-ads/
+||netdna-ssl.com/*/easy-social-share-buttons3/
+||newstimeline.net/*/jquery.magnific-popup.min.js
 ||notebookspec.com/*/nbs_custom_ads_skin.php
-||online-station.net/assets/css/ads$stylesheet
-||online-station.net/assets/js/ads$script
-||online-station.net/assets/js/facebook$script
-||online-station.net/assets/js/google*$important
+||notebookspec.com/*/nbs-ilightbox/*
+||ohlor.com/*/mini-popup/*
+||ohlor.com/*/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/*
+||oopsmobile.net/*/arscode-ninja-popups/*
+||overgraphy.com/*/easy-facebook-likebox/*
 ||pantip.com/ads.php
 ||pantip.com/adsipmobile.php
+||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
+||pol-ball.com/*/facebook-popup-box/*
+||senseonfilms.com/*/facebook-page-promoter-lightbox/*
+||shopspotapp.com/*/popups/*
+||shopspotapp.com/*/popups/*
+||siamchatroom.com/light_ads^
+||siamok.com/light_ads/*
 ||siamza.com/js/jquery.cookie.js
 ||sistacafe.com/scripts/nytive
 ||sistacafe.com/scripts/truehits
-||thaihitz.com/*/jquery.cookie.js
+||specphone.com/*/nbs-ilightbox/*
+||spokedark.tv/*/ud-social/*
+||sudting.party/*/new-facebook-popup-likebox-responsive/*
+||taghr.net/*/uji-popup/*
+||techmoblog.com/*colorbox*
+||thaihitz.com/*/like_box.js
+||thaiidol.com/*/popup-by-supsystic/*
+||thaijobsgov.com/*/fancybox/*
 ||thaijobsgov.com/banner^
+||thailandbestbeauty.com/*/colorbox.css
+||thailandbestbeauty.com/*colorbox*
+||thaimobilecenter.com/colorbox^
+||thaiza.com/nodo.html
+||thetechr.com/*/jinda-facebook-lightbox/*
+||toritalk.com/*/uji-popup/*
+||yakjado.com/*/easy-facebook-likebox/*
+||yakjado.com/*/upprev/*
+||yakjado.com/*/wp-social-popup-and-get-traffic/*
+||yaklai.com/*/ud-social/*
+
+! Request type
+! ||linkis.com/ajax^$xmlhttprequest
+||linkis.com/signin^$popup
+||linkis.com/index/ln-event?*force-auth
+||linkis.com/ajax/update-click?*force_auth
+||online-station.net/assets/css/ads$stylesheet
+||online-station.net/assets/js/ads$script
+||online-station.net/assets/js/facebook$script
+
+! Keep strict block.
+||linkis.com/ajax/get-popup-html?$important
+||online-station.net/assets/js/google*$important
+
+! - - - - - - - - - - Domain level block - - - - - - - - - - !
 
 ! 3P share button
 ||addthis.com
@@ -112,6 +396,7 @@ pantip.com###ads-tabloid
 ||s0.youtube.com
 ||s1.youtube.com
 ||s2.youtube.com
+||sales-frontier.com
 ||serving-sys.com
 ||simba-digital.com
 ||tapad.com
@@ -163,6 +448,12 @@ pantip.com###ads-tabloid
 ||lazada.co.th$third-party,important
 ||nipa.co.th$third-party,important
 
+! It's OK to show only what things needed, not other things
+||gravatar.com
+@@||gravatar.com$image
+
+! - - - - - - - - - - First party service (Mostly Facebook) - - - - - - - - - - !
+
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
 !            WSJ (Eng) > http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
@@ -180,6 +471,7 @@ pantip.com###ads-tabloid
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/impression.php$important
+||facebook.com/plugins
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/suggestions$important
@@ -201,11 +493,13 @@ pantip.com###ads-tabloid
 ! ||twitter.com/i/trends$important
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
-! Check your advert prefs here > https://www.facebook.com/ads/preferences/edit
+! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
 ||facebook.com/ads/preferences/advertiser_hideall/?*undo=true$important
 ||facebook.com/ads/preferences/edit_interests/?action=add$important
 
-! Unbreak some functional
+! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
+! to let Facebook retrieve information about advert prefs, and let you properly manage them without
+! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
 @@||facebook.com/ads/preferences/advertiser_hideall$first-party
 @@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
 @@||facebook.com/ads/preferences/report$xmlhttprequest,first-party
@@ -234,20 +528,8 @@ pantip.com###ads-tabloid
 ||mbasic.facebook.com$script,inline-script,websocket
 *$frame,script,domain=mbasic.facebook.com
 
-! [uBlock0]
-pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
-pantip.com##.event-datatable-item:has(a[href^="//ads.pantip.com"])
-pantip.com##.m-bxslider:has(a[href^="http://ads.pantip.com"])
-pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
-pantip.com##body:has(script[src*="serving-sys.com"])
-
-! [uBlock0 + Firefox Only] (also Pale moon / IceCat / Fennec F-droid / Tor)
-notebookspec.com##script:contains(#overlay_ads)
-online-station.net##script:contains(googletag.cmd.push)
-online-station.net##script:contains(rand_slot_ads)
-pantip.com##script:contains(GoogleAnalyticsObject)
-pantip.com##script:contains(_comscore)
-pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
+! What are you doing? another domain cookie to track users, even didn't logged into Facebook!?
+facebook.com##script:contains(cx.atdmt.com)
 
 ! [uBlock0] First party annoyance
 m.facebook.com##._4b-b:has(#popup_xout)
@@ -260,6 +542,31 @@ twitter.com##.dismissible-content
 twitter.com###signin-dropdown
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
-! It's OK to show only what things needed, not other things
-||gravatar.com
-@@||gravatar.com$image
+! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
+
+! [uBlock0] Accurate blocking elements
+pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
+pantip.com##.event-datatable-item:has(a[href^="//ads.pantip.com"])
+pantip.com##.m-bxslider:has(a[href^="http://ads.pantip.com"])
+pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
+pantip.com##body:has(script[src*="serving-sys.com"])
+
+! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
+autocar.in.th##script:contains(makingdifferent_ppopup)
+boxza.com##script:contains(bzpopup_timer)
+boxzaracing.com##script:contains(bzpopup_timer)
+dspzeeplus.com##script:contains(popup_facebook_box)
+liekr.com##script:contains($showLikePopup)
+manyum.com##script[id="ui_popup_window_tpl"]
+manyum.com##script:contains(ui_popup_window)
+notebookspec.com##script:contains(#overlay_ads)
+online-station.net##script:contains(googletag.cmd.push)
+online-station.net##script:contains(rand_slot_ads)
+pantip.com##script:contains(GoogleAnalyticsObject)
+pantip.com##script:contains(_comscore)
+pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
+picnic.ly##script:contains(advads)
+postjung.com##script:contains(fbpop)
+share-si.com##script:contains(ccpop)
+teededball.com##script:contains(bzpopup_timer)
+tnews.co.th##script:contains(ShowModal)
