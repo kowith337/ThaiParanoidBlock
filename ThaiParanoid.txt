@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612141649
+! Version: 201612230038
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -528,12 +528,11 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$script,inline-script,websocket
 *$frame,script,domain=mbasic.facebook.com
 
-! What are you doing? another domain cookie to track users, even didn't logged into Facebook!?
-facebook.com##script:contains(cx.atdmt.com)
-
 ! [uBlock0] First party annoyance
 m.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
 touch.facebook.com##._4b-b:has(#popup_xout)
