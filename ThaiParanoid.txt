@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612230038
+! Version: 201612251528
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -161,6 +161,7 @@ pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
 pantip.com##.ads-tabloid
+pantip.com##.m-block a[href^="http://ads.pantip.com"]
 pantip.com##.post-pick-ad
 pantip.com###ads-tabloid
 petmaya.com###arevicofancy-loading
@@ -529,9 +530,12 @@ zaapmak.com##iframe
 *$frame,script,domain=mbasic.facebook.com
 
 ! [uBlock0] First party annoyance
+facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 m.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+m.facebook.com##.fbEmuTracking
 m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+mbasic.facebook.com##.fbEmuTracking
 mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
