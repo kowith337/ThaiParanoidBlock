@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612251528
+! Version: 201612251555
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -157,6 +157,7 @@ online-station.net###video_ads_container
 online-station.net###welcome
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
+pantip.com##iframe[src*="ads.pantip.com"]
 pantip.com##iframe[src="http://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
@@ -464,7 +465,7 @@ zaapmak.com##iframe
 ||instagram.com$third-party,domain=~facebook.com|~messenger.com
 ||messenger.com$third-party,domain=~facebook.com|~instagram.com
 
-! Ads in 1st party service (e.g. Facebook, Twitter)
+! Ads/Tracking in 1st party service (e.g. Google, Facebook, Twitter)
 ! Currently doesn't have element rules for Facebook from me yet, because uBlock0 can handle them.
 ! ^ Only when you're using English (UK/US) language.
 ||analytics.twitter.com
@@ -483,6 +484,7 @@ zaapmak.com##iframe
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
 ||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
+||google.*/promos$important
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
 ||twimg.com/*/google_analytics$script,important
@@ -562,6 +564,7 @@ dspzeeplus.com##script:contains(popup_facebook_box)
 liekr.com##script:contains($showLikePopup)
 manyum.com##script[id="ui_popup_window_tpl"]
 manyum.com##script:contains(ui_popup_window)
+mx7.com##script:contains(GoogleAnalyticsObject)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(googletag.cmd.push)
 online-station.net##script:contains(rand_slot_ads)
@@ -573,3 +576,4 @@ postjung.com##script:contains(fbpop)
 share-si.com##script:contains(ccpop)
 teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
+upic.me##script:contains(#basic-modal-content)
