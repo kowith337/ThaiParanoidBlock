@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612271200
+! Version: 201612271238
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
@@ -392,6 +392,7 @@ zaapmak.com##iframe
 ||openxmarket.asia
 ||padsdel.com
 ||padstm.com
+||plista.com
 ||popads.net
 ||popcash.net
 ||reimageplus.com
@@ -569,6 +570,8 @@ mx7.com##script:contains(GoogleAnalyticsObject)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(googletag.cmd.push)
 online-station.net##script:contains(rand_slot_ads)
+online-station.net##script:contains(PLISTA)
+online-station.net##script:contains(ssProtocol)
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
 pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
