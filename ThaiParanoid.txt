@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201612300940
+! Version: 201701031311
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -548,6 +548,7 @@ mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
 touch.facebook.com##._4b-b:has(#popup_xout)
 touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+touch.facebook.com##div[data-sigil="reaction-unit-logging"]
 twitter.com##.dismissible-content
 twitter.com###signin-dropdown
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
