@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701061909
+! Version: 201701071906
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -357,6 +357,7 @@ zaapmak.com##iframe
 ||adnow.com
 ||adok.asia
 ||ads.os.co.th
+||ads.pantip.com
 ||ads.siamza.com
 ||ads.youtube.com
 ||ads.postjung.com
@@ -537,11 +538,11 @@ facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 m.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
 m.facebook.com##.fbEmuTracking
-m.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3])
+m.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
 mbasic.facebook.com##.fbEmuTracking
-mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3])
+mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 mbasic.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
 mbasic.facebook.com###m_loginbar_login_button
@@ -556,10 +557,10 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! [uBlock0] Accurate blocking elements
-pantip.com##.bxslider li:has(a[href^="http://ads.pantip.com"])
-pantip.com##.event-datatable-item:has(a[href^="//ads.pantip.com"])
-pantip.com##.m-bxslider:has(a[href^="http://ads.pantip.com"])
-pantip.com##.post-item:has(img[src="http://ptcdn.info/images/icon-tag-ad.png"])
+pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
+pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
+pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
+pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
@@ -578,7 +579,7 @@ online-station.net##script:contains(PLISTA)
 online-station.net##script:contains(ssProtocol)
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
-pantip.com##script:contains("https://ssl-avd.innity.net":"http://avd.innity.net")
+pantip.com##script:contains("https://ssl-avd.innity.net")
 picnic.ly##script:contains(advads)
 postjung.com##script:contains(fbpop)
 share-si.com##script:contains(ccpop)
