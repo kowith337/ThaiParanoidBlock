@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701071906
+! Version: 201701080016
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -535,13 +535,12 @@ zaapmak.com##iframe
 
 ! [uBlock0] First party annoyance
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
+facebook.com##.fbEmuTracking
 m.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
-m.facebook.com##.fbEmuTracking
 m.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
-mbasic.facebook.com##.fbEmuTracking
 mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 mbasic.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
