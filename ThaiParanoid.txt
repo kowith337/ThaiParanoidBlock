@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701080016
+! Version: 201701090018
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -486,6 +486,7 @@ zaapmak.com##iframe
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
 ||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
+||google.*/pagead/lvz?$third-party,important
 ||google.*/promos$important
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
@@ -541,6 +542,7 @@ m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
 m.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
+m.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//table[//h3/text()="Related"])
 mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 mbasic.facebook.com##:xpath(//div[@role="article"]//table[//h3/text()="Related"])
@@ -548,6 +550,7 @@ mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
 touch.facebook.com##._4b-b:has(#popup_xout)
 touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 touch.facebook.com##div[data-sigil="reaction-unit-logging"]
 twitter.com##.dismissible-content
 twitter.com###signin-dropdown
