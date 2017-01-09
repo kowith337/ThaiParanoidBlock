@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701090018
+! Version: 201701092348
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -322,6 +322,8 @@ zaapmak.com##iframe
 ! Keep strict block.
 ||linkis.com/ajax/get-popup-html?$important
 ||online-station.net/assets/js/google*$important
+||disqusads.com$important
+||referrer.disqus.com$important
 
 ! - - - - - - - - - - Domain level block - - - - - - - - - - !
 
@@ -486,7 +488,7 @@ zaapmak.com##iframe
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
 ||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
-||google.*/pagead/lvz?$third-party,important
+||google.*/pagead/$third-party,important
 ||google.*/promos$important
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
