@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701130034
+! Version: 201701140047
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -521,11 +521,18 @@ zaapmak.com##iframe
 ! Give the warning if you're using Facebook on some cellular data provider
 ! that can redirect to smartphone-focused site, not an actual version of it.
 ! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version
-! but you get redirected to 'mobile.facebook.com' and forced you to use the likely native app version instead.
-! Note: I don't know why it redirected to "h.facebook.com" under non-HTTPS? So, I will block everything from it.
+! but you get redirected to 'm.facebook.com' or 'mobile.facebook.com'
+! show the suggestion page to use Facebook under "Free Basics" campaign,
+! then forced you to use the likely native app version instead after you ignore that.
+! Note: After introduce of "Free Basics" was show and no matter you decide to use it or not,
+! but I don't know why it redirected to "h.facebook.com" under non-HTTPS? So, I will block everything from it.
 ||h.facebook.com$important
 ||mobile.facebook.com$document,important
 ||web.facebook.com$document,important
+
+! Sometime you're able to still use 'm.facebook.com' or 'touch.facebook.com' on mobile data,
+! but it still make xhr to 'mobile.facebook.com', so it's good to block that!
+||mobile.facebook.com$domain=m.facebook.com|touch.facebook.com,important
 
 ! I HATE FreakBasics by Facebook, internet.org also...
 ||freebasics.com$document,important
