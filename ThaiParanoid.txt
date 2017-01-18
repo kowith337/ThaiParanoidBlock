@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701181204
+! Version: 201701181233
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -158,7 +158,7 @@ oopsmobile.net##.fancybox-wrap
 pantip.com###ads-tabloid
 pantip.com##.ads-billboard
 pantip.com##.ads-tabloid
-pantip.com##.m-block a[href^="http://ads.pantip.com"]
+pantip.com##.m-block a[href*="ads.pantip.com"]
 pantip.com##.post-pick-ad
 pantip.com##iframe[src*="ads.pantip.com"]
 pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
@@ -570,6 +570,7 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
 pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
+pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 
