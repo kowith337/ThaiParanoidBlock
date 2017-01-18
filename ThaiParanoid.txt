@@ -1,32 +1,32 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701151737
+! Version: 201701181204
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
 ! - - - - - - - - - - Common section - - - - - - - - - - !
 
 ! Shared filter rules (from ThaiAntiForceLike)
-##.facebook-like-box-pop-up-overlay
-##.fblike
-##.fb_overlay
-##.fb-popup
-##.popup-like
-##.popup-like-box
-##.popup-like-box-backdrop
 ###check-also-box
-###facebookpopup-fanback
 ###facebook-like-box-pop-up
+###facebookpopup-fanback
 ###fanback
+###fb_box
 ###fblikebg
 ###fblikepop
 ###fbox-background
 ###fbpop
 ###fbpop_box
 ###fbpop_box2
-###fb_box
 ###loginModal
 ###makingdifferentpopup
+##.facebook-like-box-pop-up-overlay
+##.fb-popup
+##.fb_overlay
+##.fblike
+##.popup-like
+##.popup-like-box
+##.popup-like-box-backdrop
 /easy-facebook-likebox
 /facebook-fanbox*
 /facebook-page-promoter-lightbox*
@@ -138,8 +138,11 @@ notebookspec.com###overlay_ads
 ohlor.com###fanback
 ohlor.com###upprev_box
 ohmpiang.com###check-also-box
-online-station.net##div[id=*"div-gpt-ad"]
-online-station.net##script:contains(googletag.cmd.push)
+online-station.net###ads-overlay
+online-station.net###ads-preload-popup
+online-station.net###close-preload
+online-station.net###video_ads_container
+online-station.net###welcome
 online-station.net##.bjqs
 online-station.net##.introjs-helperLayer
 online-station.net##.introjs-overlay
@@ -149,29 +152,25 @@ online-station.net##.os-ads-banner
 online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
-online-station.net###ads-overlay
-online-station.net###ads-preload-popup
-online-station.net###close-preload
-online-station.net###video_ads_container
-online-station.net###welcome
+online-station.net##div[id=*"div-gpt-ad"]
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
-pantip.com##iframe[src*="ads.pantip.com"]
-pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
-pantip.com##img[src*="tapad.com"]
-pantip.com##noscript
+pantip.com###ads-tabloid
 pantip.com##.ads-billboard
 pantip.com##.ads-tabloid
 pantip.com##.m-block a[href^="http://ads.pantip.com"]
 pantip.com##.post-pick-ad
-pantip.com###ads-tabloid
+pantip.com##iframe[src*="ads.pantip.com"]
+pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
+pantip.com##img[src*="tapad.com"]
+pantip.com##noscript
 petmaya.com###arevicofancy-loading
 petmaya.com###arevicofancy-overlay
 petmaya.com###arevicofancy-tmp
 petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
-picnic.ly##.essb_bottombar
 picnic.ly##.essb-popup
+picnic.ly##.essb_bottombar
 pol-ball.com###facebookpopup-fanback
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
@@ -226,8 +225,8 @@ toritalk.com##.topad
 upic.me###basic-modal-content
 upic.me###simplemodal-container
 upic.me###simplemodal-overlay
-worldcosplay.net##.registration-modal-bg
 worldcosplay.net###registerPopup
+worldcosplay.net##.registration-modal-bg
 zaapmak.com##iframe
 
 ! Network Filter
@@ -238,8 +237,8 @@ zaapmak.com##iframe
 ||araidii.com/*/facebook-popup-box/*
 ||aroundnews.net/*/easy-facebook-likebox/*
 ||aroundnews.net/*/like-jacking-ninja/*
-||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||blogger.com/*lbx__th.js$domain=zapver555.com
+||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||brandbuffet.in.th/*/social-popup/*
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
@@ -263,17 +262,17 @@ zaapmak.com##iframe
 ||laughwoo.com/*/like-jacking-ninja/*
 ||likessara.com/*/like-fb/*
 ||lonely-rooyang.com/*/arscode-ninja-popups/*
-||marketingoops.com/popup-ad*
 ||marketingoops.com/*/itro-popup/*
+||marketingoops.com/popup-ad*
 ||meekhao.com/*/dreamgrow-scroll-triggered-box/*
 ||meepanda.com/*/new-facebook-popup-likebox-responsive/*
-||miruanime.net/*/popups/*
 ||miru-anime.net/*/popups/*
+||miruanime.net/*/popups/*
 ||netdna-ssl.com/*/advanced-ads/
 ||netdna-ssl.com/*/easy-social-share-buttons3/
 ||newstimeline.net/*/jquery.magnific-popup.min.js
-||notebookspec.com/*/nbs_custom_ads_skin.php
 ||notebookspec.com/*/nbs-ilightbox/*
+||notebookspec.com/*/nbs_custom_ads_skin.php
 ||ohlor.com/*/mini-popup/*
 ||ohlor.com/*/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/*
 ||oopsmobile.net/*/arscode-ninja-popups/*
@@ -313,9 +312,9 @@ zaapmak.com##iframe
 ! Request type
 ! ||linkis.com/ajax^$xmlhttprequest
 ||iwilldoforking.com/coverpage.js$script
-||linkis.com/signin^$popup
-||linkis.com/index/ln-event?*force-auth
 ||linkis.com/ajax/update-click?*force_auth
+||linkis.com/index/ln-event?*force-auth
+||linkis.com/signin^$popup
 ||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/assets/js/ads$script
 ||online-station.net/assets/js/facebook$script
@@ -339,31 +338,31 @@ zaapmak.com##iframe
 ! http://pantip.com/topic/34359052
 ||360tools.org
 ||antivirus.baidu.com
-||browser.baidu.com
 ||baidu.co.th
+||browser.baidu.com
 ||dealwifi.com
 ||govome.com
 ||hao123.com
 ||insppartner.com
 ||inspsearch.com
 ||mustang-browser.com
-||pcfaster.com
 ||pcfaster.co.th
+||pcfaster.com
 ||rafotech.com
 ||toptools100.com
 ||wisemana.com
 
 ! Ads Server / Malvertising
-||2mdn.net
 ||24x7th.com
+||2mdn.net
 ||adasiaholdings.com
 ||adnow.com
 ||adok.asia
 ||ads.os.co.th
 ||ads.pantip.com
+||ads.postjung.com
 ||ads.siamza.com
 ||ads.youtube.com
-||ads.postjung.com
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
@@ -439,10 +438,10 @@ zaapmak.com##iframe
 ||ptengine.com
 ||revsci.net
 ||ruu-dee.com
-||synergy-e.com
 ||scorecardresearch.com
 ||stats.in.th
 ||stats.wp.com
+||synergy-e.com
 ||taboola.com
 ||tagserve.asia
 ||thstats.com
@@ -474,6 +473,7 @@ zaapmak.com##iframe
 ! Currently doesn't have element rules for Facebook from me yet, because uBlock0 can handle them.
 ! ^ Only when you're using English (UK/US) language.
 ||analytics.twitter.com
+||facebook.com/*/suggestions$important
 ||facebook.com/ads/
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
@@ -485,7 +485,6 @@ zaapmak.com##iframe
 ||facebook.com/tr?$important
 ||facebook.com/video/autoplay$important
 ||facebook.com/xti.php$important
-||facebook.com/*/suggestions$important
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
 ||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
@@ -541,43 +540,29 @@ zaapmak.com##iframe
 ! [Super lightweight Facebook enhancement]
 ! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine
 ! without JavaScript, Inline script, iframe and third party resources.
-||mbasic.facebook.com$script,inline-script,websocket
-*$frame,script,domain=mbasic.facebook.com
+||mbasic.facebook.com$frame,inline-script,script,websocket
 
 ! [uBlock0] First party annoyance
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbEmuTracking
-m.facebook.com##._4b-b:has(#popup_xout)
-m.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
-m.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
-m.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
-m.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
-m.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
-m.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
-m.facebook.com###m_newsfeed_stream section article:has(iframe[src^="/xti.php?"])
-m.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
-m.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
-mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
-mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
-mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
-mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
+m.facebook.com,mbasic.facebook.com,touch.facebook.com###page_suggestions_on_liking
+m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(iframe[src^="/xti.php?"])
+m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
+m.facebook.com,touch.facebook.com##._4b-b:has(#popup_xout)
+m.facebook.com,touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
-touch.facebook.com##._4b-b:has(#popup_xout)
-touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
-touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
-touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
-touch.facebook.com###m_newsfeed_stream section article:has(iframe[src^="/xti.php?"])
-touch.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
-touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
-twitter.com##.dismissible-content
 twitter.com###signin-dropdown
+twitter.com##.dismissible-content
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
-
-! touch.facebook.com##div[data-sigil="reaction-unit-logging"]
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
@@ -594,17 +579,17 @@ boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
 dspzeeplus.com##script:contains(popup_facebook_box)
 liekr.com##script:contains($showLikePopup)
-manyum.com##script[id="ui_popup_window_tpl"]
 manyum.com##script:contains(ui_popup_window)
+manyum.com##script[id="ui_popup_window_tpl"]
 mx7.com##script:contains(GoogleAnalyticsObject)
 notebookspec.com##script:contains(#overlay_ads)
+online-station.net##script:contains(PLISTA)
 online-station.net##script:contains(googletag.cmd.push)
 online-station.net##script:contains(rand_slot_ads)
-online-station.net##script:contains(PLISTA)
 online-station.net##script:contains(ssProtocol)
+pantip.com##script:contains("https://ssl-avd.innity.net")
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
-pantip.com##script:contains("https://ssl-avd.innity.net")
 picnic.ly##script:contains(advads)
 postjung.com##script:contains(fbpop)
 share-si.com##script:contains(ccpop)
