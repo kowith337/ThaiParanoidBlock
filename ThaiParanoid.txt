@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701181233
+! Version: 201701191711
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 1 day
 
@@ -498,7 +498,8 @@ zaapmak.com##iframe
 ||twitter.com/*/recommendations$important
 ||twitter.com/i/cards/*?advertiser_name$important
 ||twitter.com/i/jot$important
-! ||twitter.com/i/trends$important
+
+! ||twitter.com/i/trends$important // Avoid disable "Trends" if you still need it. //
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
 ! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
@@ -525,6 +526,7 @@ zaapmak.com##iframe
 ! then forced you to use the likely native app version instead after you ignore that.
 ! Note: After introduce of "Free Basics" was show and no matter you decide to use it or not,
 ! but I don't know why it redirected to "h.facebook.com" under non-HTTPS? So, I will block everything from it.
+||facebook.com/zero/policy$document
 ||h.facebook.com$important
 ||mobile.facebook.com$document,important
 ||web.facebook.com$document,important
@@ -549,6 +551,7 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
 m.facebook.com,mbasic.facebook.com,touch.facebook.com###page_suggestions_on_liking
 m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
@@ -557,6 +560,7 @@ m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(iframe
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,touch.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com,touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+m.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
@@ -570,6 +574,7 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
 pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
+pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
