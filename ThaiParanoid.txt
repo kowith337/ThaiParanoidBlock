@@ -1,8 +1,8 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201701191711
+! Version: 201701282116
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
-! Expires: 1 day
+! Expires: 2 days
 
 ! - - - - - - - - - - Common section - - - - - - - - - - !
 
@@ -479,6 +479,7 @@ zaapmak.com##iframe
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/impression.php$important
 ||facebook.com/plugins
+||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/suggestions$important
@@ -547,6 +548,9 @@ zaapmak.com##iframe
 ! [uBlock0] First party annoyance
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbEmuTracking
+facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
