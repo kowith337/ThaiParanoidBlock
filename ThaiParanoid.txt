@@ -1,6 +1,7 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201702141242
+! Version: 201702141847
+! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
