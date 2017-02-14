@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201702141242
+! Version: 201702141842
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
@@ -703,3 +703,11 @@ share-si.com##script:contains(ccpop)
 teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
+
+! Extra
+! To load disqus comment on-demand.
+! Followed from gorhill's gist.: https://gist.github.com/gorhill/ef1b62d606473c68d524
+||disqus.com/forums/*/embed.js$script,redirect=disqus.com/forums/*/embed.js
+||disqus.com/embed.js$script,redirect=disqus.com/embed.js
+||disqus.com/count.js$script
+@@||disqus.com/embed.js?_=1457540*$script
