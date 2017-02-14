@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201702141842
+! Version: 201702141849
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -173,7 +173,7 @@ online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##.os_preload_popup
-online-station.net##div[id=*"div-gpt-ad"]
+online-station.net##div[id*="div-gpt-ad"]
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
 pantip.com###ads-tabloid
