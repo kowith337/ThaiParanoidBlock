@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201702120149
+! Version: 201702141242
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
@@ -39,14 +39,16 @@
 /ud-social
 
 ! Element filter rules (merge with ThaiAntiForceLike)
-12sum.com##.item-thumbs .hover-wrap
 animeranku.com###check-also-box
+animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 araidii.com###facebookpopup-fanback
 autocar.in.th###_bz_boxlike
 autocar.in.th###_bz_boxlike_area
 autocar.in.th###_bz_boxlike_bg
 autocar.in.th###_bz_boxlike_footer
 autocar.in.th###makingdifferentpopup
+autocar.in.th##.google-ads.row
+autocar.in.th##.google-ads.row-fluid
 chujai.com###arevicofancy-loading
 chujai.com###arevicofancy-overlay
 chujai.com###arevicofancy-tmp
@@ -55,10 +57,16 @@ cleothailand.com###survey-popup
 clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
 coregamerth.com###check-also-box
+coregamerth.com##.theiaStickySidebar #ads300_250-widget-2
 dodeden.com###facebookpopup-fanback
 dodeden.com###intro
+dodeden.com##.banner-A1
+dodeden.com##.banner-A2
+dodeden.com##.banner-X1
+dodeden.com##.banner-X2
 doodiza.com###popDiv
 doodiza.com###popup
+doodiza.com##.bigza-ads-block
 dspzeeplus.com###fbox-background
 dspzeeplus.com###fbox-button
 dspzeeplus.com###fbox-close
@@ -72,6 +80,8 @@ extremepc.in.th###arevicofancy-tmp
 extremepc.in.th###arevicofancy-wrap
 frynn.com###fblikebg
 frynn.com###fblikepop
+game-tep.com##.leftBanner
+game-tep.com##.rightBanner
 ithaihotnews.com###arevicofancy-loading
 ithaihotnews.com###arevicofancy-overlay
 ithaihotnews.com###arevicofancy-tmp
@@ -109,6 +119,7 @@ liceza.com###cboxOverlay
 liceza.com###cboxWrapper
 liceza.com###colorbox
 liekr.com###showLikePopup
+liekr.com###topAd
 likessara.com###facebookpopup-fanback
 linkis.com##.deeper-overlay
 linkis.com##.js-forceAuth-popup-light
@@ -120,6 +131,10 @@ lonely-rooyang.com##.fancybox-overlay
 lonely-rooyang.com##.fancybox-wrap
 m.online-station.net###leaderboard_bottom.bottom_banner
 m.online-station.net###leaderboard_bottom.bottom_banner#close_banner
+m.online-station.net##.os-install-app
+m.online-station.net##.os_preload_popup
+m.online-station.net##figure[class="os-floating-ad"]
+m.online-station.net##figure[class^="os-ad"]
 manyum.com###ui_popup_window_tpl
 manyum.com###win_showLike
 manyum.com###win_showLike_mask
@@ -128,13 +143,17 @@ marketingoops.com###itro_popup
 marketingoops.com###popup_countdown
 meekhao.com##.dgd_stb_box.clean_white
 meepanda.com###facebookpopup-fanback
+meepanda.com##.adsense-leadin
+meepanda.com##.ezAdsense
 mthai.com###arevicofancy-loading
 mthai.com###arevicofancy-overlay
 mthai.com###arevicofancy-tmp
 mthai.com###arevicofancy-wrap
 mthai.com###coverpage
+mthai.com##.ads-rec-center
 newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
+notebookspec.com##.cover_banner_bg
 ohlor.com###fanback
 ohlor.com###upprev_box
 ohmpiang.com###check-also-box
@@ -152,6 +171,7 @@ online-station.net##.os-ads-banner
 online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
+online-station.net##.os_preload_popup
 online-station.net##div[id=*"div-gpt-ad"]
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
@@ -174,19 +194,30 @@ picnic.ly##.essb_bottombar
 pol-ball.com###facebookpopup-fanback
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
+postjung.com##.mainbox > div > .adsbygoogle
+postjung.com##.xadsense_middle
+rabbit.co.th##.ads-sidebar-middle
 rabbit.co.th##.exit-overlay
+rabbit.co.th##.post-entry .ads
 rabbit.co.th##.subscribe-form
 rabbit.co.th##.ui-front.ui-widget-overlay
 share-si.com###fbox-background
 share-si.com###overlay
+share-si.com###yengo-inline-ads
+share-si.com##.yengo-x
 siamok.com###lightbox
 siamok.com###lightbox-shadow
+siamok.com##div[class^=SC_TBlock]
+siamok.com##iframe[src="/ads/foot-yengo.php"]
 siamza.com###fanback
 sistacafe.com##.fb-popup
 sistacafe.com##.popup
 sistacafe.com##.popup.fblike
+specphone.com##.cover_banner
+specphone.com##div[id^=div-gpt-ad]
 startclip.com###popDiv
 startclip.com###popup
+sudting.party##div[id^="SC_TBlock"]
 techmoblog.com###cboxOverlay
 techmoblog.com###cboxWrapper
 techtalkthai.com###check-also-box
@@ -194,23 +225,37 @@ tgpl.in.th###arevicofancy-loading
 tgpl.in.th###arevicofancy-overlay
 tgpl.in.th###arevicofancy-tmp
 tgpl.in.th###arevicofancy-wrap
+tgpl.in.th##div a[href^="http://www.compgamer.com/mario-ads/"]
 thaihitz.com###arevicofancy-loading
 thaihitz.com###arevicofancy-overlay
 thaihitz.com###arevicofancy-tmp
 thaihitz.com###arevicofancy-wrap
 thaihitz.com###facebook-like-box-pop-up
 thaihitz.com###fb_box
+thaihitz.com##.SC_TBlock
 thaihitz.com##.backdrop
 thaihitz.com##.facebook-like-box-pop-up-overlay
 thaihitz.com##.fb_overlay
 thaihitz.com##.popup-like
 thaihitz.com##.popup-like-box
 thaihitz.com##.popup-like-box-backdrop
+thaijobsgov.com##.SC_TBlock
 thaijobsgov.com##.backdrop
 thaijobsgov.com##.popup-like-box
 thailandbestbeauty.com###cboxOverlay
 thailandbestbeauty.com###colorbox
+thailandbestbeauty.com###divAdLeft
+thailandbestbeauty.com###divAdRight
+thaimobilecenter.com###divleft:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
+thaimobilecenter.com###divright:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
+thaimobilecenter.com###exp-normal:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
+thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
+thaimobilecenter.com##iframe[src^="../banner/google_adsense"]
+thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
 thaiza.com###fbpop
+thaiza.com##.adv2col
+thaiza.com##.adv3col
+thaiza.com##.banner_728_90
 thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
@@ -227,6 +272,7 @@ upic.me###simplemodal-container
 upic.me###simplemodal-overlay
 worldcosplay.net###registerPopup
 worldcosplay.net##.registration-modal-bg
+yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
 ! Network Filter
@@ -242,6 +288,7 @@ zaapmak.com##iframe
 ||brandbuffet.in.th/*/social-popup/*
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
+||dodeden.com/advert^
 ||dspzeeplus.com/*/facebook-page-promoter-lightbox/*
 ||everythingisee.in.th/*/facebook-page-promoter-lightbox/*
 ||frynn.com/*/fb-traffic-pop/*
@@ -289,6 +336,7 @@ zaapmak.com##iframe
 ||siamza.com/js/jquery.cookie.js
 ||sistacafe.com/scripts/nytive
 ||sistacafe.com/scripts/truehits
+||sistacafe.com/scripts/yengo
 ||specphone.com/*/nbs-ilightbox/*
 ||spokedark.tv/*/ud-social/*
 ||sudting.party/*/new-facebook-popup-likebox-responsive/*
@@ -311,18 +359,20 @@ zaapmak.com##iframe
 
 ! Request type
 ! ||linkis.com/ajax^$xmlhttprequest
-||iwilldoforking.com/coverpage.js$script
+||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
 ||linkis.com/signin^$popup
 ||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/assets/js/ads$script
 ||online-station.net/assets/js/facebook$script
+||techmoblog.com/tmb-advertise^$subdocument
 
 ! Keep strict block.
-||linkis.com/ajax/get-popup-html?$important
-||online-station.net/assets/js/google*$important
 ||disqusads.com$important
+||linkis.com/ajax/get-popup-html?$important
+||online-station.net/*/ads/*$important,domain=m.online-station.net
+||online-station.net/assets/js/google*$important
 ||referrer.disqus.com$important
 
 ! - - - - - - - - - - Domain level block - - - - - - - - - - !
@@ -367,7 +417,9 @@ zaapmak.com##iframe
 ||adsoptimal.com
 ||adtplatform.com
 ||bumq.com
+||clicksgear.com
 ||connextra.com
+||crazyegg.com
 ||criteo.com
 ||doubleclick.net
 ||effectivemeasure.net
@@ -394,9 +446,13 @@ zaapmak.com##iframe
 ||openxmarket.asia
 ||padsdel.com
 ||padstm.com
+||pc1ads.com
+||pc2ads.com
+||pc3ads.com
 ||plista.com
 ||popads.net
 ||popcash.net
+||puserving.com
 ||reimageplus.com
 ||s.youtube.com
 ||s0.youtube.com
@@ -405,7 +461,10 @@ zaapmak.com##iframe
 ||sales-frontier.com
 ||serving-sys.com
 ||simba-digital.com
+||smemove.com
+||sumome.com
 ||tapad.com
+||travelpayouts.com
 ||tynt.com
 ||yengo.com
 
@@ -414,6 +473,7 @@ zaapmak.com##iframe
 ||amung.us
 ||anonymousdemographics.com
 ||atdmt.com
+||aviasales.ru
 ||btstatic.com
 ||csi.gstatic.com
 ||d-stats.com
@@ -433,6 +493,7 @@ zaapmak.com##iframe
 ||parkingcrew.com
 ||parkingcrew.net
 ||ping-fast.com
+||pingdom.net
 ||pixeldigitalstudios.com
 ||plista.com
 ||ptengine.com
@@ -455,8 +516,8 @@ zaapmak.com##iframe
 ||nipa.co.th$third-party,important
 
 ! It's OK to show only what things needed, not other things
-||gravatar.com
-@@||gravatar.com$image
+||gravatar.com$third-party
+@@||gravatar.com/avatar$image
 
 ! - - - - - - - - - - First party service (Mostly Facebook) - - - - - - - - - - !
 
@@ -546,11 +607,15 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$frame,inline-script,script,websocket
 
 ! [uBlock0] First party annoyance
+facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_login_button"])
+facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_reg_button"])
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbEmuTracking
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
+facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
+facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
@@ -578,6 +643,20 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! [uBlock0] Accurate blocking elements
+4toom.com##.single .content div:has(.adsbygoogle)
+aroundnews.net##.td-g-rec:has(.adsbygoogle)
+doodiza.com##.columns.large-4:has(.yengo_ads)
+everythingisee.in.th##.widget-header:has(.adsbygoogle)
+itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
+kanomjeeb.com##.banner:has(.adsbygoogle)
+kanomjeeb.com##section .row:has(.adsbygoogle)
+kidjarak.com##.td-g-rec:has(.adsbygoogle)
+kiitdoo.com##.textwidget:has(.adsbygoogle)
+liekr.com##.postmain div:has(.adsbygoogle)
+lonely-rooyang.com##.banner:has(.adsbygoogle)
+lonely-rooyang.com##.textwidget:has(.adsbygoogle)
+oopsmobile.net##.td-post-content div:has(.adsbygoogle)
+oopsmobile.net##.textwidget:has(.adsbygoogle)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
 pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
@@ -585,6 +664,21 @@ pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
+petmaya.com##.td-g-rec:has(.adsbygoogle)
+petmaya.com##td:has(.adsbygoogle)
+picnic.ly##.textwidget:has(.adsbygoogle)
+postjung.com###maincontent div:has(.sp-adsense-incontent)
+rabbit.co.th##.widget-box:has(.ads-sidebar-top)
+share-si.com##.post > div:has(script[src^="//code.yengo.com"])
+share-si.com##.post div:has(.adsbygoogle)
+siamchatroom.com##.Sweb_right > table:has(script[src^="//ads.bumq.com"])
+siamok.com##.Sweb_right table:has(iframe[src="/ads/right-yengo.php"])
+siamok.com##.head_bg table:has(iframe[src^="/ads/"])
+thaihitz.com##.post-single-content center:has(.adsbygoogle)
+thaiidol.com##.td-g-rec:has(.adsbygoogle)
+thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
+thaijobsgov.com##.content center:has(.adsbygoogle)
+thetechr.com##.rev-block:has(.adsbygoogle)
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
 autocar.in.th##script:contains(makingdifferent_ppopup)
