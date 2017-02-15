@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201702141242
+! Version: 201702151928
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
@@ -91,6 +91,7 @@ itnews24hrs.com###arevicofancy-overlay
 itnews24hrs.com###arevicofancy-tmp
 itnews24hrs.com###arevicofancy-wrap
 itnews24hrs.com###check-also-box
+jarm.com##._banner > a[href*="ads.jarm.com"]
 juropy.com###arevicofancy-loading
 juropy.com###arevicofancy-overlay
 juropy.com###arevicofancy-tmp
@@ -246,9 +247,6 @@ thailandbestbeauty.com###cboxOverlay
 thailandbestbeauty.com###colorbox
 thailandbestbeauty.com###divAdLeft
 thailandbestbeauty.com###divAdRight
-thaimobilecenter.com###divleft:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
-thaimobilecenter.com###divright:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
-thaimobilecenter.com###exp-normal:has(a[href^="http://www.thaimobilecenter.com/ad_click"])
 thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
 thaimobilecenter.com##iframe[src^="../banner/google_adsense"]
 thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
@@ -642,12 +640,13 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
-! [uBlock0] Accurate blocking elements
+! [uBlock0] Accurate blocking elements + xpath rules
 4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
+jarm.com##:xpath(//div[@class="news-detail"]//p[./text()="Advertisement"])
 kanomjeeb.com##.banner:has(.adsbygoogle)
 kanomjeeb.com##section .row:has(.adsbygoogle)
 kidjarak.com##.td-g-rec:has(.adsbygoogle)
@@ -678,6 +677,9 @@ thaihitz.com##.post-single-content center:has(.adsbygoogle)
 thaiidol.com##.td-g-rec:has(.adsbygoogle)
 thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
 thaijobsgov.com##.content center:has(.adsbygoogle)
+thaimobilecenter.com###divleft:has(a[href*="/ad_click"])
+thaimobilecenter.com###divright:has(a[href*="/ad_click"])
+thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
@@ -685,6 +687,11 @@ autocar.in.th##script:contains(makingdifferent_ppopup)
 boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
 dspzeeplus.com##script:contains(popup_facebook_box)
+jarm.com##script:contains(adsbygoogle)
+jarm.com##script:contains(crtg_content)
+jarm.com##script:contains(function(f,b,e,v,n,t,s))
+jarm.com##script:contains(googletag.cmd.push)
+jarm.com##script:contains(GoogleAnalyticsObject)
 liekr.com##script:contains($showLikePopup)
 manyum.com##script:contains(ui_popup_window)
 manyum.com##script[id="ui_popup_window_tpl"]
