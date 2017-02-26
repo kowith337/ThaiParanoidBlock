@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201702261757
+! Version: 201702261828
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -539,11 +539,12 @@ zaapmak.com##iframe
 ||facebook.com/ads/growth$important
 ||facebook.com/ai.php$frame,important
 ||facebook.com/ajax/ads/$important
-||facebook.com/ajax/bz/$xmlhttprequest,important
+||facebook.com/ajax/bz$xmlhttprequest,important
 ||facebook.com/ajax/browse/null_state.php$important
 ||facebook.com/ajax/mutual_friends/tooltip.php$important
 ||facebook.com/ajax/pagelet/generic.php/WebEgoPane*$important
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
+||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/impression.php$important
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/feed_chaining$important
@@ -601,6 +602,7 @@ zaapmak.com##iframe
 ||facebook.com/zero/policy$document
 ||h.facebook.com$important
 ||mobile.facebook.com$document,important
+||mobile.facebook.com$important,domain=m.facebook.com|touch.facebook.com
 ||web.facebook.com$document,important
 
 ! Sometime you're able to still use 'm.facebook.com' or 'touch.facebook.com' on mobile data,
