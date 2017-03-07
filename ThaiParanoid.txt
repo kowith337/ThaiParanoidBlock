@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201703012029
+! Version: 201703072037
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -627,13 +627,16 @@ facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
+m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div[div/table//div/text()="People also like"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft]//div[.//table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,touch.facebook.com###page_suggestions_on_liking
 m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
