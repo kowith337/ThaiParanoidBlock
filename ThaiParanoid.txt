@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201703072027
+! Version: 201703291541
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -324,6 +324,7 @@ zaapmak.com##iframe
 ||oopsmobile.net/*/arscode-ninja-popups/*
 ||overgraphy.com/*/easy-facebook-likebox/*
 ||pantip.com/ads.php
+||pantip.com/adsip.php
 ||pantip.com/adsipmobile.php
 ||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
 ||pol-ball.com/*/facebook-popup-box/*
@@ -341,6 +342,8 @@ zaapmak.com##iframe
 ||sudting.party/*/new-facebook-popup-likebox-responsive/*
 ||taghr.net/*/uji-popup/*
 ||techmoblog.com/*colorbox*
+||techxcite.com/stats.php?
+||techxcite.com/truehitsstat.php?
 ||thaihitz.com/*/like_box.js
 ||thaiidol.com/*/popup-by-supsystic/*
 ||thaijobsgov.com/*/fancybox/*
@@ -411,6 +414,7 @@ zaapmak.com##iframe
 ||ads.pantip.com
 ||ads.postjung.com
 ||ads.siamza.com
+||ads.techxcite.com
 ||ads.youtube.com
 ||adsniper.ru
 ||adsoptimal.com
@@ -618,8 +622,11 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$frame,inline-script,script,websocket
 
 ! [uBlock0] First party annoyance
+facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
+facebook.com###pagelet_ego_pane .egoOrganicColumn
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_login_button"])
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_reg_button"])
+facebook.com###GroupsRHCSuggestionSection
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbEmuTracking
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
