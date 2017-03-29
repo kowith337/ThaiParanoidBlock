@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
-! Title: Thai Paranoid Block
-! Version: 201703291541
+! Title: Thai Paranoid Block ~Maximum~
+! Version: 201703291551
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -541,6 +541,7 @@ zaapmak.com##iframe
 ||facebook.com/a/bz$xmlhttprequest,important
 ||facebook.com/ads/
 ||facebook.com/ads/growth$important
+||facebook.com/ai.php$frame,important
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/bz$xmlhttprequest,important
 ||facebook.com/ajax/browse/null_state.php$important
@@ -549,6 +550,7 @@ zaapmak.com##iframe
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/impression.php$important
+||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
@@ -574,8 +576,6 @@ zaapmak.com##iframe
 ||twitter.com/i/jot$important
 
 ! Unsure rules
-! ||facebook.com/ai.php$frame,important
-! ||facebook.com/plugins
 ! ||twitter.com/i/trends$important // Avoid disable "Trends" if you still need it. //
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
@@ -734,3 +734,11 @@ share-si.com##script:contains(ccpop)
 teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
+
+! Extra
+! To load disqus comment on-demand.
+! Followed from gorhill's gist.: https://gist.github.com/gorhill/ef1b62d606473c68d524
+||disqus.com/forums/*/embed.js$script,redirect=disqus.com/forums/*/embed.js
+||disqus.com/embed.js$script,redirect=disqus.com/embed.js
+||disqus.com/count.js$script
+@@||disqus.com/embed.js?$script
