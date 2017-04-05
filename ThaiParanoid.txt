@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201703291557
+! Version: 201704052344
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -514,6 +514,19 @@ zaapmak.com##iframe
 ||yu0123456.com
 ||zemanta.com
 
+! Mobile Badvertisers
+! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand
+!          because visiting those domain or specific page will also sent request to mobile operator to subscribe useless content services
+!          (specific annual SMS sent such as daily news, horo, download, fake lotto / wap push content such as download games, videos, ringtones)
+!          or they never sent anything to you but simply charge service fee or deduct your calling balance every day, every week or every month.
+*/Aiswap.ashx?$important
+||52.76.242.20$important
+||52.220.167.186$important
+||contentdd.net$important
+||gangzaa.net$important
+||mobindy.com$important
+||zigifun.com$important
+
 ! Allowed only 1P
 ||lazada.co.th$third-party,important
 ||nipa.co.th$third-party,important
@@ -541,6 +554,7 @@ zaapmak.com##iframe
 ||facebook.com/a/bz$xmlhttprequest,important
 ||facebook.com/ads/
 ||facebook.com/ads/growth$important
+||facebook.com/ads/qe/$important
 ||facebook.com/ai.php$frame,important
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/bz$xmlhttprequest,important
@@ -550,6 +564,7 @@ zaapmak.com##iframe
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/impression.php$important
+||facebook.com/pages/qe/$important
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/suggestions$important
@@ -582,12 +597,14 @@ zaapmak.com##iframe
 ! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
 ||facebook.com/ads/preferences/advertiser_hideall/?*undo=true$important
 ||facebook.com/ads/preferences/edit_interests/?action=add$important
+||facebook.com/ads/preferences/edit_sensitive_topics*duration_in_days=0$important
 
 ! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
 ! to let Facebook retrieve information about advert prefs, and let you properly manage them without
 ! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
 @@||facebook.com/ads/preferences/advertiser_hideall$first-party
 @@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
+@@||facebook.com/ads/preferences/edit_sensitive_topics$xmlhttprequest
 @@||facebook.com/ads/preferences/report$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/advertisers$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/interests$xmlhttprequest,first-party
@@ -623,6 +640,7 @@ zaapmak.com##iframe
 
 ! [uBlock0] First party annoyance
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
+facebook.com###pagelet_advertiser_panel
 facebook.com###pagelet_ego_pane .egoOrganicColumn
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_login_button"])
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_reg_button"])
@@ -632,6 +650,9 @@ facebook.com##.fbEmuTracking
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
@@ -642,10 +663,13 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+m.facebook.com,mbasic.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
+m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,touch.facebook.com###page_suggestions_on_liking
 m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-sigil^="story-div"]:has(.scrollArea)
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(iframe[src^="/xti.php?"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
