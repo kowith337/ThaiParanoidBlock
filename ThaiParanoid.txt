@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201704051318
+! Version: 201704111304
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -174,6 +174,8 @@ online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##.os_preload_popup
+online-station.net##div[data-widget="plista_widget_sidebar"]
+online-station.net##div[data-widget="plista_widget_belowArticle"]
 online-station.net##div[id*="div-gpt-ad"]
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
@@ -262,6 +264,7 @@ thetechr.com##.jinda-wrapper
 tnews.co.th###myModal
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
+toosthai.com##iframe[id^="AYAH_iframe"]
 toritalk.com##.bottomad
 toritalk.com##.jquery-modal.blocker
 toritalk.com##.td-front-end-display-block
@@ -275,7 +278,6 @@ yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
 ! Network Filter
-*adnow.com
 ||4toom.com/*/modal-dialog/*
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
@@ -371,6 +373,8 @@ zaapmak.com##iframe
 ||techmoblog.com/tmb-advertise^$subdocument
 
 ! Keep strict block.
+||*-adnow.com$important
+||adnow.com$important
 ||disqusads.com$important
 ||linkis.com/ajax/get-popup-html?$important
 ||online-station.net/*/ads/*$important,domain=m.online-station.net
@@ -469,18 +473,26 @@ zaapmak.com##iframe
 ||tapad.com
 ||travelpayouts.com
 ||tynt.com
+||user-api.com
+||user-clicks.com
+||user-red.com
 ||yengo.com
 
 ! Tracking / Marketing / Article Suggestions
 ||accesstrade.in.th
 ||amung.us
 ||anonymousdemographics.com
+||areyouahuman.com
 ||atdmt.com
 ||aviasales.ru
+||bluekai.com
 ||btstatic.com
+||crwdcntrl.net
 ||csi.gstatic.com
 ||d-stats.com
+||dtscout.com
 ||edgesuite.net
+||eyeota.net
 ||feedjit.com
 ||gbotvisit.com
 ||go2cloud.org
@@ -591,7 +603,10 @@ zaapmak.com##iframe
 ||twitter.com/i/jot$important
 
 ! Unsure rules
-! ||twitter.com/i/trends$important // Avoid disable "Trends" if you still need it. //
+! facebook.com##div[id^="hyperfeed_story_id"] div.mtm:has(li a[href*="/commerce/products/"])
+! // Aim to hide product shown panel under page post, but apply this rule will be hide entire posts that have product catalogue sell shown.
+! ||twitter.com/i/trends$important
+! // Avoid disable "Trends" if you still need it. //
 
 ! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
 ! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
@@ -639,20 +654,39 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$frame,inline-script,script,websocket
 
 ! [uBlock0] First party annoyance
+facebook.com###fbpage_invite_audience_action
+facebook.com###fbpage_invite_audience_action_finch
+facebook.com###feed_optimistic_video
+facebook.com###friend_invites_section
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
+facebook.com###home_sponsor_nile
+facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_advertiser_panel
 facebook.com###pagelet_ego_pane .egoOrganicColumn
+facebook.com###pagelet_games_rhc
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_login_button"])
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_reg_button"])
+facebook.com###pages_may_like_section
 facebook.com###GroupsRHCSuggestionSection
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
+facebook.com##.fbAdUnit
+facebook.com##.fbEmu
+facebook.com##.fbEmuBlock
+facebook.com##.fbEmuComboList
+facebook.com##.fbEmuEgo
+facebook.com##.fbEmuEgoUnit
+facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
+facebook.com##.fbPhotoAdsCol
+facebook.com##.fbTimelineSideAds
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
+facebook.com##div[data-referrer="pagelet_side_ads"]
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
+facebook.com##div[id^="sponsoredTickerStory_"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
@@ -689,7 +723,6 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! [uBlock0] Accurate blocking elements + xpath rules
-4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
@@ -729,6 +762,7 @@ thaimobilecenter.com###divleft:has(a[href*="/ad_click"])
 thaimobilecenter.com###divright:has(a[href*="/ad_click"])
 thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
+4toom.com##.single .content div:has(.adsbygoogle)
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
 autocar.in.th##script:contains(makingdifferent_ppopup)
