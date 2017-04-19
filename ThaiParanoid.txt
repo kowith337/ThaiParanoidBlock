@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201704171414
+! Version: 201704191843
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -704,12 +704,14 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft]//div[.//table//h3/tex
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//h3/text()="Suggested Pages"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+m.facebook.com,mbasic.facebook.com##:xpath(//div[starts-with(@id,"u_")][@data-ft][.//h3/text()="Suggested Pages"])
 m.facebook.com,mbasic.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
+m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-sigil^="story-div"]:has(.scrollArea)
 m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
