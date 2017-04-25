@@ -1,11 +1,11 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201704212223
+! Version: 201704251436
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
-! - - - - - - - - - - Common section - - - - - - - - - - !
+! - - - - - - - - - - Generic filters section (aka. DOM Element Hiding) - - - - - - - - - - !
 
 ! Shared filter rules (from ThaiAntiForceLike)
 ###check-also-box
@@ -261,6 +261,9 @@ thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
 thetechr.com##.jinda-wrapper
+thisisgamethailand.com###adsbannerbottommtig
+thisisgamethailand.com###adsbannermtig
+thisisgamethailand.com###adsbannermtigbox
 tnews.co.th###myModal
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
@@ -277,7 +280,9 @@ worldcosplay.net##.registration-modal-bg
 yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
-! Network Filter
+! - - - - - - - - - - Network filters section - - - - - - - - - - !
+
+! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
 ||4toom.com/*/modal-dialog/*
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
@@ -361,7 +366,7 @@ zaapmak.com##iframe
 ||yakjado.com/*/wp-social-popup-and-get-traffic/*
 ||yaklai.com/*/ud-social/*
 
-! Request type
+! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
@@ -371,6 +376,11 @@ zaapmak.com##iframe
 ||online-station.net/assets/js/ads$script
 ||online-station.net/assets/js/facebook$script
 ||techmoblog.com/tmb-advertise^$subdocument
+
+! Block ALL 3P for specific domain(s)
+! 1. Due to someone posted on Pantip about visiting Thairath website and get auto subscribe content services without consent.
+!    I've looked that sites and see too many untrusted third parties domain (ads, tracking, malvertising, ...), so I decide to block all of them.
+||$third-party,domain=thairath.co.th,important
 
 ! Keep strict block.
 ||*-adnow.com$important
@@ -729,6 +739,7 @@ m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 mbasic.facebook.com###m_loginbar_login_button
 mbasic.facebook.com###m_loginbar_reg_button
+youtube.com###hats-container[data-survey-id]
 twitter.com###signin-dropdown
 twitter.com##.dismissible-content
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
@@ -775,6 +786,8 @@ thaimobilecenter.com###divleft:has(a[href*="/ad_click"])
 thaimobilecenter.com###divright:has(a[href*="/ad_click"])
 thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
+thisisgamethailand.com##.container .item > a[href*="/index.php?/stats/clickAdd"]
+thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
 4toom.com##.single .content div:has(.adsbygoogle)
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
