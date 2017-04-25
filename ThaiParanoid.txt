@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201704251436
+! Version: 201704252311
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -380,6 +380,7 @@ zaapmak.com##iframe
 ! Block ALL 3P for specific domain(s)
 ! 1. Due to someone posted on Pantip about visiting Thairath website and get auto subscribe content services without consent.
 !    I've looked that sites and see too many untrusted third parties domain (ads, tracking, malvertising, ...), so I decide to block all of them.
+||$third-party,domain=nationtv.tv,important
 ||$third-party,domain=thairath.co.th,important
 
 ! Keep strict block.
@@ -434,12 +435,15 @@ zaapmak.com##iframe
 ||adsoptimal.com
 ||adtplatform.com
 ||bumq.com
+||clickadu.com
 ||clicksgear.com
 ||connextra.com
 ||crazyegg.com
 ||criteo.com
 ||doubleclick.net
 ||effectivemeasure.net
+||exdynsrv.com
+||filadmir.site
 ||gammaplatform.com
 ||googleadservices.com
 ||googlesyndication.com
@@ -458,6 +462,7 @@ zaapmak.com##iframe
 ||nuffnang.com
 ||nuffnang.com.my
 ||oclaserver.com
+||oilchange.website
 ||onclasrv.com
 ||onclickads.net
 ||openxmarket.asia
@@ -469,8 +474,11 @@ zaapmak.com##iframe
 ||plista.com
 ||popads.net
 ||popcash.net
+||poptm.com
 ||puserving.com
+||quicktask.xyz
 ||reimageplus.com
+||replase.tk
 ||s.youtube.com
 ||s0.youtube.com
 ||s1.youtube.com
@@ -544,6 +552,7 @@ zaapmak.com##iframe
 */Aiswap.ashx?$important
 ||52.76.242.20$important
 ||52.220.167.186$important
+||bigolives.tv$important
 ||contentdd.net$important
 ||consentprt.dtac.co.th
 ||gangzaa.net$important
@@ -551,6 +560,7 @@ zaapmak.com##iframe
 ||mobindy.com$important
 ||mono-mobile.com$important
 ||myscoobi.com$important
+||wap.shinee.com$important
 ||zigifun.com$important
 
 ! Note: I don't know why that company (Mono Group is part of JASTEL) are use this trickery, are they in debt due to failed for 900 MHz auction?
