@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201704252315
+! Version: 201704280850
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -562,8 +562,6 @@ zaapmak.com##iframe
 ||myscoobi.com$important
 ||wap.shinee.com$important
 ||zigifun.com$important
-
-! Note: I don't know why that company (Mono Group is part of JASTEL) are use this trickery, are they in debt due to failed for 900 MHz auction?
 
 ! Allowed only 1P
 ||lazada.co.th$third-party,important
