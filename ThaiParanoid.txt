@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201704280849
+! Version: 201705022041
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -107,6 +107,7 @@ kaijeaw.com##.fb_overlay
 kaijeaw.com##.popup-like
 kaijeaw.com##.popup-like-box
 kaijeaw.com##.popup-like-box-backdrop
+kapook.com##.targetbanner-hilight
 kidjarak.com###spu-1170
 kidjarak.com##.stb-container
 kiitdoo.com##.dgd_stb_box.clean_white
@@ -638,6 +639,14 @@ zaapmak.com##iframe
 ||facebook.com/ads/preferences/edit_interests/?action=add$important
 ||facebook.com/ads/preferences/edit_sensitive_topics*duration_in_days=0$important
 
+! Messaging Privacy Aware (is typing, seen message)
+||facebook.com/*/change_read_status.php$important
+||facebook.com/*/mark_seen.php$important
+||facebook.com/*/typ.php$important
+||messenger.com/*/change_read_status.php$important
+||messenger.com/*/mark_seen.php$important
+||messenger.com/*/typ.php$important
+
 ! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
 ! to let Facebook retrieve information about advert prefs, and let you properly manage them without
 ! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
@@ -681,6 +690,7 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$websocket
 
 ! [uBlock0] First party annoyance
+facebook.com###ads_preferences_desktop_root div div:has(a[href*="/ads/about/?"])
 facebook.com###fbpage_invite_audience_action
 facebook.com###fbpage_invite_audience_action_finch
 facebook.com###feed_optimistic_video
@@ -707,6 +717,7 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
@@ -756,12 +767,16 @@ youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
 ! [uBlock0] Accurate blocking elements + xpath rules
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
+blognone.com##:xpath(//div[@id="above_comments"][//h2/text()="Blognone Workplace"])
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
 jarm.com##:xpath(//div[@class="news-detail"]//p[./text()="Advertisement"])
 kanomjeeb.com##.banner:has(.adsbygoogle)
 kanomjeeb.com##section .row:has(.adsbygoogle)
+kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
+kapook.com##div[style*="text-align:center"]:has(.banner_position)
+kapook.com###sidebar > div:has(a[href*="kapook.com/app"])
 kidjarak.com##.td-g-rec:has(.adsbygoogle)
 kiitdoo.com##.textwidget:has(.adsbygoogle)
 liekr.com##.postmain div:has(.adsbygoogle)
