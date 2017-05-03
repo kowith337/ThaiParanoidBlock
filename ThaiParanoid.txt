@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201705022047
+! Version: 201705031948
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -57,6 +57,8 @@ chujai.com###arevicofancy-wrap
 cleothailand.com###survey-popup
 clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
+compgamer.com##.backgroundPopup
+compgamer.com##div[aria-describedby="alert_popup_dialog"]
 coregamerth.com###check-also-box
 coregamerth.com##.theiaStickySidebar #ads300_250-widget-2
 dodeden.com###facebookpopup-fanback
@@ -293,6 +295,7 @@ zaapmak.com##iframe
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||brandbuffet.in.th/*/social-popup/*
+||compgamer.com/*/wp-lightbox-2/
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
@@ -369,6 +372,7 @@ zaapmak.com##iframe
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
+||compgamer.com/mario-ads$important
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
@@ -690,7 +694,6 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$websocket
 
 ! [uBlock0] First party annoyance
-facebook.com###ads_preferences_desktop_root div div:has(a[href*="/ads/about/?"])
 facebook.com###fbpage_invite_audience_action
 facebook.com###fbpage_invite_audience_action_finch
 facebook.com###feed_optimistic_video
