@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201705051959
+! Version: 201705181352
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -85,6 +85,8 @@ frynn.com###fblikebg
 frynn.com###fblikepop
 game-tep.com##.leftBanner
 game-tep.com##.rightBanner
+gamegeek.in.th##.wppaszone
+gamegeek.in.th##div[data-title="Home popup"]
 ithaihotnews.com###arevicofancy-loading
 ithaihotnews.com###arevicofancy-overlay
 ithaihotnews.com###arevicofancy-tmp
@@ -304,6 +306,7 @@ zaapmak.com##iframe
 ||frynn.com/*/fb-traffic-pop/*
 ||game-tep.com/*/adrotate-pro/*
 ||game-tep.com/*/fancy-box/*
+||gamegeek.in.th/wp-content/plugins/layeredpopups
 ||ithaihotnews.com/*/like-jacking-ninja/*
 ||itnews24hrs.com/*/facebook-page-promoter-lightbox/*
 ||japanexpothailand.org/*/facebook-fanbox-popup/*
@@ -722,6 +725,7 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+facebook.com##.mtm div[id^="u_0_"] div[id^="u_0_"]:has(span button.PageLikeButton)
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
@@ -741,7 +745,9 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[@class="coverInfoSection"]//div
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft]//div[.//table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@id="sub_profile_pic_content"]//div[//table[@role="presentation"]]//div[.//tbody//div/text()="People also like"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"]//div[table//h3/text()="Related"])
+m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//h3/text()="People you may know"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//h3/text()="Suggested Pages"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[starts-with(@id,"u_")][@data-ft][.//h3/text()="Suggested Pages"])
