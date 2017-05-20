@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201705201932
+! Version: 201705201958
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -158,6 +158,13 @@ mthai.com###arevicofancy-tmp
 mthai.com###arevicofancy-wrap
 mthai.com###coverpage
 mthai.com##.ads-rec-center
+mustplay.in.th##.YouTubeModal
+mustplay.in.th,playulti.com##.cover_page
+mustplay.in.th,playulti.com##.preloader
+mustplay.in.th,playulti.com##.promote
+mustplay.in.th,playulti.com###bg-left
+mustplay.in.th,playulti.com###bg-right
+mustplay.in.th,playulti.com###bgyoutube
 newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
@@ -200,14 +207,6 @@ petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
-playulti.com##.box-banner
-playulti.com##.cover_page
-playulti.com##.preloader
-playulti.com##.promote
-playulti.com##.vdo_cover
-playulti.com###bg-left
-playulti.com###bg-right
-playulti.com###bgyoutube
 pol-ball.com###facebookpopup-fanback
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
@@ -336,6 +335,8 @@ zaapmak.com##iframe
 ||meepanda.com/*/new-facebook-popup-likebox-responsive/*
 ||miru-anime.net/*/popups/*
 ||miruanime.net/*/popups/*
+||mustplay.in.th/assets/js/youtubepopup
+||mustplay.in.th/static/banner/*/ads-^
 ||netdna-ssl.com/*/advanced-ads/
 ||netdna-ssl.com/*/easy-social-share-buttons3/
 ||newstimeline.net/*/jquery.magnific-popup.min.js
@@ -350,6 +351,7 @@ zaapmak.com##iframe
 ||pantip.com/adsipmobile.php
 ||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
 ||playulti.com/company/truehit?
+||playulti.com/static/banner/*/ads-^
 ||pol-ball.com/*/facebook-popup-box/*
 ||senseonfilms.com/*/facebook-page-promoter-lightbox/*
 ||shopspotapp.com/*/popups/*
@@ -802,6 +804,8 @@ kiitdoo.com##.textwidget:has(.adsbygoogle)
 liekr.com##.postmain div:has(.adsbygoogle)
 lonely-rooyang.com##.banner:has(.adsbygoogle)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
+mustplay.in.th,playulti.com##.banner:has(a[rel])
+mustplay.in.th,playulti.com##a:has(img[src*="/data/setting/banner/"])
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
 oopsmobile.net##.textwidget:has(.adsbygoogle)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
@@ -814,7 +818,6 @@ pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
 picnic.ly##.textwidget:has(.adsbygoogle)
-playulti.com##.banner:has(a[rel])
 playulti.com##:xpath(//div[starts-with(@class, "card")][.//h4/text()="RECOMMEND APPS"])
 postjung.com###maincontent div:has(.sp-adsense-incontent)
 rabbit.co.th##.widget-box:has(.ads-sidebar-top)
