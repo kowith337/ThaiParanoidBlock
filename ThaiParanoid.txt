@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201705181142
+! Version: 201705201932
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -200,6 +200,14 @@ petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
+playulti.com##.box-banner
+playulti.com##.cover_page
+playulti.com##.preloader
+playulti.com##.promote
+playulti.com##.vdo_cover
+playulti.com###bg-left
+playulti.com###bg-right
+playulti.com###bgyoutube
 pol-ball.com###facebookpopup-fanback
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
@@ -341,6 +349,7 @@ zaapmak.com##iframe
 ||pantip.com/adsip.php
 ||pantip.com/adsipmobile.php
 ||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
+||playulti.com/company/truehit?
 ||pol-ball.com/*/facebook-popup-box/*
 ||senseonfilms.com/*/facebook-page-promoter-lightbox/*
 ||shopspotapp.com/*/popups/*
@@ -805,6 +814,8 @@ pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
 picnic.ly##.textwidget:has(.adsbygoogle)
+playulti.com##.banner:has(a[rel])
+playulti.com##:xpath(//div[starts-with(@class, "card")][.//h4/text()="RECOMMEND APPS"])
 postjung.com###maincontent div:has(.sp-adsense-incontent)
 rabbit.co.th##.widget-box:has(.ads-sidebar-top)
 share-si.com##.post > div:has(script[src^="//code.yengo.com"])
