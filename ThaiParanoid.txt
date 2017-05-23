@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201705212335
+! Version: 201705231622
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -335,6 +335,7 @@ zaapmak.com##iframe
 ||meepanda.com/*/new-facebook-popup-likebox-responsive/*
 ||miru-anime.net/*/popups/*
 ||miruanime.net/*/popups/*
+||mustplay.in.th/assets/js/jquery.tubular^
 ||mustplay.in.th/assets/js/youtubepopup
 ||mustplay.in.th/static/banner/*/ads-^
 ||netdna-ssl.com/*/advanced-ads/
@@ -350,6 +351,7 @@ zaapmak.com##iframe
 ||pantip.com/adsip.php
 ||pantip.com/adsipmobile.php
 ||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
+||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
 ||pol-ball.com/*/facebook-popup-box/*
@@ -629,6 +631,7 @@ zaapmak.com##iframe
 ||facebook.com/video/*/upnext$important
 ||facebook.com/video/autoplay$important
 ||facebook.com/video/quality_survey$important
+||facebook.com/webgraphql/query$important,domain=facebook.com
 ||facebook.com/xti.php$important
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
@@ -784,6 +787,10 @@ m.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics
 m.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="reaction-unit-logging"][.//h3//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//h1//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
+<<<<<<< HEAD
+=======
+youtube.com###hats-container[data-survey-id]
+>>>>>>> master
 twitter.com###signin-dropdown
 twitter.com##.dismissible-content
 youtube.com###hats-container[data-survey-id]
