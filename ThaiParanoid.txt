@@ -1,6 +1,6 @@
 [uBlock Origin 1.8.0]
 ! Title: Thai Paranoid Block
-! Version: 201705212339
+! Version: 201705231620
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -335,6 +335,7 @@ zaapmak.com##iframe
 ||meepanda.com/*/new-facebook-popup-likebox-responsive/*
 ||miru-anime.net/*/popups/*
 ||miruanime.net/*/popups/*
+||mustplay.in.th/assets/js/jquery.tubular^
 ||mustplay.in.th/assets/js/youtubepopup
 ||mustplay.in.th/static/banner/*/ads-^
 ||netdna-ssl.com/*/advanced-ads/
@@ -350,6 +351,7 @@ zaapmak.com##iframe
 ||pantip.com/adsip.php
 ||pantip.com/adsipmobile.php
 ||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
+||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
 ||pol-ball.com/*/facebook-popup-box/*
@@ -629,6 +631,7 @@ zaapmak.com##iframe
 ||facebook.com/video/*/upnext$important
 ||facebook.com/video/autoplay$important
 ||facebook.com/video/quality_survey$important
+||facebook.com/webgraphql/query$important,domain=facebook.com
 ||facebook.com/xti.php$important
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
