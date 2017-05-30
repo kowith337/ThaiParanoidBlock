@@ -1,6 +1,6 @@
 [uBlock Origin 1.11.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201705262155
+! Version: 201705302309
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -313,7 +313,8 @@ zaapmak.com##iframe
 ||frynn.com/*/fb-traffic-pop/*
 ||game-tep.com/*/adrotate-pro/*
 ||game-tep.com/*/fancy-box/*
-||gamegeek.in.th/wp-content/plugins/layeredpopups
+||gamegeek.in.th/*/layeredpopups/*
+||gamemonday.com/*/adrotate-pro/*
 ||ithaihotnews.com/*/like-jacking-ninja/*
 ||itnews24hrs.com/*/facebook-page-promoter-lightbox/*
 ||japanexpothailand.org/*/facebook-fanbox-popup/*
@@ -446,6 +447,9 @@ zaapmak.com##iframe
 ||adasiaholdings.com
 ||adnow.com
 ||adok.asia
+||ads.boxza.com
+||ads.jarm.com
+||ads.gamemonday.com
 ||ads.os.co.th
 ||ads.pantip.com
 ||ads.postjung.com
@@ -571,16 +575,55 @@ zaapmak.com##iframe
 !          (specific annual SMS sent such as daily news, horo, download, fake lotto / wap push content such as download games, videos, ringtones)
 !          or they never sent anything to you but simply charge service fee or deduct your calling balance every day, every week or every month.
 */Aiswap.ashx?$important
-||52.76.242.20$important
 ||52.220.167.186$important
+||52.76.242.20$important
+||7banana.com$important
+||8086.com.tw$important
+||achelous.mobi$important
+||addlink.mobi$important
+||amkomobile.com$important
+||b-qq.com$important
+||beezzi.com$important
 ||bigolives.tv$important
+||c1dovw6eef5jop8apwjkqy5ro5mlafkc.com$important
+||cheesemobile.com$important
+||chz.mobi$important
+||clickmlife.com$important
+||consentprt.dtac.co.th$important
 ||contentdd.net$important
-||consentprt.dtac.co.th
+||datapremium.net$important
+||facabooks.com$important
+||fly2.me$important
+||fly2me.com$important
+||funspaz.com$important
+||fylitcl7pf7kjqdduolqouaxtxbj5ing.com$important
+||g.zm.my$important
 ||gangzaa.net$important
+||gigth.com$important
+||gizmobi.mobi$important
+||hito.co.vu$important
 ||larnload.com$important
+||m.arco.co.th$important
+||m.mono-mobile.com$important
+||maejaow.com$important
+||mobico.my$important
+||mobilejmp.com$important
 ||mobindy.com$important
+||mobixing.com$important
 ||mono-mobile.com$important
 ||myscoobi.com$important
+||playclub.me$important
+||sabver.com$important
+||sanookde.com$important
+||seaman2u.com$important
+||ss1.mobilelife.co.th$important
+||ss2.mobilelife.co.th$important
+||ss3.mobilelife.co.th$important
+||th.contentbox.stream$important
+||thaifun4u.com$important
+||vas.dtac.co.th$important
+||videowap.net$important
+||vstyle4u.com$important
 ||wap.shinee.com$important
 ||zigifun.com$important
 
@@ -598,10 +641,10 @@ zaapmak.com##iframe
 ! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
 !            WSJ (Eng) > http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
 !            The Verge (Eng) > http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
-||facebook.com$third-party,domain=~messenger.com|~instagram.com
-||facebook.net$third-party,domain=~facebook.com|~instagram.com|~messenger.com
+||facebook.com$third-party,domain=~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
+||facebook.net$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
 ||instagram.com$third-party,domain=~facebook.com|~messenger.com
-||messenger.com$third-party,domain=~facebook.com|~instagram.com
+||messenger.com$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com
 
 ! Ads/Tracking in 1st party service (e.g. Google, Facebook, Twitter)
 ! Currently doesn't have element rules for Facebook from me yet, because uBlock0 can handle them.
