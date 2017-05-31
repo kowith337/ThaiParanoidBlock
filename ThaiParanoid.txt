@@ -1,6 +1,6 @@
-[uBlock Origin 1.11.0]
+[uBlock Origin 1.12.5b18]
 ! Title: Thai Paranoid Block
-! Version: 201705302303
+! Version: 201705311817
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -87,6 +87,7 @@ game-tep.com##.leftBanner
 game-tep.com##.rightBanner
 gamegeek.in.th##.wppaszone
 gamegeek.in.th##div[data-title="Home popup"]
+gamemonday.com##.ads-bottom
 ithaihotnews.com###arevicofancy-loading
 ithaihotnews.com###arevicofancy-overlay
 ithaihotnews.com###arevicofancy-tmp
@@ -389,7 +390,9 @@ zaapmak.com##iframe
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
-||compgamer.com/mario-ads$important
+||add0n.com$document
+||add0n.com$popunder
+||add0n.com$popup
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
@@ -406,8 +409,7 @@ zaapmak.com##iframe
 ||$third-party,domain=thairath.co.th,important
 
 ! Keep strict block.
-||*-adnow.com$important
-||adnow.com$important
+||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||linkis.com/ajax/get-popup-html?$important
 ||online-station.net/*/ads/*$important,domain=m.online-station.net
@@ -442,11 +444,12 @@ zaapmak.com##iframe
 ||wisemana.com
 
 ! Ads Server / Malvertising
+||*adnow.com
 ||24x7th.com
 ||2mdn.net
 ||adasiaholdings.com
-||adnow.com
 ||adok.asia
+||adnow.com
 ||ads.boxza.com
 ||ads.jarm.com
 ||ads.gamemonday.com
@@ -844,6 +847,8 @@ aroundnews.net##.td-g-rec:has(.adsbygoogle)
 blognone.com##:xpath(//div[@id="above_comments"][//h2/text()="Blognone Workplace"])
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
+gamemonday.com##a:has(img[onload])
+gamemonday.com##a[onclick]:has(img[onload])
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
 jarm.com##:xpath(//div[@class="news-detail"]//p[./text()="Advertisement"])
 kanomjeeb.com##.banner:has(.adsbygoogle)
