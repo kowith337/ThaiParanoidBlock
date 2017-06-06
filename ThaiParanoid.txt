@@ -1,6 +1,6 @@
-[uBlock Origin 1.12.5b18]
+[uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201705311817
+! Version: 201706061136
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -870,6 +870,7 @@ pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
+pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
