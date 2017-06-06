@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706061136
+! Version: 201706062133
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -818,8 +818,10 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//h3/text()="
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//h3/text()="Suggested Pages"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com##:xpath(//div[starts-with(@id,"u_")][@data-ft][.//h3/text()="Suggested Pages"])
+m.facebook.com,mbasic.facebook.com##div[data-ft] div:has(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
 m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+m.facebook.com,mbasic.facebook.com##div[role="article"] div:has(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
