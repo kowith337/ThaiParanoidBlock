@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706062133
+! Version: 201706091030
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -578,56 +578,84 @@ zaapmak.com##iframe
 !          (specific annual SMS sent such as daily news, horo, download, fake lotto / wap push content such as download games, videos, ringtones)
 !          or they never sent anything to you but simply charge service fee or deduct your calling balance every day, every week or every month.
 */Aiswap.ashx?$important
+||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||1mov.co$important
 ||7banana.com$important
 ||8086.com.tw$important
 ||achelous.mobi$important
+||ad5network.com$important
 ||addlink.mobi$important
 ||amkomobile.com$important
+||analog.mobi$important
+||androidappsfree.mobi$important
+||aplaydigital.com$important
 ||b-qq.com$important
 ||beezzi.com$important
 ||bigolives.tv$important
 ||c1dovw6eef5jop8apwjkqy5ro5mlafkc.com$important
+||centili.com$important
 ||cheesemobile.com$important
 ||chz.mobi$important
 ||clickmlife.com$important
-||consentprt.dtac.co.th$important
 ||contentdd.net$important
-||datapremium.net$important
+||consentprt.dtac.co.th$important
+||datapremium.$important
+||eskimi.com$important
 ||facabooks.com$important
 ||fly2.me$important
 ||fly2me.com$important
+||fun-club.mobi$important
+||fungame.mobi$important
 ||funspaz.com$important
+||funster.mobi$important
+||fun2u.biz$important
 ||fylitcl7pf7kjqdduolqouaxtxbj5ing.com$important
 ||g.zm.my$important
 ||gangzaa.net$important
+||getclick.mobi$important
 ||gigth.com$important
 ||gizmobi.mobi$important
 ||hito.co.vu$important
+||iamzaa.com$important
+||instantbabes.mobi$important
+||kodfin.com$important
 ||larnload.com$important
+||letgomobile.com$important
 ||m.arco.co.th$important
 ||m.mono-mobile.com$important
 ||maejaow.com$important
+||magikmobile.mobi$important
+||mastermovie-hd.mobi$important
 ||mobico.my$important
 ||mobilejmp.com$important
 ||mobindy.com$important
 ||mobixing.com$important
 ||mono-mobile.com$important
 ||myscoobi.com$important
+||n-mobile.net$important
 ||playclub.me$important
+||rushvip.net$important
 ||sabver.com$important
 ||sanookde.com$important
 ||seaman2u.com$important
+||snapp.asia$important
+||sosmob.mobi$important
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
+||tdedlove.com$important
 ||th.contentbox.stream$important
 ||thaifun4u.com$important
+||thaiza.com$important
+||thumbsms.com$important
 ||vas.dtac.co.th$important
+||vdocutesexy.mobi$important
 ||videowap.net$important
 ||vstyle4u.com$important
 ||wap.shinee.com$important
+||waphub.mobi$important
 ||zigifun.com$important
 
 ! Allowed only 1P
