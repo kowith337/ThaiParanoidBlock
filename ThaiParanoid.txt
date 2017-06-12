@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706091036
+! Version: 201706122110
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -588,7 +588,7 @@ zaapmak.com##iframe
 ||ad5network.com$important
 ||addlink.mobi$important
 ||amkomobile.com$important
-||analog.mobi$important
+||anolog.mobi$important
 ||androidappsfree.mobi$important
 ||aplaydigital.com$important
 ||b-qq.com$important
@@ -603,6 +603,7 @@ zaapmak.com##iframe
 ||consentprt.dtac.co.th$important
 ||datapremium.$important
 ||eskimi.com$important
+||etracker.cc$important
 ||facabooks.com$important
 ||fly2.me$important
 ||fly2me.com$important
@@ -620,6 +621,7 @@ zaapmak.com##iframe
 ||hito.co.vu$important
 ||iamzaa.com$important
 ||instantbabes.mobi$important
+||isport.co.th$important
 ||kodfin.com$important
 ||larnload.com$important
 ||letgomobile.com$important
@@ -635,6 +637,7 @@ zaapmak.com##iframe
 ||mono-mobile.com$important
 ||myscoobi.com$important
 ||n-mobile.net$important
+||newsplus.me$important
 ||playclub.me$important
 ||rushvip.net$important
 ||sabver.com$important
@@ -794,13 +797,13 @@ facebook.com###feed_optimistic_video
 facebook.com###friend_invites_section
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
 facebook.com###home_sponsor_nile
+facebook.com###mobile_login_bar
 facebook.com###page_suggestions_on_liking
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_advertiser_panel
-facebook.com###pagelet_ego_pane .egoOrganicColumn
+facebook.com###pagelet_ego_pane
 facebook.com###pagelet_games_rhc
-facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_login_button"])
-facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_reg_button"])
+facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###pages_may_like_section
 facebook.com###GroupsRHCSuggestionSection
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
@@ -831,7 +834,6 @@ facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
-m.facebook.com,mbasic.facebook.com###mobile_login_bar
 m.facebook.com,mbasic.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com###m_loginbar_reg_button
@@ -868,6 +870,7 @@ m.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics
 m.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="reaction-unit-logging"][.//h3//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//h1//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
+m.facebook.com,touch.facebook.com##section div[id^="unit_id"]:has(div[data-autoid] a i[class^="touched"])
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
