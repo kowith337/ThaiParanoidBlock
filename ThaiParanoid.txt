@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706122110
+! Version: 201706142155
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -446,7 +446,6 @@ zaapmak.com##iframe
 ! Ads Server / Malvertising
 ||*adnow.com
 ||24x7th.com
-||2mdn.net
 ||adasiaholdings.com
 ||adok.asia
 ||adnow.com
@@ -468,15 +467,10 @@ zaapmak.com##iframe
 ||connextra.com
 ||crazyegg.com
 ||criteo.com
-||doubleclick.net
 ||effectivemeasure.net
 ||exdynsrv.com
 ||filadmir.site
 ||gammaplatform.com
-||googleadservices.com
-||googlesyndication.com
-||googletagmanager.com
-||googletagservices.com
 ||hotjar.com
 ||innity.com
 ||innity.net
@@ -523,6 +517,14 @@ zaapmak.com##iframe
 ||user-clicks.com
 ||user-red.com
 ||yengo.com
+
+! Google Ads Strict
+||2mdn.net$important
+||doubleclick.net$important
+||googleadservices.com$important
+||googlesyndication.com$important
+||googletagmanager.com$important
+||googletagservices.com$important
 
 ! Tracking / Marketing / Article Suggestions
 ||accesstrade.in.th
@@ -719,6 +721,7 @@ zaapmak.com##iframe
 ||google.*/uds/api/ads/$important
 ||google.*/uds/stats?$important
 ||pixel.facebook.com$important
+||s.youtube.com/api/stats$important
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
 ||twimg.com/*/google_analytics$script,important
@@ -727,6 +730,11 @@ zaapmak.com##iframe
 ||twitter.com/*/recommendations$important
 ||twitter.com/i/cards/*?advertiser_name$important
 ||twitter.com/i/jot$important
+||youtube.com/*/log_event?
+||youtube.com/*/log_interaction?
+||youtube.com/api/stats/
+||youtube.com/api/stats/watchtime?$important
+||youtube.com/yts/img/pixel^$important
 
 ! Unsure rules
 ! facebook.com##div[id^="hyperfeed_story_id"] div.mtm:has(li a[href*="/commerce/products/"])
