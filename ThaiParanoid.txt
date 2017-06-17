@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706142155
+! Version: 201706171816
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -583,6 +583,9 @@ zaapmak.com##iframe
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||203.146.249.21$important
+||203.223.159.245$important
+||223.25.242.95$important
 ||1mov.co$important
 ||7banana.com$important
 ||8086.com.tw$important
@@ -590,8 +593,8 @@ zaapmak.com##iframe
 ||ad5network.com$important
 ||addlink.mobi$important
 ||amkomobile.com$important
-||anolog.mobi$important
 ||androidappsfree.mobi$important
+||anolog.mobi$important
 ||aplaydigital.com$important
 ||b-qq.com$important
 ||beezzi.com$important
@@ -601,19 +604,20 @@ zaapmak.com##iframe
 ||cheesemobile.com$important
 ||chz.mobi$important
 ||clickmlife.com$important
-||contentdd.net$important
 ||consentprt.dtac.co.th$important
+||contentdd.net$important
 ||datapremium.$important
 ||eskimi.com$important
 ||etracker.cc$important
 ||facabooks.com$important
 ||fly2.me$important
 ||fly2me.com$important
+||freezone.mobi$important
 ||fun-club.mobi$important
+||fun2u.biz$important
 ||fungame.mobi$important
 ||funspaz.com$important
 ||funster.mobi$important
-||fun2u.biz$important
 ||fylitcl7pf7kjqdduolqouaxtxbj5ing.com$important
 ||g.zm.my$important
 ||gangzaa.net$important
@@ -624,24 +628,29 @@ zaapmak.com##iframe
 ||iamzaa.com$important
 ||instantbabes.mobi$important
 ||isport.co.th$important
+||kangped.com$important
 ||kodfin.com$important
 ||larnload.com$important
 ||letgomobile.com$important
 ||m.arco.co.th$important
-||m.mono-mobile.com$important
 ||maejaow.com$important
 ||magikmobile.mobi$important
 ||mastermovie-hd.mobi$important
 ||mobico.my$important
+||mobifunz.com$important
 ||mobilejmp.com$important
 ||mobindy.com$important
 ||mobixing.com$important
+||mobl-apps.com$important
 ||mono-mobile.com$important
 ||myscoobi.com$important
 ||n-mobile.net$important
 ||newsplus.me$important
+||picwall.mobi$important
 ||playclub.me$important
+||rbt.getcools.com$important
 ||rushvip.net$important
+||sabai5555.com$important
 ||sabver.com$important
 ||sanookde.com$important
 ||seaman2u.com$important
@@ -650,17 +659,22 @@ zaapmak.com##iframe
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
+||sunmob.net$important
 ||tdedlove.com$important
 ||th.contentbox.stream$important
 ||thaifun4u.com$important
 ||thaiza.com$important
 ||thumbsms.com$important
+||tweetsms.com.my$important
 ||vas.dtac.co.th$important
 ||vdocutesexy.mobi$important
+||video-wrld.com$important
 ||videowap.net$important
 ||vstyle4u.com$important
+||wap.getcools.com$important
 ||wap.shinee.com$important
 ||waphub.mobi$important
+||wifistudy.com$important
 ||zigifun.com$important
 
 ! Allowed only 1P
@@ -915,7 +929,6 @@ pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
-pantip.com##.post-item:has(img[src="https://ptcdn.info/images/icon-tag-ad.png"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
