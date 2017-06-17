@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706171815
+! Version: 201706172334
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -61,6 +61,7 @@ compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
 coregamerth.com###check-also-box
 coregamerth.com##.theiaStickySidebar #ads300_250-widget-2
+disqus.com##div[class^="login-overlay"]
 dodeden.com###facebookpopup-fanback
 dodeden.com###intro
 dodeden.com##.banner-A1
@@ -638,6 +639,7 @@ zaapmak.com##iframe
 ||mastermovie-hd.mobi$important
 ||mobico.my$important
 ||mobifunz.com$important
+||mobihibiz.com$important
 ||mobilejmp.com$important
 ||mobindy.com$important
 ||mobixing.com$important
@@ -676,6 +678,7 @@ zaapmak.com##iframe
 ||waphub.mobi$important
 ||wifistudy.com$important
 ||zigifun.com$important
+||zomobie.com$important
 
 ! Allowed only 1P
 ||lazada.co.th$third-party,important
