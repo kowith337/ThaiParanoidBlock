@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706172336
+! Version: 201706191617
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -522,6 +522,7 @@ zaapmak.com##iframe
 ! Google Ads Strict
 ||2mdn.net$important
 ||doubleclick.net$important
+||google-analytics.com$important
 ||googleadservices.com$important
 ||googlesyndication.com$important
 ||googletagmanager.com$important
@@ -546,7 +547,6 @@ zaapmak.com##iframe
 ||gbotvisit.com
 ||go2cloud.org
 ||go2speed.org
-||google-analytics.com
 ||google-analytics.l.google.com
 ||heatmap.it
 ||histats.com
@@ -584,6 +584,7 @@ zaapmak.com##iframe
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||124.158.4.91$important
 ||203.146.249.21$important
 ||203.223.159.245$important
 ||223.25.242.95$important
@@ -597,6 +598,8 @@ zaapmak.com##iframe
 ||androidappsfree.mobi$important
 ||anolog.mobi$important
 ||aplaydigital.com$important
+||appsdorado.com$important
+||appsilike.mobi$important
 ||b-qq.com$important
 ||beezzi.com$important
 ||bigolives.tv$important
@@ -614,6 +617,7 @@ zaapmak.com##iframe
 ||fly2.me$important
 ||fly2me.com$important
 ||freezone.mobi$important
+||fun-clix.com$important
 ||fun-club.mobi$important
 ||fun2u.biz$important
 ||fungame.mobi$important
@@ -631,13 +635,16 @@ zaapmak.com##iframe
 ||isport.co.th$important
 ||kangped.com$important
 ||kodfin.com$important
+||kodporno.com$important
 ||larnload.com$important
 ||letgomobile.com$important
 ||m.arco.co.th$important
 ||maejaow.com$important
 ||magikmobile.mobi$important
 ||mastermovie-hd.mobi$important
+||mobgkt.com$important
 ||mobico.my$important
+||mobidevil.com$important
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobilejmp.com$important
@@ -662,10 +669,12 @@ zaapmak.com##iframe
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sunmob.net$important
+||sunnygames.club$important
 ||tdedlove.com$important
 ||th.contentbox.stream$important
 ||thaifun4u.com$important
 ||thaiza.com$important
+||thumbr.com$important
 ||thumbsms.com$important
 ||tweetsms.com.my$important
 ||vas.dtac.co.th$important
