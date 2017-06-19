@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706191617
+! Version: 201706192145
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -519,15 +519,6 @@ zaapmak.com##iframe
 ||user-red.com
 ||yengo.com
 
-! Google Ads Strict
-||2mdn.net$important
-||doubleclick.net$important
-||google-analytics.com$important
-||googleadservices.com$important
-||googlesyndication.com$important
-||googletagmanager.com$important
-||googletagservices.com$important
-
 ! Tracking / Marketing / Article Suggestions
 ||accesstrade.in.th
 ||amung.us
@@ -689,6 +680,15 @@ zaapmak.com##iframe
 ||zigifun.com$important
 ||zomobie.com$important
 
+! Google Ads Strict
+||2mdn.net$important
+||doubleclick.net$important
+||google-analytics.com$important
+||googleadservices.com$important
+||googlesyndication.com$important
+||googletagmanager.com$important
+||googletagservices.com$important
+
 ! Allowed only 1P
 ||lazada.co.th$third-party,important
 ||nipa.co.th$third-party,important
@@ -734,6 +734,7 @@ zaapmak.com##iframe
 ||facebook.com/sem_campaigns$important
 ||facebook.com/suggestions$important
 ||facebook.com/tr?$important
+||facebook.com/typeahead/search/facebar/nullstate/?$important
 ||facebook.com/video/*/upnext$important
 ||facebook.com/video/autoplay$important
 ||facebook.com/video/quality_survey$important
@@ -871,6 +872,8 @@ facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(
 m.facebook.com,mbasic.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com###m_loginbar_reg_button
+m.facebook.com,mbasic.facebook.com###objects_container #root div div:has(div[id^="more_item_"])
+m.facebook.com,mbasic.facebook.com###objects_container #root div:has(table a[href*="/friends/center/requests/"])
 m.facebook.com,mbasic.facebook.com###root div[data-ft]:has(a[href*="/friends/center/requests/"])
 m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com###viewport div > table[class] td a[target="_blank"]:has(span)
@@ -892,11 +895,13 @@ m.facebook.com,mbasic.facebook.com##div[role="article"] div:has(table a[href*="m
 m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com,touch.facebook.com###MNewsFeed section div[id^="unit_id_"]:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer a[href*="/saved/"])
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer div a[href*="/friends/center/"])
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(iframe[src^="/xti.php?"])
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-sigil^="story-div"]:has(.scrollArea)
-m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(.scrollArea)
-m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(iframe[src^="/xti.php?"])
-m.facebook.com,touch.facebook.com###m_newsfeed_stream section article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,touch.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com,touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
 m.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
@@ -905,10 +910,10 @@ m.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="re
 m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//h1//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,touch.facebook.com##section div[id^="unit_id"]:has(div[data-autoid] a i[class^="touched"])
+m.facebook.com,touch.facebook.com##section div[id^="unit_id_"]:has(div[data-autoid] a i[class^="touched"])
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
-! twitter.com##.dismissible-content
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
