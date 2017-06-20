@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706201832
+! Version: 201706201834
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -919,7 +919,6 @@ m.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="re
 m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//h1//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,touch.facebook.com##section div[id^="unit_id"]:has(div[data-autoid] a i[class^="touched"])
-m.facebook.com,touch.facebook.com##section div[id^="unit_id_"]:has(div[data-autoid] a i[class^="touched"])
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
