@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706222340
+! Version: 201706230023
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -574,6 +574,7 @@ zaapmak.com##iframe
 !          (specific annual SMS sent such as daily news, horo, download, fake lotto / wap push content such as download games, videos, ringtones)
 !          or they never sent anything to you but simply charge service fee or deduct your calling balance every day, every week or every month.
 */Aiswap.ashx?$important
+||27.100.44.214$important
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
@@ -583,6 +584,7 @@ zaapmak.com##iframe
 ||203.223.159.245$important
 ||223.25.242.95$important
 ||1mov.co$important
+||5sys.com$important
 ||7banana.com$important
 ||8086.com.tw$important
 ||achelous.mobi$important
