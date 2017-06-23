@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706230020
+! Version: 201706232150
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -78,6 +78,11 @@ dspzeeplus.com###fbox-display
 dspzeeplus.com###fbox-link
 dspzeeplus.com###twist-blogger-fan-page
 dspzeeplus.com##.popup-box
+exteen.com###promote
+exteen.com##.banner-box
+exteen.com##.feature-box
+exteen.com##.pr-box
+exteen.com##.promote-box
 extremepc.in.th###arevicofancy-loading
 extremepc.in.th###arevicofancy-overlay
 extremepc.in.th###arevicofancy-tmp
@@ -154,19 +159,22 @@ meekhao.com##.dgd_stb_box.clean_white
 meepanda.com###facebookpopup-fanback
 meepanda.com##.adsense-leadin
 meepanda.com##.ezAdsense
+mthai.com###MT_HP_Topbanner
 mthai.com###arevicofancy-loading
 mthai.com###arevicofancy-overlay
 mthai.com###arevicofancy-tmp
 mthai.com###arevicofancy-wrap
 mthai.com###coverpage
+mthai.com###ga-between
 mthai.com##.ads-rec-center
+mthai.com##.billboard-banner
 mustplay.in.th##.YouTubeModal
-mustplay.in.th,playulti.com##.cover_page
-mustplay.in.th,playulti.com##.preloader
-mustplay.in.th,playulti.com##.promote
 mustplay.in.th,playulti.com###bg-left
 mustplay.in.th,playulti.com###bg-right
 mustplay.in.th,playulti.com###bgyoutube
+mustplay.in.th,playulti.com##.cover_page
+mustplay.in.th,playulti.com##.preloader
+mustplay.in.th,playulti.com##.promote
 newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
@@ -188,8 +196,8 @@ online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##.os_preload_popup
-online-station.net##div[data-widget="plista_widget_sidebar"]
 online-station.net##div[data-widget="plista_widget_belowArticle"]
+online-station.net##div[data-widget="plista_widget_sidebar"]
 online-station.net##div[id*="div-gpt-ad"]
 oopsmobile.net##.fancybox-overlay
 oopsmobile.net##.fancybox-wrap
@@ -323,6 +331,7 @@ zaapmak.com##iframe
 ||juropy.com/*/facebook-page-promoter-lightbox/*
 ||kaijeaw.com/*/fancybox/*
 ||kaijeaw.com/*/like_box*
+||kapook.com/ads/portal^
 ||kanomjeeb.com/*/lightbox*
 ||khonkaenlink.info/facebook_popup^
 ||kidjarak.com/*/bsa-pro-scripteo/*
@@ -838,7 +847,9 @@ zaapmak.com##iframe
 ||mbasic.facebook.com$script
 ||mbasic.facebook.com$websocket
 
-! [uBlock0] First party annoyance
+! First party annoyance DOM
+! - Generic
+facebook.com###GroupsRHCSuggestionSection
 facebook.com###fbpage_invite_audience_action
 facebook.com###fbpage_invite_audience_action_finch
 facebook.com###feed_optimistic_video
@@ -853,7 +864,6 @@ facebook.com###pagelet_ego_pane
 facebook.com###pagelet_games_rhc
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###pages_may_like_section
-facebook.com###GroupsRHCSuggestionSection
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbAdUnit
 facebook.com##.fbEmu
@@ -865,26 +875,32 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+m.facebook.com,mbasic.facebook.com###m_loginbar_login_button
+m.facebook.com,mbasic.facebook.com###m_loginbar_reg_button
+m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+twitter.com###signin-dropdown
+youtube.com###hats-container[data-survey-id]
+youtube.com##.branded-page-box:has(.shelf-subscription-button)
+
+! - uBlock (has/xpath) [Need 1.10.0 or newer]
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
+facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div//span/text()="Featured for you"])
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@data-ownerid,"u_jsonp_")][//div/text()="Related"])
 facebook.com##:xpath(//div[@id="timeline-medley"]//div//span[.//button/text()="Tag Suggestions"])
-facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
 facebook.com##div ul[role="menu"] li:has(a[href*="campaign/landing.php?"])
 facebook.com##div[data-referrer="pagelet_side_ads"]
+facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
 facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
-facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
-facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
+facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory_"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
-facebook.com##div[id^="pagelet_recommendation"]
-facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
 m.facebook.com,mbasic.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
-m.facebook.com,mbasic.facebook.com###m_loginbar_login_button
-m.facebook.com,mbasic.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com###objects_container #root div div:has(div[id^="more_item_"])
 m.facebook.com,mbasic.facebook.com###objects_container #root div:has(table a[href*="/friends/center/requests/"])
 m.facebook.com,mbasic.facebook.com###viewport div > div:has(a[href^="/download.php"])
@@ -902,14 +918,12 @@ m.facebook.com,mbasic.facebook.com##:xpath(//div[starts-with(@id,"u_")][@data-ft
 m.facebook.com,mbasic.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com##div[data-ft] div:has(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
-m.facebook.com,mbasic.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mbasic.facebook.com##div[role="article"] div:has(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com,touch.facebook.com##section div[id^="unit_id_"]:has(div[data-autoid] a i[class^="touched"])
-m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(.scrollArea)
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer a[href*="/saved/"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer div a[href*="/friends/center/"])
 m.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(iframe[src^="/xti.php?"])
@@ -923,31 +937,40 @@ m.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="re
 m.facebook.com,touch.facebook.com##:xpath(//div[starts-with(@id,"unit_id_")][.//h1//div/text()="Featured for you"])
 m.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,touch.facebook.com##section div[id^="unit_id"]:has(div[data-autoid] a i[class^="touched"])
-twitter.com###signin-dropdown
-youtube.com###hats-container[data-survey-id]
-youtube.com##.branded-page-box:has(.shelf-subscription-button)
+m.facebook.com,touch.facebook.com##section div[id^="unit_id_"]:has(div[data-autoid] a i[class^="touched"])
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! [uBlock0] Accurate blocking elements + xpath rules
+4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
+bbs.pramool.com###AutoNumber1:has(iframe)
 blognone.com##:xpath(//div[@id="above_comments"][//h2/text()="Blognone Workplace"])
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
+exteen.com##.content-box center:has(div script)
+exteen.com##.content-box:has(.prnews)
+exteen.com##div[class^="grid_"]:has(div[id^="div-gpt-ad"])
 gamemonday.com##a:has(img[onload])
 gamemonday.com##a[onclick]:has(img[onload])
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
 jarm.com##:xpath(//div[@class="news-detail"]//p[./text()="Advertisement"])
 kanomjeeb.com##.banner:has(.adsbygoogle)
 kanomjeeb.com##section .row:has(.adsbygoogle)
+kapook.com###action-quick:has(div span[id="ad-close"])
+kapook.com###sidebar > div:has(a[href*="kapook.com/app"])
+kapook.com##body > div[style*="width:100%"]:has(div[style*="z-index:888"])
+kapook.com##div a[target="_blank"]:has(img[src*="ads-lotto.gif"])
 kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
 kapook.com##div[style*="text-align:center"]:has(.banner_position)
-kapook.com###sidebar > div:has(a[href*="kapook.com/app"])
+kapook.com##div[style*="text-align:center"]:has(.banner_position[style="display:show"])
 kidjarak.com##.td-g-rec:has(.adsbygoogle)
 kiitdoo.com##.textwidget:has(.adsbygoogle)
 liekr.com##.postmain div:has(.adsbygoogle)
 lonely-rooyang.com##.banner:has(.adsbygoogle)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
+mthai.com##div[id^="MT_HP_"]:has(.ads-rec-center)
+mthai.com##div[id^="MT_HP_"]:has(.banner)
 mustplay.in.th,playulti.com##.banner:has(a[rel])
 mustplay.in.th,playulti.com##a:has(img[src*="/data/setting/banner/"])
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
@@ -955,9 +978,9 @@ oopsmobile.net##.textwidget:has(.adsbygoogle)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
 pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
+pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
-pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(a[href*="ads.pantip.com"])
 pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
@@ -965,6 +988,9 @@ petmaya.com##td:has(.adsbygoogle)
 picnic.ly##.textwidget:has(.adsbygoogle)
 playulti.com##:xpath(//div[starts-with(@class, "card")][.//h4/text()="RECOMMEND APPS"])
 postjung.com###maincontent div:has(.sp-adsense-incontent)
+pramool.com##tbody table tr:has(a[target="ads"])
+pramool.com##tbody table tr:has(iframe)
+pramool.com##tbody table tr:has(noscript)
 rabbit.co.th##.widget-box:has(.ads-sidebar-top)
 share-si.com##.post > div:has(script[src^="//code.yengo.com"])
 share-si.com##.post div:has(.adsbygoogle)
@@ -981,7 +1007,6 @@ thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
 thisisgamethailand.com##.container .item > a[href*="/index.php?/stats/clickAdd"]
 thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
-4toom.com##.single .content div:has(.adsbygoogle)
 
 ! [uBlock0 + Firefox Only] Specific Inline Script (also support Pale moon / IceCat / Fennec F-droid / Tor)
 autocar.in.th##script:contains(makingdifferent_ppopup)
