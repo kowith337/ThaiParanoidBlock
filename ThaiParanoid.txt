@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706251803
+! Version: 201706261847
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -884,6 +884,7 @@ facebook.com##.fbTimelineSideAds
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##section div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 
@@ -915,12 +916,13 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[target="_blank"]:has(span)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@id="m_story_permalink_view"]//div[starts-with(@id,"u_")]//div[table//h3/text()="Related"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:has(table a[href*="mbasic_feed_post_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:has(table a[href*="mbasic_feed_post_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
@@ -933,19 +935,16 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream articl
 m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-sigil^="story-div"]:has(.scrollArea)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//div[@id="page"]//div[@data-sigil="reaction-unit-logging"][.//h3//div/text()="Featured for you"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(.scrollArea)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer a[href*="/friends/center/requests/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer a[href*="/saved/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(span[data-sigil="pixelContainer"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article[data-sigil^="story-div"]:has(.scrollArea)
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section div[id^="unit_id_"]:has(div[data-autoid] a i[class^="touched"])
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
 ! Other sites (This use for improve the DOM accuracy)
