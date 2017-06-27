@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706271133
+! Version: 201706272156
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -616,6 +616,7 @@ zaapmak.com##iframe
 ||achelous.mobi$important
 ||ad5network.com$important
 ||addlink.mobi$important
+||alpha-mobi.com$important
 ||amkomobile.com$important
 ||androidappsfree.mobi$important
 ||anolog.mobi$important
@@ -625,7 +626,9 @@ zaapmak.com##iframe
 ||b-qq.com$important
 ||beezzi.com$important
 ||bigolives.tv$important
+||breathing-love.com$important
 ||c1dovw6eef5jop8apwjkqy5ro5mlafkc.com$important
+||cdnfiber.com$important
 ||centili.com$important
 ||cheesemobile.com$important
 ||chz.mobi$important
@@ -633,6 +636,7 @@ zaapmak.com##iframe
 ||consentprt.dtac.co.th$important
 ||contentdd.net$important
 ||datapremium.$important
+||dlxxxvip.com$important
 ||eskimi.com$important
 ||etracker.cc$important
 ||facabooks.com$important
@@ -651,6 +655,7 @@ zaapmak.com##iframe
 ||getclick.mobi$important
 ||gigth.com$important
 ||gizmobi.mobi$important
+||gmpmobi.com$important
 ||hito.co.vu$important
 ||iamzaa.com$important
 ||instantbabes.mobi$important
@@ -674,6 +679,7 @@ zaapmak.com##iframe
 ||mobixing.com$important
 ||mobl-apps.com$important
 ||mono-mobile.com$important
+||mobplanner.com$important
 ||myscoobi.com$important
 ||n-content.com$important
 ||n-mobile.net$important
@@ -689,6 +695,7 @@ zaapmak.com##iframe
 ||sabver.com$important
 ||sanookde.com$important
 ||seaman2u.com$important
+||skype4mobile.com$important
 ||snapp.asia$important
 ||sosmob.mobi$important
 ||ss1.mobilelife.co.th$important
@@ -714,6 +721,7 @@ zaapmak.com##iframe
 ||waphub.mobi$important
 ||waplog.com$important
 ||wifistudy.com$important
+||woaifanyi.com$important
 ||zigifun.com$important
 ||zomobie.com$important
 
