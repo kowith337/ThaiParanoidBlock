@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706272159
+! Version: 201706280756
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -891,6 +891,7 @@ facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
@@ -928,12 +929,14 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="arti
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/requests/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/requests/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(.scrollArea)
 m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer a[href*="/saved/"])
