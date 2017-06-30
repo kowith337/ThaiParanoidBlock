@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201706292328
+! Version: 201706301645
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -149,6 +149,7 @@ m.online-station.net##.os-install-app
 m.online-station.net##.os_preload_popup
 m.online-station.net##figure[class="os-floating-ad"]
 m.online-station.net##figure[class^="os-ad"]
+m.webtoons.com##.downapp_area
 manyum.com###ui_popup_window_tpl
 manyum.com###win_showLike
 manyum.com###win_showLike_mask
@@ -428,6 +429,10 @@ zaapmak.com##iframe
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/js/google*$important
 ||referrer.disqus.com$important
+||webtoons.com/js/lib/dfp_helper$important
+||webtoons.com/js/lib/facebook_logger$important
+||webtoons.com/js/lib/gak$important
+||webtoons.com/js/lib/ga_logger$important
 
 ! - - - - - - - - - - Domain level block - - - - - - - - - - !
 
@@ -773,6 +778,7 @@ zaapmak.com##iframe
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
+||facebook.com/sem_pixel$important
 ||facebook.com/suggestions$important
 ||facebook.com/tr?$important
 ||facebook.com/typeahead/search/facebar/nullstate/?$important
