@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201706301640
+! Version: 201707022240
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -28,16 +28,6 @@
 ##.popup-like
 ##.popup-like-box
 ##.popup-like-box-backdrop
-/easy-facebook-likebox
-/facebook-fanbox*
-/facebook-page-promoter-lightbox*
-/facebook_popup*
-/fb-traffic-pop
-/floating-social-bar
-/like-fb
-/like_box*
-/new-facebook-popup-likebox-responsive
-/ud-social
 
 ! Element filter rules (merge with ThaiAntiForceLike)
 animeranku.com###check-also-box
@@ -134,6 +124,9 @@ liceza.com###cboxWrapper
 liceza.com###colorbox
 liekr.com###showLikePopup
 liekr.com###topAd
+liekr.com##.foot_fb_like
+liekr.com##.like_yellow
+liekr.com##div[itemprop="articleBody"] a[class^="ui_btn"][href*="line.me"]
 likessara.com###facebookpopup-fanback
 linkis.com##.deeper-overlay
 linkis.com##.js-forceAuth-popup-light
@@ -305,6 +298,18 @@ zaapmak.com##iframe
 
 ! - - - - - - - - - - Network filters section - - - - - - - - - - !
 
+! Shared plugins path
+/easy-facebook-likebox
+/facebook-fanbox*
+/facebook-page-promoter-lightbox*
+/facebook_popup*
+/fb-traffic-pop
+/floating-social-bar
+/like-fb
+/like_box*
+/new-facebook-popup-likebox-responsive
+/ud-social
+
 ! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
 ||4toom.com/*/modal-dialog/*
 ||anitime.in.th/*/easy-facebook-likebox/*
@@ -358,6 +363,7 @@ zaapmak.com##iframe
 ||notebookspec.com/*/nbs_custom_ads_skin.php
 ||ohlor.com/*/mini-popup/*
 ||ohlor.com/*/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/*
+||online-station.net/content/count_stats?
 ||oopsmobile.net/*/arscode-ninja-popups/*
 ||overgraphy.com/*/easy-facebook-likebox/*
 ||pantip.com/ads.php
@@ -409,6 +415,7 @@ zaapmak.com##iframe
 ||linkis.com/index/ln-event?*force-auth
 ||linkis.com/signin^$popup
 ||online-station.net/assets/css/ads$stylesheet
+||online-station.net/*/css/preload_ads$stylesheet
 ||online-station.net/assets/js/ads$script
 ||online-station.net/assets/js/facebook$script
 ||techmoblog.com/tmb-advertise^$subdocument
@@ -618,6 +625,7 @@ zaapmak.com##iframe
 ||5sys.com$important
 ||7banana.com$important
 ||8086.com.tw$important
+||a.n-d.bz$important
 ||achelous.mobi$important
 ||ad5network.com$important
 ||addlink.mobi$important
@@ -902,6 +910,7 @@ facebook.com##.fbTimelineSideAds
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table > a[href*="freebasics.com"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
@@ -959,7 +968,7 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(ifram
 m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(span[data-sigil="pixelContainer"])
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
-! Other sites (This use for improve the DOM accuracy)
+! Other sites (This use for improve accuracy of DOM hiding)
 4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
