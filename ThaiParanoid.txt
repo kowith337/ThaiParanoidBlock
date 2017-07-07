@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707062343
+! Version: 201707072217
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -917,9 +917,9 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table > a[href*="freebasics.com"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article[data-ft*="mhpp_ego_service_type"]
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article[data-store*="is_sponsored.1"]
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section div[data-store*="mobile_page_contextual_recommendations"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft*="mhpp_ego_service_type"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-store*="is_sponsored.1"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 
@@ -963,26 +963,20 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] tabl
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(.mEventSingleLineItem)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/requests/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(.scrollArea)
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer a[href*="/saved/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(footer div a[href*="/friends/center/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(iframe[src^="/xti.php?"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article:has(span[data-sigil="pixelContainer"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-sigil^="story-div"]:has(.scrollArea)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##._4b-b:has(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.abb.apm.aclb:has(#m_loginbar_login_button)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//section[starts-with(@id,"u_")]//article[.//header//div//span/text()="Sponsored"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(div[data-sigil="egoScroller"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer a[href*="/friends/center/requests/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer a[href*="/saved/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(footer div a[href*="/friends/center/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(iframe[src^="/xti.php?"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##section article:has(span[data-sigil="pixelContainer"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(a[href*="/netego/redirect/?redirect=%2Fpages%2Fboosted_component%2F"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(div[data-sigil="egoScroller"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/friends/center/requests/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/groups/?ref=category_discover_landing"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/saved/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer div a[href*="/friends/center/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 youtube.com##.branded-page-box:has(.shelf-subscription-button)
 
 ! Other sites (This use for improve accuracy of DOM hiding)
