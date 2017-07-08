@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707081404
+! Version: 201707081511
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -619,6 +619,7 @@ zaapmak.com##iframe
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||65.49.33.31$important
 ||124.158.4.91$important
 ||203.146.249.21$important
 ||203.151.206.102$important
@@ -627,6 +628,7 @@ zaapmak.com##iframe
 ||1mov.co$important
 ||5sys.com$important
 ||7banana.com$important
+||7me.co$important
 ||8086.com.tw$important
 ||a.n-d.bz$important
 ||achelous.mobi$important
@@ -673,6 +675,7 @@ zaapmak.com##iframe
 ||gigth.com$important
 ||gizmobi.mobi$important
 ||gmpmobi.com$important
+||halocell.com$important
 ||hito.co.vu$important
 ||iamzaa.com$important
 ||innnews.co.th$important
@@ -684,7 +687,9 @@ zaapmak.com##iframe
 ||larnload.com$important
 ||letgomobile.com$important
 ||lustzy.com$important
+||ltvperf.com$important
 ||m.arco.co.th$important
+||ma3.co$important
 ||maejaow.com$important
 ||magikmobile.mobi$important
 ||mastermovie-hd.mobi$important
@@ -710,6 +715,7 @@ zaapmak.com##iframe
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
 ||newsplus.me$important
+||phubbers.com$important
 ||picwall.mobi$important
 ||playclub.me$important
 ||rbt.getcools.com$important
@@ -725,6 +731,7 @@ zaapmak.com##iframe
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
+||sswap.mobi$important
 ||sunmob.net$important
 ||sunnygames.club$important
 ||tdedlove.com$important
@@ -736,6 +743,7 @@ zaapmak.com##iframe
 ||toon-land.com$important
 ||tweetsms.com.my$important
 ||vas.dtac.co.th$important
+||vcgbtlktbagb.com$important
 ||vdocutesexy.mobi$important
 ||video-wrld.com$important
 ||videowap.net$important
