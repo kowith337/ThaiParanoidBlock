@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707082135
+! Version: 201707092044
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -678,6 +678,7 @@ zaapmak.com##iframe
 ||gmpmobi.com$important
 ||halocell.com$important
 ||hito.co.vu$important
+||horoworld.com$important
 ||iamzaa.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
@@ -716,6 +717,7 @@ zaapmak.com##iframe
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
 ||newsplus.me$important
+||optsearch.net$important
 ||phubbers.com$important
 ||picwall.mobi$important
 ||playclub.me$important
@@ -729,6 +731,7 @@ zaapmak.com##iframe
 ||skype4mobile.com$important
 ||snapp.asia$important
 ||sosmob.mobi$important
+||spak.me$important
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
@@ -742,6 +745,7 @@ zaapmak.com##iframe
 ||thumbr.com$important
 ||thumbsms.com$important
 ||toon-land.com$important
+||trackmeplease.com$important
 ||tweetsms.com.my$important
 ||vas.dtac.co.th$important
 ||vcgbtlktbagb.com$important
@@ -930,6 +934,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table 
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft*="mhpp_ego_service_type"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-store*="is_sponsored.1"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-xt*="is_sponsored.1"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
