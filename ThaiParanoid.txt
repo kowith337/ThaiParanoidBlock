@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707132047
+! Version: 201707132053
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -807,6 +807,7 @@ zaapmak.com##iframe
 ||facebook.com/pages/qe/$important
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/$xmlhttprequest
+||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/sem_pixel$important
