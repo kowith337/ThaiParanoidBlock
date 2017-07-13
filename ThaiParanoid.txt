@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707130121
+! Version: 201707132047
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -836,6 +836,9 @@ zaapmak.com##iframe
 ||twitter.com/i/cards/*?advertiser_name$important
 ||twitter.com/i/jot$important
 ||twitter.com/i/promoted_content$important
+||youtube-nocookie.com/api/stats/$important
+||youtube-nocookie.com/csi_204?
+||youtube-nocookie.com/ptracking?
 ||youtube.com/*/log_event?$important
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/api/stats/
@@ -932,6 +935,7 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+github.com##div[class^="signup-prompt"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
@@ -966,7 +970,7 @@ facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:has(table a[href*="/friends/center/requests/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:has(table a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
@@ -974,11 +978,11 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="arti
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/requests/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/requests/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea):has(.scrollAreaColumn div[data-autoid])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
@@ -986,9 +990,8 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has
 m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//section//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(.scrollArea div[data-sigil="ego-auto-pager"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(div[data-sigil="egoScroller"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/friends/center/requests/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/saved/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
