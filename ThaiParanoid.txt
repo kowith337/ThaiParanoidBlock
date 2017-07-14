@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707141405
+! Version: 201707142123
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -795,8 +795,7 @@ zaapmak.com##iframe
 ||messenger.com$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com
 
 ! Ads/Tracking in 1st party service (e.g. Google, Facebook, Twitter)
-! Currently doesn't have element rules for Facebook from me yet, because uBlock0 can handle them.
-! ^ Only when you're using English (UK/US) language.
+! Note: uBlock0 assets can handle some of them.
 ||analytics.twitter.com
 ||facebook.com/a/bz$xmlhttprequest,important
 ||facebook.com/ads/
@@ -809,6 +808,7 @@ zaapmak.com##iframe
 ||facebook.com/ajax/mutual_friends/tooltip.php$important
 ||facebook.com/ajax/pagelet/generic.php/WebEgoPane*$important
 ||facebook.com/ajax/photos/logging$important
+||facebook.com/ajax/react_composer/survey?
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/async/social_good/fundraiser/attachment_pivot/?$xmlhttprequest
 ||facebook.com/feed/pivot/chaining$important
@@ -876,13 +876,13 @@ zaapmak.com##iframe
 @@||facebook.com/feed/options_menu$xmlhttprequest,first-party
 @@||facebook.com/share/dialog/submit/$xmlhttprequest,first-party
 
-! [Facebook] Prevent accidentally add advert prefs while you're deleting them.
+! [Counter] Prevent accidentally (re-)add advert prefs while you're deleting them.
 ! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
 ||facebook.com/ads/preferences/advertiser_hideall/?*undo=true$important
 ||facebook.com/ads/preferences/edit_interests/?action=add$important
 ||facebook.com/ads/preferences/edit_sensitive_topics*duration_in_days=0$important
 
-! Messaging Privacy Aware (is typing, seen message)
+! Facebook Messaging Privacy Aware (is typing, seen message)
 ||facebook.com/*/change_read_status.php$important
 ||facebook.com/*/mark_seen.php$important
 ||facebook.com/*/typ.php$important
@@ -976,7 +976,7 @@ youtube.com###hats-container[data-survey-id]
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
-! First party services annoyance DOM - have the if/has/xpath procedure [Need 1.10.0 or newer]
+! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0 for multiple chaining]
 facebook.com##.mtm div[id^="u_0_"] div[id^="u_0_"]:has(span button.PageLikeButton)
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
@@ -1009,6 +1009,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored.1"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
