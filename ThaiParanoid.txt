@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707141307
+! Version: 201707141404
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -653,11 +653,14 @@ zaapmak.com##iframe
 ||cheesemobile.com$important
 ||chickyclub.net$important
 ||chz.mobi$important
+||ckwizard.com$important
 ||clickmlife.com$important
+||clickstk.com$important
 ||clip.vu$important
 ||consentprt.dtac.co.th$important
 ||contentdd.net$important
 ||datapremium.$important
+||deepbluetech.biz$important
 ||dlxxxvip.com$important
 ||eskimi.com$important
 ||etracker.cc$important
@@ -673,6 +676,7 @@ zaapmak.com##iframe
 ||funster.mobi$important
 ||fylitcl7pf7kjqdduolqouaxtxbj5ing.com$important
 ||g.zm.my$important
+||gamepanda.me$important
 ||gangzaa.net$important
 ||getclick.mobi$important
 ||gigth.com$important
@@ -699,13 +703,17 @@ zaapmak.com##iframe
 ||mastermovie-hd.mobi$important
 ||may91.vn$important
 ||mcommsg.com$important
+||mli.me$important
 ||mobgkt.com$important
 ||mobico.my$important
 ||mobidevil.com$important
 ||mobifunz.com$important
 ||mobihibiz.com$important
+||mobileacademy.com$important
 ||mobilejmp.com$important
 ||mobindy.com$important
+||mobiteacher.com$important
+||mobiteacher.me$important
 ||mobixing.com$important
 ||mobl-apps.com$important
 ||mobplanner.com$important
@@ -745,6 +753,7 @@ zaapmak.com##iframe
 ||th.contentbox.stream$important
 ||thaifun4u.com$important
 ||thaiza.com$important
+||thmobi.com$important
 ||thumbr.com$important
 ||thumbsms.com$important
 ||toon-land.com$important
@@ -755,6 +764,7 @@ zaapmak.com##iframe
 ||vdocutesexy.mobi$important
 ||video-wrld.com$important
 ||videowap.net$important
+||vipgames.me$important
 ||vstyle4u.com$important
 ||wap.getcools.com$important
 ||wap.shinee.com$important
