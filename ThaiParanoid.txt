@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707142117
+! Version: 201707151455
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -914,9 +914,9 @@ zaapmak.com##iframe
 ! [Super lightweight Facebook enhancement]
 ! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine
 ! without JavaScript, Inline script, iframe and third party resources.
-||mbasic.facebook.com$subdocument
+||$script,domain=mbasic.facebook.com
+||$subdocument,domain=mbasic.facebook.com
 ||mbasic.facebook.com$inline-script
-||mbasic.facebook.com$script
 ||mbasic.facebook.com$websocket
 
 ! First party annoyance DOM - Generic
@@ -1001,11 +1001,13 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored.1"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored.1"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/groups/?ref=category_discover_landing"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div a[href*="origin=feed_pyml"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
