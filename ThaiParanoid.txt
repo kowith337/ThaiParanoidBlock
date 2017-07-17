@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707171838
+! Version: 201707180101
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -661,7 +661,9 @@ zaapmak.com##iframe
 ||clickstk.com$important
 ||clip.vu$important
 ||consentprt.dtac.co.th$important
+||contentbox.stream$important
 ||contentdd.net$important
+||coolzee.net$important
 ||datapremium.$important
 ||ddzey.com$important
 ||deepbluetech.biz$important
@@ -669,6 +671,7 @@ zaapmak.com##iframe
 ||eskimi.com$important
 ||etracker.cc$important
 ||facabooks.com$important
+||findgit.com$important
 ||fly2.me$important
 ||fly2me.com$important
 ||freezone.mobi$important
@@ -685,6 +688,7 @@ zaapmak.com##iframe
 ||getclick.mobi$important
 ||gigth.com$important
 ||gizmobi.mobi$important
+||globocom.co.in$important
 ||gmpmobi.com$important
 ||gogameportal.com$important
 ||halocell.com$important
@@ -695,6 +699,7 @@ zaapmak.com##iframe
 ||innnews.co.th$important
 ||instantbabes.mobi$important
 ||isport.co.th$important
+||iqwmxn.com$important
 ||kangped.com$important
 ||kodfin.com$important
 ||kodporno.com$important
@@ -734,6 +739,7 @@ zaapmak.com##iframe
 ||ncontentmv.com$important
 ||newsplus.me$important
 ||optsearch.net$important
+||panshimob.com$important
 ||phubbers.com$important
 ||picwall.mobi$important
 ||playclub.me$important
@@ -757,7 +763,6 @@ zaapmak.com##iframe
 ||sunmob.net$important
 ||sunnygames.club$important
 ||tdedlove.com$important
-||th.contentbox.stream$important
 ||thaifun4u.com$important
 ||thaiza.com$important
 ||thmobi.com$important
