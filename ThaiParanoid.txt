@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707180122
+! Version: 201707180126
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1012,8 +1012,10 @@ facebook.com##div[id^="sponsoredTickerStory_"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[id^="page_suggestion"]:has(div a[href*="&origin=mobile_page_browser&"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
