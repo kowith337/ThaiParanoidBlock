@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707162125
+! Version: 201707171336
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -621,6 +621,7 @@ zaapmak.com##iframe
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||58.181.206.44$important
 ||65.49.33.31$important
 ||124.158.4.91$important
 ||203.146.249.21$important
@@ -634,6 +635,7 @@ zaapmak.com##iframe
 ||7me.co$important
 ||8086.com.tw$important
 ||a.n-d.bz$important
+||a1n.in$important
 ||achelous.mobi$important
 ||ad5network.com$important
 ||addlink.mobi$important
@@ -684,9 +686,11 @@ zaapmak.com##iframe
 ||gigth.com$important
 ||gizmobi.mobi$important
 ||gmpmobi.com$important
+||gogameportal.com$important
 ||halocell.com$important
 ||hito.co.vu$important
 ||horoworld.com$important
+||house365.com$important
 ||iamzaa.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
@@ -768,6 +772,7 @@ zaapmak.com##iframe
 ||video-wrld.com$important
 ||videowap.net$important
 ||vipgames.me$important
+||vplus.ais.co.th$important
 ||vstyle4u.com$important
 ||wap.getcools.com$important
 ||wap.shinee.com$important
