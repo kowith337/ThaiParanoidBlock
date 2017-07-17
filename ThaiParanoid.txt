@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707180048
+! Version: 201707180120
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1037,7 +1037,7 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
-youtube.com##.branded-page-box:if(.feed-item-dismissable:has(span .shelf-subscription-button button[data-style-type="branded"]))
+youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
 
 ! Other sites (This use for improve accuracy of DOM hiding)
 4toom.com##.single .content div:has(.adsbygoogle)
