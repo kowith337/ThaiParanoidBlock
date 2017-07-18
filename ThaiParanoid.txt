@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707181552
+! Version: 201707182254
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1010,6 +1010,7 @@ facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory_"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
+facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm div > div:if(.uiList:has(li a[href^="/commerce/products/"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
