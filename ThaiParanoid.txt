@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707202005
+! Version: 201707202251
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -885,6 +885,7 @@ zaapmak.com##iframe
 ! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
 ! to let Facebook retrieve information about advert prefs, and let you properly manage them without
 ! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
+@@||facebook.com/ads/preferences/ad_report/$xmlhttprequest
 @@||facebook.com/ads/preferences/advertiser_hideall$first-party
 @@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
 @@||facebook.com/ads/preferences/edit_sensitive_topics$xmlhttprequest
