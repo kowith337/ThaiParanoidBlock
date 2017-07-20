@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707182325
+! Version: 201707202013
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -497,6 +497,8 @@ zaapmak.com##iframe
 ||criteo.com
 ||effectivemeasure.net
 ||exdynsrv.com
+||exoclick.com
+||exosrv.com
 ||filadmir.site
 ||gammaplatform.com
 ||hotjar.com
@@ -820,11 +822,13 @@ zaapmak.com##iframe
 ||facebook.com/ajax/browse/null_state.php$important
 ||facebook.com/ajax/bz$xmlhttprequest,important
 ||facebook.com/ajax/mutual_friends/tooltip.php$important
-||facebook.com/ajax/pagelet/generic.php/WebEgoPane*$important
+||facebook.com/ajax/pagelet/generic.php/WebEgoPane$important
 ||facebook.com/ajax/photos/logging$important
 ||facebook.com/ajax/react_composer/survey?
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
-||facebook.com/async/social_good/fundraiser/attachment_pivot/?$xmlhttprequest
+||facebook.com/async/social_good/$xmlhttprequest
+||facebook.com/common/referer_frame.php$inline-script
+||facebook.com/ego/$xmlhttprequest
 ||facebook.com/feed/pivot/chaining$important
 ||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/impression.php$important
@@ -833,6 +837,8 @@ zaapmak.com##iframe
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/$xmlhttprequest
 ||facebook.com/pubcontent/feed_chaining$important
+||facebook.com/pubcontent/local_news_chaining$important
+||facebook.com/pubcontent/related_share$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/sem_pixel$important
@@ -930,8 +936,8 @@ zaapmak.com##iframe
 ! without JavaScript, Inline script, iframe and third party resources.
 ||$script,domain=mbasic.facebook.com
 ||$subdocument,domain=mbasic.facebook.com
-||mbasic.facebook.com$inline-script
-||mbasic.facebook.com$websocket
+||$inline-script,domain=mbasic.facebook.com
+||$websocket,domain=mbasic.facebook.com
 
 ! First party annoyance DOM - Generic
 facebook.com###GroupsRHCSuggestionSection
@@ -960,6 +966,7 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+facebook.com##div[id^="pagelet_group"] form[action*="nux_type=member_suggesting_tags"]
 facebook.com##div[role="feed"] .fbUserContent .FriendButton
 facebook.com##div[role="feed"] .fbUserContent .mtm .FriendButton
 facebook.com##div[role="feed"] .fbUserContent .mtm span a[ajaxify^="/ajax/follow/"]
@@ -1002,13 +1009,14 @@ facebook.com##div ul[role="menu"] li:has(a[href*="campaign/landing.php?"])
 facebook.com##div[data-referrer="pagelet_side_ads"]
 facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
 facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
+facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a:has-text(/Sponsored/))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
 facebook.com##div[id^="pagelet_recommendation"]
-facebook.com##div[id^="sponsoredTickerStory_"]
+facebook.com##div[id^="sponsoredTickerStory"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm div > div:if(.uiList:has(li a[href^="/commerce/products/"]))
@@ -1035,6 +1043,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea):has(.scrollAreaColumn div[data-autoid])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
@@ -1047,7 +1056,6 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
 
 ! Other sites (This use for improve accuracy of DOM hiding)
