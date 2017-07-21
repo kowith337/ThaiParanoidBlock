@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707202304
+! Version: 201707212231
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -426,9 +426,15 @@ zaapmak.com##iframe
 ! 1. Due to someone posted on Pantip about visiting Thairath website and get
 !    auto subscribe content services without consent, I've looked that sites
 !    and see too many untrusted third parties domain (ads, tracking, malvertising, ...),
-!    so I decide to block all of them.
-||$third-party,domain=nationtv.tv,important
-||$third-party,domain=thairath.co.th,important
+!    so I decide to block all of them and allow only domains that probably needed.
+||$third-party,domain=nationtv.tv
+||$third-party,domain=thairath.co.th
+@@||brightcove.com$domain=nationtv.tv
+@@||dcs-digital.com$domain=nationtv.tv
+@@||jwpcdn.com$domain=thairath.co.th
+@@||jwplayer.com$domain=thairath.co.th
+@@||nationchannel.com$domain=nationtv.tv
+@@||youtube.com$domain=nationtv.tv|thairath.co.th
 
 ! Counter bad rules / Strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
@@ -436,6 +442,7 @@ zaapmak.com##iframe
 ||disqusads.com$important
 ||img.in.th/?ping$important
 ||linkis.com/ajax/get-popup-html?$important
+||metrics.brightcove.com$important
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/js/google*$important
 ||referrer.disqus.com$important
