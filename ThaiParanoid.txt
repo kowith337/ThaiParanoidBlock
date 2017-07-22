@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707212231
+! Version: 201707221127
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -995,6 +995,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div >
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table > a[href*="freebasics.com"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##root div[data-ft][data-xt]
+m.facebook.com,mobile.facebook.com,touch.facebook.com###root .scrollArea[data-sigil*="friends-center-nav"] a[data-ajaxify-href*="/friends/center/suggestions/"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft*="mhpp_ego_service_type"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft][data-xt]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-store*="is_sponsored.1"]
@@ -1006,6 +1007,7 @@ youtube.com###hats-container[data-survey-id]
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0 for multiple chaining]
+facebook.com###fbSearchResultsBox:if(form.friendBrowserForm div:has(li a[href*="?fref=pymk"]))
 facebook.com##.mtm div[id^="u_0_"] div[id^="u_0_"]:has(span button.PageLikeButton)
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
@@ -1028,6 +1030,7 @@ facebook.com##div[id^="sponsoredTickerStory"]
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
 facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm div > div:if(.uiList:has(li a[href^="/commerce/products/"]))
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###friends_center_main div:if(table tr:has(td a[href*="pymk_funnel_data"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
@@ -1053,6 +1056,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea):has(.scrollAreaColumn div[data-autoid])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="/friends/center/suggestions/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
