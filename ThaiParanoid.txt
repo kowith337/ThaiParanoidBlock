@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707231744
+! Version: 201707241500
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -618,6 +618,14 @@ zaapmak.com##iframe
 ||s1.youtube.com$important
 ||s2.youtube.com$important
 
+! Allowed only 1P
+||lazada.co.th$third-party,important
+||nipa.co.th$third-party,important
+
+! It's OK to show only what things needed, not other things
+||gravatar.com$third-party
+@@||gravatar.com/avatar$image
+
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance
 !          for mobile cellphone users in Thailand, because visiting those domain or specific page
@@ -625,7 +633,8 @@ zaapmak.com##iframe
 !          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content
 !          such as download games, videos, ringtones or they never sent anything to you but simply charge 
 !          service fee or deduct your calling balance everyday, every week or every month.
-*/Aiswap.ashx?$important
+
+! IP Address
 ||27.100.44.214$important
 ||43.231.124.161$important
 ||52.220.167.186$important
@@ -637,12 +646,15 @@ zaapmak.com##iframe
 ||203.151.206.102$important
 ||203.223.159.245$important
 ||223.25.242.95$important
+
+! Base Domain
 ||1mov.co$important
 ||5sys.com$important
 ||6988fa.com$important
 ||7banana.com$important
 ||7me.co$important
 ||8086.com.tw$important
+||9v8p.com$important
 ||a.n-d.bz$important
 ||a1n.in$important
 ||achelous.mobi$important
@@ -704,6 +716,7 @@ zaapmak.com##iframe
 ||hito.co.vu$important
 ||horoworld.com$important
 ||house365.com$important
+||i-link.co$important
 ||iamzaa.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
@@ -798,13 +811,73 @@ zaapmak.com##iframe
 ||zigifun.com$important
 ||zomobie.com$important
 
-! Allowed only 1P
-||lazada.co.th$third-party,important
-||nipa.co.th$third-party,important
+! - - - - - - - - - - Other lists combination - - - - - - - - - - !
 
-! It's OK to show only what things needed, not other things
-||gravatar.com$third-party
-@@||gravatar.com/avatar$image
+! - - - - - Anime Leeching Lists - - - - - !
+
+! These rules below are modified from https://github.com/pureexe/LeeCh-List
+! Copyright (c) 2017 Pakkapon Phongthawee
+! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
+
+! These list below are well-know illegal streaming sites (mostly in Thailand)
+! that steal the non-profit works from various fansubs and hosts on their sites,
+! take profits and revenue for themselves from advertisement services.
+! (e.g. insert banner ads, popunder ads, add many tracking and monetisation services)
+! This list will use $document tag for strict blocking to prevent visiting those sites,
+! however, you can turn off strict blocking (temporary or permanently, as your choice)
+! if you still want to visit them.
+
+||1000toon.blogspot.com$document
+||am4th.com$document
+||anime-i.com$document
+||anime-lunla.com$document
+||anime-me-th-tv.blogspot.com$document
+||anime-mvp.com$document
+||anime-ox.com$document
+||anime-sugoi.com$document
+||anime-thclub.com$document
+||anime-zeed.com$document
+||animemovie-club.in$document
+||animethailovelove.blogspot.com$document
+||animelovestory.com$document
+||bigc-anime.com$document
+||cartoonth12.com$document
+||dekanime.com$document
+||doanimehd.com$document
+||dooanimez.com$document
+||dukartoon.com$document
+||dukartoon.blogspot.com $document
+||gg-anime.com$document
+||hime-anime.com$document
+||hunter-anime.com$document
+||kimochii-jp.net$document
+||king-anime.com$document
+||kledr.com$document
+||ko-anime.com$document
+||kuma-anime.com$document
+||m9anime.com$document
+||maxmeadcartoons.net$document
+||micxca.com$document
+||miko-anime.com$document
+||miru-anime.com$document
+||miru-anime.net$document
+||miruanime.net$document
+||misa-anime.com$document
+||neko-miku.com$document
+||newb-anime.com$document
+||nice-anime.com$document
+||onitoon.com$document
+||orztoon.co$document
+||otakudrive.com$document
+||rock-anime.com$document
+||show-anime.com$document
+||snipertopanime.net$document
+||strip-cartoon.blogspot.com$document
+||toonzaa.com$document
+||wztoon.com$document
+||zone-anime.net$document
+
+! - - - - - End of Anime Leeching Lists - - - - - !
 
 ! - - - - - - - - - - First party service (Mostly Facebook) - - - - - - - - - - !
 
@@ -846,6 +919,7 @@ zaapmak.com##iframe
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/local_news_chaining$important
 ||facebook.com/pubcontent/related_share$important
+||facebook.com/pubcontent/related_video$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/sem_pixel$important
