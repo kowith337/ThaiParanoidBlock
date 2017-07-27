@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707262205
+! Version: 201707272234
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -636,6 +636,7 @@ zaapmak.com##iframe
 
 ! IP Address
 ||27.100.44.214$important
+||27.254.82.82$important
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
@@ -711,6 +712,7 @@ zaapmak.com##iframe
 ||gamepanda.me$important
 ||gangzaa.net$important
 ||getclick.mobi$important
+||getcools.com$important
 ||gigth.com$important
 ||gizmobi.mobi$important
 ||globocom.co.in$important
@@ -725,15 +727,15 @@ zaapmak.com##iframe
 ||iamzaa.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
-||isport.co.th$important
 ||iqwmxn.com$important
+||isport.co.th$important
 ||kangped.com$important
 ||kodfin.com$important
 ||kodporno.com$important
 ||larnload.com$important
 ||letgomobile.com$important
-||lustzy.com$important
 ||ltvperf.com$important
+||lustzy.com$important
 ||m.arco.co.th$important
 ||ma3.co$important
 ||maejaow.com$important
@@ -755,6 +757,7 @@ zaapmak.com##iframe
 ||mobiteacher.com$important
 ||mobiteacher.me$important
 ||mobixing.com$important
+||mobiz.guru$important
 ||mobl-apps.com$important
 ||mobplanner.com$important
 ||momoga.com$important
@@ -768,6 +771,7 @@ zaapmak.com##iframe
 ||ncontentmv.com$important
 ||newsplus.me$important
 ||optsearch.net$important
+||pages.mli.me$important
 ||panshimob.com$important
 ||phubbers.com$important
 ||picwall.mobi$important
@@ -784,13 +788,13 @@ zaapmak.com##iframe
 ||snapp.asia$important
 ||sosmob.mobi$important
 ||spak.me$important
-||symbioticinfo.com$important
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
 ||sunmob.net$important
 ||sunnygames.club$important
+||symbioticinfo.com$important
 ||tdedlove.com$important
 ||thaifun4u.com$important
 ||thaiza.com$important
@@ -800,10 +804,12 @@ zaapmak.com##iframe
 ||toon-land.com$important
 ||trackmeplease.com$important
 ||tweetsms.com.my$important
+||umobi.biz$important
 ||vas.dtac.co.th$important
 ||vassolution.com$important
 ||vcgbtlktbagb.com$important
 ||vdocutesexy.mobi$important
+||vedaapp.com$important
 ||video-wrld.com$important
 ||videowap.net$important
 ||vipgames.me$important
