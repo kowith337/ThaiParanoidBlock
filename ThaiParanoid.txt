@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201707272318
+! Version: 201707292138
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -211,7 +211,11 @@ petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
+picpost.mthai.com###dfp-adhesion
+picpost.mthai.com###masthead #dfp-topbanner
+picpost.mthai.com##.sticky-container .banner-wrap
 pol-ball.com###facebookpopup-fanback
+popcornfor2.com###content div .banner-mobile-size
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
 postjung.com##.mainbox > div > .adsbygoogle
@@ -930,6 +934,7 @@ zaapmak.com##iframe
 ||facebook.com/pages/qe/$important
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/$xmlhttprequest
+||facebook.com/pubcontent/comment_chaining$important
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/local_news_chaining$important
 ||facebook.com/pubcontent/related_share$important
@@ -976,7 +981,7 @@ zaapmak.com##iframe
 ||youtube.com/api/stats/$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
-||youtube.com/yts/img/pixel^$important
+||youtube.com/yts/img/pixel$important
 ||youtube.com/yts/jsbin/www-pagead-id$important
 
 ! Unsure rules
@@ -1069,6 +1074,7 @@ facebook.com##.fbEmuLink
 facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
+facebook.com##div[id^="pagelet_group"] form[action*="nux_type=create_page"]
 facebook.com##div[id^="pagelet_group"] form[action*="nux_type=member_suggesting_tags"]
 facebook.com##div[role="feed"] .fbUserContent .FriendButton
 facebook.com##div[role="feed"] .fbUserContent .mtm .FriendButton
@@ -1091,6 +1097,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table 
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##root div[data-ft][data-xt]
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root .scrollArea[data-sigil*="friends-center-nav"] a[data-ajaxify-href*="/friends/center/suggestions/"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com###root[data-sigil*="context-layer-root"] article div a[href^="/ads/preferences/interest_suggestions/"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft*="mhpp_ego_service_type"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft][data-xt]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-store*="is_sponsored.1"]
@@ -1215,6 +1222,13 @@ playulti.com##.card .box:if(.box-banner)
 playulti.com##.card-content.card:if(a[href="https://www.facebook.com/playinter.th"][rel="external"])
 playulti.com##.card.game_page:if(.box:has(.box-banner))
 playulti.com##:xpath(//div[starts-with(@class, "card")][.//h4/text()="RECOMMEND APPS"])
+popcornfor2.com###content div[style*="float:center"]:has(a[href*="yengo.com"])
+popcornfor2.com###content div[style*="text-align:center"]:has(script[src*="yengo.com"])
+popcornfor2.com##.content_right > div:has(div[id^="DIV_YNG"])
+popcornfor2.com##.content_right div:has(script[src*="synergy-e.com"])
+popcornfor2.com##.main div:if(iframe[src*="popcornfor2.com/bannerads/"])
+popcornfor2.com##.news_view div center:has(script[src*="googlesyndication.com"])
+popcornfor2.com##.news_view div div:has-text(/Advertisement/)
 postjung.com###maincontent div:has(.sp-adsense-incontent)
 pramool.com##tbody table tr:has(a[target="ads"])
 pramool.com##tbody table tr:has(iframe)
@@ -1282,7 +1296,6 @@ online-station.net##script:inject(abort-on-property-write.js, PLISTA)
 online-station.net##script:inject(abort-on-property-write.js, googletag)
 online-station.net##script:inject(abort-on-property-write.js, ssPage)
 online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
-pantip.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
 pantip.com##script:inject(abort-on-property-write.js, _comscore)
 pantip.com##script:inject(abort-on-property-write.js, googletag)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
