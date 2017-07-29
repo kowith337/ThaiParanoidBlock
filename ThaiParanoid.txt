@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201707272316
+! Version: 201707292052
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -211,7 +211,11 @@ petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
+picpost.mthai.com###dfp-adhesion
+picpost.mthai.com###masthead #dfp-topbanner
+picpost.mthai.com##.sticky-container .banner-wrap
 pol-ball.com###facebookpopup-fanback
+popcornfor2.com###content div .banner-mobile-size
 postjung.com###fbpop_box
 postjung.com###fbpop_box2
 postjung.com##.mainbox > div > .adsbygoogle
@@ -928,6 +932,7 @@ zaapmak.com##iframe
 ||facebook.com/pages/qe/$important
 ||facebook.com/plugins/likebox.php$important
 ||facebook.com/pubcontent/$xmlhttprequest
+||facebook.com/pubcontent/comment_chaining$important
 ||facebook.com/pubcontent/feed_chaining$important
 ||facebook.com/pubcontent/local_news_chaining$important
 ||facebook.com/pubcontent/related_share$important
@@ -972,7 +977,7 @@ zaapmak.com##iframe
 ||youtube.com/api/stats/$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
-||youtube.com/yts/img/pixel^$important
+||youtube.com/yts/img/pixel$important
 ||youtube.com/yts/jsbin/www-pagead-id$important
 
 ! Unsure rules
@@ -1197,6 +1202,13 @@ playulti.com##.card .box:if(.box-banner)
 playulti.com##.card-content.card:if(a[href="https://www.facebook.com/playinter.th"][rel="external"])
 playulti.com##.card.game_page:if(.box:has(.box-banner))
 playulti.com##:xpath(//div[starts-with(@class, "card")][.//h4/text()="RECOMMEND APPS"])
+popcornfor2.com###content div[style*="float:center"]:has(a[href*="yengo.com"])
+popcornfor2.com###content div[style*="text-align:center"]:has(script[src*="yengo.com"])
+popcornfor2.com##.content_right > div:has(div[id^="DIV_YNG"])
+popcornfor2.com##.content_right div:has(script[src*="synergy-e.com"])
+popcornfor2.com##.main div:if(iframe[src*="popcornfor2.com/bannerads/"])
+popcornfor2.com##.news_view div center:has(script[src*="googlesyndication.com"])
+popcornfor2.com##.news_view div div:has-text(/Advertisement/)
 postjung.com###maincontent div:has(.sp-adsense-incontent)
 pramool.com##tbody table tr:has(a[target="ads"])
 pramool.com##tbody table tr:has(iframe)
