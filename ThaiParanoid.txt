@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201708061454
+! Version: 201708071638
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -317,6 +317,7 @@ zaapmak.com##iframe
 
 ! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
 ||4toom.com/*/modal-dialog/*
+||ais.co.th/advertiser^
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
 ||araidii.com/*/facebook-popup-box/*
@@ -354,6 +355,7 @@ zaapmak.com##iframe
 ||lonely-rooyang.com/*/arscode-ninja-popups/*
 ||marketingoops.com/*/itro-popup/*
 ||marketingoops.com/popup-ad*
+||matichon.co.th/www/delivery/
 ||meekhao.com/*/dreamgrow-scroll-triggered-box/*
 ||meepanda.com/*/new-facebook-popup-likebox-responsive/*
 ||miru-anime.net/*/popups/*
@@ -389,7 +391,6 @@ zaapmak.com##iframe
 ||sistacafe.com/scripts/truehits
 ||sistacafe.com/scripts/yengo
 ||specphone.com/*/nbs-ilightbox/*
-||spokedark.tv/*/ud-social/*
 ||sudting.party/*/new-facebook-popup-likebox-responsive/*
 ||taghr.net/*/uji-popup/*
 ||techmoblog.com/*colorbox*
@@ -408,7 +409,6 @@ zaapmak.com##iframe
 ||yakjado.com/*/easy-facebook-likebox/*
 ||yakjado.com/*/upprev/*
 ||yakjado.com/*/wp-social-popup-and-get-traffic/*
-||yaklai.com/*/ud-social/*
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
@@ -442,6 +442,9 @@ zaapmak.com##iframe
 
 ! Counter bad rules / Strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
+/plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
+/plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
+||comenu.ais.co.th$~first-party,important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
@@ -486,24 +489,28 @@ zaapmak.com##iframe
 ||*adnow.com
 ||24x7th.com
 ||adasiaholdings.com
-||adok.asia
 ||adnow.com
+||adok.asia
+||ads*.bangkokpost.co.th
+||ads*.matichon.co.th
 ||ads.boxza.com
-||ads.jarm.com
 ||ads.gamemonday.com
+||ads.jarm.com
 ||ads.os.co.th
 ||ads.pantip.com
 ||ads.postjung.com
 ||ads.siamza.com
 ||ads.techxcite.com
-||ads.youtube.com
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
+||app-measurement.com
+||appsflyer.com
 ||bumq.com
 ||clickadu.com
 ||clicksgear.com
 ||connextra.com
+||crashlytics.com
 ||crazyegg.com
 ||criteo.com
 ||effectivemeasure.net
@@ -512,10 +519,13 @@ zaapmak.com##iframe
 ||exosrv.com
 ||filadmir.site
 ||gammaplatform.com
+||gbox.sc
 ||hotjar.com
+||inmobi.com
 ||innity.com
 ||innity.net
 ||kiosked.com
+||moatads.com
 ||mtburn.com
 ||mtburn.jp
 ||newrelic.com
@@ -544,10 +554,6 @@ zaapmak.com##iframe
 ||quicktask.xyz
 ||reimageplus.com
 ||replase.tk
-||s.youtube.com
-||s0.youtube.com
-||s1.youtube.com
-||s2.youtube.com
 ||sales-frontier.com
 ||serving-sys.com
 ||simba-digital.com
@@ -597,6 +603,7 @@ zaapmak.com##iframe
 ||revsci.net
 ||ruu-dee.com
 ||scorecardresearch.com
+||stat.matichon.co.th
 ||stats.in.th
 ||stats.wp.com
 ||synergy-e.com
@@ -617,6 +624,8 @@ zaapmak.com##iframe
 ||googlesyndication.com$important
 ||googletagmanager.com$important
 ||googletagservices.com$important
+||imasdk.googleapis.com$important
+||mobilecrashreporting.googleapis.com$important
 ||s.youtube.com$important
 ||s0.youtube.com$important
 ||s1.youtube.com$important
@@ -912,15 +921,17 @@ zaapmak.com##iframe
 
 ! Ads/Tracking in 1st party service (e.g. Google, Facebook, Twitter)
 ! Note: uBlock0 assets can handle some of them.
+! ||facebook.com/a/bz$xmlhttprequest,important
+! ||facebook.com/ajax/bz$xmlhttprequest,important
 ||analytics.twitter.com
-||facebook.com/a/bz$xmlhttprequest,important
+||facebook.com/adnw_logging/$important
 ||facebook.com/ads/
+||facebook.com/ads/ad_choices$important
 ||facebook.com/ads/growth$important
 ||facebook.com/ads/qe/$important
 ||facebook.com/ai.php$subdocument,important
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/browse/null_state.php$important
-||facebook.com/ajax/bz$xmlhttprequest,important
 ||facebook.com/ajax/haste-response/?modules=PubcontentFeedChainingController$important
 ||facebook.com/ajax/mutual_friends/tooltip.php$important
 ||facebook.com/ajax/pagelet/generic.php/WebEgoPane$important
@@ -928,6 +939,7 @@ zaapmak.com##iframe
 ||facebook.com/ajax/react_composer/survey?
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important
 ||facebook.com/async/social_good/$xmlhttprequest
+||facebook.com/audience_network/$important
 ||facebook.com/common/referer_frame.php$inline-script
 ||facebook.com/ego/$xmlhttprequest
 ||facebook.com/ego/feed$important
@@ -935,6 +947,7 @@ zaapmak.com##iframe
 ||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/friends/center/suggestions$important
 ||facebook.com/impression.php$important
+||facebook.com/network_ads_common$important
 ||facebook.com/pages/launchpoint/discover/$document,important
 ||facebook.com/pages/qe/$important
 ||facebook.com/plugins/likebox.php$important
@@ -990,8 +1003,6 @@ zaapmak.com##iframe
 ||youtube.com/yts/jsbin/www-pagead-id$important
 
 ! Unsure rules
-! facebook.com##div[id^="hyperfeed_story_id"] div.mtm:has(li a[href*="/commerce/products/"])
-! // Aim to hide product shown panel under page post, but apply this rule will be hide entire posts that have product catalogue sell shown.
 ! ||twitter.com/i/trends$important
 ! // Avoid disable "Trends" if you still need it. //
 
