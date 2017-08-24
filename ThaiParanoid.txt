@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201708241103
+! Version: 201708242344
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1149,7 +1149,7 @@ facebook.com##div ul[role="menu"] li:has(a[href*="campaign/landing.php?"])
 facebook.com##div[data-referrer="pagelet_side_ads"]
 facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
 facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
-facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_jsonp"]:has(a[href*="type=article_author_in_shared_link""])
+facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_jsonp"]:has(a[href*="type=article_author_in_shared_link"])
 facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
