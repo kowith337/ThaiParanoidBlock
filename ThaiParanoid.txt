@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201708121550
+! Version: 201708241103
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -616,8 +616,11 @@ zaapmak.com##iframe
 ||zemanta.com
 
 ! Strictly block Google Ads and/or Tracking (YouTube Included)
+/generate_204$important,~document
 ||2mdn.net$important
+||admob.com$important
 ||ads.youtube.com$important
+||adservices.google.com$important
 ||doubleclick.net$important
 ||google-analytics.com$important
 ||googleadservices.com$important
@@ -714,6 +717,7 @@ zaapmak.com##iframe
 ||fly2.me$important
 ||fly2me.com$important
 ||freezone.mobi$important
+||full-funny.com$important
 ||fun-clix.com$important
 ||fun-club.mobi$important
 ||fun2u.biz$important
@@ -761,6 +765,7 @@ zaapmak.com##iframe
 ||mobgkt.com$important
 ||mobico.my$important
 ||mobidevil.com$important
+||mobifan.com$important
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobileacademy.com$important
@@ -1085,6 +1090,7 @@ facebook.com###pagelet_ego_pane
 facebook.com###pagelet_games_rhc
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###pages_may_like_section
+facebook.com###video_permalink_related_pagelet
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbAdUnit
 facebook.com##.fbEmu
@@ -1143,10 +1149,13 @@ facebook.com##div ul[role="menu"] li:has(a[href*="campaign/landing.php?"])
 facebook.com##div[data-referrer="pagelet_side_ads"]
 facebook.com##div[data-referrer="timeline_collections_section_title"] > div:has(div[id^="pagelet_recommendation"])
 facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
+facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_jsonp"]:has(a[href*="type=article_author_in_shared_link""])
 facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
+facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=group_top_stories_feed"]))
+facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a:has-text(/Sponsored/))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
 facebook.com##div[id^="pagelet_recommendation"]
