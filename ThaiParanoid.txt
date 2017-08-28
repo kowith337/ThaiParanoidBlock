@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201708242342
+! Version: 201708282234
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -30,6 +30,7 @@
 ##.popup-like-box-backdrop
 
 ! Element filter rules (merge with ThaiAntiForceLike)
+akibatan.com##.td-logo-wrap-full
 animeranku.com###check-also-box
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 araidii.com###facebookpopup-fanback
@@ -233,6 +234,8 @@ siamok.com###lightbox
 siamok.com###lightbox-shadow
 siamok.com##div[class^=SC_TBlock]
 siamok.com##iframe[src="/ads/foot-yengo.php"]
+siamphone.com###banner300_600
+siamphone.com##.mid_ads
 siamza.com###fanback
 sistacafe.com##.fb-popup
 sistacafe.com##.popup
@@ -448,9 +451,11 @@ zaapmak.com##iframe
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
+||isanook.com/*/beacon$important
 ||linkis.com/ajax/get-popup-html?$important
 ||metrics.brightcove.com$important
 ||online-station.net/*/ads/*$important
+||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
 ||referrer.disqus.com$important
 ||webtoons.com/js/lib/dfp_helper$important
@@ -928,7 +933,8 @@ zaapmak.com##iframe
 ! Note: uBlock0 assets can handle some of them.
 ! ||facebook.com/a/bz$xmlhttprequest,important
 ! ||facebook.com/ajax/bz$xmlhttprequest,important
-||analytics.twitter.com
+||ads.twitter.com$important
+||analytics.twitter.com$important
 ||facebook.com/adnw_logging/$important
 ||facebook.com/ads/
 ||facebook.com/ads/ad_choices$important
@@ -937,10 +943,13 @@ zaapmak.com##iframe
 ||facebook.com/ai.php$subdocument,important
 ||facebook.com/ajax/ads/$important
 ||facebook.com/ajax/browse/null_state.php$important
+||facebook.com/ajax/haste-response/?modules=*LinkshimLogController$important
 ||facebook.com/ajax/haste-response/?modules=PhotoSnowliftViewableWithContextMenuLogging$important
 ||facebook.com/ajax/haste-response/?modules=PubcontentFeedChainingController$important
+||facebook.com/ajax/haste-response/?modules=ReactComposerFeedSurvey$important
+||facebook.com/ajax/haste-response/?modules=ReactComposerMagicTagSurvey$important
+||facebook.com/ajax/haste-response/?modules=ShareDialogMessageAudience$important
 ||facebook.com/ajax/haste-response/?modules=TypeaheadMetricReporter$important
-||facebook.com/ajax/haste-response/?modules=*LinkshimLogController$important
 ||facebook.com/ajax/mutual_friends/tooltip.php$important
 ||facebook.com/ajax/pagelet/generic.php/WebEgoPane$important
 ||facebook.com/ajax/photos/logging$important
@@ -1082,6 +1091,7 @@ facebook.com###pagelet_ego_pane
 facebook.com###pagelet_games_rhc
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###pages_may_like_section
+facebook.com###permalink_related_videos_logged_out
 facebook.com###video_permalink_related_pagelet
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbAdUnit
@@ -1124,6 +1134,7 @@ youtube.com###hats-container[data-survey-id]
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0 for multiple chaining]
+facebook.com##.loggedout_menubar div[data-testid="royal_login_form"] div:if(form[id="login_form"])
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
 facebook.com##:xpath(//div[@id="pagelet_timeline_main_column"]//div[starts-with(@data-referrer,"id")]//div[starts-with(@id,"u_")]//div//div[.//span/text()="Featured for you"])
@@ -1212,6 +1223,8 @@ mthai.com##div[id^="MT_HP_"]:has(.banner)
 mustplay.in.th##.panel-default:if(ul li div:has(a[href*="/game/page/"]))
 mustplay.in.th,playulti.com##.banner:has(a[rel])
 mustplay.in.th,playulti.com##a:has(img[src*="/data/setting/banner/"])
+news.sanook.com##.col.highlight--channel__aside:has(.social)
+news.sanook.com##.col.highlight--channel__aside:has(div[class^="snic"])
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
 oopsmobile.net##.textwidget:has(.adsbygoogle)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
@@ -1246,6 +1259,10 @@ share-si.com##.post div:has(.adsbygoogle)
 siamchatroom.com##.Sweb_right > table:has(script[src^="//ads.bumq.com"])
 siamok.com##.Sweb_right table:has(iframe[src="/ads/right-yengo.php"])
 siamok.com##.head_bg table:has(iframe[src^="/ads/"])
+siamphone.com###banner:has(iframe[src*="ads.siamphone.com"])
+siamphone.com##.news_cate li ul:has(iframe[src*="ads.siamphone.com"])
+siamphone.com##.top_banner:if(div span:has(iframe[src*="ads.siamphone.com"]))
+siamphone.com##div[class^="banner"]:has(iframe[src*="ads.siamphone.com"])
 thaihitz.com##.post-single-content center:has(.adsbygoogle)
 thaiidol.com##.td-g-rec:has(.adsbygoogle)
 thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
