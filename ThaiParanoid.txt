@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201709022004
+! Version: 201709032254
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -876,19 +876,20 @@ zaapmak.com##iframe
 ||anime-sugoi.com$document
 ||anime-thclub.com$document
 ||anime-zeed.com$document
+||animelovestory.com$document
 ||animemovie-club.in$document
 ||animethailovelove.blogspot.com$document
-||animelovestory.com$document
 ||bigc-anime.com$document
 ||cartoonth12.com$document
 ||dekanime.com$document
 ||doanimehd.com$document
 ||dooanimez.com$document
-||dukartoon.com$document
 ||dukartoon.blogspot.com $document
+||dukartoon.com$document
 ||gg-anime.com$document
 ||hime-anime.com$document
 ||hunter-anime.com$document
+||in-anime.com$document
 ||kimochii-jp.net$document
 ||king-anime.com$document
 ||kledr.com$document
@@ -905,6 +906,7 @@ zaapmak.com##iframe
 ||neko-miku.com$document
 ||newb-anime.com$document
 ||nice-anime.com$document
+||now-anime.com$document
 ||onitoon.com$document
 ||orztoon.co$document
 ||otakudrive.com$document
