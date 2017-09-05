@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201709032254
+! Version: 201709051300
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -661,6 +661,7 @@ zaapmak.com##iframe
 ||43.231.124.161$important
 ||52.220.167.186$important
 ||52.76.242.20$important
+||56.76.86.177$important
 ||58.181.206.44$important
 ||65.49.33.31$important
 ||124.158.4.91$important
@@ -770,6 +771,7 @@ zaapmak.com##iframe
 ||mobico.my$important
 ||mobidevil.com$important
 ||mobifan.com$important
+||mobifun4u.com$important
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobileacademy.com$important
@@ -793,6 +795,7 @@ zaapmak.com##iframe
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
 ||newsplus.me$important
+||nmpcenter.com$important
 ||optsearch.net$important
 ||pages.mli.me$important
 ||panshimob.com$important
@@ -810,6 +813,7 @@ zaapmak.com##iframe
 ||seaman2u.com$important
 ||sexy-here.com$important
 ||skype4mobile.com$important
+||smsgateway.cc$important
 ||snapp.asia$important
 ||sosmob.mobi$important
 ||spak.me$important
@@ -841,12 +845,14 @@ zaapmak.com##iframe
 ||vipgames.me$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
+||wap.dtac.co.th$important
 ||wap.getcools.com$important
 ||wap.shinee.com$important
 ||waphub.mobi$important
 ||waplog.com$important
 ||wifistudy.com$important
 ||woaifanyi.com$important
+||youlaugh.online$important
 ||zigifun.com$important
 ||zomobie.com$important
 
