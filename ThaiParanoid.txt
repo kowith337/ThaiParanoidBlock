@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201709051800
+! Version: 201709081426
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -85,6 +85,8 @@ game-tep.com##.rightBanner
 gamegeek.in.th##.wppaszone
 gamegeek.in.th##div[data-title="Home popup"]
 gamemonday.com##.ads-bottom
+goal.in.th###ads_top_content
+goal.in.th##.ajax-banner
 ithaihotnews.com###arevicofancy-loading
 ithaihotnews.com###arevicofancy-overlay
 ithaihotnews.com###arevicofancy-tmp
@@ -248,6 +250,7 @@ sudting.party##div[id^="SC_TBlock"]
 techmoblog.com###cboxOverlay
 techmoblog.com###cboxWrapper
 techtalkthai.com###check-also-box
+techtalkthai.com##.wrapper-outer .background-cover
 tgpl.in.th###arevicofancy-loading
 tgpl.in.th###arevicofancy-overlay
 tgpl.in.th###arevicofancy-tmp
@@ -284,10 +287,10 @@ thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
 thetechr.com##.jinda-wrapper
-thisisgamethailand.com##a[href*="index.php?/stats/clickAdd/"]
 thisisgamethailand.com###adsbannerbottommtig
 thisisgamethailand.com###adsbannermtig
 thisisgamethailand.com###adsbannermtigbox
+thisisgamethailand.com##a[href*="index.php?/stats/clickAdd/"]
 tnews.co.th###myModal
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
@@ -813,6 +816,7 @@ zaapmak.com##iframe
 ||sanookde.com$important
 ||seaman2u.com$important
 ||sexy-here.com$important
+||shoopadoo.com$important
 ||skype4mobile.com$important
 ||smsgateway.cc$important
 ||snapp.asia$important
@@ -1090,7 +1094,6 @@ facebook.com###fbpage_invite_audience_action
 facebook.com###fbpage_invite_audience_action_finch
 facebook.com###feed_optimistic_video
 facebook.com###friend_invites_section
-facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
 facebook.com###home_sponsor_nile
 facebook.com###mobile_login_bar
 facebook.com###page_suggestions_on_liking
@@ -1098,11 +1101,9 @@ facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_advertiser_panel
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_games_rhc
-facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###pages_may_like_section
 facebook.com###permalink_related_videos_logged_out
 facebook.com###video_permalink_related_pagelet
-facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.fbAdUnit
 facebook.com##.fbEmu
 facebook.com##.fbEmuBlock
@@ -1139,10 +1140,14 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-xt*="is_spon
 m.facebook.com,mobile.facebook.com,touch.facebook.com##div[data-store*="mobile_page_contextual_recommendations"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
+youtube.com##ytd-consent-bump-renderer
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0 for multiple chaining]
+facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
+facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
+facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.loggedout_menubar div[data-testid="royal_login_form"] div:if(form[id="login_form"])
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
 facebook.com##:xpath(//div//form[@rel="async"]//div[.//div/text()="Up next"])
@@ -1203,6 +1208,7 @@ youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has
 4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
+beartai.com###wallpaper:style(background: none !important; display: none !important)
 blognone.com##:xpath(//div[@id="above_comments"][//h2/text()="Blognone Workplace"])
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
@@ -1213,6 +1219,7 @@ gamemonday.com##a:has(img[onload])
 gamemonday.com##a[onclick]:has(img[onload])
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
 jarm.com##:xpath(//div[@class="news-detail"]//p[./text()="Advertisement"])
+jokergameth.com###postlist li[id^="post_"]:if(.posthead:has(span a[href*="/advertisement/"]))
 kanomjeeb.com##.banner:has(.adsbygoogle)
 kanomjeeb.com##section .row:has(.adsbygoogle)
 kapook.com###action-quick:has(div span[id="ad-close"])
@@ -1272,6 +1279,7 @@ siamphone.com###banner:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.news_cate li ul:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.top_banner:if(div span:has(iframe[src*="ads.siamphone.com"]))
 siamphone.com##div[class^="banner"]:has(iframe[src*="ads.siamphone.com"])
+techtalkthai.com##.theiaStickySidebar .widget:if(.widget-container p:has(a[rel="noopener"]))
 thaihitz.com##.post-single-content center:has(.adsbygoogle)
 thaiidol.com##.td-g-rec:has(.adsbygoogle)
 thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
