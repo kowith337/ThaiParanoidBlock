@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201709081513
+! Version: 201709082351
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -450,15 +450,12 @@ zaapmak.com##iframe
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
-||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
-||comenu.ais.co.th$domain=~comenu.ais.co.th,important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
 ||isanook.com/*/beacon$important
 ||linkis.com/ajax/get-popup-html?$important
 ||metrics.brightcove.com$important
-||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
@@ -659,6 +656,16 @@ zaapmak.com##iframe
 !          such as download games, videos, ringtones or they never sent anything to you but simply charge 
 !          service fee or deduct your calling balance everyday, every week or every month.
 
+! Even operator...
+||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||ais.co.th/aisnow$domain=~ais.co.th|~mobilelife.co.th,important
+||comenu.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||ss*.mobilelife.co.th$important
+||vas.dtac.co.th$important
+||wap.dtac.co.th$important
+
 ! IP Address
 ||27.100.44.214$important
 ||27.254.82.82$important
@@ -705,6 +712,7 @@ zaapmak.com##iframe
 ||cdnfiber.com$important
 ||centili.com$important
 ||cheesemobile.com$important
+||cherryzone.com.ph$important
 ||chickyclub.net$important
 ||chz.mobi$important
 ||ckwizard.com$important
@@ -840,7 +848,6 @@ zaapmak.com##iframe
 ||trackmeplease.com$important
 ||tweetsms.com.my$important
 ||umobi.biz$important
-||vas.dtac.co.th$important
 ||vassolution.com$important
 ||vcgbtlktbagb.com$important
 ||vdocutesexy.mobi$important
@@ -850,7 +857,6 @@ zaapmak.com##iframe
 ||vipgames.me$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
-||wap.dtac.co.th$important
 ||wap.getcools.com$important
 ||wap.shinee.com$important
 ||waphub.mobi$important
