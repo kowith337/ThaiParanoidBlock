@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201709082351
+! Version: 201709102106
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1150,11 +1150,11 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table > div table > a[href*="freebasics.com"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"][data-ft*="ego_id"]
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##root div[data-ft][data-xt]
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##root div[data-ft][data-xt*="sponsored"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root .scrollArea[data-sigil*="friends-center-nav"] a[data-ajaxify-href*="/friends/center/suggestions/"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root[data-sigil*="context-layer-root"] article div a[href*="/ads/preferences/interest_suggestions/"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft*="mhpp_ego_service_type"]
-m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft][data-xt]
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-ft][data-xt*="sponsored"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-store*="is_sponsored.1"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article[data-xt*="is_sponsored.1"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##div[data-store*="mobile_page_contextual_recommendations"]
