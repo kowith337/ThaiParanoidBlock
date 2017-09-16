@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201709082348
+! Version: 201709170019
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -717,7 +717,7 @@ zaapmak.com##iframe
 ||chz.mobi$important
 ||ckwizard.com$important
 ||clickmlife.com$important
-||lickmultimedia.co.th$important
+||clickmultimedia.co.th$important
 ||clickstk.com$important
 ||clip.vu$important
 ||consentprt.dtac.co.th$important
@@ -729,6 +729,7 @@ zaapmak.com##iframe
 ||deepbluetech.biz$important
 ||dlxxxvip.com$important
 ||eskimi.com$important
+||espabit.net$important
 ||etracker.cc$important
 ||facabooks.com$important
 ||findgit.com$important
@@ -834,6 +835,7 @@ zaapmak.com##iframe
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
+||streamflix.mobi$important
 ||sunmob.net$important
 ||sunnygames.club$important
 ||surfto.mobi$important
@@ -855,6 +857,7 @@ zaapmak.com##iframe
 ||video-wrld.com$important
 ||videowap.net$important
 ||vipgames.me$important
+||viral-mix.com$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
 ||wap.getcools.com$important
