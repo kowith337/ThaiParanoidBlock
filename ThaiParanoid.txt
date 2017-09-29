@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201709232203
+! Version: 201709291439
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -323,7 +323,6 @@ zaapmak.com##iframe
 
 ! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
 ||4toom.com/*/modal-dialog/*
-||ais.co.th/advertiser^
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
 ||araidii.com/*/facebook-popup-box/*
@@ -450,6 +449,7 @@ zaapmak.com##iframe
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
+||ais.co.th/advertiser$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
@@ -1126,19 +1126,6 @@ facebook.com##.fbEmuTracking
 facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
 facebook.com##div[id^="pagelet_group"] form[action*="nux_type=member_suggesting_tags"]
-facebook.com##div[role="feed"] .fbUserContent .FriendButton
-facebook.com##div[role="feed"] .fbUserContent .mtm .FriendButton
-facebook.com##div[role="feed"] .fbUserContent .mtm span a[ajaxify^="/ajax/follow/"]
-facebook.com##div[role="feed"] .fbUserContent .mtm span[class*="uiLikePageButton"]
-facebook.com##div[role="feed"] .fbUserContent .mtm span[class*="uiPageLikeButton"]
-facebook.com##div[role="feed"] .fbUserContent a[ajaxify^="/ajax/follow/"]
-facebook.com##div[role="feed"] .fbUserContent span a[ajaxify^="/ajax/follow/"]
-facebook.com##div[role="feed"] .fbUserContent span[class*="uiLikePageButton"]
-facebook.com##div[role="feed"] .fbUserContent span[class*="uiPageLikeButton"]
-facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm .FriendButton
-facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span a[ajaxify^="/ajax/follow/"]
-facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span[class*="uiLikePageButton"]
-facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span[class*="uiPageLikeButton"]
 github.com##div[class^="signup-prompt"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
@@ -1155,7 +1142,7 @@ youtube.com##ytd-consent-bump-renderer
 
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
-! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0 for multiple chaining]
+! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0+ for multiple chaining]
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
@@ -1173,7 +1160,7 @@ facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
 facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_jsonp"]:has(a[href*="type=article_author_in_shared_link"])
 facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
-facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=group_top_stories_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=psym_feed"]))
@@ -1190,18 +1177,18 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored.1"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/groups/?ref=category_discover_landing"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div a[href*="origin=feed_pyml"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div:has(a[href*="origin=feed_pyml"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea):has(.scrollAreaColumn div[data-autoid])
+m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
