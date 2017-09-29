@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201709291458
+! Version: 201709292228
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -520,6 +520,7 @@ zaapmak.com##iframe
 ||crazyegg.com$important
 ||criteo.com$important
 ||criteo.net$important
+||cxense.com$important
 ||effectivemeasure.net$important
 ||exdynsrv.com$important
 ||exoclick.com$important
@@ -647,6 +648,23 @@ zaapmak.com##iframe
 ! It's OK to show only what things needed, not other things
 ||gravatar.com$third-party
 @@||gravatar.com/avatar$image
+
+! Dark Patterns (Coin Miners, Using your machine as CDN and such...)
+! - NoCoin List by hoshsadiq: https://github.com/hoshsadiq/adblock-nocoin-list
+! - NoCoins Extension by Keraf: https://github.com/keraf/NoCoin/blob/master/src/blacklist.txt
+! - EdgeMesh Issues: https://github.com/uBlockOrigin/uAssets/issues/659
+||cnhv.co$important
+||coin-hive.com$important
+||coinhive.com$important
+||edgemesh.com$important
+||edgeno.de$important
+||gus.host$important
+||jsecoin.com$important
+||listat.biz$important
+||lmodr.biz$important
+||minecrunch.co$important
+||minemytraffic.com$important
+||pr0gramm.com$important
 
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance
