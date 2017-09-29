@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201709232208
+! Version: 201709291458
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -323,7 +323,6 @@ zaapmak.com##iframe
 
 ! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
 ||4toom.com/*/modal-dialog/*
-||ais.co.th/advertiser^
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
 ||araidii.com/*/facebook-popup-box/*
@@ -450,6 +449,7 @@ zaapmak.com##iframe
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
+||ais.co.th/advertiser$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
@@ -467,159 +467,158 @@ zaapmak.com##iframe
 ! - - - - - - - - - - Domain level block - - - - - - - - - - !
 
 ! 3P share button
-||addthis.com
-||addtoany.com
-||hellobar.com
+||addthis.com$important
+||addtoany.com$important
+||hellobar.com$important
 
 ! Baidu/Hao123/DesktopWeather
 ! http://pantip.com/topic/30586979
 ! http://pantip.com/topic/33939110
 ! http://pantip.com/topic/34359052
-||360tools.org
-||antivirus.baidu.com
-||baidu.co.th
-||browser.baidu.com
-||dealwifi.com
-||govome.com
-||hao123.com
-||insppartner.com
-||inspsearch.com
-||mustang-browser.com
-||pcfaster.co.th
-||pcfaster.com
-||rafotech.com
-||toptools100.com
-||wisemana.com
+||360tools.org$important
+||antivirus.baidu.com$important
+||baidu.co.th$important
+||browser.baidu.com$important
+||dealwifi.com$important
+||govome.com$important
+||hao123.com$important
+||insppartner.com$important
+||inspsearch.com$important
+||mustang-browser.com$important
+||pcfaster.co.th$important
+||pcfaster.com$important
+||rafotech.com$important
+||toptools100.com$important
+||wisemana.com$important
 
 ! Ads Server / Malvertising
-||*adnow.com
-||24x7th.com
-||adasiaholdings.com
-||adnow.com
-||adok.asia
-||ads*.bangkokpost.co.th
-||ads*.matichon.co.th
-||ads.boxza.com
-||ads.gamemonday.com
-||ads.jarm.com
-||ads.os.co.th
-||ads.pantip.com
-||ads.postjung.com
-||ads.siamza.com
-||ads.techxcite.com
-||adsniper.ru
-||adsoptimal.com
-||adtplatform.com
-||app-measurement.com
-||appsflyer.com
-||bumq.com
-||clickadu.com
-||clicksgear.com
-||connextra.com
-||crashlytics.com
-||crazyegg.com
-||criteo.com
-||effectivemeasure.net
-||exdynsrv.com
-||exoclick.com
-||exosrv.com
-||filadmir.site
-||gammaplatform.com
-||gbox.sc
-||hotjar.com
-||inmobi.com
-||innity.com
-||innity.net
-||kiosked.com
-||moatads.com
-||mtburn.com
-||mtburn.jp
-||newrelic.com
-||nr-data.com
-||nr-data.net
-||nuffnang.co.th
-||nuffnang.com
-||nuffnang.com.my
-||oclaserver.com
-||oilchange.website
-||onclasrv.com
-||onclickads.net
-||openxmarket.asia
-||padsdel.com
-||padstm.com
-||pc1ads.com
-||pc2ads.com
-||pc3ads.com
-||plista.com
-||popads.net
-||popcash.net
-||popclck.com
-||popclck.net
-||poptm.com
-||puserving.com
-||quicktask.xyz
-||reimageplus.com
-||replase.tk
-||sales-frontier.com
-||serving-sys.com
-||simba-digital.com
-||smemove.com
-||sumome.com
-||tapad.com
-||travelpayouts.com
-||tynt.com
-||user-api.com
-||user-clicks.com
-||user-red.com
-||yengo.com
+||*adnow.com$important
+||24x7th.com$important
+||adasiaholdings.com$important
+||adnow.com$important
+||adok.asia$important
+||ads*.bangkokpost.co.th$important
+||ads*.matichon.co.th$important
+||ads.boxza.com$important
+||ads.gamemonday.com$important
+||ads.jarm.com$important
+||ads.os.co.th$important
+||ads.pantip.com$important
+||ads.postjung.com$important
+||ads.siamza.com$important
+||ads.techxcite.com$important
+||adsniper.ru$important
+||adsoptimal.com$important
+||adtplatform.com$important
+||app-measurement.com$important
+||appsflyer.com$important
+||bumq.com$important
+||clickadu.com$important
+||clicksgear.com$important
+||connextra.com$important
+||crashlytics.com$important
+||crazyegg.com$important
+||criteo.com$important
+||criteo.net$important
+||effectivemeasure.net$important
+||exdynsrv.com$important
+||exoclick.com$important
+||exosrv.com$important
+||filadmir.site$important
+||gammaplatform.com$important
+||gbox.sc$important
+||hotjar.com$important
+||inmobi.com$important
+||innity.com$important
+||innity.net$important
+||kiosked.com$important
+||moatads.com$important
+||mtburn.com$important
+||mtburn.jp$important
+||newrelic.com$important
+||nr-data.com$important
+||nr-data.net$important
+||nuffnang.co.th$important
+||nuffnang.com$important
+||oclaserver.com$important
+||oilchange.website$important
+||onclasrv.com$important
+||onclickads.net$important
+||openxmarket.asia$important
+||padsdel.com$important
+||padstm.com$important
+||pc1ads.com$important
+||pc2ads.com$important
+||pc3ads.com$important
+||plista.com$important
+||popads.net$important
+||popcash.net$important
+||popclck.com$important
+||popclck.net$important
+||poptm.com$important
+||puserving.com$important
+||quicktask.xyz$important
+||reimageplus.com$important
+||replase.tk$important
+||sales-frontier.com$important
+||serving-sys.com$important
+||simba-digital.com$important
+||smemove.com$important
+||sumome.com$important
+||tapad.com$important
+||travelpayouts.com$important
+||tynt.com$important
+||user-api.com$important
+||user-clicks.com$important
+||user-red.com$important
+||yengo.com$important
 
 ! Tracking / Marketing / Article Suggestions
-||accesstrade.in.th
-||amung.us
-||anonymousdemographics.com
-||areyouahuman.com
-||atdmt.com
-||aviasales.ru
-||bluekai.com
-||btstatic.com
-||crwdcntrl.net
-||csi.gstatic.com
-||d-stats.com
-||dtscout.com
-||edgesuite.net
-||eyeota.net
-||feedjit.com
-||gbotvisit.com
-||go2cloud.org
-||go2speed.org
-||google-analytics.l.google.com
-||heatmap.it
-||histats.com
-||inspectlet.com
-||luckyorange.com
-||m88.com
-||nytive.com
-||parkingcrew.com
-||parkingcrew.net
-||ping-fast.com
-||pingdom.net
-||pixeldigitalstudios.com
-||plista.com
-||ptengine.com
-||revsci.net
-||ruu-dee.com
-||scorecardresearch.com
-||stat.matichon.co.th
-||stats.in.th
-||stats.wp.com
-||synergy-e.com
-||taboola.com
-||tagserve.asia
-||thstats.com
-||truehits.in.th
-||truehits.net
-||yu0123456.com
-||zemanta.com
+||accesstrade.in.th$important
+||amung.us$important
+||anonymousdemographics.com$important
+||areyouahuman.com$important
+||atdmt.com$important
+||aviasales.ru$important
+||bluekai.com$important
+||btstatic.com$important
+||crwdcntrl.net$important
+||csi.gstatic.com$important
+||d-stats.com$important
+||dtscout.com$important
+||edgesuite.net$important
+||eyeota.net$important
+||feedjit.com$important
+||gbotvisit.com$important
+||go2cloud.org$important
+||go2speed.org$important
+||heatmap.it$important
+||histats.com$important
+||inspectlet.com$important
+||luckyorange.com$important
+||m88.com$important
+||nytive.com$important
+||parkingcrew.com$important
+||parkingcrew.net$important
+||ping-fast.com$important
+||pingdom.net$important
+||pixeldigitalstudios.com$important
+||plista.com$important
+||ptengine.com$important
+||revsci.net$important
+||ruu-dee.com$important
+||scorecardresearch.com$important
+||stat.matichon.co.th$important
+||stats.in.th$important
+||stats.wp.com$important
+||synergy-e.com$important
+||taboola.com$important
+||tagserve.asia$important
+||thstats.com$important
+||truehits.in.th$important
+||truehits.net$important
+||yu0123456.com$important
+||zemanta.com$important
 
 ! Strictly block Google Ads and/or Tracking (YouTube Included)
 /generate_204$important,~document
@@ -629,6 +628,7 @@ zaapmak.com##iframe
 ||adservices.google.com$important
 ||doubleclick.net$important
 ||google-analytics.com$important
+||google-analytics.l.google.com$important
 ||googleadservices.com$important
 ||googlesyndication.com$important
 ||googletagmanager.com$important
@@ -989,6 +989,7 @@ zaapmak.com##iframe
 ||facebook.com/common/referer_frame.php$inline-script
 ||facebook.com/ego/$important
 ||facebook.com/ego/feed$important
+||facebook.com/feed/pivot/$xmlhttprequest
 ||facebook.com/feed/pivot/chaining$important
 ||facebook.com/feed/pivot/related_articles$important
 ||facebook.com/friends/center/suggestions$important
@@ -1190,7 +1191,7 @@ facebook.com##div[id^="dialog_"]:has(.dialog_buttons input[name="login"])
 facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_jsonp"]:has(a[href*="type=article_author_in_shared_link"])
 facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:has(.fbInternPreview)
-facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/?"])
+facebook.com##div[id^="hyperfeed_story_id"]:has(a[href*="/friends/requests/"])
 facebook.com##div[id^="hyperfeed_story_id"]:has(a[href="https://www.facebook.com/zuck"])
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=group_top_stories_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=psym_feed"]))
@@ -1213,13 +1214,13 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored.1"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/groups/?ref=category_discover_landing"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div a[href*="origin=feed_pyml"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div:has(a[href*="origin=feed_pyml"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[id^="u_0_"] table:has(td a[href^="/profilepicframes/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
@@ -1228,7 +1229,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea):has(.scrollAreaColumn div[data-autoid])
+m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root div a.sub[href*="?sk=h_nor"]
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="/ads/create/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="/friends/center/suggestions/"])
