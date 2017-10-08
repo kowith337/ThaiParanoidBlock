@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201710062329
+! Version: 201710081307
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1211,6 +1211,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(iframe[src^="/xti.php?"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
@@ -1218,13 +1219,14 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="instagram.com"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//section//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(.scrollArea div[data-sigil="ego-auto-pager"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(a[data-uri*="is_sponsored=1"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(div[data-sigil="egoScroller"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href*="/saved/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
 youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
+! m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 
 ! Other sites (This use for improve accuracy of DOM hiding)
 4toom.com##.single .content div:has(.adsbygoogle)
