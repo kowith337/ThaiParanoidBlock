@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201710081319
+! Version: 201710092109
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -656,6 +656,7 @@ zaapmak.com##iframe
 ||cnhv.co$important
 ||coin-hive.com$important
 ||coinhive.com$important
+||crypto-loot.com$important
 ||edgemesh.com$important
 ||edgeno.de$important
 ||gus.host$important
@@ -664,7 +665,9 @@ zaapmak.com##iframe
 ||lmodr.biz$important
 ||minecrunch.co$important
 ||minemytraffic.com$important
+||ppoi.org$important
 ||pr0gramm.com$important
+||projectpoi.com$important
 
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance
@@ -775,6 +778,7 @@ zaapmak.com##iframe
 ||gogameportal.com$important
 ||gw2cloud.com$important
 ||halocell.com$important
+||hayhaa.com$important
 ||hito.co.vu$important
 ||horoworld.com$important
 ||house365.com$important
