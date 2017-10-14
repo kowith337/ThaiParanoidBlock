@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201710092109
+! Version: 201710142114
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1225,8 +1225,6 @@ facebook.com##div[id^="hyperfeed_story_id"]:if(span a:has-text(/Sponsored/))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
 facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory"]
-facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
-facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm:if(div .uiList:has(li a[href^="/commerce/products/"]))
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"]:if(div ul.uiList:has(li[data-ft*="ego_id"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###friends_center_main div:if(table tr:has(td a[href*="pymk_funnel_data"]))
@@ -1272,6 +1270,8 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(footer a[href
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(span[data-sigil="pixelContainer"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
 youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
+! facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
+! facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
 ! m.facebook.com,mobile.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"])
 
 ! Other sites (This use for improve accuracy of DOM hiding)
