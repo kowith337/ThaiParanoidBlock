@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201710142111
+! Version: 201710222251
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1195,6 +1195,7 @@ facebook.com##div[id^="hyperfeed_story_id"]:if(span a:has-text(/Sponsored/))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
 facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory"]
+github.com##.js-notice:if(.js-dismiss)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
@@ -1215,6 +1216,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:has(
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
