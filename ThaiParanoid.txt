@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block
-! Version: 201710222251
+! Version: 201710232135
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1170,7 +1170,9 @@ youtube.com##ytd-consent-bump-renderer
 ! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0+ for multiple chaining]
+facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
+facebook.com###headerArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.loggedout_menubar div[data-testid="royal_login_form"] div:if(form[id="login_form"])
