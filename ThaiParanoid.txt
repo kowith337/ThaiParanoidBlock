@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201710232137
+! Version: 201710291618
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1147,6 +1147,7 @@ facebook.com###page_suggestions_on_liking
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_advertiser_panel
 facebook.com###pagelet_ego_pane
+facebook.com###pagelet_explore_feed div[role="article"] .fbUserStory span.uiLikePageButton
 facebook.com###pagelet_games_rhc
 facebook.com###pages_may_like_section
 facebook.com###permalink_related_videos_logged_out
