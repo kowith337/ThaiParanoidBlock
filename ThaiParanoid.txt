@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201710301216
+! Version: 201710301533
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1234,9 +1234,9 @@ github.com##.js-notice:if(.js-dismiss)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###friends_center_main div:if(table tr:has(td a[href*="pymk_funnel_data"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:if(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:if(a[href*="netgo_suggestion"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:if(div[id^="more_item_"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div[data-ft]:if(a[href*="netego_suggestion"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[id^="page_suggestion"]:has(div a[href*="&origin=mobile_page_browser&"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
