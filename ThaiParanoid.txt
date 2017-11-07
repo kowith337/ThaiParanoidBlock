@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201711032018
+! Version: 201711072311
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1209,6 +1209,8 @@ facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###fbSearchResultsBox:if(form.friendBrowserForm div:has(li a[href*="?fref=pymk"]))
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
 facebook.com###headerArea div:if-not(.clearfix):has(a[href*="/login/?"])
+facebook.com###pagelet_group_rhc .groupSkyAux div[class] > div[id][class]:if(.uiList:has(li[id^="suggested_member"]))
+facebook.com###pagelet_group_rhc .groupSkyAux div[class] > div[id][class]:if(div[class]:has(a[id^="group_rhc_see_more"]))
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###stream_pagelet div.mvm:if(div:has(a[href*="?sk=h_nor"]))
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
@@ -1236,15 +1238,18 @@ facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
 facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory"]
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm:if(div .uiList:has(li a[href^="/commerce/products/"]))
+facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .userContentWrapper .mtm .mtm:if(ul.uiList:has(a[href*="/services"]))
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"]:if(div ul.uiList:has(li[data-ft*="ego_id"]))
 github.com##.js-notice:if(.js-dismiss)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###friends_center_main div:if(table tr:has(td a[href*="pymk_funnel_data"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:if(div a[href*="/findgroups/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div div[data-ft]:if(div:has(a[href^="/qp/action/redirect/"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:if(div[id^="more_item_"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div[data-ft]:if(a[href*="netego_suggestion"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[id^="page_suggestion"]:has(div a[href*="&origin=mobile_page_browser&"]))
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table td > div:has-text(/^Suggested/):if(ul li:has(table))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
@@ -1264,6 +1269,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] tabl
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div div[data-store*="share_id"] .story_body_container div[data-ft] div:if(.scrollArea:has(a[href*="/services?"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div:if(.scrollArea:has(a[href^="/commerce/products/"]))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div[data-store*="share_id"] .story_body_container div div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###mJewelRequestsFlyoutBody div div:if(div[class] div[class]:has(div[data-pymk-id]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
