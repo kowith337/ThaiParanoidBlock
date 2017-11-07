@@ -1,6 +1,6 @@
 [uBlock Origin 1.12.5.100]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201711072311
+! Version: 201711072332
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -655,21 +655,43 @@ zaapmak.com##iframe
 ! - NoCoin List by hoshsadiq: https://github.com/hoshsadiq/adblock-nocoin-list
 ! - NoCoins Extension by Keraf: https://github.com/keraf/NoCoin/blob/master/src/blacklist.txt
 ! - EdgeMesh Issues: https://github.com/uBlockOrigin/uAssets/issues/659
+! - Toshiya's assets: https://github.com/toshiya44/myAssets/blob/3888657c1a5435bce3bff86986bc9b699de3dca7/filters-exp.txt#L571
+||adtech.de$important
+||azvjudwr.info$important
+||bf-ad.net$important
 ||cnhv.co$important
+||coin-have.com$important
 ||coin-hive.com$important
+||coinbase.com$important
+||coinblind.com$important
+||coinerra.com$important
 ||coinhive.com$important
+||coinnebula.com$important
+||coinser.in$important
+||coinzilla.io$important
+||contentpass.net$important
 ||crypto-loot.com$important
 ||edgemesh.com$important
 ||edgeno.de$important
 ||gus.host$important
+||jroqvbvw.info$important
 ||jsecoin.com$important
+||jyhfuqoh.info$important
+||kdowqlpt.info$important
 ||listat.biz$important
 ||lmodr.biz$important
+||mataharirama.xyz$important
 ||minecrunch.co$important
 ||minemytraffic.com$important
+||miner.pr0gramm.com$important
+||monero-miner.net$important
 ||ppoi.org$important
 ||pr0gramm.com$important
 ||projectpoi.com$important
+||reasedoper.pw$important
+||shekel.link$important
+||webmine.cz$important
+||xbasfbno.info$important
 
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance
@@ -700,6 +722,7 @@ zaapmak.com##iframe
 ||65.49.33.31$important
 ||124.158.4.91$important
 ||203.146.249.21$important
+||203.146.251.229$important
 ||203.151.206.102$important
 ||203.223.147.133$important
 ||203.223.159.245$important
@@ -709,6 +732,7 @@ zaapmak.com##iframe
 
 ! Base Domain
 ||1mov.co$important
+||321load.com$important
 ||5sys.com$important
 ||6988fa.com$important
 ||7banana.com$important
@@ -747,6 +771,7 @@ zaapmak.com##iframe
 ||clickmultimedia.co.th$important
 ||clickstk.com$important
 ||clip.vu$important
+||clubmmobile.com$important
 ||consentprt.dtac.co.th$important
 ||contentbox.stream$important
 ||contentdd.net$important
@@ -755,6 +780,7 @@ zaapmak.com##iframe
 ||ddzey.com$important
 ||deepbluetech.biz$important
 ||dlxxxvip.com$important
+||eggdigital.com$important
 ||eskimi.com$important
 ||espabit.net$important
 ||etracker.cc$important
@@ -777,6 +803,7 @@ zaapmak.com##iframe
 ||getcools.com$important
 ||gigth.com$important
 ||gizmobi.mobi$important
+||gktmobi.com$important
 ||globocom.co.in$important
 ||gmpmobi.com$important
 ||gogameportal.com$important
