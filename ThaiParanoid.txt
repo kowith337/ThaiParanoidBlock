@@ -1,6 +1,6 @@
-[uBlock Origin 1.12.5.100]
+[uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201711072332
+! Version: 201711092357
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1198,6 +1198,8 @@ facebook.com##.fbPhotoAdsCol
 facebook.com##.fbTimelineSideAds
 facebook.com##div[id^="pagelet_group"] form[action*="nux_type=create_page"]
 facebook.com##div[id^="pagelet_group"] form[action*="nux_type=member_suggesting_tags"]
+facebook.com##div[id^="pagelet_recommendation"]
+facebook.com##div[id^="sponsoredTickerStory"]
 facebook.com##div[role="feed"] .fbUserContent .FriendButton
 facebook.com##div[role="feed"] .fbUserContent .mtm .FriendButton
 facebook.com##div[role="feed"] .fbUserContent .mtm span a[ajaxify^="/ajax/follow/"]
@@ -1257,13 +1259,14 @@ facebook.com##div[id^="hyperfeed_story_id"] .mtm div[id^="u_jsonp"] div[id^="u_j
 facebook.com##div[id^="hyperfeed_story_id"] div[id^="u_fetchstream"]:if(div[role="article"] div[data-ft*="ego_id"]:has(a[href*="?ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(.fbInternPreview)
 facebook.com##div[id^="hyperfeed_story_id"]:if(a[href*="/friends/requests/"])
+facebook.com##div[id^="hyperfeed_story_id"]:if(a[href*="[is_sponsored]=1"])
+facebook.com##div[id^="hyperfeed_story_id"]:if(a[href*="is_sponsored=1"])
 facebook.com##div[id^="hyperfeed_story_id"]:if(a[href="https://www.facebook.com/zuck"])
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=group_top_stories_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(div[data-ft*="ego_id"]:has(a[href*="ref=psym_feed"]))
 facebook.com##div[id^="hyperfeed_story_id"]:if(span a:has-text(/Sponsored/))
-facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]"])
-facebook.com##div[id^="pagelet_recommendation"]
-facebook.com##div[id^="sponsoredTickerStory"]
+facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="[is_sponsored]=1"])
+facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="is_sponsored=1"])
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm:if(div .uiList:has(li a[href^="/commerce/products/"]))
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .userContentWrapper .mtm .mtm:if(ul.uiList:has(a[href*="/services"]))
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"]:if(div ul.uiList:has(li[data-ft*="ego_id"]))
@@ -1278,14 +1281,15 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div[data-ft]:if(a[
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[id^="page_suggestion"]:has(div a[href*="&origin=mobile_page_browser&"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table td > div:has-text(/^Suggested/):if(ul li:has(table))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft*="is_sponsored"]:if(a[href*="is_sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:if(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(a[href*="[is_sponsored]=1"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(a[href*="is_sponsored=1"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(div a[href*="/groups/?ref=category_discover_landing"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(table td div:has(a[href*="origin=feed_pyml"]))
@@ -1294,6 +1298,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] table[role="presentation"]:has(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div div[data-store*="share_id"] .story_body_container div[data-ft] div:if(.scrollArea:has(a[href*="/services?"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div[data-store*="share_id"] .story_body_container div div:if(.scrollArea:has(a[href^="/commerce/products/"]))
@@ -1302,18 +1307,21 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com###mJewelRequestsFlyoutBody
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root div a.sub[href*="?sk=h_nor"]
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="/ads/create/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="/friends/center/suggestions/"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=124024574287414"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="app_id=1728807357362356"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="appcenter/124024574287414"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="freebasics.com"])
-m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:has(a[href*="instagram.com"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="/ads/create/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="/friends/center/suggestions/"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=124024574287414"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=1728807357362356"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="appcenter/124024574287414"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="freebasics.com"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="instagram.com"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.storyStream section article:if(footer:has(a[data-ajaxify-href^="/qp/action/redirect/?"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com##:xpath(//section//article[.//header//div//span/text()="Sponsored"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea div[data-sigil="ego-auto-pager"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(.scrollArea):has(.scrollAreaBody div[data-ft*="ego_id"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(a[data-uri*="[is_sponsored]=1"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(a[data-uri*="is_sponsored=1"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(a[href*="[is_sponsored]=1"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(a[href*="is_sponsored=1"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(div[data-sigil="egoScroller"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(footer a[href*="/friends/center/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(footer a[href*="/saved/"])
