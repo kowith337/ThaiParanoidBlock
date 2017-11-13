@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201711092357
+! Version: 201711132341
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -838,6 +838,7 @@ zaapmak.com##iframe
 ||mli.me$important
 ||mobgkt.com$important
 ||mobico.my$important
+||mobicute.com$important
 ||mobidevil.com$important
 ||mobifan.com$important
 ||mobifun4u.com$important
@@ -1183,6 +1184,7 @@ facebook.com###pagelet_advertiser_panel
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_explore_feed div[role="article"] .fbUserStory span.uiLikePageButton
 facebook.com###pagelet_games_rhc
+facebook.com###pagelet_main_column_personal #fbSuggestionsPlaceHolder
 facebook.com###pages_may_like_section
 facebook.com###permalink_related_videos_logged_out
 facebook.com###video_permalink_related_pagelet
@@ -1304,6 +1306,7 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section articl
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div[data-store*="share_id"] .story_body_container div div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###mJewelRequestsFlyoutBody div div:if(div[class] div[class]:has(div[data-pymk-id]))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###msite-pages-header-contents div[style*="transparent none repeat scroll"]:if(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root div a.sub[href*="?sk=h_nor"]
