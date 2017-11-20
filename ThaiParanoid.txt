@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201711132320
+! Version: 201711202310
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -764,6 +764,7 @@ zaapmak.com##iframe
 ||centili.com$important
 ||cheesemobile.com$important
 ||cherryzone.com.ph$important
+||chickcell.com$important
 ||chickyclub.net$important
 ||chz.mobi$important
 ||ckwizard.com$important
@@ -829,6 +830,7 @@ zaapmak.com##iframe
 ||ltvperf.com$important
 ||lustzy.com$important
 ||m.arco.co.th$important
+||m228.net$important
 ||ma3.co$important
 ||maejaow.com$important
 ||magikmobile.mobi$important
@@ -855,6 +857,7 @@ zaapmak.com##iframe
 ||mobiz.guru$important
 ||mobl-apps.com$important
 ||mobplanner.com$important
+||mocomecome.com$important
 ||momoga.com$important
 ||mono-mobile.com$important
 ||monogame.in.th$important
@@ -874,6 +877,7 @@ zaapmak.com##iframe
 ||picwall.mobi$important
 ||playclub.me$important
 ||playplay.in.th$important
+||puteez.com$important
 ||raptorads.net$important
 ||rbt.getcools.com$important
 ||rockymobi.com$important
@@ -978,6 +982,7 @@ zaapmak.com##iframe
 ||kledr.com$document
 ||ko-anime.com$document
 ||koi-anime.com$document
+||kono-anime.com$document
 ||kuma-anime.com$document
 ||m9anime.com$document
 ||maxmeadcartoons.net$document
