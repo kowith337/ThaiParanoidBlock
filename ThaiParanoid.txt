@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201711222152
+! Version: 201711282248
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -715,15 +715,18 @@ zaapmak.com##iframe
 ||wap.dtac.co.th$important
 
 ! IP Address
+||10.104.143.133$important
 ||27.100.44.214$important
 ||27.254.82.82$important
 ||43.231.124.161$important
-||52.220.167.186$important
 ||52.76.242.20$important
+||52.220.167.186$important
+||54.169.240.216$important
 ||56.76.86.177$important
 ||58.181.206.44$important
 ||65.49.33.31$important
 ||124.158.4.91$important
+||139.162.57.169$important
 ||203.146.249.21$important
 ||203.146.251.229$important
 ||203.151.206.102$important
@@ -758,6 +761,7 @@ zaapmak.com##iframe
 ||aplaydigital.com$important
 ||appsdorado.com$important
 ||appsilike.mobi$important
+||atmail.nl$important
 ||b-qq.com$important
 ||beezzi.com$important
 ||bigolives.tv$important
@@ -783,6 +787,7 @@ zaapmak.com##iframe
 ||datapremium.$important
 ||ddzey.com$important
 ||deepbluetech.biz$important
+||dindo.co.th$important
 ||dlxxxvip.com$important
 ||eggdigital.com$important
 ||eskimi.com$important
@@ -849,6 +854,7 @@ zaapmak.com##iframe
 ||mobifun4u.com$important
 ||mobifunz.com$important
 ||mobihibiz.com$important
+||mobilart.in$important
 ||mobileacademy.com$important
 ||mobilegameblast.com$important
 ||mobilejmp.com$important
@@ -870,8 +876,10 @@ zaapmak.com##iframe
 ||n-mobile.net$important
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
+||neomobilesestatic.azureedge.net$important
 ||newsplus.me$important
 ||nmpcenter.com$important
+||nowportal.net$important
 ||optsearch.net$important
 ||pages.mli.me$important
 ||panshimob.com$important
@@ -912,6 +920,7 @@ zaapmak.com##iframe
 ||thmobi.com$important
 ||thumbr.com$important
 ||thumbsms.com$important
+||tomyamclub.com$important
 ||toon-land.com$important
 ||trackmeplease.com$important
 ||tweetsms.com.my$important
