@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712022009
+! Version: 201712051048
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -733,6 +733,7 @@ zaapmak.com##iframe
 ||124.158.4.91$important
 ||139.162.57.169$important
 ||202.9.104.118$important
+||203.146.208.145$important
 ||203.146.249.21$important
 ||203.146.251.229$important
 ||203.151.206.102$important
@@ -764,6 +765,7 @@ zaapmak.com##iframe
 ||alchemy.n-d.bz$important
 ||alpha-mobi.com$important
 ||amkomobile.com$important
+||amkoonline.com$important
 ||androidappsfree.mobi$important
 ||anolog.mobi$important
 ||aplaydigital.com$important
@@ -891,6 +893,7 @@ zaapmak.com##iframe
 ||movilfun4u.com$important
 ||mp3-shared.com$important
 ||mtouche.com$important
+||mygirlshow.com$important
 ||myscoobi.com$important
 ||n-content.com$important
 ||n-mobile.net$important
@@ -920,6 +923,7 @@ zaapmak.com##iframe
 ||sanookde.com$important
 ||seaman2u.com$important
 ||sexy-here.com$important
+||shemaroo.com$important
 ||shoopadoo.com$important
 ||skype4mobile.com$important
 ||smsgateway.cc$important
@@ -967,6 +971,7 @@ zaapmak.com##iframe
 ||waphub.mobi$important
 ||waplog.com$important
 ||wifistudy.com$important
+||worldgamespn.mobi$important
 ||youlaugh.online$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
