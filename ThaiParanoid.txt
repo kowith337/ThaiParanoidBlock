@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712051048
+! Version: 201712062330
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -823,8 +823,10 @@ zaapmak.com##iframe
 ||funsexy.info$important
 ||funspaz.com$important
 ||funster.mobi$important
+||funzone.mobi$important
 ||g.zm.my$important
 ||gamepanda.me$important
+||gamezzone.me$important
 ||gangzaa.net$important
 ||getclick.mobi$important
 ||getcools.com$important
@@ -912,6 +914,7 @@ zaapmak.com##iframe
 ||playinvaders.com$important
 ||playplay.in.th$important
 ||puteez.com$important
+||radio.in.th$important
 ||raptorads.net$important
 ||rbt.getcools.com$important
 ||redporntube.xyz$important
@@ -926,6 +929,7 @@ zaapmak.com##iframe
 ||shemaroo.com$important
 ||shoopadoo.com$important
 ||skype4mobile.com$important
+||smilesms.com$important
 ||smsgateway.cc$important
 ||snapp.asia$important
 ||sosmob.mobi$important
@@ -972,6 +976,7 @@ zaapmak.com##iframe
 ||waplog.com$important
 ||wifistudy.com$important
 ||worldgamespn.mobi$important
+||xn--22c0bau8bor5ac4k7cc6g8a.net$important
 ||youlaugh.online$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
