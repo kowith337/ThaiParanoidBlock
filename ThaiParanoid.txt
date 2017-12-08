@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201712062333
+! Version: 201712082028
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -813,6 +813,7 @@ zaapmak.com##iframe
 ||findgit.com$important
 ||fly2.me$important
 ||fly2me.com$important
+||focusonone.cc$important
 ||freezone.mobi$important
 ||full-funny.com$important
 ||fun-clix.com$important
@@ -837,6 +838,7 @@ zaapmak.com##iframe
 ||gogameportal.com$important
 ||gw2cloud.com$important
 ||halocell.com$important
+||handysms.com$important
 ||hayhaa.com$important
 ||hito.co.vu$important
 ||horoworld.com$important
@@ -844,6 +846,7 @@ zaapmak.com##iframe
 ||hypermobiworld.com$important
 ||i-link.co$important
 ||iamzaa.com$important
+||ilovemobi.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
 ||iqwmxn.com$important
@@ -967,6 +970,7 @@ zaapmak.com##iframe
 ||videowap.net$important
 ||vipgames.me$important
 ||viral-mix.com$important
+||vovivooo.com$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
 ||wap.getcools.com$important
