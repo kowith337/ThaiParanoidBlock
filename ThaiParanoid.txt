@@ -1,11 +1,11 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201712082340
+! Version: 201712112044
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
 
-! - - - - - - - - - - Generic filters section (aka. DOM Element Hiding) - - - - - - - - - - !
+! ------------------------------------------ Generic filters section (aka. DOM Element Hiding) ------------------------------------------ !
 
 ! Shared filter rules (from ThaiAntiForceLike)
 ###check-also-box
@@ -29,7 +29,7 @@
 ##.popup-like-box
 ##.popup-like-box-backdrop
 
-! Element filter rules (merge with ThaiAntiForceLike)
+! Element filter rules (merged with ThaiAntiForceLike)
 akibatan.com##.td-logo-wrap-full
 animeranku.com###check-also-box
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
@@ -51,7 +51,7 @@ clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
 coregamerth.com###check-also-box
-coregamerth.com##.theiaStickySidebar #ads300_250-widget-2
+coregamerth.com##.theiaStickySidebar div[id^="ads300_250"]
 disqus.com##div[class^="login-overlay"]
 dodeden.com###facebookpopup-fanback
 dodeden.com###intro
@@ -309,7 +309,7 @@ worldcosplay.net##.registration-modal-bg
 yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
-! - - - - - - - - - - Network filters section - - - - - - - - - - !
+! ------------------------------------------------------- Network filters section ------------------------------------------------------- !
 
 ! Shared plugins path
 /easy-facebook-likebox
@@ -323,7 +323,7 @@ zaapmak.com##iframe
 /new-facebook-popup-likebox-responsive
 /ud-social
 
-! Inside first party, such as self-hosted ads, script function that try to suggest or force users to follow brand.
+! Inside first party, such as self-hosted ads, plugins, script function that try to suggest or force users to follow brand on SNS services.
 ||4toom.com/*/modal-dialog/*
 ||anitime.in.th/*/easy-facebook-likebox/*
 ||araideewa.com/*/facebook-fanbox-popup/*
@@ -434,9 +434,8 @@ zaapmak.com##iframe
 ||tigthai.com/js/popup_facebook.js$script
 
 ! Block ALL 3P for specific domain(s)
-! 1. Due to someone posted on Pantip about visiting Thairath website and get
-!    auto subscribe content services without consent, I've looked that sites
-!    and see too many untrusted third parties domain (ads, tracking, malvertising, ...),
+! 1. Due to someone posted on Pantip about visiting Thairath website and get auto subscribe content services without consent,
+!    I've looked that sites and see too many untrusted third parties domain (ads, tracking, malvertising, ...),
 !    so I decide to block all of them and allow only domains that probably needed.
 ||$third-party,domain=nationtv.tv
 ||$third-party,domain=thairath.co.th
@@ -468,7 +467,7 @@ zaapmak.com##iframe
 ||webtoons.com/js/lib/*_logger$important
 ||webtoons.com/js/lib/gak$important
 
-! - - - - - - - - - - Domain level block - - - - - - - - - - !
+! --------------------------------------------------------- Domain level block ---------------------------------------------------------- !
 
 ! 3P share button
 ||addthis.com$important
@@ -700,12 +699,11 @@ zaapmak.com##iframe
 ||xbasfbno.info$important
 
 ! Mobile Badvertisers
-! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance
-!          for mobile cellphone users in Thailand, because visiting those domain or specific page
-!          will also sent request to mobile operator to subscribe useless content services
-!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content
-!          such as download games, videos, ringtones or they never sent anything to you but simply charge 
-!          service fee or deduct your calling balance everyday, every week or every month.
+! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand,
+!          because visiting those domain or specific page will also sent request to mobile operator to subscribe useless content services
+!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content, such as download games, videos,
+!          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
+!          every month, or every each messages that they've sent to you...
 
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
@@ -713,7 +711,9 @@ zaapmak.com##iframe
 ||comenu.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
-||ss*.mobilelife.co.th$important
+||ss1.mobilelife.co.th$important
+||ss2.mobilelife.co.th$important
+||ss3.mobilelife.co.th$important
 ||vas.dtac.co.th$important
 ||wap.dtac.co.th$important
 
@@ -746,6 +746,7 @@ zaapmak.com##iframe
 ||181818.com.my$important
 ||1mov.co$important
 ||321load.com$important
+||5rio.com$important
 ||5sys.com$important
 ||6988fa.com$important
 ||7banana.com$important
@@ -795,6 +796,7 @@ zaapmak.com##iframe
 ||contentbox.stream$important
 ||contentdd.net$important
 ||coolzee.net$important
+||ctrackz.net$important
 ||cutties.net$important
 ||d22ndsbwwggzum.cloudfront.net$important
 ||datapremium.$important
@@ -839,6 +841,7 @@ zaapmak.com##iframe
 ||globocom.co.in$important
 ||gmpmobi.com$important
 ||gogameportal.com$important
+||gotd.mobi$important
 ||gw2cloud.com$important
 ||halocell.com$important
 ||handysms.com$important
@@ -854,6 +857,7 @@ zaapmak.com##iframe
 ||instantbabes.mobi$important
 ||iqwmxn.com$important
 ||isport.co.th$important
+||izenmobi.com$important
 ||jmtt.co.th$important
 ||kangped.com$important
 ||kodfin.com$important
@@ -989,21 +993,19 @@ zaapmak.com##iframe
 ||zigifun.com$important
 ||zomobie.com$important
 
-! - - - - - - - - - - Other lists combination - - - - - - - - - - !
+! ------------------------------------------------------- Other lists combination ------------------------------------------------------- !
 
-! - - - - - Anime Leeching Lists - - - - - !
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Anime Leeching List - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
 
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
 
-! These list below are well-know illegal streaming sites (mostly in Thailand)
-! that steal the non-profit works from various fansubs and hosts on their sites,
-! take profits and revenue for themselves from advertisement services.
-! (e.g. insert banner ads, popunder ads, add many tracking and monetisation services)
-! This list will use $document tag for strict blocking to prevent visiting those sites,
-! however, you can turn off strict blocking (temporary or permanently, as your choice)
-! if you still want to visit them.
+! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various fansubs, also
+! publish retail products/contents on their site (even it's unauthorized by local license), they earn profits and revenue from ad services.
+! *e.g. insert banner ads, popunder ads, coin mining, add many tracking and monetisation services, ...
+! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
+! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
 
 ||1000toon.blogspot.com$document
 ||am4th.com$document
@@ -1059,14 +1061,12 @@ zaapmak.com##iframe
 ||wztoon.com$document
 ||zone-anime.net$document
 
-! - - - - - End of Anime Leeching Lists - - - - - !
-
-! - - - - - - - - - - First party service (Mostly Facebook) - - - - - - - - - - !
+! ------------------------------------------------ First party service (Mostly Facebook) ------------------------------------------------ !
 
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
-! Why? Read! Blognone (Thai) > https://www.blognone.com/node/81520
-!            WSJ (Eng) > http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
-!            The Verge (Eng) > http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
+! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
+!              WSJ (Eng): http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
+!              The Verge (Eng): http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
 ||facebook.com$third-party,domain=~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
 ||facebook.net$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
 ||instagram.com$third-party,domain=~facebook.com|~messenger.com
@@ -1166,10 +1166,7 @@ zaapmak.com##iframe
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/jsbin/www-pagead-id$important
-
-! Unsure rules
-! ||twitter.com/i/trends$important
-! // Avoid disable "Trends" if you still need it. //
+! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
 
 ! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
 ! to let Facebook retrieve information about advert prefs, and let you properly manage them without
@@ -1291,7 +1288,7 @@ twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##ytd-consent-bump-renderer
 
-! - - - - - - - - - - uBlock0 section - - - - - - - - - - !
+! ----------------------------------------------------------- uBlock0 section ----------------------------------------------------------- !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0+ for multiple chaining]
 facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
@@ -1478,7 +1475,7 @@ thaimobilecenter.com###exp-normal:if(a[href*="/ad_click"])
 thetechr.com##.rev-block:if(.adsbygoogle)
 thisisgamethailand.com##.module .item:if(a[href*="/index.php?/stats/clickAdd"])
 
-! [Firefox-based Only!] Specific inline-script hiding
+! [Firefox 56 and Below + uBO Legacy Only!] Specific inline-script hiding
 autocar.in.th##script:contains(makingdifferent_ppopup)
 boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
@@ -1509,7 +1506,7 @@ teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
 
-! [uBlock0 Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
+! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
 exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
 exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
 exteen.com##script:inject(abort-on-property-write.js, window._taboola)
@@ -1529,8 +1526,7 @@ pantip.com##script:inject(abort-on-property-write.js, googletag)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
 webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 
-! Extra
-! To load disqus comment on-demand.
+! [Extra] To load disqus comment on-demand.
 ! Followed from gorhill's gist.: https://gist.github.com/gorhill/ef1b62d606473c68d524
 ||disqus.com/forums/*/embed.js$script,redirect=disqus.com/forums/*/embed.js
 ||disqus.com/embed.js$script,redirect=disqus.com/embed.js
