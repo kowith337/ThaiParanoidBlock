@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201712142123
+! Version: 201712142239
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1108,6 +1108,9 @@ zaapmak.com##iframe
 ||facebook.com/ads/
 ||facebook.com/ads/ad_choices$important
 ||facebook.com/ads/growth$important
+||facebook.com/ads/manager/ajax/check_tip_qe$important
+||facebook.com/ads/manager/ajax/list_tips$important
+||facebook.com/ads/manager/ajax/megaphone_story$important
 ||facebook.com/ads/qe/$important
 ||facebook.com/ai.php$subdocument,important
 ||facebook.com/ajax/ads/$important
@@ -1152,6 +1155,7 @@ zaapmak.com##iframe
 ||facebook.com/pubcontent/related_video$important
 ||facebook.com/pubcontent/suggestions$important
 ||facebook.com/pymk/funnel_logging$important
+||facebook.com/relay/bootload/?component=AdsCMChromeRenderer$important
 ||facebook.com/requests/interaction_history_logging$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/sem_pixel$important
@@ -1165,12 +1169,14 @@ zaapmak.com##iframe
 ||facebook.net/*/xfbml.ad.js$script,important
 ||fbcdn.net/*?*facebook.com%2Fads%2F$important
 ||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
+||fbcdn.net/hads-ak-*$important
 ||google.*/jsapi?autoload$domain=youtube.com|youtube-nocookie.com,important
 ||google.*/pagead/$important
 ||google.*/promos$important
 ||google.*/uds/api/ads/$important
 ||google.*/uds/stats?$important
 ||googlevideo.com/videogoodput?
+||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
@@ -1197,6 +1203,10 @@ zaapmak.com##iframe
 ! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
 ! to let Facebook retrieve information about advert prefs, and let you properly manage them without
 ! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
+@@||facebook.com/ads/can_change_business_country_reason/?$domain=www.facebook.com
+@@||facebook.com/ads/can_change_currency_timezone_reason/?$domain=www.facebook.com
+@@||facebook.com/ads/manage/$domain=www.facebook.com
+@@||facebook.com/ads/manager/$domain=www.facebook.com
 @@||facebook.com/ads/preferences/ad_report/$xmlhttprequest
 @@||facebook.com/ads/preferences/advertiser_hideall$first-party
 @@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
@@ -1204,6 +1214,8 @@ zaapmak.com##iframe
 @@||facebook.com/ads/preferences/report$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/advertisers$xmlhttprequest,first-party
 @@||facebook.com/ads/profile/interests$xmlhttprequest,first-party
+@@||facebook.com/ads/tax_id_collection_config/?$domain=www.facebook.com
+@@||facebook.com/ads/viewer_permissions/?$domain=www.facebook.com
 @@||facebook.com/ajax/groups/mall/mall_post_menu.php$xmlhttprequest,first-party
 @@||facebook.com/feed/options_menu$xmlhttprequest,first-party
 @@||facebook.com/share/dialog/submit/$xmlhttprequest,first-party
@@ -1317,13 +1329,16 @@ youtube.com##ytd-consent-bump-renderer
 ! ----------------------------------------------------------- uBlock0 section ----------------------------------------------------------- !
 
 ! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0+ for multiple chaining]
+facebook.com###ads_preferences_desktop_root div[tabindex][role="button"] button[data-hover][data-tooltip-content="Add"]:if(span:has-text(Add))
 facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###fbSearchResultsBox:if(form.friendBrowserForm div:has(li a[href*="?fref=pymk"]))
+facebook.com###globalContainer .uiLayer[data-testid="undefined"] .uiContextualLayer div ul[role="menu"] li:if(a span div:has-text(/^Undo hiding ads/))
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
 facebook.com###headerArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###pagelet_group_rhc .groupSkyAux div[class] > div[id][class]:if(.uiList:has(li[id^="suggested_member"]))
 facebook.com###pagelet_group_rhc .groupSkyAux div[class] > div[id][class]:if(div[class]:has(a[id^="group_rhc_see_more"]))
 facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
+facebook.com###profile_page_insights_hubble div > table td div:has-text(Suggested Pages to Watch)
 facebook.com###stream_pagelet div.mvm:if(div:has(a[href*="?sk=h_nor"]))
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
 facebook.com##.loggedout_menubar div[data-testid="royal_login_form"] div:if(form[id="login_form"])
