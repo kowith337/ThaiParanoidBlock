@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712142040
+! Version: 201712142122
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -875,6 +875,7 @@ zaapmak.com##iframe
 ||kangped.com$important
 ||kodfin.com$important
 ||kodporno.com$important
+||lalamobi.com$important
 ||larnload.com$important
 ||letgomobile.com$important
 ||lovehoro.space$important
@@ -975,6 +976,7 @@ zaapmak.com##iframe
 ||surfto.mobi$important
 ||symbioticinfo.com$important
 ||tdedlove.com$important
+||thai-iphone.com$important
 ||thaifun4u.com$important
 ||thaiza.com$important
 ||thepind.mobi$important
@@ -994,6 +996,7 @@ zaapmak.com##iframe
 ||vcgbtlktbagb.com$important
 ||vdocutesexy.mobi$important
 ||vedaapp.com$important
+||veoo.com$important
 ||video-wrld.com$important
 ||videopaper.win$important
 ||videowap.net$important
