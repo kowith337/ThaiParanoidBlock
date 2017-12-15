@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712142229
+! Version: 201712152324
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -709,6 +709,7 @@ zaapmak.com##iframe
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||ais.co.th/aisnow$domain=~ais.co.th|~mobilelife.co.th,important
+||ais.co.th/games/gameloftclub$important
 ||comenu.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
@@ -839,6 +840,7 @@ zaapmak.com##iframe
 ||funzone.mobi$important
 ||g.zm.my$important
 ||gameloft.co.th$important
+||gameloft.com$important
 ||gamepanda.me$important
 ||gamezzone.me$important
 ||gangzaa.net$important
