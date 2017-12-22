@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712211206
+! Version: 201712221033
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -705,6 +705,11 @@ zaapmak.com##iframe
 !          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content, such as download games, videos,
 !          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
 !          every month, or every each messages that they've sent to you...
+
+! Hiding hyperlink that beginning with sms/tel/wtai because it can directly call or sent sms to those services
+##a[href^="sms:"]
+##a[href^="tel:"]
+##a[href^="wtai:"]
 
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
