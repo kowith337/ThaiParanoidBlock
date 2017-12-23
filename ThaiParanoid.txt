@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712231858
+! Version: 201712232038
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -981,6 +981,7 @@ zaapmak.com##iframe
 ||shoopadoo.com$important
 ||skype4mobile.com$important
 ||smartoffer.site$important
+||smarttelebiz.com$important
 ||smilesms.com$important
 ||smsgateway.cc$important
 ||snapp.asia$important
@@ -990,6 +991,7 @@ zaapmak.com##iframe
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
+||stackpathdns.com$important
 ||stream-flix.mobi$important
 ||streamflix.mobi$important
 ||studiox-babes.com$important
