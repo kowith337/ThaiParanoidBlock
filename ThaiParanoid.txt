@@ -1,11 +1,11 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201712232048
+! Version: 201712251341
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
 
-! ------------------------------------------ Generic filters section (aka. DOM Element Hiding) ------------------------------------------ !
+! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
 
 ! Shared filter rules (from ThaiAntiForceLike)
 ###check-also-box
@@ -309,7 +309,7 @@ worldcosplay.net##.registration-modal-bg
 yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
-! ------------------------------------------------------- Network filters section ------------------------------------------------------- !
+! -------------------------------------------------- Network filters section -------------------------------------------------- !
 
 ! Shared plugins path
 /easy-facebook-likebox
@@ -467,7 +467,7 @@ zaapmak.com##iframe
 ||webtoons.com/js/lib/*_logger$important
 ||webtoons.com/js/lib/gak$important
 
-! --------------------------------------------------------- Domain level block ---------------------------------------------------------- !
+! ---------------------------------------------------- Domain level block ----------------------------------------------------- !
 
 ! 3P share button
 ||addthis.com$important
@@ -716,6 +716,7 @@ zaapmak.com##iframe
 ||ais.co.th/games/gameloftclub$important
 ||comenu.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||sdpwap.dtac.co.th$important
 ||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
@@ -725,6 +726,7 @@ zaapmak.com##iframe
 
 ! IP Address
 ||10.104.143.133$important
+||13.76.87.1$important
 ||27.100.44.214$important
 ||27.254.82.82$important
 ||43.231.124.161$important
@@ -737,7 +739,13 @@ zaapmak.com##iframe
 ||61.91.6.131$important
 ||65.49.33.31$important
 ||124.158.4.91$important
+||139.59.44.57$important
 ||139.162.57.169$important
+||162.243.33.148$important
+||162.243.73.231$important
+||162.243.217.139$important
+||192.241.180.55$important
+||192.241.249.228$important
 ||202.9.104.118$important
 ||203.146.208.145$important
 ||203.146.249.21$important
@@ -756,6 +764,8 @@ zaapmak.com##iframe
 ||1mov.co$important
 ||321load.com$important
 ||4mobilefunz.com$important
+||4v4jfe79erfxfu8z8.com$important
+||55555getcontent.com$important
 ||5rio.com$important
 ||5sys.com$important
 ||6988fa.com$important
@@ -766,13 +776,25 @@ zaapmak.com##iframe
 ||a.n-d.bz$important
 ||a1n.in$important
 ||a81.me$important
+||ab4hr.com$important
 ||achelous.mobi$important
 ||ad5network.com$important
+||addictiveads.com$important
 ||addlink.mobi$important
 ||adfries.net$important
 ||adfrigate.com$important
+||ads.gold$important
+||adsbtrk.com$important
+||adschemist.com$important
+||adsfast.com$important
+||adsmain.com$important
+||adzsx.pro$important
 ||affichaos.com$important
+||affmob.com$important
 ||affmoney.top$important
+||afftrack-data.com$important
+||afftrack.com$important
+||aielber.com$important
 ||alchemy.n-d.bz$important
 ||alpha-mobi.com$important
 ||amkomobile.com$important
@@ -782,15 +804,32 @@ zaapmak.com##iframe
 ||aplaydigital.com$important
 ||appsdorado.com$important
 ||appsilike.mobi$important
+||aptrk5.com$important
+||aragontrack.com$important
+||arco.co.th$important
 ||at2010.net$important
+||atas.io$important
 ||atmail.nl$important
+||awolf.mobi$important
 ||b-qq.com$important
+||b3st0ff3rs.com$important
 ||beezzi.com$important
+||bestmobiworld.com$important
 ||bigolives.tv$important
+||billmscurlrev.com$important
+||billyaffcontent.com$important
+||bldtrax.com$important
 ||bmobil.net$important
 ||breathing-love.com$important
+||brucelead.com$important
+||brvaffs.com$important
+||btrkpro.com$important
+||buddycode.net$important
+||bulkhentai.com$important
+||bzadx.pro$important
 ||callingsticker.com$important
 ||cdnfiber.com$important
+||celeryleek.com$important
 ||centili.com$important
 ||cheesemobile.com$important
 ||cherryzone.com.ph$important
@@ -798,6 +837,7 @@ zaapmak.com##iframe
 ||chickyclub.net$important
 ||chilliclubs.com$important
 ||chocoboard.com$important
+||chupa.mobi$important
 ||chz.mobi$important
 ||ckwizard.com$important
 ||clausiafze.com$important
@@ -808,19 +848,29 @@ zaapmak.com##iframe
 ||clubmmobile.com$important
 ||clubxzone.com$important
 ||consentprt.dtac.co.th$important
+||consested-opplyield.com$important
 ||contentbox.stream$important
 ||contentdd.net$important
+||contentfall.com$important
 ||cool4mob.com$important
 ||coolzee.net$important
+||cpactions.com$important
+||cpgnrotationurl.com$important
+||cpitraffic.com$important
 ||ctrackz.net$important
 ||cuteclub.tv$important
 ||cutties.net$important
+||cypher-sys.com$important
 ||d22ndsbwwggzum.cloudfront.net$important
+||damneddevastator.com$important
 ||datapremium.$important
 ||datinggirls.info$important
 ||ddzey.com$important
 ||deepbluetech.biz$important
+||despiteracy.com$important
 ||digi.com.my$important
+||digitalmerkat.com$important
+||digitalngo.com$important
 ||dindo.co.th$important
 ||dlxxxvip.com$important
 ||downloadhub.me$important
@@ -829,13 +879,17 @@ zaapmak.com##iframe
 ||eskimi.com$important
 ||espabit.net$important
 ||etracker.cc$important
+||exprtmb.com$important
 ||facabooks.com$important
 ||fblives.net$important
 ||findgit.com$important
 ||fly2.me$important
 ||fly2me.com$important
 ||flybi.store$important
+||flyrlk.com$important
 ||focusonone.cc$important
+||formulawire.com$important
+||free8888content.com$important
 ||freezone.mobi$important
 ||full-funny.com$important
 ||fun-clix.com$important
@@ -848,12 +902,16 @@ zaapmak.com##iframe
 ||funspaz.com$important
 ||funster.mobi$important
 ||funzone.mobi$important
+||fusetracking.com$important
 ||g.zm.my$important
+||gadmobe.com$important
 ||gameloft.co.th$important
 ||gameloft.com$important
 ||gamepanda.me$important
+||gamescentreom.com$important
 ||gameziz.com$important
 ||gamezzone.me$important
+||gamzones.com$important
 ||gangzaa.net$important
 ||getclick.mobi$important
 ||getcools.com$important
@@ -863,22 +921,30 @@ zaapmak.com##iframe
 ||glimline.com$important
 ||globocom.co.in$important
 ||gmpmobi.com$important
+||go2affise.com$important
 ||gogameportal.com$important
 ||goohd.tv$important
 ||gotd.mobi$important
 ||grabmobitraffic.com$important
+||grandmobi.net$important
 ||gw2cloud.com$important
 ||halocell.com$important
 ||handysms.com$important
+||havfun.mobi$important
 ||hayhaa.com$important
+||hclips.net$important
+||hfa.mobi$important
 ||hito.co.vu$important
 ||horoworld.com$important
 ||house365.com$important
+||hurvewa.com$important
 ||hypermobiworld.com$important
 ||hyptas.com$important
 ||i-link.co$important
 ||iamzaa.com$important
 ||ilovemobi.com$important
+||imgamma.com$important
+||imzog.com$important
 ||innnews.co.th$important
 ||instantbabes.mobi$important
 ||iqwmxn.com$important
@@ -886,26 +952,34 @@ zaapmak.com##iframe
 ||izenmobi.com$important
 ||jibhd.com$important
 ||jmtt.co.th$important
+||jtsws.com$important
 ||kaka-games.com$important
 ||kangped.com$important
 ||kodfin.com$important
 ||kodporno.com$important
 ||lalamobi.com$important
 ||larnload.com$important
+||leadzuaf.com$important
 ||letgomobile.com$important
+||link-boost.com$important
+||linkbooster.xyz$important
+||linkingclicks.com$important
 ||lovehoro.space$important
 ||ltvperf.com$important
+||lucky6lucky.club$important
 ||lustzy.com$important
-||m.arco.co.th$important
 ||m228.net$important
 ||ma3.co$important
 ||maejaow.com$important
 ||magikmobile.mobi$important
 ||mastermovie-hd.mobi$important
+||maxforecast.com$important
 ||may91.vn$important
+||mayrondigital.com$important
 ||mcommsg.com$important
 ||mexcomm.net$important
 ||mfunz.mobi$important
+||mktrack.com$important
 ||mli.me$important
 ||mobgkt.com$important
 ||mobico.my$important
@@ -916,11 +990,17 @@ zaapmak.com##iframe
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobilart.in$important
+||mobile-link.today$important
 ||mobile.mthai.com$important
 ||mobileacademy.com$important
+||mobilecontents.mobi$important
 ||mobilegameblast.com$important
 ||mobilejmp.com$important
+||mobileth.net$important
+||mobilevol.com$important
+||mobillium.mobi$important
 ||mobindy.com$important
+||mobiprofit.com$important
 ||mobistos.com$important
 ||mobiteacher.com$important
 ||mobiteacher.me$important
@@ -928,16 +1008,23 @@ zaapmak.com##iframe
 ||mobixing.com$important
 ||mobiz.guru$important
 ||mobl-apps.com$important
+||mobopromo.biz$important
 ||mobplanner.com$important
+||mobplus.net$important
+||mobrain.xyz$important
+||mobusi.com$important
 ||mocomecome.com$important
 ||momoga.com$important
 ||momozaap.com$important
+||moneymak3rstrack.com$important
 ||mono-mobile.com$important
 ||monogame.in.th$important
 ||movilfun4u.com$important
 ||mp3-shared.com$important
 ||mtouche.com$important
+||mugforward.com$important
 ||mygirlshow.com$important
+||mynewrotationlink.com$important
 ||myscoobi.com$important
 ||n-content.com$important
 ||n-mobile.net$important
@@ -948,12 +1035,17 @@ zaapmak.com##iframe
 ||nmpcenter.com$important
 ||nowportal.net$important
 ||offergold.online$important
+||onlytopoffers.com$important
 ||optsearch.net$important
+||outputfx.com$important
 ||pages.mli.me$important
 ||panshimob.com$important
+||peak-serving.com$important
 ||peerfly.com$important
+||perfonspot.com$important
 ||phubbers.com$important
 ||picwall.mobi$important
+||pixeleads.com$important
 ||playclub.me$important
 ||playinvaders.com$important
 ||playplay.in.th$important
@@ -961,11 +1053,16 @@ zaapmak.com##iframe
 ||pluckyaff.com$important
 ||privatebay.tv$important
 ||privatewow.tv$important
+||pubmt.ch$important
 ||puteez.com$important
+||questionfly.com$important
 ||radio.in.th$important
 ||raptorads.net$important
 ||rbt.getcools.com$important
 ||redporntube.xyz$important
+||regaming.com$important
+||retail9.com$important
+||retail9ventures.com$important
 ||retromedya.com$important
 ||rockymobi.com$important
 ||rotationurls.com$important
@@ -974,11 +1071,16 @@ zaapmak.com##iframe
 ||sabai5555.com$important
 ||sabver.com$important
 ||sanookde.com$important
+||scattertraff.com$important
 ||seaman2u.com$important
+||sedapmeesiam.gold$important
 ||sexy-here.com$important
 ||shemaroo.com$important
 ||shoopadoo.com$important
+||shoutingnetwork.com$important
 ||skype4mobile.com$important
+||slimcdn.com$important
+||smartadurl.com$important
 ||smartoffer.site$important
 ||smarttelebiz.com$important
 ||smilesms.com$important
@@ -986,11 +1088,13 @@ zaapmak.com##iframe
 ||snapp.asia$important
 ||sosmob.mobi$important
 ||spak.me$important
+||sptslmtrafms.com$important
 ||ss1.mobilelife.co.th$important
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
 ||stackpathdns.com$important
+||startappservice.com$important
 ||stream-flix.mobi$important
 ||streamflix.mobi$important
 ||studiox-babes.com$important
@@ -998,6 +1102,8 @@ zaapmak.com##iframe
 ||sunnygames.club$important
 ||surfto.mobi$important
 ||symbioticinfo.com$important
+||t3mobileadvertising.xyz$important
+||tc-clicks.com$important
 ||tdedlove.com$important
 ||thai-iphone.com$important
 ||thai2mobi.com$important
@@ -1012,13 +1118,18 @@ zaapmak.com##iframe
 ||tomlekded.com$important
 ||tomyamclub.com$important
 ||toon-land.com$important
+||trackinit.com$important
 ||trackmeplease.com$important
+||traffikflow.com$important
+||trakkthisfor.info$important
 ||trend-tech.net$important
 ||tubecorporate.com$important
+||turbob.mobi$important
 ||tweetsms.com.my$important
 ||txtnation.com$important
 ||umobi.biz$important
 ||vassolution.com$important
+||vcdn.stream$important
 ||vcgbtlktbagb.com$important
 ||vdocutesexy.mobi$important
 ||vedaapp.com$important
@@ -1028,9 +1139,12 @@ zaapmak.com##iframe
 ||videowap.net$important
 ||vipgames.me$important
 ||viral-mix.com$important
+||voluumtrk.com$important
+||voluumtrk2.com$important
 ||vovivooo.com$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
+||vuclip.com$important
 ||vuclipgamesat.com$important
 ||wakau.in$important
 ||wap.getcools.com$important
@@ -1038,28 +1152,32 @@ zaapmak.com##iframe
 ||waphub.mobi$important
 ||waplog.com$important
 ||waremode.com$important
+||wathspap.com$important
 ||wealthclick.net$important
 ||wifistudy.com$important
+||wiseforwarding.com$important
 ||worldgamespn.mobi$important
 ||xn--22c0bau8bor5ac4k7cc6g8a.net$important
 ||xn--42c8cmgk9dvfyd.com$important
 ||youlaugh.online$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
+||yuqazate.com$important
 ||zigifun.com$important
+||zog.link$important
 ||zomobie.com$important
 
-! ------------------------------------------------------- Other lists combination ------------------------------------------------------- !
+! -------------------------------------------------- Other lists combination -------------------------------------------------- !
 
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Anime Leeching List - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! - - - - - - - - - - - - - - - - - - - - - - - - - - Anime Leeching List - - - - - - - - - - - - - - - - - - - - - - - - - - !
 
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
 
-! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various fansubs, also
-! publish retail products/contents on their site (even it's unauthorized by local license), they earn profits and revenue from ad services.
-! *e.g. insert banner ads, popunder ads, coin mining, add many tracking and monetisation services, ...
+! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from
+! various fansubs, also publish retail products/contents on their site (even it's unauthorized by local license), they
+! earn profits and revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)
 ! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
 ! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
 
@@ -1117,7 +1235,7 @@ zaapmak.com##iframe
 ||wztoon.com$document
 ||zone-anime.net$document
 
-! ------------------------------------------------ First party service (Mostly Facebook) ------------------------------------------------ !
+! ------------------------------------------- First party service (Mostly Facebook) ------------------------------------------- !
 
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
@@ -1230,9 +1348,9 @@ zaapmak.com##iframe
 ||youtube.com/yts/jsbin/www-pagead-id$important
 ! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
 
-! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests
-! to let Facebook retrieve information about advert prefs, and let you properly manage them without
-! getting error or auto refresh due to cannot sent xhr to perform delete preference out of your account.
+! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests to let Facebook retrieve
+! information about advert prefs, and let you properly manage them without getting error or auto refresh due to cannot sent xhr
+! to perform delete preference out of your account.
 @@||facebook.com/ads/can_change_business_country_reason/?$domain=www.facebook.com
 @@||facebook.com/ads/can_change_currency_timezone_reason/?$domain=www.facebook.com
 @@||facebook.com/ads/manage/$domain=www.facebook.com
@@ -1264,15 +1382,13 @@ zaapmak.com##iframe
 ||messenger.com/*/mark_seen.php$important
 ||messenger.com/*/typ.php$important
 
-! Give the warning if you're using Facebook on some cellular data provider
-! that can redirect to smartphone-focused site, not an actual version of it.
-! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version
-! but you get redirected to 'm.facebook.com' or 'mobile.facebook.com'
-! show the suggestion page to use Facebook under "Free Basics" campaign,
-! then forced you to use the likely native app version instead after you ignore that.
-! Note: After introduce of "Free Basics" was show and no matter you decide to use it or not,
-! but I don't know why it redirected to "h.facebook.com" under non-HTTPS? So, I will block it
-! until they change the redirection to use over HTTPS, or you need to use HTTPS Everywhere plugins.
+! Give the warning if you're using Facebook on some cellular data provider that can redirect to smartphone-focused site,
+! not an actual version of it!
+! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version, but you get redirected to
+! 'm.facebook.com' or 'mobile.facebook.com' then show the suggestion page to use Facebook under "Free Basics" campaign,
+! Note: I don't know why it redirected to "h.facebook.com" under non-HTTPS? first before bouncing back to "m.facebook.com"
+! or "mobile.facebook.com" ? so, I will block it until they change the redirection to use over HTTPS, or you need to use
+! HTTPS Everywhere plugins.
 |http://h.facebook.com$important
 ||facebook.com/zero/policy$document
 ||web.facebook.com$document,important
@@ -1286,14 +1402,14 @@ zaapmak.com##iframe
 ||internet.org$document,important
 
 ! [Super lightweight Facebook enhancement]
-! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine
-! without JavaScript, Inline script, iframe and third party resources.
+! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine without JavaScript,
+! Inline script, iframe and third party resources.
 ||$script,domain=mbasic.facebook.com
 ||$subdocument,domain=mbasic.facebook.com
 ||$inline-script,domain=mbasic.facebook.com
 ||$websocket,domain=mbasic.facebook.com
 
-! First party annoyance DOM - Generic
+! First party annoyance DOM | Generic
 facebook.com###GroupsRHCSuggestionSection
 facebook.com###fbpage_invite_audience_action
 facebook.com###fbpage_invite_audience_action_finch
@@ -1356,9 +1472,10 @@ twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##ytd-consent-bump-renderer
 
-! ----------------------------------------------------------- uBlock0 section ----------------------------------------------------------- !
+! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
 
-! First party services annoyance DOM - have the if/has(-text)/xpath procedural [Need 1.8.0+, but 1.10.0+ for multiple chaining]
+! First party services procedural DOM - contains if/has(-text)/xpath parameter
+! This need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
 facebook.com###ads_preferences_desktop_root div[tabindex][role="button"] button[data-hover][data-tooltip-content="Add"]:if(span:has-text(Add))
 facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
 facebook.com###fbSearchResultsBox:if(form.friendBrowserForm div:has(li a[href*="?fref=pymk"]))
@@ -1458,9 +1575,10 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(span[data-sigi
 youtube.com##.individual-feed li .branded-page-box:if(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
 ! facebook.com##div[id^="u_0_"]:if(div a[role="button"][href^="/login/?"])
 ! facebook.com##div[id^="u_0_"]:if(div a[role="button"][href^="/r.php?"])
-! m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(iframe[src^="/xti.php?"])
+! m.facebook.com,mobile.facebook.com,touch.facebook.com##article:if(iframe[src^="/xti.php?"]) // New ads code include 'xti.php' frames in every posts from pages
 
-! Other sites (This use for improve accuracy of DOM hiding)
+! Other sites
+! This use for improve accuracy of DOM hiding
 4toom.com##.single .content div:if(.adsbygoogle)
 aroundnews.net##.td-g-rec:if(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:if(iframe)
@@ -1546,7 +1664,8 @@ thaimobilecenter.com###exp-normal:if(a[href*="/ad_click"])
 thetechr.com##.rev-block:if(.adsbygoogle)
 thisisgamethailand.com##.module .item:if(a[href*="/index.php?/stats/clickAdd"])
 
-! [Firefox 56 and Below + uBO Legacy Only!] Specific inline-script hiding
+! Specific inline-script hiding
+! This work only Firefox version below than 56 + install legacy version of uBO
 autocar.in.th##script:contains(makingdifferent_ppopup)
 boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
