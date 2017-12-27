@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712251338
+! Version: 201712272004
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1477,14 +1477,14 @@ facebook.com##div[id^="hyperfeed_story_id"]:if(span a[href*="is_sponsored=1"])
 facebook.com##div[id^="pagelet_recommendation"]
 facebook.com##div[id^="sponsoredTickerStory"]
 github.com##.js-notice:if(.js-dismiss)
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:has(div a[href*="/findgroups/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:has(div[id^="more_item_"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:if(div a[href*="/findgroups/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:if(div[id^="more_item_"]:has(a[href^="/findfriends/browser/?"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:has(a[href^="/download.php"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
-m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:has(span a[href*="/boosted_post/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] > div > div:if(span a[href*="/boosted_post/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_post_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft] div:if(table a[href*="mbasic_feed_share_like_chaining"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[data-ft]:if(a[href*="[is_sponsored]=1"])
