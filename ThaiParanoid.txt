@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201712281326
+! Version: 201712291221
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -433,19 +433,6 @@ zaapmak.com##iframe
 ||techmoblog.com/tmb-advertise^$subdocument
 ||tigthai.com/js/popup_facebook.js$script
 
-! Block ALL 3P for specific domain(s)
-! 1. Due to someone posted on Pantip about visiting Thairath website and get auto subscribe content services without consent,
-!    I've looked that sites and see too many untrusted third parties domain (ads, tracking, malvertising, ...),
-!    so I decide to block all of them and allow only domains that probably needed.
-||$third-party,domain=nationtv.tv
-||$third-party,domain=thairath.co.th
-@@||brightcove.com$domain=nationtv.tv
-@@||dcs-digital.com$domain=nationtv.tv
-@@||jwpcdn.com$domain=thairath.co.th
-@@||jwplayer.com$domain=thairath.co.th
-@@||nationchannel.com$domain=nationtv.tv
-@@||youtube.com$domain=nationtv.tv|thairath.co.th
-
 ! Counter bad rules / Strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
@@ -494,9 +481,10 @@ zaapmak.com##iframe
 ||toptools100.com$important
 ||wisemana.com$important
 
-! Ads Server / Malvertising
+! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
 ||*adnow.com$important
 ||24x7th.com$important
+||accesstrade.in.th$important
 ||adasiaholdings.com$important
 ||adnow.com$important
 ||adok.asia$important
@@ -513,8 +501,15 @@ zaapmak.com##iframe
 ||adsniper.ru$important
 ||adsoptimal.com$important
 ||adtplatform.com$important
+||amung.us$important
+||anonymousdemographics.com$important
 ||app-measurement.com$important
 ||appsflyer.com$important
+||areyouahuman.com$important
+||atdmt.com$important
+||aviasales.ru$important
+||bluekai.com$important
+||btstatic.com$important
 ||bumq.com$important
 ||clickadu.com$important
 ||clicksgear.com$important
@@ -523,19 +518,34 @@ zaapmak.com##iframe
 ||crazyegg.com$important
 ||criteo.com$important
 ||criteo.net$important
+||crwdcntrl.net$important
+||csi.gstatic.com$important
 ||cxense.com$important
+||d-stats.com$important
+||dtscout.com$important
+||edgesuite.net$important
 ||effectivemeasure.net$important
 ||exdynsrv.com$important
 ||exoclick.com$important
 ||exosrv.com$important
+||eyeota.net$important
+||feedjit.com$important
 ||filadmir.site$important
 ||gammaplatform.com$important
+||gbotvisit.com$important
 ||gbox.sc$important
+||go2cloud.org$important
+||go2speed.org$important
+||heatmap.it$important
+||histats.com$important
 ||hotjar.com$important
 ||inmobi.com$important
 ||innity.com$important
 ||innity.net$important
+||inspectlet.com$important
 ||kiosked.com$important
+||luckyorange.com$important
+||m88.com$important
 ||moatads.com$important
 ||mtburn.com$important
 ||mtburn.jp$important
@@ -544,6 +554,7 @@ zaapmak.com##iframe
 ||nr-data.net$important
 ||nuffnang.co.th$important
 ||nuffnang.com$important
+||nytive.com$important
 ||oclaserver.com$important
 ||oilchange.website$important
 ||onclasrv.com$important
@@ -551,76 +562,50 @@ zaapmak.com##iframe
 ||openxmarket.asia$important
 ||padsdel.com$important
 ||padstm.com$important
+||parkingcrew.com$important
+||parkingcrew.net$important
 ||pc1ads.com$important
 ||pc2ads.com$important
 ||pc3ads.com$important
+||ping-fast.com$important
+||pingdom.net$important
+||pixeldigitalstudios.com$important
+||plista.com$important
 ||plista.com$important
 ||popads.net$important
 ||popcash.net$important
 ||popclck.com$important
 ||popclck.net$important
 ||poptm.com$important
+||ptengine.com$important
 ||puserving.com$important
 ||quicktask.xyz$important
 ||reimageplus.com$important
 ||replase.tk$important
+||revsci.net$important
+||ruu-dee.com$important
 ||sales-frontier.com$important
+||scorecardresearch.com$important
 ||serving-sys.com$important
 ||simba-digital.com$important
 ||smemove.com$important
+||stat.matichon.co.th$important
+||stats.in.th$important
+||stats.wp.com$important
 ||sumome.com$important
+||synergy-e.com$important
+||taboola.com$important
+||tagserve.asia$important
 ||tapad.com$important
+||thstats.com$important
 ||travelpayouts.com$important
+||truehits.in.th$important
+||truehits.net$important
 ||tynt.com$important
 ||user-api.com$important
 ||user-clicks.com$important
 ||user-red.com$important
 ||yengo.com$important
-
-! Tracking / Marketing / Article Suggestions
-||accesstrade.in.th$important
-||amung.us$important
-||anonymousdemographics.com$important
-||areyouahuman.com$important
-||atdmt.com$important
-||aviasales.ru$important
-||bluekai.com$important
-||btstatic.com$important
-||crwdcntrl.net$important
-||csi.gstatic.com$important
-||d-stats.com$important
-||dtscout.com$important
-||edgesuite.net$important
-||eyeota.net$important
-||feedjit.com$important
-||gbotvisit.com$important
-||go2cloud.org$important
-||go2speed.org$important
-||heatmap.it$important
-||histats.com$important
-||inspectlet.com$important
-||luckyorange.com$important
-||m88.com$important
-||nytive.com$important
-||parkingcrew.com$important
-||parkingcrew.net$important
-||ping-fast.com$important
-||pingdom.net$important
-||pixeldigitalstudios.com$important
-||plista.com$important
-||ptengine.com$important
-||revsci.net$important
-||ruu-dee.com$important
-||scorecardresearch.com$important
-||stat.matichon.co.th$important
-||stats.in.th$important
-||stats.wp.com$important
-||synergy-e.com$important
-||taboola.com$important
-||tagserve.asia$important
-||thstats.com$important
-||truehits.in.th$important
-||truehits.net$important
 ||yu0123456.com$important
 ||zemanta.com$important
 
