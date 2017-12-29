@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201712281323
+! Version: 201712291217
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -433,19 +433,6 @@ zaapmak.com##iframe
 ||techmoblog.com/tmb-advertise^$subdocument
 ||tigthai.com/js/popup_facebook.js$script
 
-! Block ALL 3P for specific domain(s)
-! 1. Due to someone posted on Pantip about visiting Thairath website and get auto subscribe content services without consent,
-!    I've looked that sites and see too many untrusted third parties domain (ads, tracking, malvertising, ...),
-!    so I decide to block all of them and allow only domains that probably needed.
-||$third-party,domain=nationtv.tv
-||$third-party,domain=thairath.co.th
-@@||brightcove.com$domain=nationtv.tv
-@@||dcs-digital.com$domain=nationtv.tv
-@@||jwpcdn.com$domain=thairath.co.th
-@@||jwplayer.com$domain=thairath.co.th
-@@||nationchannel.com$domain=nationtv.tv
-@@||youtube.com$domain=nationtv.tv|thairath.co.th
-
 ! Counter bad rules / Strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
@@ -494,9 +481,10 @@ zaapmak.com##iframe
 ||toptools100.com
 ||wisemana.com
 
-! Ads Server / Malvertising
+! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
 ||*adnow.com
 ||24x7th.com
+||accesstrade.in.th
 ||adasiaholdings.com
 ||adnow.com
 ||adok.asia
@@ -513,8 +501,15 @@ zaapmak.com##iframe
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
+||amung.us
+||anonymousdemographics.com
 ||app-measurement.com
 ||appsflyer.com
+||areyouahuman.com
+||atdmt.com
+||aviasales.ru
+||bluekai.com
+||btstatic.com
 ||bumq.com
 ||clickadu.com
 ||clicksgear.com
@@ -523,19 +518,35 @@ zaapmak.com##iframe
 ||crazyegg.com
 ||criteo.com
 ||criteo.net
+||crwdcntrl.net
+||csi.gstatic.com
 ||cxense.com
+||d-stats.com
+||dtscout.com
+||edgesuite.net
 ||effectivemeasure.net
 ||exdynsrv.com
 ||exoclick.com
 ||exosrv.com
+||eyeota.net
+||feedjit.com
 ||filadmir.site
 ||gammaplatform.com
+||gbotvisit.com
 ||gbox.sc
+||go2cloud.org
+||go2speed.org
+||google-analytics.l.google.com
+||heatmap.it
+||histats.com
 ||hotjar.com
 ||inmobi.com
 ||innity.com
 ||innity.net
+||inspectlet.com
 ||kiosked.com
+||luckyorange.com
+||m88.com
 ||moatads.com
 ||mtburn.com
 ||mtburn.jp
@@ -545,6 +556,7 @@ zaapmak.com##iframe
 ||nuffnang.co.th
 ||nuffnang.com
 ||nuffnang.com.my
+||nytive.com
 ||oclaserver.com
 ||oilchange.website
 ||onclasrv.com
@@ -552,77 +564,50 @@ zaapmak.com##iframe
 ||openxmarket.asia
 ||padsdel.com
 ||padstm.com
+||parkingcrew.com
+||parkingcrew.net
 ||pc1ads.com
 ||pc2ads.com
 ||pc3ads.com
+||ping-fast.com
+||pingdom.net
+||pixeldigitalstudios.com
+||plista.com
 ||plista.com
 ||popads.net
 ||popcash.net
 ||popclck.com
 ||popclck.net
 ||poptm.com
+||ptengine.com
 ||puserving.com
 ||quicktask.xyz
 ||reimageplus.com
 ||replase.tk
+||revsci.net
+||ruu-dee.com
 ||sales-frontier.com
+||scorecardresearch.com
 ||serving-sys.com
 ||simba-digital.com
 ||smemove.com
+||stat.matichon.co.th
+||stats.in.th
+||stats.wp.com
 ||sumome.com
+||synergy-e.com
+||taboola.com
+||tagserve.asia
 ||tapad.com
+||thstats.com
 ||travelpayouts.com
+||truehits.in.th
+||truehits.net
 ||tynt.com
 ||user-api.com
 ||user-clicks.com
 ||user-red.com
 ||yengo.com
-
-! Tracking / Marketing / Article Suggestions
-||accesstrade.in.th
-||amung.us
-||anonymousdemographics.com
-||areyouahuman.com
-||atdmt.com
-||aviasales.ru
-||bluekai.com
-||btstatic.com
-||crwdcntrl.net
-||csi.gstatic.com
-||d-stats.com
-||dtscout.com
-||edgesuite.net
-||eyeota.net
-||feedjit.com
-||gbotvisit.com
-||go2cloud.org
-||go2speed.org
-||google-analytics.l.google.com
-||heatmap.it
-||histats.com
-||inspectlet.com
-||luckyorange.com
-||m88.com
-||nytive.com
-||parkingcrew.com
-||parkingcrew.net
-||ping-fast.com
-||pingdom.net
-||pixeldigitalstudios.com
-||plista.com
-||ptengine.com
-||revsci.net
-||ruu-dee.com
-||scorecardresearch.com
-||stat.matichon.co.th
-||stats.in.th
-||stats.wp.com
-||synergy-e.com
-||taboola.com
-||tagserve.asia
-||thstats.com
-||truehits.in.th
-||truehits.net
 ||yu0123456.com
 ||zemanta.com
 
