@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201801012010
+! Version: 201801021235
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -822,6 +822,7 @@ zaapmak.com##iframe
 ||callingsticker.com$important
 ||cdnfiber.com$important
 ||celeryleek.com$important
+||cellvidz.com$important
 ||centili.com$important
 ||chatded.com$important
 ||cheesemobile.com$important
@@ -838,6 +839,7 @@ zaapmak.com##iframe
 ||clickmultimedia.co.th$important
 ||clickstk.com$important
 ||clip.vu$important
+||cloudify.cc$important
 ||clubmmobile.com$important
 ||clubxzone.com$important
 ||consentprt.dtac.co.th$important
@@ -952,6 +954,7 @@ zaapmak.com##iframe
 ||klinikasmara.com$important
 ||kodfin.com$important
 ||kodporno.com$important
+||kwizu.club$important
 ||lalamobi.com$important
 ||larnload.com$important
 ||leadzuaf.com$important
@@ -974,6 +977,7 @@ zaapmak.com##iframe
 ||may91.vn$important
 ||mayrondigital.com$important
 ||mcommsg.com$important
+||media-bucket.com$important
 ||mexcomm.net$important
 ||mfunz.mobi$important
 ||mktrack.com$important
@@ -992,6 +996,7 @@ zaapmak.com##iframe
 ||mobileacademy.com$important
 ||mobilecontents.mobi$important
 ||mobilegameblast.com$important
+||mobilegamepass.com$important
 ||mobilejmp.com$important
 ||mobileth.net$important
 ||mobilevol.com$important
@@ -1145,6 +1150,7 @@ zaapmak.com##iframe
 ||vuclip.com$important
 ||vuclipgamesat.com$important
 ||wakau.in$important
+||walletfun.com$important
 ||wallpapers-girls.com$important
 ||wap.getcools.com$important
 ||wap.shinee.com$important
@@ -1163,6 +1169,7 @@ zaapmak.com##iframe
 ||yuppyuppytv.com$important
 ||yuqazate.com$important
 ||zigifun.com$important
+||zmclick.com$important
 ||zog.link$important
 ||zomobie.com$important
 
