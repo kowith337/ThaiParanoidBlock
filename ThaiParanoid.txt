@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201801021233
+! Version: 201801040034
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -811,6 +811,7 @@ zaapmak.com##iframe
 ||bigolives.tv$important
 ||billmscurlrev.com$important
 ||billyaffcontent.com$important
+||blastoffgaming.com$important
 ||bldtrax.com$important
 ||bmobil.net$important
 ||breathing-love.com$important
@@ -850,6 +851,7 @@ zaapmak.com##iframe
 ||contentfall.com$important
 ||cool4mob.com$important
 ||coolzee.net$important
+||cosmik-ltd.com$important
 ||cpactions.com$important
 ||cpgnrotationurl.com$important
 ||cpitraffic.com$important
@@ -959,6 +961,7 @@ zaapmak.com##iframe
 ||lalamobi.com$important
 ||larnload.com$important
 ||leadzuaf.com$important
+||leadzupc.com$important
 ||letgomobile.com$important
 ||link-boost.com$important
 ||linkbooster.xyz$important
