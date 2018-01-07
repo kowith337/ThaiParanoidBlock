@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201801062134
+! Version: 201801072223
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -646,50 +646,7 @@ zaapmak.com##iframe
 @@||gravatar.com/avatar$image
 
 ! Dark Patterns (Coin Miners, Using your machine as CDN and such...)
-! - NoCoin List by hoshsadiq: https://github.com/hoshsadiq/adblock-nocoin-list
-! - NoCoins Extension by Keraf: https://github.com/keraf/NoCoin/blob/master/src/blacklist.txt
-! - EdgeMesh Issues: https://github.com/uBlockOrigin/uAssets/issues/659
-! - Toshiya's assets: https://github.com/toshiya44/myAssets/blob/3888657c1a5435bce3bff86986bc9b699de3dca7/filters-exp.txt#L571
-||adtech.de$important
-||azvjudwr.info$important
-||bf-ad.net$important
-||cnhv.co$important
-||coin-have.com$important
-||coin-hive.com$important
-||coinbase.com$important
-||coinblind.com$important
-||coinerra.com$important
-||coinhive.com$important
-||coinhiveproxy.com$important
-||coinnebula.com$important
-||coinser.in$important
-||coinzilla.io$important
-||contentpass.net$important
-||crypto-loot.com$important
-||edgemesh.com$important
-||edgeno.de$important
-||gus.host$important
-||jroqvbvw.info$important
-||jsccnn.com$important
-||jscdndel.com$important
-||jsecoin.com$important
-||jyhfuqoh.info$important
-||kdowqlpt.info$important
-||listat.biz$important
-||lmodr.biz$important
-||mataharirama.xyz$important
-||minecrunch.co$important
-||minemytraffic.com$important
-||miner.pr0gramm.com$important
-||minero.pw$important
-||monero-miner.net$important
-||ppoi.org$important
-||pr0gramm.com$important
-||projectpoi.com$important
-||reasedoper.pw$important
-||shekel.link$important
-||webmine.cz$important
-||xbasfbno.info$important
+! [Deprecated] Recommended to use this list > https://github.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt
 
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand,
@@ -723,30 +680,58 @@ zaapmak.com##iframe
 ||27.100.44.214$important
 ||27.254.82.82$important
 ||43.231.124.161$important
+||49.50.69.80$important
 ||52.76.242.20$important
 ||52.220.167.186$important
 ||54.169.240.216$important
+||54.186.88.28$important
 ||56.76.86.177$important
 ||58.181.206.44$important
+||61.16.174.219$important
 ||61.47.40.132$important
 ||61.91.6.131$important
 ||65.49.33.31$important
+||103.16.143.120$important
+||103.16.143.144$important
+||103.56.210.21$important
+||107.170.154.51$important
+||113.30.248.2$important
+||118.102.141.188$important
+||121.241.248.6$important
+||122.160.21.203$important
 ||124.158.4.91$important
 ||139.59.44.57$important
 ||139.162.57.169$important
 ||162.243.33.148$important
 ||162.243.73.231$important
 ||162.243.217.139$important
+||180.151.100.230$important
+||180.179.103.240$important
+||180.179.103.253$important
+||180.179.108.50$important
+||180.179.207.111$important
+||180.179.207.113$important
+||180.179.207.246$important
+||180.179.236.26$important
+||182.71.228.49$important
 ||192.241.180.55$important
 ||192.241.249.228$important
+||198.15.67.85$important
+||198.15.104.214$important
 ||202.9.104.118$important
+||202.38.172.244$important
 ||202.57.163.235$important
+||202.87.41.147$important
+||202.191.128.157$important
+||203.122.58.93$important
 ||203.146.208.145$important
 ||203.146.249.21$important
 ||203.146.251.229$important
 ||203.151.206.102$important
 ||203.223.147.133$important
 ||203.223.159.245$important
+||205.147.96.155$important
+||220.226.188.56$important
 ||223.25.242.68$important
 ||223.25.242.69$important
 ||223.25.242.95$important
@@ -759,10 +744,12 @@ zaapmak.com##iframe
 ||321load.com$important
 ||4mobilefunz.com$important
 ||4v4jfe79erfxfu8z8.com$important
+||54646.co$important
 ||55555getcontent.com$important
 ||5rio.com$important
 ||5sys.com$important
 ||6988fa.com$important
+||6f76b4c82656094f26.com$important
 ||7banana.com$important
 ||7me.co$important
 ||8086.com.tw$important
@@ -777,6 +764,7 @@ zaapmak.com##iframe
 ||addlink.mobi$important
 ||adfries.net$important
 ||adfrigate.com$important
+||admblink.xyz$important
 ||ads.gold$important
 ||adsbtrk.com$important
 ||adschemist.com$important
@@ -798,15 +786,18 @@ zaapmak.com##iframe
 ||aplaydigital.com$important
 ||appsdorado.com$important
 ||appsilike.mobi$important
+||apsalar.com$important
 ||aptrk5.com$important
 ||aragontrack.com$important
 ||arco.co.th$important
 ||at2010.net$important
 ||atas.io$important
 ||atmail.nl$important
+||autoportal.com$important
 ||awolf.mobi$important
 ||b-qq.com$important
 ||b3st0ff3rs.com$important
+||bajajcapital.com$important
 ||beezzi.com$important
 ||bestmobiworld.com$important
 ||bigolives.tv$important
@@ -815,9 +806,11 @@ zaapmak.com##iframe
 ||blastoffgaming.com$important
 ||bldtrax.com$important
 ||bmobil.net$important
+||brazzers93.com$important
 ||breathing-love.com$important
 ||brucelead.com$important
 ||brvaffs.com$important
+||bsnlhellotv.in$important
 ||btrkpro.com$important
 ||buddycode.net$important
 ||bulkhentai.com$important
@@ -841,10 +834,15 @@ zaapmak.com##iframe
 ||clickmlife.com$important
 ||clickmultimedia.co.th$important
 ||clickstk.com$important
+||clickwinks.com$important
 ||clip.vu$important
 ||cloudify.cc$important
+||clubcinemasti.com$important
 ||clubmmobile.com$important
 ||clubxzone.com$important
+||collarfolk.com$important
+||comedy-club.mobi$important
+||comedymunch.com$important
 ||consentprt.dtac.co.th$important
 ||consested-opplyield.com$important
 ||contentbox.stream$important
@@ -866,11 +864,14 @@ zaapmak.com##iframe
 ||datinggirls.info$important
 ||ddzey.com$important
 ||deepbluetech.biz$important
+||desisilk.com$important
 ||despiteracy.com$important
+||dgmobix.com$important
 ||digi.com.my$important
 ||digitalmerkat.com$important
 ||digitalngo.com$important
 ||dindo.co.th$important
+||dittolite.com$important
 ||dlxxxvip.com$important
 ||downloadhub.me$important
 ||e668ou.com$important
@@ -880,6 +881,7 @@ zaapmak.com##iframe
 ||etracker.cc$important
 ||exprtmb.com$important
 ||facabooks.com$important
+||fashionbunny.com$important
 ||fblives.net$important
 ||findgit.com$important
 ||fly2.me$important
@@ -910,6 +912,7 @@ zaapmak.com##iframe
 ||gamescentreom.com$important
 ||gameziz.com$important
 ||gamezzone.me$important
+||gammo.me$important
 ||gamzones.com$important
 ||gangzaa.net$important
 ||gcvw.mobi$important
@@ -920,9 +923,12 @@ zaapmak.com##iframe
 ||gktmobi.com$important
 ||glimline.com$important
 ||globocom.co.in$important
+||glzelnk.com$important
 ||gmpmobi.com$important
 ||go2affise.com$important
+||godnearme.com$important
 ||gogameportal.com$important
+||gomasti.in$important
 ||goohd.tv$important
 ||gotd.mobi$important
 ||grabmobitraffic.com$important
@@ -933,9 +939,12 @@ zaapmak.com##iframe
 ||havfun.mobi$important
 ||hayhaa.com$important
 ||hclips.net$important
+||hd0y.com$important
+||hello1.in$important
 ||hfa.mobi$important
 ||hito.co.vu$important
 ||horoworld.com$important
+||hotstar.com$important
 ||house365.com$important
 ||hurvewa.com$important
 ||hypermobiworld.com$important
@@ -955,6 +964,8 @@ zaapmak.com##iframe
 ||jtsws.com$important
 ||kaka-games.com$important
 ||kangped.com$important
+||khelbazar.in$important
+||kissmyads.com$important
 ||klinikasmara.com$important
 ||kodfin.com$important
 ||kodporno.com$important
@@ -968,6 +979,7 @@ zaapmak.com##iframe
 ||linkbooster.xyz$important
 ||linkingclicks.com$important
 ||loadded.com$important
+||looke.mobi$important
 ||lovehoro.space$important
 ||lovehoro2561.com$important
 ||ltvperf.com$important
@@ -982,11 +994,15 @@ zaapmak.com##iframe
 ||may91.vn$important
 ||mayrondigital.com$important
 ||mcommsg.com$important
+||mconverge.in$important
+||mdeal.co$important
+||measurementapi.com$important
 ||media-bucket.com$important
 ||mexcomm.net$important
 ||mfunz.mobi$important
 ||mktrack.com$important
 ||mli.me$important
+||mob-api.net$important
 ||mobgkt.com$important
 ||mobico.my$important
 ||mobicute.com$important
@@ -998,6 +1014,7 @@ zaapmak.com##iframe
 ||mobilart.in$important
 ||mobile-link.today$important
 ||mobile.mthai.com$important
+||mobile18.in.com$important
 ||mobileacademy.com$important
 ||mobilecontents.mobi$important
 ||mobilegameblast.com$important
@@ -1031,19 +1048,28 @@ zaapmak.com##iframe
 ||mp3-shared.com$important
 ||mtouche.com$important
 ||mugforward.com$important
+||mydala.com$important
 ||mygirlshow.com$important
 ||mynewrotationlink.com$important
 ||myscoobi.com$important
+||mystyletip.com$important
 ||n-content.com$important
 ||n-mobile.net$important
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
 ||neomobilesestatic.azureedge.net$important
+||netmeds.com$important
+||newshunt.com$important
 ||newsplus.me$important
+||nexg.tv$important
+||niitcloudcampus.com$important
 ||nmpcenter.com$important
 ||nowportal.net$important
 ||offergold.online$important
+||offerstrack.net$important
 ||onlytopoffers.com$important
+||oomph.club$important
+||opencurvemedia.com$important
 ||optsearch.net$important
 ||outputfx.com$important
 ||pages.mli.me$important
@@ -1051,14 +1077,20 @@ zaapmak.com##iframe
 ||peak-serving.com$important
 ||peerfly.com$important
 ||perfonspot.com$important
+||performancerevenues.com$important
 ||phubbers.com$important
 ||picwall.mobi$important
 ||pixeleads.com$important
+||pixelmagicnet.com$important
 ||playclub.me$important
 ||playinvaders.com$important
 ||playplay.in.th$important
+||playsutra.com$important
+||playwap.mobi$important
 ||playwork.co.th$important
 ||pluckyaff.com$important
+||pointificsecure.com$important
+||porn93.com$important
 ||privatebay.tv$important
 ||privatewow.tv$important
 ||pubmt.ch$important
@@ -1067,6 +1099,7 @@ zaapmak.com##iframe
 ||radio.in.th$important
 ||raptorads.net$important
 ||rbt.getcools.com$important
+||re1store.com$important
 ||redporntube.xyz$important
 ||regaming.com$important
 ||retail9.com$important
@@ -1086,12 +1119,15 @@ zaapmak.com##iframe
 ||shemaroo.com$important
 ||shoopadoo.com$important
 ||shoutingnetwork.com$important
+||siamfun4u.com$important
+||silk69.in$important
 ||skype4mobile.com$important
 ||slimcdn.com$important
 ||smartadurl.com$important
 ||smartoffer.site$important
 ||smarttelebiz.com$important
 ||smilesms.com$important
+||smrtx.net$important
 ||smsgateway.cc$important
 ||snapp.asia$important
 ||sosmob.mobi$important
@@ -1103,6 +1139,7 @@ zaapmak.com##iframe
 ||sswap.mobi$important
 ||stackpathdns.com$important
 ||startappservice.com$important
+||stormobi.com$important
 ||stream-flix.mobi$important
 ||streamflix.mobi$important
 ||studiox-babes.com$important
@@ -1143,6 +1180,7 @@ zaapmak.com##iframe
 ||vedaapp.com$important
 ||veoo.com$important
 ||video-wrld.com$important
+||videohub.club$important
 ||videopaper.win$important
 ||videowap.net$important
 ||vipgames.me$important
@@ -1154,6 +1192,7 @@ zaapmak.com##iframe
 ||vstyle4u.com$important
 ||vuclip.com$important
 ||vuclipgamesat.com$important
+||vvidiacom.com$important
 ||wakau.in$important
 ||walletfun.com$important
 ||wallpapers-girls.com$important
@@ -1163,16 +1202,19 @@ zaapmak.com##iframe
 ||waplog.com$important
 ||waremode.com$important
 ||wathspap.com$important
+||wealthandwealth.com$important
 ||wealthclick.net$important
 ||wifistudy.com$important
 ||wiseforwarding.com$important
 ||worldgamespn.mobi$important
+||wrtual.com$important
 ||xn--22c0bau8bor5ac4k7cc6g8a.net$important
 ||xn--42c8cmgk9dvfyd.com$important
 ||youlaugh.online$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
 ||yuqazate.com$important
+||zedo.com$important
 ||zigifun.com$important
 ||zmclick.com$important
 ||zog.link$important
