@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201801072226
+! Version: 201801091656
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1531,6 +1531,7 @@ youtube.com##ytd-consent-bump-renderer
 ! This need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
 facebook.com###ads_preferences_desktop_root div[tabindex][role="button"] button[data-hover][data-tooltip-content="Add"]:if(span:has-text(Add))
 facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
+facebook.com###events_dashboard_activity_feed div[role="article"]:if(.fbEventsSuggestionItem)
 facebook.com###fbSearchResultsBox:if(form.friendBrowserForm div:has(li a[href*="?fref=pymk"]))
 facebook.com###globalContainer .uiLayer[data-testid="undefined"] .uiContextualLayer div ul[role="menu"] li:if(a span div:has-text(/^Undo hiding ads/))
 facebook.com###groupsNewMembersLink div:has(li[id^="suggested_member_"])
@@ -1541,6 +1542,7 @@ facebook.com###pagelet_growth_expanding_cta:has(a[id^="expanding_cta_"])
 facebook.com###profile_page_insights_hubble div > table td div:has-text(Suggested Pages to Watch)
 facebook.com###stream_pagelet div.mvm:if(div:has(a[href*="?sk=h_nor"]))
 facebook.com##._4-u8:has(a[data-testid="back_to_top_link"])
+facebook.com##.jewelWithEgoUnits .uiScrollableAreaContent div:if(form.friendBrowserForm:has(input[value="people_you_may_know"]))
 facebook.com##.loggedout_menubar div[data-testid="royal_login_form"] div:if(form[id="login_form"])
 facebook.com##.mtm div[id^="u_0_"] div[id^="u_0_"]:has(span button.PageLikeButton)
 facebook.com##.pagelet.groupSkyAux div:has(a[ajaxify*="/ajax/groups/create_get.php?"])
@@ -1580,6 +1582,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[i
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table td > div:has-text(/^Suggested/):if(ul li:has(table))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(a[href^="/download.php"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(table tbody tr td:has(a[href^="/a/language.php?"]):if-not(a[href*="lref=%2Fsettings%2Flanguage%2F"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@data-ft][.//span/text()="Sponsored"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##:xpath(//div[@role="article"][.//span/text()="Sponsored"])
@@ -1597,10 +1600,12 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] table[role="presentation"]:if(td a[href^="/profilepicframes"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(iframe[src^="/xti.php?"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com##table td#mEventsDashboard #events_dashboard_activity_feed:if(a[href*="suggestion_feed_unit"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div div[data-store*="share_id"] .story_body_container div[data-ft] div:if(.scrollArea:has(a[href*="/services?"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article .story_body_container div[data-ft] div[data-store*="share_id"] .story_body_container div div:if(.scrollArea:has(a[href^="/commerce/products/"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###events_dashboard_activity_feed section article:if(.scrollArea:has(.fbEventsEgoScroller))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###mJewelRequestsFlyoutBody div div:if(div[class] div[class]:has(div[data-pymk-id]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###msite-pages-header-contents div[style*="transparent none repeat scroll"]:if(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
