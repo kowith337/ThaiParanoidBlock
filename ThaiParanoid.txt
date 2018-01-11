@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201801091656
+! Version: 201801111005
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1508,6 +1508,7 @@ facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span a[ajaxify
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span[class*="uiLikePageButton"]
 facebook.com##div[role="feed"] div[id^="hyperfeed_story_id"] .mtm span[class*="uiPageLikeButton"]
 github.com##div[class^="signup-prompt"]
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###bookmarkmenu table td a[href*="freebasics.com"]
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_login_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_loginbar_reg_button
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div > div[data-ft*="saved_for_later"]
