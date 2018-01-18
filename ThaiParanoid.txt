@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201801151127
+! Version: 201801182258
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1074,6 +1074,7 @@ zaapmak.com##iframe
 ||oomph.club$important
 ||opencurvemedia.com$important
 ||optsearch.net$important
+||oqg84co2z.bkt.clouddn.com$important
 ||outputfx.com$important
 ||pages.mli.me$important
 ||panshimob.com$important
@@ -1126,6 +1127,7 @@ zaapmak.com##iframe
 ||silk69.in$important
 ||skype4mobile.com$important
 ||slimcdn.com$important
+||slypee.com$important
 ||smartadurl.com$important
 ||smartoffer.site$important
 ||smarttelebiz.com$important
