@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201801212229
+! Version: 201801242141
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1588,6 +1588,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###friends_center_main div
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_group_stories_container div:if(div a[href*="/findgroups/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div div[data-ft]:if(div:has(a[href^="/qp/action/redirect/"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###m_newsfeed_stream div[data-ft] > div a[href*="/mobile/friends/add_friend.php?"]
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root #bookmarkmenu table:if(a[href*="freebasics.com"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div div:if(div[id^="more_item_"]:has(a[href^="/findfriends/browser/?"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div:if(table td a[href*="/collapse/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div[data-ft]:if(a[href*="netego_suggestion"])
@@ -1628,6 +1629,7 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="/friends/center/suggestions/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=1728807357362356"])
+m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=275254692598279"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="appcenter/124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="freebasics.com"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="instagram.com"])
