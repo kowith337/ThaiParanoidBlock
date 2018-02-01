@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802011603
+! Version: 201802012316
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -333,7 +333,6 @@ zaapmak.com##iframe
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||brandbuffet.in.th/*/social-popup/*
-||compgamer.com/mainpage/module/popupnews/$important
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
@@ -422,6 +421,7 @@ zaapmak.com##iframe
 ||add0n.com$document
 ||add0n.com$popunder
 ||add0n.com$popup
+||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
@@ -438,6 +438,7 @@ zaapmak.com##iframe
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
 ||ais.co.th/advertiser$important
+||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
