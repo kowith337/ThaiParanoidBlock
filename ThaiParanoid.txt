@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201802011606
+! Version: 201802012322
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -333,7 +333,6 @@ zaapmak.com##iframe
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||brandbuffet.in.th/*/social-popup/*
-||compgamer.com/mainpage/module/popupnews/$important
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
@@ -422,6 +421,7 @@ zaapmak.com##iframe
 ||add0n.com$document
 ||add0n.com$popunder
 ||add0n.com$popup
+||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
@@ -438,6 +438,7 @@ zaapmak.com##iframe
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
 ||ais.co.th/advertiser$important
+||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
 ||img.in.th/?ping$important
@@ -1687,6 +1688,11 @@ kiitdoo.com##.textwidget:if(.adsbygoogle)
 liekr.com##.postmain div:if(.adsbygoogle)
 lonely-rooyang.com##.banner:if(.adsbygoogle)
 lonely-rooyang.com##.textwidget:if(.adsbygoogle)
+m.pantip.com##.m-bxslider:if(a[href*="ads.pantip.com"])
+m.pantip.com##.m-thumb div[class^="subject"]:if(a[href*="ads.pantip.com"])
+m.pantip.com##.m-thumb:if(.subject-ad)
+m.pantip.com##.m-thumb:if(a[href*="ads.pantip.com"])
+m.pantip.com##.main-section .row .columns .m-thumb:if(div span.focus02-txt)
 mthai.com##div[id^="MT_HP_"]:if(.ads-rec-center)
 mthai.com##div[id^="MT_HP_"]:if(.banner)
 mustplay.in.th##.panel-default:if(ul li div:has(a[href*="/game/page/"]))
@@ -1698,11 +1704,8 @@ oopsmobile.net##.td-post-content div:if(.adsbygoogle)
 oopsmobile.net##.textwidget:if(.adsbygoogle)
 pantip.com##.bg-box-allow:if(.box-allow-location)
 pantip.com##.bxslider li:if(a[href*="ads.pantip.com"])
+pantip.com##.data-roomMenu-item .post-item.best-item:if-not(div a[href^="/topic/"])
 pantip.com##.event-datatable-item:if(a[href*="ads.pantip.com"])
-pantip.com##.m-bxslider:if(a[href*="ads.pantip.com"])
-pantip.com##.m-thumb div[class^="subject"]:if(a[href*="ads.pantip.com"])
-pantip.com##.m-thumb:if(.subject-ad)
-pantip.com##.m-thumb:if(a[href*="ads.pantip.com"])
 pantip.com##.post-item:if(a[href*="ads.pantip.com"])
 pantip.com##body:if(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:if(.adsbygoogle)
