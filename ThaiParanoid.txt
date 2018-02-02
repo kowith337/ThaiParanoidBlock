@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802012331
+! Version: 201802021807
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -656,7 +656,7 @@ zaapmak.com##iframe
 !          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
 !          every month, or every each messages that they've sent to you...
 
-! Hiding hyperlink that beginning with sms/tel/wtai because it can directly call or sent sms to those services
+! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
 ##a[href^="sms:"]
 ##a[href^="tel:"]
 ##a[href^="wtai:"]
@@ -916,6 +916,7 @@ zaapmak.com##iframe
 ||gamepanda.me$important
 ||games-live.s3.amazonaws.com$important
 ||gamescentreom.com$important
+||gamezine.in$important
 ||gameziz.com$important
 ||gamezzone.me$important
 ||gammo.me$important
@@ -1175,6 +1176,7 @@ zaapmak.com##iframe
 ||thaiza.com$important
 ||thepind.mobi$important
 ||thinksmart.co.th$important
+||thisilike.net$important
 ||thmobi.com$important
 ||thumbr.com$important
 ||thumbsms.com$important
