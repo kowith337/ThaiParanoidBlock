@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802021807
+! Version: 201802032246
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1347,7 +1347,6 @@ zaapmak.com##iframe
 ||facebook.com/ajax/haste-response/?modules=ReactComposerMagicTagSurvey$important
 ||facebook.com/ajax/haste-response/?modules=ShareDialogMessageAudience$important
 ||facebook.com/ajax/haste-response/?modules=TypeaheadMetricReporter$important
-||facebook.com/ajax/mutual_friends/tooltip.php$important
 ||facebook.com/ajax/pagelet/generic.php/WebEgoPane$important
 ||facebook.com/ajax/photos/logging$important
 ||facebook.com/ajax/react_composer/survey?
@@ -1371,6 +1370,7 @@ zaapmak.com##iframe
 ||facebook.com/pubcontent/related_share$important
 ||facebook.com/pubcontent/related_video$important
 ||facebook.com/pubcontent/suggestions$important
+||facebook.com/related-application/?$important
 ||facebook.com/relay/bootload/?component=AdsCMChromeRenderer$important
 ||facebook.com/sem_campaigns$important
 ||facebook.com/sem_pixel$important
@@ -1573,6 +1573,7 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###m_group_stories_container section article:if(.scrollArea:has(.scrollAreaColumn[data-sigil="m-groups-pymi-item"]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###msite-pages-header-contents div[style*="transparent none repeat scroll"]:if(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=124024574287414"])
