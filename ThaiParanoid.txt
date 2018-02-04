@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201802032253
+! Version: 201802042236
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1634,11 +1634,12 @@ m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section articl
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###events_dashboard_activity_feed section article:if(.scrollArea:has(.fbEventsEgoScroller))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###mJewelRequestsFlyoutBody div div:if(div[class] div[class]:has(div[data-pymk-id]))
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_group_stories_container section article:if(.scrollArea:has(.scrollAreaColumn[data-sigil="m-groups-pymi-item"]))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###m_group_stories_container section article:if(.scrollArea .scrollAreaColumn[data-sigil="m-groups-pymi-item"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###msite-pages-header-contents div[style*="transparent none repeat scroll"]:if(#popup_xout)
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page #root header div div:if(a[href^="/pages/launchpoint/discover/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
 m.facebook.com,mobile.facebook.com,touch.facebook.com###root div a.sub[href*="?sk=h_nor"]
+m.facebook.com,mobile.facebook.com,touch.facebook.com###viewport #root div[id^="u_0_"]:if(div #mobile_login_bar strong)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="/ads/create/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="/friends/center/suggestions/"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=124024574287414"])
