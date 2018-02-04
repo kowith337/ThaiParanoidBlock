@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802032246
+! Version: 201802042232
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1573,9 +1573,9 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"] div:
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(div a[href*="/friends/center/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com##div[role="article"]:if(iframe[src^="/xti.php?"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###MNewsFeed section article:if(.scrollArea:has(a#pyml_infinite_scroll_loading))
-m.facebook.com,mobile.facebook.com,touch.facebook.com###m_group_stories_container section article:if(.scrollArea:has(.scrollAreaColumn[data-sigil="m-groups-pymi-item"]))
-m.facebook.com,mobile.facebook.com,touch.facebook.com###msite-pages-header-contents div[style*="transparent none repeat scroll"]:if(#popup_xout)
+m.facebook.com,mobile.facebook.com,touch.facebook.com###m_group_stories_container section article:if(.scrollArea .scrollAreaColumn[data-sigil="m-groups-pymi-item"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com###page div[id^="unit_id_"]:if(.scrollArea:has(.scrollAreaColumn div[data-autoid]))
+m.facebook.com,mobile.facebook.com,touch.facebook.com###viewport #root div[id^="u_0_"]:if(div #mobile_login_bar strong)
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=124024574287414"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="app_id=1728807357362356"])
 m.facebook.com,mobile.facebook.com,touch.facebook.com##.mSideMenu .touchable:if(a[href*="appcenter/124024574287414"])
