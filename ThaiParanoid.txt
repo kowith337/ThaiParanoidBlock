@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201802042236
+! Version: 201802051042
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -656,9 +656,9 @@ zaapmak.com##iframe
 !          every month, or every each messages that they've sent to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
-##a[href^="sms:"]
-##a[href^="tel:"]
-##a[href^="wtai:"]
+##a[href^="sms:"]:style(pointer-events: none !important)
+##a[href^="tel:"]:style(pointer-events: none !important)
+##a[href^="wtai:"]:style(pointer-events: none !important)
 
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
