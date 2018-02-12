@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Redundance~
-! Version: 201802121523
+! Version: 201802121554
 ! Author: kowith337
-! Homepage: https://github.com/kowith337/ThaiParanoidBlock
+! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/redundant
 ! Expires: 2 days
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
@@ -32,16 +32,8 @@
 ! Element filter rules (merged with ThaiAntiForceLike)
 akibatan.com##.td-logo-wrap-full
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
-autocar.in.th###_bz_boxlike
-autocar.in.th###_bz_boxlike_area
-autocar.in.th###_bz_boxlike_bg
-autocar.in.th###_bz_boxlike_footer
-autocar.in.th##.google-ads.row
-autocar.in.th##.google-ads.row-fluid
-chujai.com###arevicofancy-loading
-chujai.com###arevicofancy-overlay
-chujai.com###arevicofancy-tmp
-chujai.com###arevicofancy-wrap
+autocar.in.th##.google-ads
+autocar.in.th##div[id^="_bz_boxlike"]
 cleothailand.com###survey-popup
 clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
@@ -50,28 +42,16 @@ compgamer.com##div[aria-describedby="alert_popup_dialog"]
 coregamerth.com##.theiaStickySidebar div[id^="ads300_250"]
 disqus.com##div[class^="login-overlay"]
 dodeden.com###intro
-dodeden.com##.banner-A1
-dodeden.com##.banner-A2
-dodeden.com##.banner-X1
-dodeden.com##.banner-X2
-doodiza.com###popDiv
-doodiza.com###popup
+dodeden.com##div[class^="banner-X2"]
 doodiza.com##.bigza-ads-block
-dspzeeplus.com###fbox-button
-dspzeeplus.com###fbox-close
-dspzeeplus.com###fbox-display
-dspzeeplus.com###fbox-link
 dspzeeplus.com###twist-blogger-fan-page
 dspzeeplus.com##.popup-box
+dspzeeplus.com##div[id^="fbox-"]
 exteen.com###promote
 exteen.com##.banner-box
 exteen.com##.feature-box
 exteen.com##.pr-box
 exteen.com##.promote-box
-extremepc.in.th###arevicofancy-loading
-extremepc.in.th###arevicofancy-overlay
-extremepc.in.th###arevicofancy-tmp
-extremepc.in.th###arevicofancy-wrap
 game-tep.com##.leftBanner
 game-tep.com##.rightBanner
 gamegeek.in.th##.wppaszone
@@ -79,39 +59,12 @@ gamegeek.in.th##div[data-title="Home popup"]
 gamemonday.com##.ads-bottom
 goal.in.th###ads_top_content
 goal.in.th##.ajax-banner
-ithaihotnews.com###arevicofancy-loading
-ithaihotnews.com###arevicofancy-overlay
-ithaihotnews.com###arevicofancy-tmp
-ithaihotnews.com###arevicofancy-wrap
-itnews24hrs.com###arevicofancy-loading
-itnews24hrs.com###arevicofancy-overlay
-itnews24hrs.com###arevicofancy-tmp
-itnews24hrs.com###arevicofancy-wrap
 jarm.com##._banner > a[href*="ads.jarm.com"]
-juropy.com###arevicofancy-loading
-juropy.com###arevicofancy-overlay
-juropy.com###arevicofancy-tmp
-juropy.com###arevicofancy-wrap
-kaijeaw.com###arevicofancy-loading
-kaijeaw.com###arevicofancy-overlay
-kaijeaw.com###arevicofancy-tmp
-kaijeaw.com###arevicofancy-wrap
-kaijeaw.com##.backdrop
 kapook.com##.targetbanner-hilight
 kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
 kidjarak.com###spu-1170
 kidjarak.com##.stb-container
-kiitdoo.com##.dgd_stb_box.clean_white
-kodlikes.com##.fancybox-overlay
-kodlikes.com##.fancybox-wrap
-kpmemory.com###overlay
-laughwoo.com###arevicofancy-loading
-laughwoo.com###arevicofancy-overlay
-laughwoo.com###arevicofancy-tmp
-laughwoo.com###arevicofancy-wrap
-liceza.com###cboxOverlay
-liceza.com###cboxWrapper
-liceza.com###colorbox
+liceza.com##div[id^="cbox"]
 liekr.com###showLikePopup
 liekr.com###topAd
 liekr.com##.foot_fb_like
@@ -126,39 +79,24 @@ linkis.com##.theme15-authorize
 lonely-rooyang.com##.fancybox-overlay
 lonely-rooyang.com##.fancybox-wrap
 m.online-station.net###leaderboard_bottom.bottom_banner
-m.online-station.net###leaderboard_bottom.bottom_banner#close_banner
 m.online-station.net##.os-install-app
 m.online-station.net##figure[class="os-floating-ad"]
 m.online-station.net##figure[class^="os-ad"]
 m.webtoons.com##.downapp_area
 manyum.com###ui_popup_window_tpl
-manyum.com###win_showLike
-manyum.com###win_showLike_mask
-marketingoops.com###itro_opaco
-marketingoops.com###itro_popup
+manyum.com##div[id^="win_showLike"]
 marketingoops.com###popup_countdown
-meekhao.com##.dgd_stb_box.clean_white
+marketingoops.com##div[id^="itro_"]
 meepanda.com##.adsense-leadin
 meepanda.com##.ezAdsense
 mthai.com###MT_HP_Topbanner
-mthai.com###arevicofancy-loading
-mthai.com###arevicofancy-overlay
-mthai.com###arevicofancy-tmp
-mthai.com###arevicofancy-wrap
 mthai.com###coverpage
 mthai.com###ga-between
 mthai.com##.ads-rec-center
 mthai.com##.billboard-banner
 mustplay.in.th##.YouTubeModal
-mustplay.in.th,playulti.com###bg-left
-mustplay.in.th,playulti.com###bg-right
-mustplay.in.th,playulti.com###bgyoutube
-mustplay.in.th,playulti.com##.cover_page
-mustplay.in.th,playulti.com##.preloader
-mustplay.in.th,playulti.com##.promote
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
-notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
 ohlor.com###upprev_box
 online-station.net###ads-overlay
 online-station.net###ads-preload-popup
@@ -166,33 +104,23 @@ online-station.net###close-preload
 online-station.net###video_ads_container
 online-station.net###welcome
 online-station.net##.bjqs
-online-station.net##.introjs-helperLayer
-online-station.net##.introjs-overlay
-online-station.net##.introjs-tooltipReferenceLayer
-online-station.net##.os-ads
-online-station.net##.os-ads-banner
-online-station.net##.os-ads-sp
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
 online-station.net##.os_preload_popup
+online-station.net##div[class^="introjs"]
+online-station.net##div[class^="os-ads"]
 online-station.net##div[data-widget="plista_widget_belowArticle"]
 online-station.net##div[data-widget="plista_widget_sidebar"]
 online-station.net##div[id*="div-gpt-ad"]
-oopsmobile.net##.fancybox-overlay
-oopsmobile.net##.fancybox-wrap
-pantip.com###ads-tabloid
-pantip.com##.ads-billboard
 pantip.com##.ads-tabloid
 pantip.com##.m-block a[href*="ads.pantip.com"]
 pantip.com##.post-pick-ad
+pantip.com##div[class^="ads-"]
+pantip.com##div[id^="ads-"]
 pantip.com##iframe[src*="ads.pantip.com"]
 pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
-petmaya.com###arevicofancy-loading
-petmaya.com###arevicofancy-overlay
-petmaya.com###arevicofancy-tmp
-petmaya.com###arevicofancy-wrap
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
@@ -207,12 +135,10 @@ rabbit.co.th##.exit-overlay
 rabbit.co.th##.post-entry .ads
 rabbit.co.th##.subscribe-form
 rabbit.co.th##.ui-front.ui-widget-overlay
-share-si.com###overlay
 share-si.com###yengo-inline-ads
 share-si.com##.yengo-x
-siamok.com###lightbox
-siamok.com###lightbox-shadow
 siamok.com##div[class^=SC_TBlock]
+siamok.com##div[id^="lightbox"]
 siamok.com##iframe[src="/ads/foot-yengo.php"]
 siamphone.com###banner300_600
 siamphone.com##.mid_ads
@@ -220,27 +146,10 @@ sistacafe.com##.popup
 specphone.com##.banana_box iframe[src^="https://notebookspec.com/specialprice"]
 specphone.com##.cover_banner
 specphone.com##div[id^=div-gpt-ad]
-startclip.com###popDiv
-startclip.com###popup
 sudting.party##div[id^="SC_TBlock"]
-techmoblog.com###cboxOverlay
 techmoblog.com###cboxWrapper
 techtalkthai.com##.wrapper-outer .background-cover
-tgpl.in.th###arevicofancy-loading
-tgpl.in.th###arevicofancy-overlay
-tgpl.in.th###arevicofancy-tmp
-tgpl.in.th###arevicofancy-wrap
 tgpl.in.th##div a[href^="http://www.compgamer.com/mario-ads/"]
-thaihitz.com###arevicofancy-loading
-thaihitz.com###arevicofancy-overlay
-thaihitz.com###arevicofancy-tmp
-thaihitz.com###arevicofancy-wrap
-thaihitz.com##.SC_TBlock
-thaihitz.com##.backdrop
-thaijobsgov.com##.SC_TBlock
-thaijobsgov.com##.backdrop
-thailandbestbeauty.com###cboxOverlay
-thailandbestbeauty.com###colorbox
 thailandbestbeauty.com###divAdLeft
 thailandbestbeauty.com###divAdRight
 thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
@@ -253,11 +162,9 @@ thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
 thetechr.com##.jinda-wrapper
-thisisgamethailand.com###adsbannerbottommtig
-thisisgamethailand.com###adsbannermtig
-thisisgamethailand.com###adsbannermtigbox
 thisisgamethailand.com##.container .item > a[href*="/index.php?/stats/clickAdd"]
 thisisgamethailand.com##a[href*="index.php?/stats/clickAdd/"]
+thisisgamethailand.com##div[id^="adsbanner"]
 tnews.co.th###myModal
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
@@ -267,12 +174,30 @@ toritalk.com##.jquery-modal.blocker
 toritalk.com##.td-front-end-display-block
 toritalk.com##.topad
 upic.me###basic-modal-content
-upic.me###simplemodal-container
-upic.me###simplemodal-overlay
+upic.me##div[id^="simplemodal"]
 worldcosplay.net###registerPopup
 worldcosplay.net##.registration-modal-bg
 yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
+
+! Multiple domains that shared same element names
+chujai.com,extremepc.in.th,ithaihotnews.com,itnews24hrs.com,juropy.com,kaijeaw.com,laughwoo.com,mthai.com,petmaya.com,tgpl.in.th,thaihitz.com##div[id^="arevicofancy"]
+doodiza.com,startclip.com###popDiv
+doodiza.com,startclip.com###popup
+kaijeaw.com,thaihitz.com,thaijobsgov.com##.backdrop
+kiitdoo.com,meekhao.com##.dgd_stb_box.clean_white
+kodlikes.com,oopsmobile.net##div[class^="fancybox"]
+kpmemory.com,share-si.com###overlay
+liceza.com,thailandbestbeauty.com###colorbox
+mustplay.in.th,playulti.com###bg-left
+mustplay.in.th,playulti.com###bg-right
+mustplay.in.th,playulti.com###bgyoutube
+mustplay.in.th,playulti.com##.cover_page
+mustplay.in.th,playulti.com##.preloader
+mustplay.in.th,playulti.com##.promote
+notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
+techmoblog.com,thailandbestbeauty.com###cboxOverlay
+thaihitz.com,thaijobsgov.com##.SC_TBlock
 
 ! -------------------------------------------------- Network filters section -------------------------------------------------- !
 
@@ -280,21 +205,21 @@ zaapmak.com##iframe
 /easy-facebook-likebox
 /facebook-fanbox*
 /facebook-page-promoter-lightbox*
+/facebook-popup-box
 /facebook_popup*
 /fb-traffic-pop
 /floating-social-bar
 /like-fb
 /like_box*
 /new-facebook-popup-likebox-responsive
+/social-popup
 /ud-social
 
 ! Inside first party, such as self-hosted ads, plugins, script function that try to suggest or force users to follow brand on SNS services.
 ||4toom.com/*/modal-dialog/*
-||araidii.com/*/facebook-popup-box/*
 ||aroundnews.net/*/like-jacking-ninja/*
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
-||brandbuffet.in.th/*/social-popup/*
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
@@ -304,8 +229,8 @@ zaapmak.com##iframe
 ||gamemonday.com/*/adrotate-pro/*
 ||ithaihotnews.com/*/like-jacking-ninja/*
 ||kaijeaw.com/*/fancybox/*
-||kapook.com/ads/portal^
 ||kanomjeeb.com/*/lightbox*
+||kapook.com/ads/portal^
 ||kidjarak.com/*/bsa-pro-scripteo/*
 ||ladycee.com/light_ads^
 ||laughwoo.com/*/like-jacking-ninja/*
@@ -334,7 +259,6 @@ zaapmak.com##iframe
 ||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
-||pol-ball.com/*/facebook-popup-box/*
 ||shopspotapp.com/*/popups/*
 ||siamchatroom.com/light_ads^
 ||siamok.com/light_ads/*
