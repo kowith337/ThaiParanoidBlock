@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802051029
+! Version: 201802121247
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -176,6 +176,7 @@ mustplay.in.th,playulti.com##.promote
 newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
+notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
 ohlor.com###fanback
 ohlor.com###upprev_box
 ohmpiang.com###check-also-box
@@ -243,6 +244,7 @@ siamza.com###fanback
 sistacafe.com##.fb-popup
 sistacafe.com##.popup
 sistacafe.com##.popup.fblike
+specphone.com##.banana_box iframe[src^="https://notebookspec.com/specialprice"]
 specphone.com##.cover_banner
 specphone.com##div[id^=div-gpt-ad]
 startclip.com###popDiv
@@ -447,6 +449,7 @@ zaapmak.com##iframe
 ||linkis.com/log.php$important
 ||ln.is/dhsync-push?*show_auth_popup$important
 ||metrics.brightcove.com$important
+||notebookspec.com/tracker/$important
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
@@ -550,6 +553,7 @@ zaapmak.com##iframe
 ||innity.com
 ||innity.net
 ||inspectlet.com
+||joox-affiliate.sanook.com
 ||kiosked.com
 ||luckyorange.com
 ||m88.com
@@ -567,6 +571,7 @@ zaapmak.com##iframe
 ||oilchange.website
 ||onclasrv.com
 ||onclickads.net
+||openx.notebookspec.com
 ||openxmarket.asia
 ||padsdel.com
 ||padstm.com
@@ -587,6 +592,7 @@ zaapmak.com##iframe
 ||poptm.com
 ||ptengine.com
 ||puserving.com
+||pushnative.com
 ||quicktask.xyz
 ||reimageplus.com
 ||replase.tk
@@ -598,6 +604,7 @@ zaapmak.com##iframe
 ||simba-digital.com
 ||smemove.com
 ||stat.matichon.co.th
+||statmt.matichon.co.th
 ||stats.in.th
 ||stats.wp.com
 ||sumome.com
@@ -1157,7 +1164,6 @@ zaapmak.com##iframe
 ||ss2.mobilelife.co.th$important
 ||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
-||stackpathdns.com$important
 ||startappservice.com$important
 ||stormobi.com$important
 ||stream-flix.mobi$important
@@ -1634,6 +1640,8 @@ mustplay.in.th,playulti.com##.banner:if(a[rel])
 mustplay.in.th,playulti.com##a:if(img[src*="/data/setting/banner/"])
 news.sanook.com##.col.highlight--channel__aside:if(.social)
 news.sanook.com##.col.highlight--channel__aside:if(div[class^="snic"])
+notebookspec.com##.banner-side:if(iframe[src^="https://openx.notebookspec.com"])
+notebookspec.com##.text-center.container:if(iframe[src^="https://openx.notebookspec.com"])
 oopsmobile.net##.td-post-content div:if(.adsbygoogle)
 oopsmobile.net##.textwidget:if(.adsbygoogle)
 pantip.com##.bg-box-allow:if(.box-allow-location)
@@ -1673,6 +1681,10 @@ siamphone.com###banner:if(iframe[src*="ads.siamphone.com"])
 siamphone.com##.news_cate li ul:if(iframe[src*="ads.siamphone.com"])
 siamphone.com##.top_banner:if(div span:has(iframe[src*="ads.siamphone.com"]))
 siamphone.com##div[class^="banner"]:if(iframe[src*="ads.siamphone.com"])
+specphone.com##.container > .row .blog_left_box:if(.ad_center_box)
+specphone.com##.container > .row .blog_right_box:if(.ad_center_box)
+specphone.com##.home_banner_align_box:if(#AdsTop)
+specphone.com##.home_banner_top:if(iframe[src^="https://openx.notebookspec.com"])
 techtalkthai.com##.theiaStickySidebar .widget:if(.widget-container p:has(a[rel="noopener"]))
 thaihitz.com##.post-single-content center:if(.adsbygoogle)
 thaiidol.com##.td-g-rec:if(.adsbygoogle)
