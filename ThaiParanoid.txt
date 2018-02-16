@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201802121246
+! Version: 201802162110
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -31,14 +31,11 @@
 
 ! Element filter rules (merged with ThaiAntiForceLike)
 akibatan.com##.td-logo-wrap-full
-animeranku.com###check-also-box
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
-araidii.com###facebookpopup-fanback
 autocar.in.th###_bz_boxlike
 autocar.in.th###_bz_boxlike_area
 autocar.in.th###_bz_boxlike_bg
 autocar.in.th###_bz_boxlike_footer
-autocar.in.th###makingdifferentpopup
 autocar.in.th##.google-ads.row
 autocar.in.th##.google-ads.row-fluid
 chujai.com###arevicofancy-loading
@@ -50,10 +47,8 @@ clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
-coregamerth.com###check-also-box
 coregamerth.com##.theiaStickySidebar div[id^="ads300_250"]
 disqus.com##div[class^="login-overlay"]
-dodeden.com###facebookpopup-fanback
 dodeden.com###intro
 dodeden.com##.banner-A1
 dodeden.com##.banner-A2
@@ -62,7 +57,6 @@ dodeden.com##.banner-X2
 doodiza.com###popDiv
 doodiza.com###popup
 doodiza.com##.bigza-ads-block
-dspzeeplus.com###fbox-background
 dspzeeplus.com###fbox-button
 dspzeeplus.com###fbox-close
 dspzeeplus.com###fbox-display
@@ -78,8 +72,6 @@ extremepc.in.th###arevicofancy-loading
 extremepc.in.th###arevicofancy-overlay
 extremepc.in.th###arevicofancy-tmp
 extremepc.in.th###arevicofancy-wrap
-frynn.com###fblikebg
-frynn.com###fblikepop
 game-tep.com##.leftBanner
 game-tep.com##.rightBanner
 gamegeek.in.th##.wppaszone
@@ -95,7 +87,6 @@ itnews24hrs.com###arevicofancy-loading
 itnews24hrs.com###arevicofancy-overlay
 itnews24hrs.com###arevicofancy-tmp
 itnews24hrs.com###arevicofancy-wrap
-itnews24hrs.com###check-also-box
 jarm.com##._banner > a[href*="ads.jarm.com"]
 juropy.com###arevicofancy-loading
 juropy.com###arevicofancy-overlay
@@ -105,12 +96,7 @@ kaijeaw.com###arevicofancy-loading
 kaijeaw.com###arevicofancy-overlay
 kaijeaw.com###arevicofancy-tmp
 kaijeaw.com###arevicofancy-wrap
-kaijeaw.com###fb_box
 kaijeaw.com##.backdrop
-kaijeaw.com##.fb_overlay
-kaijeaw.com##.popup-like
-kaijeaw.com##.popup-like-box
-kaijeaw.com##.popup-like-box-backdrop
 kapook.com##.targetbanner-hilight
 kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
 kidjarak.com###spu-1170
@@ -131,7 +117,6 @@ liekr.com###topAd
 liekr.com##.foot_fb_like
 liekr.com##.like_yellow
 liekr.com##div[itemprop="articleBody"] a[class^="ui_btn"][href*="line.me"]
-likessara.com###facebookpopup-fanback
 linkis.com##.deeper-overlay
 linkis.com##.js-forceAuth-popup-light
 linkis.com##.other-pages-holder .left-column
@@ -143,7 +128,6 @@ lonely-rooyang.com##.fancybox-wrap
 m.online-station.net###leaderboard_bottom.bottom_banner
 m.online-station.net###leaderboard_bottom.bottom_banner#close_banner
 m.online-station.net##.os-install-app
-m.online-station.net##.os_preload_popup
 m.online-station.net##figure[class="os-floating-ad"]
 m.online-station.net##figure[class^="os-ad"]
 m.webtoons.com##.downapp_area
@@ -154,7 +138,6 @@ marketingoops.com###itro_opaco
 marketingoops.com###itro_popup
 marketingoops.com###popup_countdown
 meekhao.com##.dgd_stb_box.clean_white
-meepanda.com###facebookpopup-fanback
 meepanda.com##.adsense-leadin
 meepanda.com##.ezAdsense
 mthai.com###MT_HP_Topbanner
@@ -173,13 +156,10 @@ mustplay.in.th,playulti.com###bgyoutube
 mustplay.in.th,playulti.com##.cover_page
 mustplay.in.th,playulti.com##.preloader
 mustplay.in.th,playulti.com##.promote
-newstimeline.net###makingdifferentpopup
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
 notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
-ohlor.com###fanback
 ohlor.com###upprev_box
-ohmpiang.com###check-also-box
 online-station.net###ads-overlay
 online-station.net###ads-preload-popup
 online-station.net###close-preload
@@ -219,10 +199,7 @@ picnic.ly##.essb_bottombar
 picpost.mthai.com###dfp-adhesion
 picpost.mthai.com###masthead #dfp-topbanner
 picpost.mthai.com##.sticky-container .banner-wrap
-pol-ball.com###facebookpopup-fanback
 popcornfor2.com###content div .banner-mobile-size
-postjung.com###fbpop_box
-postjung.com###fbpop_box2
 postjung.com##.mainbox > div > .adsbygoogle
 postjung.com##.xadsense_middle
 rabbit.co.th##.ads-sidebar-middle
@@ -230,7 +207,6 @@ rabbit.co.th##.exit-overlay
 rabbit.co.th##.post-entry .ads
 rabbit.co.th##.subscribe-form
 rabbit.co.th##.ui-front.ui-widget-overlay
-share-si.com###fbox-background
 share-si.com###overlay
 share-si.com###yengo-inline-ads
 share-si.com##.yengo-x
@@ -240,10 +216,7 @@ siamok.com##div[class^=SC_TBlock]
 siamok.com##iframe[src="/ads/foot-yengo.php"]
 siamphone.com###banner300_600
 siamphone.com##.mid_ads
-siamza.com###fanback
-sistacafe.com##.fb-popup
 sistacafe.com##.popup
-sistacafe.com##.popup.fblike
 specphone.com##.banana_box iframe[src^="https://notebookspec.com/specialprice"]
 specphone.com##.cover_banner
 specphone.com##div[id^=div-gpt-ad]
@@ -252,7 +225,6 @@ startclip.com###popup
 sudting.party##div[id^="SC_TBlock"]
 techmoblog.com###cboxOverlay
 techmoblog.com###cboxWrapper
-techtalkthai.com###check-also-box
 techtalkthai.com##.wrapper-outer .background-cover
 tgpl.in.th###arevicofancy-loading
 tgpl.in.th###arevicofancy-overlay
@@ -263,18 +235,10 @@ thaihitz.com###arevicofancy-loading
 thaihitz.com###arevicofancy-overlay
 thaihitz.com###arevicofancy-tmp
 thaihitz.com###arevicofancy-wrap
-thaihitz.com###facebook-like-box-pop-up
-thaihitz.com###fb_box
 thaihitz.com##.SC_TBlock
 thaihitz.com##.backdrop
-thaihitz.com##.facebook-like-box-pop-up-overlay
-thaihitz.com##.fb_overlay
-thaihitz.com##.popup-like
-thaihitz.com##.popup-like-box
-thaihitz.com##.popup-like-box-backdrop
 thaijobsgov.com##.SC_TBlock
 thaijobsgov.com##.backdrop
-thaijobsgov.com##.popup-like-box
 thailandbestbeauty.com###cboxOverlay
 thailandbestbeauty.com###colorbox
 thailandbestbeauty.com###divAdLeft
@@ -282,7 +246,6 @@ thailandbestbeauty.com###divAdRight
 thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
 thaimobilecenter.com##iframe[src^="../banner/google_adsense"]
 thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
-thaiza.com###fbpop
 thaiza.com##.adv2col
 thaiza.com##.adv3col
 thaiza.com##.banner_728_90
@@ -327,10 +290,7 @@ zaapmak.com##iframe
 
 ! Inside first party, such as self-hosted ads, plugins, script function that try to suggest or force users to follow brand on SNS services.
 ||4toom.com/*/modal-dialog/*
-||anitime.in.th/*/easy-facebook-likebox/*
-||araideewa.com/*/facebook-fanbox-popup/*
 ||araidii.com/*/facebook-popup-box/*
-||aroundnews.net/*/easy-facebook-likebox/*
 ||aroundnews.net/*/like-jacking-ninja/*
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
@@ -338,34 +298,22 @@ zaapmak.com##iframe
 ||coregamerth.com/*/jquery-cookie/*
 ||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
-||dspzeeplus.com/*/facebook-page-promoter-lightbox/*
-||everythingisee.in.th/*/facebook-page-promoter-lightbox/*
-||frynn.com/*/fb-traffic-pop/*
 ||game-tep.com/*/adrotate-pro/*
 ||game-tep.com/*/fancy-box/*
 ||gamegeek.in.th/*/layeredpopups/*
 ||gamemonday.com/*/adrotate-pro/*
 ||ithaihotnews.com/*/like-jacking-ninja/*
-||itnews24hrs.com/*/facebook-page-promoter-lightbox/*
-||japanexpothailand.org/*/facebook-fanbox-popup/*
-||juropy.com/*/facebook-page-promoter-lightbox/*
 ||kaijeaw.com/*/fancybox/*
-||kaijeaw.com/*/like_box*
 ||kapook.com/ads/portal^
 ||kanomjeeb.com/*/lightbox*
-||khonkaenlink.info/facebook_popup^
 ||kidjarak.com/*/bsa-pro-scripteo/*
-||kidjarak.com/*/easy-facebook-likebox/*
 ||ladycee.com/light_ads^
-||laughwoo.com/*/floating-social-bar/*
 ||laughwoo.com/*/like-jacking-ninja/*
-||likessara.com/*/like-fb/*
 ||lonely-rooyang.com/*/arscode-ninja-popups/*
 ||marketingoops.com/*/itro-popup/*
 ||marketingoops.com/popup-ad*
 ||matichon.co.th/www/delivery/
 ||meekhao.com/*/dreamgrow-scroll-triggered-box/*
-||meepanda.com/*/new-facebook-popup-likebox-responsive/*
 ||miru-anime.net/*/popups/*
 ||miruanime.net/*/popups/*
 ||mustplay.in.th/assets/js/jquery.tubular^
@@ -380,17 +328,13 @@ zaapmak.com##iframe
 ||ohlor.com/*/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/*
 ||online-station.net/content/count_stats?
 ||oopsmobile.net/*/arscode-ninja-popups/*
-||overgraphy.com/*/easy-facebook-likebox/*
 ||pantip.com/ads.php
 ||pantip.com/adsip.php
 ||pantip.com/adsipmobile.php
-||petmaya.com/*/facebook-page-promoter-lightbox-premium/*
 ||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
 ||pol-ball.com/*/facebook-popup-box/*
-||senseonfilms.com/*/facebook-page-promoter-lightbox/*
-||shopspotapp.com/*/popups/*
 ||shopspotapp.com/*/popups/*
 ||siamchatroom.com/light_ads^
 ||siamok.com/light_ads/*
@@ -399,22 +343,18 @@ zaapmak.com##iframe
 ||sistacafe.com/scripts/truehits
 ||sistacafe.com/scripts/yengo
 ||specphone.com/*/nbs-ilightbox/*
-||sudting.party/*/new-facebook-popup-likebox-responsive/*
 ||taghr.net/*/uji-popup/*
 ||techmoblog.com/*colorbox*
 ||techxcite.com/stats.php?
 ||techxcite.com/truehitsstat.php?
-||thaihitz.com/*/like_box.js
 ||thaiidol.com/*/popup-by-supsystic/*
 ||thaijobsgov.com/*/fancybox/*
 ||thaijobsgov.com/banner^
-||thailandbestbeauty.com/*/colorbox.css
 ||thailandbestbeauty.com/*colorbox*
 ||thaimobilecenter.com/colorbox^
 ||thaiza.com/nodo.html
 ||thetechr.com/*/jinda-facebook-lightbox/*
 ||toritalk.com/*/uji-popup/*
-||yakjado.com/*/easy-facebook-likebox/*
 ||yakjado.com/*/upprev/*
 ||yakjado.com/*/wp-social-popup-and-get-traffic/*
 
@@ -544,6 +484,7 @@ zaapmak.com##iframe
 ||gbox.sc$important
 ||go2cloud.org$important
 ||go2speed.org$important
+||google-analytics.l.google.com$important
 ||heatmap.it$important
 ||histats.com$important
 ||hotjar.com$important
@@ -570,7 +511,7 @@ zaapmak.com##iframe
 ||oilchange.website$important
 ||onclasrv.com$important
 ||onclickads.net$important
-||openx.notebookspec.com
+||openx.notebookspec.com$important
 ||openxmarket.asia$important
 ||padsdel.com$important
 ||padstm.com$important
@@ -1780,7 +1721,6 @@ jarm.com##script:contains(googletag.cmd.push)
 jarm.com##script:contains(GoogleAnalyticsObject)
 liekr.com##script:contains($showLikePopup)
 manyum.com##script:contains(ui_popup_window)
-manyum.com##script[id="ui_popup_window_tpl"]
 mx7.com##script:contains(GoogleAnalyticsObject)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(PLISTA)
