@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201802162113
+! Version: 201802162114
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -94,6 +94,7 @@ mthai.com###coverpage
 mthai.com###ga-between
 mthai.com##.ads-rec-center
 mthai.com##.billboard-banner
+mthai.com##div[id^="dfp-"]
 mustplay.in.th##.YouTubeModal
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
@@ -124,7 +125,6 @@ pantip.com##noscript
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
-picpost.mthai.com###dfp-adhesion
 picpost.mthai.com###masthead #dfp-topbanner
 picpost.mthai.com##.sticky-container .banner-wrap
 popcornfor2.com###content div .banner-mobile-size
@@ -320,6 +320,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||referrer.disqus.com$important
 ||thairath.co.th/assets/js/firebase$important
 ||thairath.co.th/js/autotrack$important
+||thairath.co.th/js/tr_$script,important
 ||visualwebsiteoptimizer.com$important
 ||webtoons.com/js/lib/dfp_helper$important
 ||webtoons.com/js/lib/*_logger$important
