@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802162105
+! Version: 201802181200
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/redundant
 ! Expires: 2 days
@@ -754,6 +754,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||etracker.cc$important
 ||exprtmb.com$important
 ||facabooks.com$important
+||famobi.com$important
 ||fashionbunny.com$important
 ||fblives.net$important
 ||findgit.com$important
@@ -820,6 +821,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||hello1.in$important
 ||hfa.mobi$important
 ||hito.co.vu$important
+||hm5.me$important
 ||horoworld.com$important
 ||hotstar.com$important
 ||house365.com$important
