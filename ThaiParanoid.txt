@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802181202
+! Version: 201802191618
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -812,6 +812,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||grabmobitraffic.com$important
 ||grandmobi.net$important
 ||gw2cloud.com$important
+||gzazone.com$important
 ||halocell.com$important
 ||handysms.com$important
 ||havfun.mobi$important
@@ -838,6 +839,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||instantbabes.mobi$important
 ||iqwmxn.com$important
 ||isport.co.th$important
+||ivalent.com$important
 ||izenmobi.com$important
 ||jibhd.com$important
 ||jmtt.co.th$important
