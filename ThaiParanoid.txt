@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block
-! Version: 201802241037
+! Version: 201803041316
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -464,8 +464,10 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||sales-frontier.com
 ||scorecardresearch.com
 ||serving-sys.com
+||shinobi.jp
 ||simba-digital.com
 ||smemove.com
+||socdm.com
 ||stat.matichon.co.th
 ||statmt.matichon.co.th
 ||stats.in.th
@@ -476,6 +478,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||tagserve.asia
 ||tapad.com
 ||thstats.com
+||thtrackingap.com
 ||travelpayouts.com
 ||truehits.in.th
 ||truehits.net
@@ -514,7 +517,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 
 ! It's OK to show only what things needed, not other things
 ||gravatar.com$third-party
-@@||gravatar.com/avatar$image
+@@||gravatar.com/avatar$image,third-party
 
 ! Dark Patterns (Coin Miners, Using your machine as CDN and such...)
 ! [Deprecated] Recommended to use this list > https://github.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt
@@ -770,6 +773,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||full-funny.com$important
 ||fun-clix.com$important
 ||fun-club.mobi$important
+||fun-offer-th.com$important
 ||fun2u.biz$important
 ||fun4u.co$important
 ||fungame.mobi$important
@@ -782,6 +786,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||fusetracking.com$important
 ||g.zm.my$important
 ||gadmobe.com$important
+||gamebuffet.mobi$important
 ||gameloft.co.th$important
 ||gameloft.com$important
 ||gamepanda.me$important
