@@ -1,6 +1,6 @@
 [uBlock Origin 1.14.18.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201803041326
+! Version: 201803081409
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -382,7 +382,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||bluekai.com$important
 ||btstatic.com$important
 ||bumq.com$important
-||byteark-analytics.thairath.co.th$important
 ||clickadu.com$important
 ||clicksgear.com$important
 ||connextra.com$important
@@ -1489,6 +1488,8 @@ m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root div[data-ft]:if(a[
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table div:if(div[id^="page_suggestion"]:has(div a[href*="&origin=mobile_page_browser&"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###root table td > div:has-text(/^Suggested/):if(ul li:has(table))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###sub_profile_pic_content div > div:if(table a[href*="/search/"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport #root div:if(h3):has(span a[href^="/dd/greeting/mbasic/more/tapped"])
+m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport #root div[data-ft]:if(h3:has-text(Facebook)):has(a[href^="/netego/redirect/"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(a[href^="/download.php"])
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > div:if(table tbody tr td:has(a[href^="/a/language.php?"]):if-not(a[href*="lref=%2Fsettings%2Flanguage%2F"]))
 m.facebook.com,mbasic.facebook.com,mobile.facebook.com###viewport div > table[class] td a[href*="lm.facebook.com/l.php?"][target="_blank"]:if(span)
