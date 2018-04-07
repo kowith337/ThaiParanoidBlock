@@ -1,6 +1,6 @@
-[uBlock Origin 1.14.18.0]
+[uBlock Origin 1.15.25.1]
 ! Title: Thai Paranoid Block
-! Version: 201803241350
+! Version: 201804071910
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -791,6 +791,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||gameloft.com$important
 ||gamepanda.me$important
 ||games-live.s3.amazonaws.com$important
+||games-unlimited.mobi$important
 ||gamescentreom.com$important
 ||gamezine.in$important
 ||gameziz.com$important
@@ -1569,6 +1570,7 @@ thaimobilecenter.com###exp-normal:if(a[href*="/ad_click"])
 thetechr.com##.rev-block:if(.adsbygoogle)
 thisisgamethailand.com##.module .item:if(a[href*="/index.php?/stats/clickAdd"])
 
+!#if ext_firefox
 ! Specific inline-script hiding
 ! This work only Firefox version below than 56 + install legacy version of uBO
 autocar.in.th##script:contains(makingdifferent_ppopup)
@@ -1599,3 +1601,4 @@ share-si.com##script:contains(ccpop)
 teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
+!#endif
