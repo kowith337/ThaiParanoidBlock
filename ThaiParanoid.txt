@@ -1,6 +1,6 @@
 [uBlock Origin 1.15.25.1]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201804141225
+! Version: 201804161118
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -798,7 +798,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||games-unlimited.mobi$important
 ||gamescentreom.com$important
 ||gamezine.in$important
-||gamezine.in$important
 ||gameziz.com$important
 ||gamezzone.me$important
 ||gammo.me$important
@@ -1067,7 +1066,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||thepind.mobi$important
 ||thinksmart.co.th$important
 ||thisilike.net$important
-||thisilike.net$important
 ||thmobi.com$important
 ||thumbr.com$important
 ||thumbsms.com$important
@@ -1082,6 +1080,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||trend-tech.net$important
 ||tubecorporate.com$important
 ||turbob.mobi$important
+||tvplanet.co$important
 ||tweetsms.com.my$important
 ||txtnation.com$important
 ||u-nee.com$important
