@@ -1,6 +1,6 @@
 [uBlock Origin 1.15.25.1]
 ! Title: Thai Paranoid Block
-! Version: 201804182146
+! Version: 201804211249
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -749,6 +749,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||digi.com.my$important
 ||digitalmerkat.com$important
 ||digitalngo.com$important
+||digitalzoneng.com$important
 ||dindo.co.th$important
 ||dittolite.com$important
 ||dlxxxvip.com$important
@@ -786,6 +787,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||funstar.mobi$important
 ||funster.mobi$important
 ||funzone.mobi$important
+||funzytv.com$important
 ||fusetracking.com$important
 ||g.zm.my$important
 ||gadmobe.com$important
@@ -840,6 +842,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||hurvewa.com$important
 ||hypermobiworld.com$important
 ||hyptas.com$important
+||hyvesdp.com$important
 ||i-link.co$important
 ||iamzaa.com$important
 ||ibwin68.net$important
@@ -886,6 +889,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||magent.my$important
 ||magikmobile.mobi$important
 ||mastermovie-hd.mobi$important
+||matchme.com.ng$important
 ||maxforecast.com$important
 ||may91.vn$important
 ||mayrondigital.com$important
@@ -1039,6 +1043,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||smrtx.net$important
 ||smsgateway.cc$important
 ||snapp.asia$important
+||soccerchamp.ng$important
 ||socialclip.mobi$important
 ||sosmob.mobi$important
 ||spak.me$important
@@ -1059,6 +1064,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||t3mobileadvertising.xyz$important
 ||tc-clicks.com$important
 ||tdedlove.com$important
+||terragonbase.com$important
 ||thai-iphone.com$important
 ||thai2mobi.com$important
 ||thaifun4u.com$important
