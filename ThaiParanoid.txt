@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 2018043051225
+! Version: 2018043061614
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -82,6 +82,7 @@ m.online-station.net###leaderboard_bottom.bottom_banner
 m.online-station.net##.os-install-app
 m.online-station.net##figure[class="os-floating-ad"]
 m.online-station.net##figure[class^="os-ad"]
+m.pantip.com##.smartbanner
 m.pantip.com##.social-banner
 m.webtoons.com##.downapp_area
 manyum.com###ui_popup_window_tpl
@@ -293,7 +294,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||linkis.com/ajax/update-click?*force_auth
 ||linkis.com/index/ln-event?*force-auth
 ||linkis.com/signin^$popup
-||m.pantip.com/js/function-smart$script
 ||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/*/css/preload_ads$stylesheet
 ||online-station.net/assets/js/ads$script
@@ -1520,6 +1520,7 @@ online-station.net##script:contains(ssProtocol)
 pantip.com##script:contains("https://ssl-avd.innity.net")
 pantip.com##script:contains(GoogleAnalyticsObject)
 pantip.com##script:contains(_comscore)
+pantip.com##script:contains(gtm.start)
 picnic.ly##script:contains(advads)
 postjung.com##script:contains(fbpop)
 share-si.com##script:contains(ccpop)
