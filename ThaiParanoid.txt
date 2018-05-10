@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 2018043061615
+! Version: 201805102120
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -436,6 +436,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||oilchange.website$important
 ||onclasrv.com$important
 ||onclickads.net$important
+||onesignal.com$important
 ||openx.notebookspec.com$important
 ||openxmarket.asia$important
 ||padsdel.com$important
@@ -742,6 +743,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||cypher-sys.com$important
 ||d22ndsbwwggzum.cloudfront.net$important
 ||damneddevastator.com$important
+||dangduter.com$important
 ||datapremium.$important
 ||datinggirls.info$important
 ||ddzey.com$important
@@ -1095,6 +1097,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||txtnation.com$important
 ||u-nee.com$important
 ||umobi.biz$important
+||vasgn.com$important
 ||vassolution.com$important
 ||vcdn.stream$important
 ||vcgbtlktbagb.com$important
