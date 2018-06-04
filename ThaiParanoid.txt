@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201805302235
+! Version: 201806042017
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -560,6 +560,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||27.254.82.83$important
 ||43.231.124.161$important
 ||49.50.69.80$important
+||52.76.52.18$important
 ||52.76.242.20$important
 ||52.220.167.186$important
 ||54.169.240.216$important
@@ -576,6 +577,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||103.56.210.21$important
 ||107.170.154.51$important
 ||113.30.248.2$important
+||116.68.193.122$important
 ||118.102.141.188$important
 ||121.241.248.6$important
 ||122.160.21.203$important
@@ -760,6 +762,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||dindo.co.th$important
 ||dittolite.com$important
 ||dlxxxvip.com$important
+||dobmobile.com$important
+||dobmobile.xyz$important
 ||downloadhub.me$important
 ||e668ou.com$important
 ||eggdigital.com$important
@@ -913,6 +917,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||mli.me$important
 ||mob-api.net$important
 ||mobgkt.com$important
+||mobi-zone.mobi$important
 ||mobi2u.biz$important
 ||mobi2u.mobi$important
 ||mobico.my$important
@@ -983,6 +988,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||nowportal.net$important
 ||offergold.online$important
 ||offerstrack.net$important
+||offrtrking.com$important
 ||onlytopoffers.com$important
 ||oomph.club$important
 ||opencurvemedia.com$important
@@ -1046,6 +1052,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||slimcdn.com$important
 ||slypee.com$important
 ||smartadurl.com$important
+||smartcalltech.co.za$important
 ||smartoffer.site$important
 ||smarttelebiz.com$important
 ||smilesms.com$important
@@ -1148,6 +1155,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||yuqazate.com$important
 ||zedo.com$important
 ||zigifun.com$important
+||zingmobiledev.com$important
 ||zmclick.com$important
 ||zog.link$important
 ||zomobie.com$important
