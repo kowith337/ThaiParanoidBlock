@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201806152151
+! Version: 201806152154
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -588,6 +588,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||121.241.248.6$important
 ||122.160.21.203$important
 ||124.158.4.91$important
+||125.63.68.111$important
 ||139.59.44.57$important
 ||139.162.57.169$important
 ||162.243.33.148$important
