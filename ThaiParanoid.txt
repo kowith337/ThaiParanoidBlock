@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201806152153
+! Version: 201806152156
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -466,6 +466,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||quicktask.xyz
 ||reimageplus.com
 ||replase.tk
+||report-uri.cloudflare.com
 ||revsci.net
 ||ruu-dee.com
 ||sales-frontier.com
