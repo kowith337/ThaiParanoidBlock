@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201806042017
+! Version: 201806152151
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -34,6 +34,7 @@ akibatan.com##.td-logo-wrap-full
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 autocar.in.th##.google-ads
 autocar.in.th##div[id^="_bz_boxlike"]
+becteroradio.com##div[class^="fancybox"]
 cleothailand.com###survey-popup
 clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
@@ -186,6 +187,7 @@ zaapmak.com##iframe
 chujai.com,extremepc.in.th,ithaihotnews.com,itnews24hrs.com,juropy.com,kaijeaw.com,laughwoo.com,mthai.com,petmaya.com,tgpl.in.th,thaihitz.com##div[id^="arevicofancy"]
 doodiza.com,startclip.com###popDiv
 doodiza.com,startclip.com###popup
+fmone1035.com,get1025.com##.spu-box
 kaijeaw.com,thaihitz.com,thaijobsgov.com##.backdrop
 kiitdoo.com,meekhao.com##.dgd_stb_box.clean_white
 kodlikes.com,oopsmobile.net##div[class^="fancybox"]
@@ -217,13 +219,16 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 /social-popup
 /ud-social
 
+! Same as above, but depend on specific domain(s)
+/plugins/popups/$script,stylesheet,domain=coregamerth.com|fmone1035.com|get1025.com|miru-anime.net|miruanime.net|shopspotapp.com
+
 ! Inside first party, such as self-hosted ads, plugins, script function that try to suggest or force users to follow brand on SNS services.
 ||4toom.com/*/modal-dialog/*
 ||aroundnews.net/*/like-jacking-ninja/*
+||becteroradio.com/lib/fancybox/
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
 ||coregamerth.com/*/jquery-cookie/*
-||coregamerth.com/*/popups/*
 ||dodeden.com/advert^
 ||game-tep.com/*/adrotate-pro/*
 ||game-tep.com/*/fancy-box/*
@@ -241,8 +246,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||marketingoops.com/popup-ad*
 ||matichon.co.th/www/delivery/
 ||meekhao.com/*/dreamgrow-scroll-triggered-box/*
-||miru-anime.net/*/popups/*
-||miruanime.net/*/popups/*
 ||mustplay.in.th/assets/js/jquery.tubular^
 ||mustplay.in.th/assets/js/youtubepopup
 ||mustplay.in.th/static/banner/*/ads-^
@@ -261,7 +264,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
-||shopspotapp.com/*/popups/*
 ||siamchatroom.com/light_ads^
 ||siamok.com/light_ads/*
 ||siamza.com/js/jquery.cookie.js
@@ -306,6 +308,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
 ||ais.co.th/advertiser$important
+||becteroradio.com/2014/hidden-ad-inner.php?$important
+||becteroradio.com/truehitsstat.php?$important
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
@@ -320,6 +324,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
 ||referrer.disqus.com$important
+||siamha.com/truehits/stat$important
 ||thairath.co.th/assets/js/firebase$important
 ||thairath.co.th/js/autotrack$important
 ||thairath.co.th/js/tr_$script,important
@@ -507,6 +512,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||googlesyndication.com$important
 ||googletagmanager.com$important
 ||googletagservices.com$important
+||gstatic.com/firebasejs$important
 ||id.google.com$important
 ||imasdk.googleapis.com$important
 ||mobilecrashreporting.googleapis.com$important
@@ -1576,6 +1582,8 @@ webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
 ! Experimental for Facebook security pixels, this may break their functionality and security check.
+||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
+||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noopframe
 ||facebook.com/common/referer_frame.php$subdocument,important,redirect=noopframe
 ||facebook.com/security/hsts-pixel.gif$image,important,redirect=1x1-transparent.gif
 ||facebook.com/sem_pixel/1/control/0/$subdocument,important,redirect=noopframe
