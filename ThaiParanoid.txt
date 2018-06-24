@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201806152156
+! Version: 201806241111
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -569,6 +569,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||49.50.69.80$important
 ||52.76.52.18$important
 ||52.76.242.20$important
+||52.187.132.230$important
 ||52.220.167.186$important
 ||54.169.240.216$important
 ||54.186.88.28$important
@@ -612,6 +613,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||202.38.172.244$important
 ||202.57.163.235$important
 ||202.87.41.147$important
+||203.107.133.238$important
 ||202.191.128.157$important
 ||203.122.58.93$important
 ||203.146.208.145$important
@@ -896,6 +898,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||linkbooster.xyz$important
 ||linkingclicks.com$important
 ||loadded.com$important
+||loadmuns.com$important
 ||looke.mobi$important
 ||lovehoro.space$important
 ||lovehoro2561.com$important
@@ -1026,6 +1029,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||privatebay.tv$important
 ||privatewow.tv$important
 ||pubmt.ch$important
+||pure-babe.com$important
 ||puteez.com$important
 ||questionfly.com$important
 ||radio.in.th$important
