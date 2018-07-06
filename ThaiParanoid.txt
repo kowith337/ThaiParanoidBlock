@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201807011051
+! Version: 201807062020
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -575,6 +575,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||52.76.89.151$important
 ||58.181.206.44$important
 ||61.16.174.219$important
+||61.19.249.34$important
 ||61.47.40.132$important
 ||61.91.6.131$important
 ||65.49.33.31$important
@@ -864,6 +865,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||hyptas.com$important
 ||hyvesdp.com$important
 ||i-link.co$important
+||i-walkernet.com$important
 ||iamzaa.com$important
 ||ibwin68.net$important
 ||icubemobile.com$important
