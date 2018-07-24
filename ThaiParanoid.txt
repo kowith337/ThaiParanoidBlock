@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201807182113
+! Version: 201807242136
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -694,6 +694,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||atmail.nl$important
 ||autoportal.com$important
 ||awolf.mobi$important
+||awz.bz$important
 ||b-qq.com$important
 ||b3st0ff3rs.com$important
 ||bajajcapital.com$important
@@ -795,6 +796,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||fly2.me$important
 ||fly2me.com$important
 ||flybi.store$important
+||flygemobi.$important
 ||flyrlk.com$important
 ||focusonone.cc$important
 ||formulawire.com$important
@@ -1056,6 +1058,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||s-onetelecom.com$important
 ||sabai5555.com$important
 ||sabver.com$important
+||safedown.s3.amazonaws.com$important
 ||sanookde.com$important
 ||scattertraff.com$important
 ||seaman2u.com$important
@@ -1130,6 +1133,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||txtnation.com$important
 ||u-nee.com$important
 ||umobi.biz$important
+||vasglobalnetwork.com$important
 ||vasgn.com$important
 ||vassolution.com$important
 ||vcdn.stream$important
