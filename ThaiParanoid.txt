@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201807242136
+! Version: 201807261959
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1410,19 +1410,24 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version, but you get redirected to
 ! 'm.facebook.com' or 'mobile.facebook.com' then show the suggestion page to use Facebook under "Free Basics" campaign,
 ! Note: I don't know why it redirected to "h.facebook.com" under non-HTTPS? first before bouncing back to "m.facebook.com"
-! or "mobile.facebook.com" ? so, I will block it until they change the redirection to use over HTTPS, or you need to use
-! HTTPS Everywhere plugins.
-|http://h.facebook.com$important
+! or "mobile.facebook.com" ? so, I will block it, no matter what, when and why...
+! Futhurmore, I HATE FreakBasics by Facebook, internet.org also...
+||0.facebook.com$important
 ||facebook.com/zero/policy$document
+||free.facebook.com$important
+||freebasics.com$important
+||internet.org$important
+||o.facebook.com$important
 ||web.facebook.com$document,important
+||zero.facebook.com$important
+||h.facebook.com$important
 
-! Sometime you're able to still use 'm.facebook.com' or 'touch.facebook.com' on mobile data,
-! but it still make xhr to 'mobile.facebook.com', so it's good to block that!
+! Sometime you're able to still use 'm.facebook.com' or 'touch.facebook.com' on mobile data, but it still make xhr to
+! 'mobile.facebook.com', so it's good to block that!
+! Note: that the internal navigation will be stuck due to this filterlist are block connections to 'mobile.facebook.com'
+!       completely, if you face that problems, try to refresh current page to make the content load or open everything
+!       to new tab instead.
 ||mobile.facebook.com$important,domain=~mobile.facebook.com
-
-! I HATE FreakBasics by Facebook, internet.org also...
-||freebasics.com$document,important
-||internet.org$document,important
 
 ! [Super lightweight Facebook enhancement]
 ! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine without JavaScript,
@@ -1581,6 +1586,7 @@ upic.me##script:contains(#basic-modal-content)
 !#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
+! include something fix, such as prevent external link wrapping to track users who go out of their site.
 exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
 exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
 exteen.com##script:inject(abort-on-property-write.js, window._taboola)
@@ -1597,6 +1603,9 @@ online-station.net##script:inject(abort-on-property-write.js, ssPage)
 online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
 pantip.com##script:inject(abort-on-property-write.js, _comscore)
 pantip.com##script:inject(abort-on-property-write.js, googletag)
+pantip.com##script:inject(addEventListener-defuser.js, click)
+pantip.com##script:inject(addEventListener-defuser.js, mouseout)
+pantip.com##script:inject(addEventListener-defuser.js, mouseover)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
 webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 
