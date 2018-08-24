@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201808151302
+! Version: 201808250117
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1006,6 +1006,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||newshunt.com$important
 ||newsplus.me$important
 ||nexg.tv$important
+||ngdfx.com$important
 ||niitcloudcampus.com$important
 ||nmpcenter.com$important
 ||nowportal.net$important
@@ -1259,7 +1260,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||zone-anime.net$document
 
 ! ------------------------------------------- First party service (Mostly Facebook) ------------------------------------------- !
-
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
 !              WSJ (Eng): http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
@@ -1276,65 +1276,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||ads.twitter.com$important
 ||ads-twitter.com$important
 ||analytics.twitter.com$important
-||facebook.com/adnw_logging/$important
-||facebook.com/ads/
-||facebook.com/ads/ad_choices$important
-||facebook.com/ads/growth$important
-||facebook.com/ads/manager/ajax/check_tip_qe$important
-||facebook.com/ads/manager/ajax/list_tips$important
-||facebook.com/ads/manager/ajax/megaphone_story$important
-||facebook.com/ads/qe/$important
-||facebook.com/ai.php$subdocument,important
-||facebook.com/ajax/ads/$important
-||facebook.com/ajax/browse/null_state.php$important
-||facebook.com/ajax/haste-response/?modules=*LinkshimLogController$important
-||facebook.com/ajax/haste-response/?modules=PhotoSnowliftViewableWithContextMenuLogging$important
-||facebook.com/ajax/haste-response/?modules=PubcontentFeedChainingController$important
-||facebook.com/ajax/haste-response/?modules=ReactComposerFeedSurvey$important
-||facebook.com/ajax/haste-response/?modules=ReactComposerMagicTagSurvey$important
-||facebook.com/ajax/haste-response/?modules=ShareDialogMessageAudience$important
-||facebook.com/ajax/haste-response/?modules=TypeaheadMetricReporter$important
-||facebook.com/ajax/pagelet/generic.php/WebEgoPane$important
-||facebook.com/ajax/photos/logging$important
-||facebook.com/ajax/react_composer/survey?$important
-||facebook.com/ajax/typeahead/record_basic_metrics.php$important
-||facebook.com/async/social_good/$xmlhttprequest
-||facebook.com/audience_network/$important
-||facebook.com/common/referer_frame.php$inline-script
-||facebook.com/ego/
-||facebook.com/ego/feed$important,~xmlhttprequest
-||facebook.com/ego/feed
-||facebook.com/feed/pivot/chaining$important
-||facebook.com/feed/pivot/related_articles$important
-||facebook.com/impression.php$important
-||facebook.com/network_ads_common$important
-||facebook.com/pages/qe/$important
-||facebook.com/plugins/likebox.php$important
-||facebook.com/pubcontent/$xmlhttprequest
-||facebook.com/pubcontent/comment_chaining$important
-||facebook.com/pubcontent/feed_chaining$important
-||facebook.com/pubcontent/group_related_stories$important
-||facebook.com/pubcontent/local_news_chaining$important
-||facebook.com/pubcontent/related_share$important
-||facebook.com/pubcontent/related_video$important
-||facebook.com/pubcontent/suggestions$important
-||facebook.com/related-application/?$important
-||facebook.com/relay/bootload/?component=AdsCMChromeRenderer$important
-||facebook.com/sem_campaigns$important
-||facebook.com/sem_pixel$important
-||facebook.com/suggestions$important
-||facebook.com/tr?$important
-||facebook.com/typeahead/search/facebar/nullstate/?$important
-||facebook.com/video/autoplay$important
-||facebook.com/video/instream_video/rapid_feedback$important
-||facebook.com/video/quality_survey$important
-||facebook.com/video/tahoe/upnext/$important
-||facebook.com/xti.php$important
-||facebook.net/*/xfbml.ad.js$script,important
-||fbcdn.net/*?*facebook.com%2Fads%2F$important
-||fbcdn.net/*?*facebook.com%2Fajax%2Fads%2F$important
-||fbcdn.net/hads-ak-*$important
-||google.*/jsapi?autoload$domain=youtube.com|youtube-nocookie.com,important
+||google.*/jsapi?autoload$important
 ||google.*/pagead/$important
 ||google.*/promos$important
 ||google.*/uds/api/ads/$important
@@ -1361,78 +1303,17 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||youtube.com/api/stats/$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
-||youtube.com/yts/jsbin/www-pagead-id$important
+||youtube.com/yts/*/www-pagead-id$important
 ! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
-
-! Unbreak some functional, e.g. If you want to manage advert prefs, you need to allow some requests to let Facebook retrieve
-! information about advert prefs, and let you properly manage them without getting error or auto refresh due to cannot sent xhr
-! to perform delete preference out of your account.
-@@||facebook.com/ads/advertiser_guidance/server_msg/$xmlhttprequest
-@@||facebook.com/ads/can_change_business_country_reason/?$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ads/can_change_currency_timezone_reason/?$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ads/manage/$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ads/manager/$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ads/preferences/ad_report/$xmlhttprequest
-@@||facebook.com/ads/preferences/advertiser_hideall$first-party
-@@||facebook.com/ads/preferences/edit_interests/?*action=del$first-party
-@@||facebook.com/ads/preferences/edit_sensitive_topics$xmlhttprequest
-@@||facebook.com/ads/preferences/report$xmlhttprequest,first-party
-@@||facebook.com/ads/profile/advertisers$xmlhttprequest,first-party
-@@||facebook.com/ads/profile/interests$xmlhttprequest,first-party
-@@||facebook.com/ads/tax_id_collection_config/?$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ads/viewer_permissions/?$first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/ajax/groups/mall/mall_post_menu.php$xmlhttprequest,first-party
-@@||facebook.com/ajax/settings/account/advertising_email.php?$xmlhttprequest,first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/feed/options_menu$xmlhttprequest,first-party
-@@||facebook.com/settings/advertising_email/$xmlhttprequest,first-party,~domain=h.facebook.com|mobile.facebook.com|web.facebook.com
-@@||facebook.com/share/dialog/submit/$xmlhttprequest,first-party
-
-! [Counter] Prevent accidentally (re-)add advert prefs while you're deleting them.
-! Check your advert prefs here [FB Login needed] > https://www.facebook.com/ads/preferences/edit
-||facebook.com/ads/preferences/advertiser_hideall/?*undo=true$important
-||facebook.com/ads/preferences/edit_interests/?action=add$important
-||facebook.com/ads/preferences/edit_sensitive_topics*duration_in_days=0$important
-
-! Facebook Messaging Privacy Aware (is typing, seen message)
-||facebook.com/*/change_read_status.php$important
-||facebook.com/*/mark_seen.php$important
-||facebook.com/*/typ.php$important
-||messenger.com/*/change_read_status.php$important
-||messenger.com/*/mark_seen.php$important
-||messenger.com/*/typ.php$important
-
-! Give the warning if you're using Facebook on some cellular data provider that can redirect to smartphone-focused site,
-! not an actual version of it!
-! e.g. when you want to go 'mbasic.faecbook.com' for super lightweight Facebook mobile version, but you get redirected to
-! 'm.facebook.com' or 'mobile.facebook.com' then show the suggestion page to use Facebook under "Free Basics" campaign,
-! Note: I don't know why it redirected to "h.facebook.com" under non-HTTPS? first before bouncing back to "m.facebook.com"
-! or "mobile.facebook.com" ? so, I will block it until they change the redirection to use over HTTPS, or you need to use
-! HTTPS Everywhere plugins.
-|http://h.facebook.com$important
-||facebook.com/zero/policy$document
-||web.facebook.com$document,important
-
-! Sometime you're able to still use 'm.facebook.com' or 'touch.facebook.com' on mobile data,
-! but it still make xhr to 'mobile.facebook.com', so it's good to block that!
-||mobile.facebook.com$important,domain=~mobile.facebook.com
-
-! I HATE FreakBasics by Facebook, internet.org also...
-||freebasics.com$document,important
-||internet.org$document,important
-
-! [Super lightweight Facebook enhancement]
-! It's no need to load anything that not matter to use, because `mbasic.facebook.com` can work fine without JavaScript,
-! Inline script, iframe and third party resources.
-||$script,domain=mbasic.facebook.com
-||$subdocument,domain=mbasic.facebook.com
-||mbasic.facebook.com$inline-script
-||mbasic.facebook.com$websocket
 
 ! First party annoyance DOM | Generic
 github.com##div[class^="signup-prompt"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##ytd-consent-bump-renderer
+
+! Purge support for Facebook until race condition can be fixed
+! or use directive include: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/FacebookZuckestionKiller.txt
 
 ! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
 
