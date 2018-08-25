@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201808251822
+! Version: 201808251849
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1315,8 +1315,8 @@ youtube.com##ytd-consent-bump-renderer
 
 ! Unbreak some functionality
 ! [YouTube] Allow video history (also watched time of clip)
-@@||s.youtube.com/api/stats/playback?$first-party
-@@||s.youtube.com/api/stats/watchtime?$first-party
+@@||s.youtube.com/api/stats/playback?$domain=youtube.com
+@@||s.youtube.com/api/stats/watchtime?$domain=youtube.com
 
 ! Purge support for Facebook until race condition can be fixed
 ! or use directive include: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/FacebookZuckestionKiller.txt
