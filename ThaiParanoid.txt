@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201808250117
+! Version: 201808251822
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -516,7 +516,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||id.google.com$important
 ||imasdk.googleapis.com$important
 ||mobilecrashreporting.googleapis.com$important
-||s.youtube.com$important
 ||s0.youtube.com$important
 ||s1.youtube.com$important
 ||s2.youtube.com$important
@@ -1259,7 +1258,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||wztoon.com$document
 ||zone-anime.net$document
 
-! ------------------------------------------- First party service (Mostly Facebook) ------------------------------------------- !
+! --------------------------------------------------- First party service --------------------------------------------------- !
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
 !              WSJ (Eng): http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
@@ -1276,6 +1275,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||ads.twitter.com$important
 ||ads-twitter.com$important
 ||analytics.twitter.com$important
+||error.facebook.com$important
 ||google.*/jsapi?autoload$important
 ||google.*/pagead/$important
 ||google.*/promos$important
@@ -1284,6 +1284,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||googlevideo.com/videogoodput?
 ||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
+||s.youtube.com
 ||syndication.twimg.com$important
 ||syndication.twitter.com$important
 ||twimg.com/*/google_analytics$script,important
@@ -1300,7 +1301,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||youtube.com/*/log_event?$important
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/annotations_invideo?instream_ad$important
-||youtube.com/api/stats/$important
+||youtube.com/api/stats/
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/*/www-pagead-id$important
@@ -1311,6 +1312,11 @@ github.com##div[class^="signup-prompt"]
 twitter.com###signin-dropdown
 youtube.com###hats-container[data-survey-id]
 youtube.com##ytd-consent-bump-renderer
+
+! Unbreak some functionality
+! [YouTube] Allow video history (also watched time of clip)
+@@||s.youtube.com/api/stats/playback?$first-party
+@@||s.youtube.com/api/stats/watchtime?$first-party
 
 ! Purge support for Facebook until race condition can be fixed
 ! or use directive include: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/FacebookZuckestionKiller.txt
