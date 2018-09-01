@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201808291841
+! Version: 201809012041
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -543,9 +543,9 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 !          every month, or every each messages that they've sent to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
-##a[href^="sms:"]:style(pointer-events: none !important)
-##a[href^="tel:"]:style(pointer-events: none !important)
-##a[href^="wtai:"]:style(pointer-events: none !important)
+! ##a[href^="sms:"]:style(pointer-events: none !important)
+! ##a[href^="tel:"]:style(pointer-events: none !important)
+! ##a[href^="wtai:"]:style(pointer-events: none !important)
 
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
@@ -671,6 +671,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||adschemist.com$important
 ||adsfast.com$important
 ||adsmain.com$important
+||adultvids.mobi$important
 ||adzsx.pro$important
 ||affichaos.com$important
 ||affmob.com$important
@@ -1104,6 +1105,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||stormobi.com$important
 ||stream-flix.mobi$important
 ||streamflix.mobi$important
+||streamsharp.com$important
 ||studiox-babes.com$important
 ||sunmob.net$important
 ||sunnygames.club$important
@@ -1306,6 +1308,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/annotations_invideo?instream_ad$important
 ||youtube.com/api/stats/$important
+||youtube.com/api/stats/atr?$important
+||youtube.com/api/stats/qoe?$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/*/www-pagead-id$important
