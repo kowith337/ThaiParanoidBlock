@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201809012034
+! Version: 201809032031
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -72,12 +72,6 @@ liekr.com###topAd
 liekr.com##.foot_fb_like
 liekr.com##.like_yellow
 liekr.com##div[itemprop="articleBody"] a[class^="ui_btn"][href*="line.me"]
-linkis.com##.deeper-overlay
-linkis.com##.js-forceAuth-popup-light
-linkis.com##.other-pages-holder .left-column
-linkis.com##.other-pages-holder .right-column
-linkis.com##.popup_force-auth
-linkis.com##.theme15-authorize
 lonely-rooyang.com##.fancybox-overlay
 lonely-rooyang.com##.fancybox-wrap
 m.online-station.net###leaderboard_bottom.bottom_banner
@@ -289,9 +283,6 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
-||add0n.com$document
-||add0n.com$popunder
-||add0n.com$popup
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
