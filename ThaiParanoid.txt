@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201809041759
+! Version: 201809052137
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -30,6 +30,7 @@
 ##.popup-like-box-backdrop
 
 ! Element filter rules (merged with ThaiAntiForceLike)
+4toom.com###header .ad
 akibatan.com##.td-logo-wrap-full
 animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 autocar.in.th##.google-ads
@@ -56,12 +57,18 @@ exteen.com##.pr-box
 exteen.com##.promote-box
 game-tep.com##.leftBanner
 game-tep.com##.rightBanner
+game-tep.com##.td-more-articles-box
+game-tep.com##div[id^="divFLRALeft"]
+game-tep.com##div[id^="divFLRARight"]
+game-tep.com##div[id^="wh-widget"]
 gamegeek.in.th##.wppaszone
 gamegeek.in.th##div[data-title="Home popup"]
+gamemonday.com###my-welcome-message
 gamemonday.com##.ads-bottom
 goal.in.th###ads_top_content
 goal.in.th##.ajax-banner
 jarm.com##._banner > a[href*="ads.jarm.com"]
+kanomjeeb.com##.article .row div .fb-like
 kapook.com##.targetbanner-hilight
 kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
 kidjarak.com###spu-1170
@@ -69,6 +76,7 @@ kidjarak.com##.stb-container
 liceza.com##div[id^="cbox"]
 liekr.com###showLikePopup
 liekr.com###topAd
+liekr.com##.detail_content .ui_adblock
 liekr.com##.foot_fb_like
 liekr.com##.like_yellow
 liekr.com##div[itemprop="articleBody"] a[class^="ui_btn"][href*="line.me"]
@@ -102,6 +110,7 @@ online-station.net###ads-preload-popup
 online-station.net###close-preload
 online-station.net###video_ads_container
 online-station.net###welcome
+online-station.net##.ad-box
 online-station.net##.bjqs
 online-station.net##.os-banner-ads
 online-station.net##.os-page-wallpaper
@@ -111,6 +120,7 @@ online-station.net##div[class^="os-ads"]
 online-station.net##div[data-widget="plista_widget_belowArticle"]
 online-station.net##div[data-widget="plista_widget_sidebar"]
 online-station.net##div[id*="div-gpt-ad"]
+online-station.net##section.bigbanner-ad
 pantip.com##.ads-tabloid
 pantip.com##.m-block a[href*="ads.pantip.com"]
 pantip.com##.post-pick-ad
@@ -126,6 +136,8 @@ picnic.ly##.essb_bottombar
 picpost.mthai.com###masthead #dfp-topbanner
 picpost.mthai.com##.sticky-container .banner-wrap
 popcornfor2.com###content div .banner-mobile-size
+popcornfor2.com##.banner-990x90
+postjung.com###rsticky
 postjung.com##.mainbox > div > .adsbygoogle
 postjung.com##.xadsense_middle
 rabbit.co.th##.ads-sidebar-middle
@@ -139,21 +151,36 @@ share-si.com##.yengo-x
 siamok.com##div[class^=SC_TBlock]
 siamok.com##div[id^="lightbox"]
 siamok.com##iframe[src="/ads/foot-yengo.php"]
+siamphone.com###adv_header
 siamphone.com###banner300_600
 siamphone.com##.mid_ads
+sistacafe.com###summary .social
 sistacafe.com##.popup
 specphone.com##.banana_box iframe[src^="https://notebookspec.com/specialprice"]
 specphone.com##.cover_banner
+specphone.com##.td-more-articles-box
 specphone.com##div[id^=div-gpt-ad]
 sudting.party##div[id^="SC_TBlock"]
 techmoblog.com###cboxWrapper
+techmoblog.com##div[id^="ads_div_"]
 techtalkthai.com##.wrapper-outer .background-cover
+techxcite.com###adsMiniUnder
+techxcite.com###col_right .ads
+techxcite.com###skin-left
+techxcite.com###skin-right
+techxcite.com##.ads-feature
 tgpl.in.th##div a[href^="http://www.compgamer.com/mario-ads/"]
+thaijobsgov.com##.hidden-mobile
 thailandbestbeauty.com###divAdLeft
 thailandbestbeauty.com###divAdRight
+thaimobilecenter.com##.container.bn-a2
+thaimobilecenter.com##.container.hidden-xs div[class^="col-"][align="right"]
+thaimobilecenter.com##.visible-lg.visible-xl iframe
 thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
 thaimobilecenter.com##iframe[src^="../banner/google_adsense"]
 thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
+thairath.co.th##.ad-box
+thairath.co.th##.container .row .ads
 thaiza.com##.adv2col
 thaiza.com##.adv3col
 thaiza.com##.banner_728_90
@@ -164,7 +191,9 @@ thetechr.com##.jinda-wrapper
 thisisgamethailand.com##.container .item > a[href*="/index.php?/stats/clickAdd"]
 thisisgamethailand.com##a[href*="index.php?/stats/clickAdd/"]
 thisisgamethailand.com##div[id^="adsbanner"]
+tnews.co.th###AdAsia
 tnews.co.th###myModal
+tnews.co.th###uniads
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
 toritalk.com##.bottomad
@@ -180,6 +209,8 @@ zaapmak.com##iframe
 
 ! Multiple domains that shared same element names
 chujai.com,extremepc.in.th,ithaihotnews.com,itnews24hrs.com,juropy.com,kaijeaw.com,laughwoo.com,mthai.com,petmaya.com,tgpl.in.th,thaihitz.com##div[id^="arevicofancy"]
+compgamer.com,tgpl.in.th###divnews
+compgamer.com,tgpl.in.th##button[onclick][title="close"]
 doodiza.com,startclip.com###popDiv
 doodiza.com,startclip.com###popup
 fmone1035.com,get1025.com##.spu-box
@@ -196,6 +227,8 @@ mustplay.in.th,playulti.com##.promote
 notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
 techmoblog.com,thailandbestbeauty.com###cboxOverlay
 thaihitz.com,thaijobsgov.com##.SC_TBlock
+thisisgamethailand.com,tigthai.com##.mod_banner
+thisisgamethailand.com,tigthai.com##.mod_banner_top
 
 ! -------------------------------------------------- Network filters section -------------------------------------------------- !
 
@@ -210,6 +243,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 /like-fb
 /like_box*
 /new-facebook-popup-likebox-responsive
+/plugins/add-to-any
 /social-popup
 /ud-social
 
@@ -228,16 +262,20 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||game-tep.com/*/fancy-box/*
 ||gamegeek.in.th/*/layeredpopups/*
 ||gamemonday.com/*/adrotate-pro/*
+||gamemonday.com/wp-content/themes/gamemonday/libs/jquery.firstVisitPopup.js
 ||ithaihotnews.com/*/like-jacking-ninja/*
 ||kaijeaw.com/*/fancybox/*
 ||kanomjeeb.com/*/lightbox*
 ||kapook.com/ads/portal^
+||kapook.com/asset/js/track.js
+||kapook.com/jquery/jquery.kp.tracker.js
 ||kidjarak.com/*/bsa-pro-scripteo/*
 ||ladycee.com/light_ads^
 ||laughwoo.com/*/like-jacking-ninja/*
 ||lonely-rooyang.com/*/arscode-ninja-popups/*
 ||marketingoops.com/*/itro-popup/*
 ||marketingoops.com/popup-ad*
+||marketingoops.com/truehitsstat.php?
 ||matichon.co.th/www/delivery/
 ||meekhao.com/*/dreamgrow-scroll-triggered-box/*
 ||mustplay.in.th/assets/js/jquery.tubular^
@@ -261,12 +299,15 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||siamchatroom.com/light_ads^
 ||siamok.com/light_ads/*
 ||siamza.com/js/jquery.cookie.js
+||sistacafe.com/assets/jquery.cookie-*.js$script
+||sistacafe.com/assets/popup_notification-*.js$script
 ||sistacafe.com/scripts/nytive
 ||sistacafe.com/scripts/truehits
 ||sistacafe.com/scripts/yengo
 ||specphone.com/*/nbs-ilightbox/*
 ||taghr.net/*/uji-popup/*
 ||techmoblog.com/*colorbox*
+||techxcite.com/ads/revive/
 ||techxcite.com/stats.php?
 ||techxcite.com/truehitsstat.php?
 ||thaiidol.com/*/popup-by-supsystic/*
@@ -277,6 +318,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||thaiza.com/nodo.html
 ||thetechr.com/*/jinda-facebook-lightbox/*
 ||toritalk.com/*/uji-popup/*
+||viu.com/ott/*/tracking/*
+||wp.com/media.go2*.*/*
 ||yakjado.com/*/upprev/*
 ||yakjado.com/*/wp-social-popup-and-get-traffic/*
 
@@ -298,6 +341,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
+||*-adnow.com$important
 ||ais.co.th/advertiser$important
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
@@ -322,8 +366,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||thairath.co.th/js/tr_$script,important
 ||toosthai.com$important
 ||visualwebsiteoptimizer.com$important
-||webtoons.com/js/lib/dfp_helper$important
 ||webtoons.com/js/lib/*_logger$important
+||webtoons.com/js/lib/dfp_helper$important
 ||webtoons.com/js/lib/gak$important
 
 ! ---------------------------------------------------- Domain level block ----------------------------------------------------- !
@@ -354,11 +398,11 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||wisemana.com
 
 ! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
-||*adnow.com
 ||24x7th.com
 ||accesstrade.in.th
 ||adasiaholdings.com
 ||adok.asia
+||adop.cc
 ||ads*.bangkokpost.co.th
 ||ads*.matichon.co.th
 ||ads.boxza.com
@@ -391,6 +435,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||criteo.com
 ||criteo.net
 ||crwdcntrl.net
+||cryptobrowser.site
 ||csi.gstatic.com
 ||cxense.com
 ||d-stats.com
@@ -407,10 +452,12 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||gammaplatform.com
 ||gbotvisit.com
 ||gbox.sc
+||generaltagcom.ga
 ||go2cloud.org
 ||go2speed.org
 ||google-analytics.l.google.com
 ||heatmap.it
+||hilightad.kapook.com
 ||histats.com
 ||hotjar.com
 ||imrworldwide.com
@@ -418,6 +465,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||innity.com
 ||innity.net
 ||inspectlet.com
+||iyfnzgb.com
+||izooto.com
 ||joox-affiliate.sanook.com
 ||kiosked.com
 ||luckyorange.com
@@ -462,11 +511,13 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||replase.tk
 ||report-uri.cloudflare.com
 ||revsci.net
+||runtnc.net
 ||ruu-dee.com
 ||sales-frontier.com
 ||scorecardresearch.com
 ||serving-sys.com
 ||shinobi.jp
+||silkspan.com
 ||simba-digital.com
 ||smemove.com
 ||socdm.com
@@ -481,6 +532,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||tapad.com
 ||thstats.com
 ||thtrackingap.com
+||tityx.com$important
 ||travelpayouts.com
 ||truehits.in.th
 ||truehits.net
@@ -488,6 +540,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||user-api.com
 ||user-clicks.com
 ||user-red.com
+||uustoughtonma.org$important
+||whatshelp.io
 ||wmdstat.dev-sanook.com
 ||yengo.com
 ||yu0123456.com
@@ -557,13 +611,13 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||43.231.124.161$important
 ||49.50.69.80$important
 ||52.76.52.18$important
+||52.76.89.151$important
 ||52.76.242.20$important
 ||52.187.132.230$important
 ||52.220.167.186$important
 ||54.169.240.216$important
 ||54.186.88.28$important
 ||56.76.86.177$important
-||52.76.89.151$important
 ||58.181.206.44$important
 ||61.16.174.219$important
 ||61.19.249.34$important
@@ -603,8 +657,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||202.38.172.244$important
 ||202.57.163.235$important
 ||202.87.41.147$important
-||203.107.133.238$important
 ||202.191.128.157$important
+||203.107.133.238$important
 ||203.122.58.93$important
 ||203.146.208.145$important
 ||203.146.249.21$important
@@ -620,30 +674,30 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||223.25.242.95$important
 
 ! Base Domain
-||100000freecontent.com$important
-||12mob.com$important
-||181818.com.my$important
 ||1bet2uthai.net$important
 ||1mov.co$important
-||20150917.com$important
-||321load.com$important
 ||4mobilefunz.com$important
 ||4v4jfe79erfxfu8z8.com$important
-||54646.co$important
-||55555getcontent.com$important
 ||5rio.com$important
 ||5sys.com$important
-||6969jp.xyz$important
-||6988fa.com$important
 ||6f76b4c82656094f26.com$important
 ||7banana.com$important
 ||7me.co$important
-||8086.com.tw$important
 ||9ep.cc$important
 ||9v8p.com$important
-||a.n-d.bz$important
+||12mob.com$important
+||321load.com$important
+||6969jp.xyz$important
+||6988fa.com$important
+||8086.com.tw$important
+||54646.co$important
+||55555getcontent.com$important
+||100000freecontent.com$important
+||181818.com.my$important
+||20150917.com$important
 ||a1n.in$important
 ||a81.me$important
+||a.n-d.bz$important
 ||ab4hr.com$important
 ||achelous.mobi$important
 ||ad5network.com$important
@@ -685,8 +739,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||autoportal.com$important
 ||awolf.mobi$important
 ||awz.bz$important
-||b-qq.com$important
 ||b3st0ff3rs.com$important
+||b-qq.com$important
 ||bajajcapital.com$important
 ||beezzi.com$important
 ||bestmobiworld.com$important
@@ -748,6 +802,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||cpgnrotationurl.com$important
 ||cpitraffic.com$important
 ||cpweb.com$important
+||ct9.me$important
 ||ctrackz.net$important
 ||cuteclub.tv$important
 ||cutties.net$important
@@ -794,11 +849,11 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||free8888content.com$important
 ||freezone.mobi$important
 ||full-funny.com$important
+||fun2u.biz$important
+||fun4u.co$important
 ||fun-clix.com$important
 ||fun-club.mobi$important
 ||fun-offer-th.com$important
-||fun2u.biz$important
-||fun4u.co$important
 ||fungame.mobi$important
 ||funnyclub.tv$important
 ||funsexy.info$important
@@ -826,6 +881,7 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||gcvw.mobi$important
 ||getclick.mobi$important
 ||getcools.com$important
+||getfeelgood.com$important
 ||gigth.com$important
 ||gizmobi.mobi$important
 ||gktmobi.com$important
@@ -899,8 +955,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||loadded.com$important
 ||loadmuns.com$important
 ||looke.mobi$important
-||lovehoro.space$important
 ||lovehoro2561.com$important
+||lovehoro.space$important
 ||ltvperf.com$important
 ||lucky6lucky.club$important
 ||lunla.net$important
@@ -928,9 +984,9 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||mli.me$important
 ||mob-api.net$important
 ||mobgkt.com$important
-||mobi-zone.mobi$important
 ||mobi2u.biz$important
 ||mobi2u.mobi$important
+||mobi-zone.mobi$important
 ||mobico.my$important
 ||mobicute.com$important
 ||mobidevil.com$important
@@ -939,9 +995,9 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobilart.in$important
+||mobile18.in.com$important
 ||mobile-link.today$important
 ||mobile.mthai.com$important
-||mobile18.in.com$important
 ||mobileacademy.com$important
 ||mobilecontents.mobi$important
 ||mobilefunclub.com$important
@@ -1102,8 +1158,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||tdedlove.com$important
 ||tech-vault.com$important
 ||terragonbase.com$important
-||thai-iphone.com$important
 ||thai2mobi.com$important
+||thai-iphone.com$important
 ||thaifun4u.com$important
 ||thaimobile.com$important
 ||thaiza.com$important
@@ -1144,8 +1200,8 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ||vilandsoft.com$important
 ||vipgames.me$important
 ||viral-mix.com$important
-||voluumtrk.com$important
 ||voluumtrk2.com$important
+||voluumtrk.com$important
 ||vovivooo.com$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
@@ -1255,8 +1311,9 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 ! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
 !              WSJ (Eng): http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
 !              The Verge (Eng): http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
-||facebook.com$third-party,domain=~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
-||facebook.net$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com|~messenger.com|~twitter.com
+||facebook.com$third-party,domain=~fbsbx.com|~instagram.com|~messenger.com
+||facebook.net$domain=~facebook.com|~fbsbx.com|~instagram.com|~messenger.com
+||fbcdn.net$domain=~facebook.com|~messenger.com|~instagram.com
 ||instagram.com$third-party,domain=~facebook.com|~messenger.com
 ||messenger.com$third-party,domain=~facebook.com|~fbsbx.com|~instagram.com
 
@@ -1327,27 +1384,33 @@ youtube.com##.individual-feed li .branded-page-box:has(.feed-item-dismissable:ha
 
 ! Other sites
 ! This use for improve accuracy of DOM hiding
+4toom.com##.rightwidget div:has(a[href^="http://4toom.com/?p="])
 4toom.com##.single .content div:has(.adsbygoogle)
 aroundnews.net##.td-g-rec:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
-blognone.com###above_comments:has(h2:has-text(/Blognone Workplace/))
 blognone.com###above_comments:has(.view-PremiumCompanies)
-blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
+blognone.com###above_comments:has(h2:has-text(/Blognone Workplace/))
 blognone.com###rightbottom_sidebar .region div[id^="block-block"]:has(.content .fb-page)
+blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
 exteen.com##.content-box center:has(div script)
 exteen.com##.content-box:has(.prnews)
 exteen.com##div[class^="grid_"]:has(div[id^="div-gpt-ad"])
+game-tep.com##.td-header-sp-recs:has(img[onload])
+game-tep.com##.td-post-content .td-a-rec .g:has(a[onclick^="ga"])
 gamemonday.com##a:has(img[onload])
 gamemonday.com##a[onclick]:has(img[onload])
 itnews24hrs.com##.e3lan.widget:has(.adsbygoogle)
 jarm.com##.news-detail p:has-text(/Advertisement/)
 jokergameth.com###postlist li[id^="post_"]:has(.posthead:has(span a[href*="/advertisement/"]))
+kaijeaw.com##.post-entry .hidden-xs.hidden-sm:has(ins.adsbygoogle)
+kanomjeeb.com##.article .row div[class]:has(aside section.banner)
 kanomjeeb.com##.banner:has(.adsbygoogle)
 kanomjeeb.com##section .row:has(.adsbygoogle)
 kapook.com###action-quick:has(div span[id="ad-close"])
 kapook.com###sidebar > div:has(a[href*="kapook.com/app"])
+kapook.com##.temp-300:has(.card-banner div[id^="div-gpt-ad"])
 kapook.com##body > div[style*="width:100%"]:has(div[style*="z-index:888"])
 kapook.com##div a[target="_blank"]:has(img[src*="ads-lotto.gif"])
 kapook.com##div[style*="text-align:center"]:has(.banner_position)
@@ -1356,9 +1419,14 @@ kidjarak.com##.td-g-rec:has(.adsbygoogle)
 kiitdoo.com##.textwidget:has(.adsbygoogle)
 liekr.com##.postmain div:has(.adsbygoogle)
 lonely-rooyang.com##.banner:has(.adsbygoogle)
+lonely-rooyang.com##.entry-content center:has(div ins.adsbygoogle)
+lonely-rooyang.com##.sidebar aside:has(.textwidget figure.op-ad)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
+matichon.co.th##div[class^="td-header-"]:has(div[id^="ud-dfp-ad-pos-"])
 mthai.com##div[id^="MT_HP_"]:has(.ads-rec-center)
 mthai.com##div[id^="MT_HP_"]:has(.banner)
+mthai.com##header#masthead .topbanner-wrap:has(script)
+mustplay.in.th##.hidden-xs div[class^="col-"]:has(a[style^="z-index:"])
 mustplay.in.th##.panel-default:has(ul li div:has(a[href*="/game/page/"]))
 mustplay.in.th,playulti.com##.banner:has(a[rel])
 mustplay.in.th,playulti.com##a:has(img[src*="/data/setting/banner/"])
@@ -1366,6 +1434,7 @@ news.sanook.com##.col.highlight--channel__aside:has(.social)
 news.sanook.com##.col.highlight--channel__aside:has(div[class^="snic"])
 notebookspec.com##.banner-side:has(iframe[src^="https://openx.notebookspec.com"])
 notebookspec.com##.text-center.container:has(iframe[src^="https://openx.notebookspec.com"])
+online-station.net##section.box aside:has(.ad-box)
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
 oopsmobile.net##.textwidget:has(.adsbygoogle)
 pantip.com##.bg-box-allow:has(.box-allow-location)
@@ -1390,6 +1459,7 @@ popcornfor2.com###content div[style*="text-align:center"]:has(script[src*="yengo
 popcornfor2.com##.content_right > div:has(div[id^="DIV_YNG"])
 popcornfor2.com##.content_right div:has(script[src*="synergy-e.com"])
 popcornfor2.com##.main div:has(iframe[src*="popcornfor2.com/bannerads/"])
+popcornfor2.com##.main div[style^="width:728px;"]:has(ins.adsbyadop)
 popcornfor2.com##.news_view div center:has(script[src*="googlesyndication.com"])
 popcornfor2.com##.news_view div div:has-text(/Advertisement/)
 postjung.com###maincontent div:has(.sp-adsense-incontent)
@@ -1404,22 +1474,35 @@ siamok.com##.Sweb_right table:has(iframe[src="/ads/right-yengo.php"])
 siamok.com##.head_bg table:has(iframe[src^="/ads/"])
 siamphone.com###banner:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.news_cate li ul:has(iframe[src*="ads.siamphone.com"])
+siamphone.com##.news_cate ul li:has(a img[src="/images/ads_menu.png"])
+siamphone.com##.swiper-slide:has(a img[src="/images/sp_ads.png"])
+siamphone.com##.swiper-slide:has(iframe[src^="//ads.siamphone.com/"])
 siamphone.com##.top_banner:has(div span:has(iframe[src*="ads.siamphone.com"]))
 siamphone.com##div[class^="banner"]:has(iframe[src*="ads.siamphone.com"])
+sistacafe.com###summary div:has(img[title="downloadapp"])
+sistacafe.com##.footer_content_box .box_mid:has(div[class*="box_app_side"])
+sistacafe.com##a[onclick^="ga"]:has(img[src^="/assets/share_icons/"])
 specphone.com##.container > .row .blog_left_box:has(.ad_center_box)
 specphone.com##.container > .row .blog_right_box:has(.ad_center_box)
 specphone.com##.home_banner_align_box:has(#AdsTop)
 specphone.com##.home_banner_top:has(iframe[src^="https://openx.notebookspec.com"])
+specphone.com##.td-header-menu-wrap-full div[style]:has(#AdsTop)
+specphone.com##.td-header-sp-recs:has(div > iframe[src^="https://openx.notebookspec.com/"])
+techmoblog.com##.container center:has(table div iframe[src^="/tmb-advertise/"])
 techtalkthai.com##.theiaStickySidebar .widget:has(.widget-container p:has(a[rel="noopener"]))
+techxcite.com##.shopping:has(script[async][src^="//techxcite.com/ads/revive/"])
 thaihitz.com##.post-single-content center:has(.adsbygoogle)
 thaiidol.com##.td-g-rec:has(.adsbygoogle)
 thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
 thaijobsgov.com##.content center:has(.adsbygoogle)
+thaijobsgov.com##.content center:has-text(/Advertisement/)
+thailandbestbeauty.com##.td-post-template-default a[target="_blank"]:has(img[class*="wp-image-"])
 thaimobilecenter.com###divleft:has(a[href*="/ad_click"])
 thaimobilecenter.com###divright:has(a[href*="/ad_click"])
 thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
 thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
+tnews.co.th##.hidden-sm.hidden-xs:has(div script[src^="//code.yengo.com/"])
 
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
