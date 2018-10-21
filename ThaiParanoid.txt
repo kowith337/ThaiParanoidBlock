@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201809172105
+! Version: 201810211530
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -912,6 +912,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hfa.mobi$important
 ||hito.co.vu$important
 ||hm5.me$important
+||horolive.com$important
 ||horoworld.com$important
 ||hotstar.com$important
 ||house365.com$important
@@ -1095,6 +1096,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||puteez.com$important
 ||questionfly.com$important
 ||radio.in.th$important
+||rakcontent.com$important
 ||raptorads.net$important
 ||rbt.getcools.com$important
 ||re1store.com$important
