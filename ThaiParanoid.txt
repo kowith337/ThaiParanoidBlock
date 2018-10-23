@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201810252020
+! Version: 201810252037
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -342,6 +342,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
 ||*-adnow.com$important
+||ads*.bangkokpost.co.th$important
+||ads*.matichon.co.th$important
 ||ais.co.th/advertiser$important
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
@@ -455,7 +457,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||generaltagcom.ga
 ||go2cloud.org
 ||go2speed.org
-||google-analytics.l.google.com
 ||heatmap.it
 ||hilightad.kapook.com
 ||histats.com
@@ -556,10 +557,12 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||adservices.google.*$important
 ||doubleclick.net$important
 ||google-analytics.com$important
+||google-analytics.l.google.com$important
 ||googleadservices.com$important
 ||googlesyndication.com$important
 ||googletagmanager.com$important
 ||googletagservices.com$important
+||gstatic.com/firebasejs$important
 ||id.google.*$important
 ||imasdk.googleapis.com$important
 ||mobilecrashreporting.googleapis.com$important
