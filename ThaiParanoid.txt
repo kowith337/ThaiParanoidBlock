@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201810301237
+! Version: 201810301238
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -1573,6 +1573,8 @@ pantip.com##script:inject(abort-on-property-write.js, googletag)
 pantip.com##script:inject(addEventListener-defuser.js, a[rel="nofollow"])
 pantip.com##script:inject(addEventListener-defuser.js, mouseout)
 pantip.com##script:inject(addEventListener-defuser.js, mouseover)
+thairath.co.th##script:inject(cookie-remover.js, tr_bId)
+thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
 webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 
