@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201811082330
+! Version: 201811151900
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -326,6 +326,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
+||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||linkis.com/ajax/update-click?*force_auth
@@ -406,6 +407,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||24x7th.com
 ||accesstrade.in.th
 ||adasiaholdings.com
+||adnuntius.com
 ||adok.asia
 ||adop.cc
 ||ads*.bangkokpost.co.th
@@ -460,6 +462,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||generaltagcom.ga
 ||go2cloud.org
 ||go2speed.org
+||graph.sanook.com
 ||heatmap.it
 ||hilightad.kapook.com
 ||histats.com
@@ -469,6 +472,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||innity.com
 ||innity.net
 ||inspectlet.com
+||isgstat.sanook.com
 ||iyfnzgb.com
 ||izooto.com
 ||joox-affiliate.sanook.com
@@ -531,6 +535,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||stats.wp.com
 ||sumome.com
 ||synergy-e.com
+||ta.sanook.com
 ||taboola.com
 ||tagserve.asia
 ||tapad.com
