@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201811211958
+! Version: 201811212016
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -37,14 +37,11 @@ autocar.in.th##.google-ads
 autocar.in.th##div[id^="_bz_boxlike"]
 becteroradio.com##div[class^="fancybox"]
 cleothailand.com###survey-popup
-clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
-coregamerth.com##.theiaStickySidebar div[id^="ads300_250"]
 disqus.com##div[class^="login-overlay"]
 dodeden.com###intro
 dodeden.com##div[class^="banner-X2"]
-doodiza.com##.bigza-ads-block
 dspzeeplus.com###twist-blogger-fan-page
 dspzeeplus.com##.popup-box
 dspzeeplus.com##div[id^="fbox-"]
@@ -71,7 +68,6 @@ kapook.com##.targetbanner-hilight
 kapook.com##div[style*="text-align:center"] div[style*="z-index:888"]
 kidjarak.com###spu-1170
 kidjarak.com##.stb-container
-liceza.com##div[id^="cbox"]
 liekr.com###showLikePopup
 liekr.com###topAd
 liekr.com##.detail_content .ui_adblock
@@ -87,8 +83,6 @@ m.online-station.net##figure[class^="os-ad"]
 m.pantip.com##.smartbanner
 m.pantip.com##.social-banner
 m.webtoons.com##.downapp_area
-manyum.com###ui_popup_window_tpl
-manyum.com##div[id^="win_showLike"]
 marketingoops.com###popup_countdown
 marketingoops.com##div[id^="itro_"]
 meepanda.com##.adsense-leadin
@@ -158,7 +152,6 @@ specphone.com##.banana_box iframe[src^="https://notebookspec.com/specialprice"]
 specphone.com##.cover_banner
 specphone.com##.td-more-articles-box
 specphone.com##div[id^=div-gpt-ad]
-sudting.party##div[id^="SC_TBlock"]
 techmoblog.com###cboxWrapper
 techmoblog.com##div[id^="ads_div_"]
 techtalkthai.com##.wrapper-outer .background-cover
@@ -195,28 +188,21 @@ tnews.co.th###myModal
 tnews.co.th###uniads
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
-toritalk.com##.bottomad
-toritalk.com##.jquery-modal.blocker
-toritalk.com##.td-front-end-display-block
-toritalk.com##.topad
 upic.me###basic-modal-content
 upic.me##div[id^="simplemodal"]
 worldcosplay.net###registerPopup
 worldcosplay.net##.registration-modal-bg
-yaklai.com##.td-post-content .err-subscription
 zaapmak.com##iframe
 
 ! Multiple domains that shared same element names
-chujai.com,extremepc.in.th,ithaihotnews.com,itnews24hrs.com,juropy.com,kaijeaw.com,laughwoo.com,mthai.com,petmaya.com,tgpl.in.th,thaihitz.com##div[id^="arevicofancy"]
 compgamer.com,tgpl.in.th###divnews
 compgamer.com,tgpl.in.th##button[onclick][title="close"]
-doodiza.com,startclip.com###popDiv
-doodiza.com,startclip.com###popup
+startclip.com###popDiv
+startclip.com###popup
+extremepc.in.th,itnews24hrs.com,kaijeaw.com,laughwoo.com,mthai.com,petmaya.com,tgpl.in.th,thaihitz.com##div[id^="arevicofancy"]
 fmone1035.com,get1025.com##.spu-box
 kaijeaw.com,thaihitz.com,thaijobsgov.com##.backdrop
 kiitdoo.com,meekhao.com##.dgd_stb_box.clean_white
-kodlikes.com,oopsmobile.net##div[class^="fancybox"]
-liceza.com,thailandbestbeauty.com###colorbox
 mustplay.in.th,playulti.com###bg-left
 mustplay.in.th,playulti.com###bg-right
 mustplay.in.th,playulti.com###bgyoutube
@@ -224,8 +210,10 @@ mustplay.in.th,playulti.com##.cover_page
 mustplay.in.th,playulti.com##.preloader
 mustplay.in.th,playulti.com##.promote
 notebookspec.com,specphone.com##iframe[src^="https://openx.notebookspec.com"]
+oopsmobile.net##div[class^="fancybox"]
 techmoblog.com,thailandbestbeauty.com###cboxOverlay
 thaihitz.com,thaijobsgov.com##.SC_TBlock
+thailandbestbeauty.com###colorbox
 thisisgamethailand.com,tigthai.com##.mod_banner
 thisisgamethailand.com,tigthai.com##.mod_banner_top
 
@@ -247,30 +235,25 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 /ud-social
 
 ! Same as above, but depend on specific domain(s)
-/plugins/popups/$script,stylesheet,domain=coregamerth.com|fmone1035.com|get1025.com|miru-anime.net|miruanime.net|shopspotapp.com
+/plugins/popups/$script,stylesheet,domain=fmone1035.com|get1025.com|miru-anime.net|miruanime.net|shopspotapp.com
 
 ! Inside first party, such as self-hosted ads, plugins, script function that try to suggest or force users to follow brand on SNS services.
 ||4toom.com/*/modal-dialog/*
-||aroundnews.net/*/like-jacking-ninja/*
 ||becteroradio.com/lib/fancybox/
 ||blogger.com/*lbx__th.js$domain=zapver555.com
 ||blogger.com/*lightbox_bundle.css$domain=zapver555.com
-||coregamerth.com/*/jquery-cookie/*
 ||dodeden.com/advert^
 ||game-tep.com/*/adrotate-pro/*
 ||game-tep.com/*/fancy-box/*
 ||gamegeek.in.th/*/layeredpopups/*
 ||gamemonday.com/*/adrotate-pro/*
 ||gamemonday.com/wp-content/themes/gamemonday/libs/jquery.firstVisitPopup.js
-||ithaihotnews.com/*/like-jacking-ninja/*
 ||kaijeaw.com/*/fancybox/*
 ||kanomjeeb.com/*/lightbox*
 ||kapook.com/ads/portal^
 ||kapook.com/asset/js/track.js
 ||kapook.com/jquery/jquery.kp.tracker.js
 ||kidjarak.com/*/bsa-pro-scripteo/*
-||ladycee.com/light_ads^
-||laughwoo.com/*/like-jacking-ninja/*
 ||lonely-rooyang.com/*/arscode-ninja-popups/*
 ||marketingoops.com/*/itro-popup/*
 ||marketingoops.com/popup-ad*
@@ -295,7 +278,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||playulti.com/assets/js/jquery.tubular^
 ||playulti.com/company/truehit?
 ||playulti.com/static/banner/*/ads-^
-||siamchatroom.com/light_ads^
 ||siamok.com/light_ads/*
 ||siamza.com/js/jquery.cookie.js
 ||sistacafe.com/assets/jquery.cookie-*.js$script
@@ -315,11 +297,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thailandbestbeauty.com/*colorbox*
 ||thaimobilecenter.com/colorbox^
 ||thetechr.com/*/jinda-facebook-lightbox/*
-||toritalk.com/*/uji-popup/*
 ||viu.com/ott/*/tracking/*
 ||wp.com/media.go2*.*/*
-||yakjado.com/*/upprev/*
-||yakjado.com/*/wp-social-popup-and-get-traffic/*
 
 ! Specific request blocking to prevent frame, dependency of trigger.
 ! ||linkis.com/ajax^$xmlhttprequest
@@ -339,7 +318,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ! Counter bad rules / Strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
-/plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
+/plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv,important
 ||*-adnow.com$important
 ||ads*.bangkokpost.co.th$important
 ||ads*.matichon.co.th$important
@@ -1395,13 +1374,11 @@ youtube.com##.individual-feed li .branded-page-box:has(.feed-item-dismissable:ha
 ! This use for improve accuracy of DOM hiding
 4toom.com##.rightwidget div:has(a[href^="http://4toom.com/?p="])
 4toom.com##.single .content div:has(.adsbygoogle)
-aroundnews.net##.td-g-rec:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
 blognone.com###above_comments:has(.view-PremiumCompanies)
 blognone.com###above_comments:has(h2:has-text(/Blognone Workplace/))
 blognone.com###rightbottom_sidebar .region div[id^="block-block"]:has(.content .fb-page)
 blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
-doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
 exteen.com##.content-box center:has(div script)
 exteen.com##.content-box:has(.prnews)
@@ -1478,7 +1455,6 @@ pramool.com##tbody table tr:has(noscript)
 rabbit.co.th##.widget-box:has(.ads-sidebar-top)
 share-si.com##.post > div:has(script[src^="//code.yengo.com"])
 share-si.com##.post div:has(.adsbygoogle)
-siamchatroom.com##.Sweb_right > table:has(script[src^="//ads.bumq.com"])
 siamok.com##.Sweb_right table:has(iframe[src="/ads/right-yengo.php"])
 siamok.com##.head_bg table:has(iframe[src^="/ads/"])
 siamphone.com###banner:has(iframe[src*="ads.siamphone.com"])
@@ -1535,7 +1511,6 @@ jarm.com##script:contains(function(f,b,e,v,n,t,s))
 jarm.com##script:contains(googletag.cmd.push)
 jarm.com##script:contains(GoogleAnalyticsObject)
 liekr.com##script:contains($showLikePopup)
-manyum.com##script:contains(ui_popup_window)
 mx7.com##script:contains(GoogleAnalyticsObject)
 notebookspec.com##script:contains(#overlay_ads)
 online-station.net##script:contains(PLISTA)
