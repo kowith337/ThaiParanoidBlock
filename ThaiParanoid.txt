@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201811151903
+! Version: 201811212008
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Expires: 2 days
@@ -36,9 +36,7 @@ animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 autocar.in.th##.google-ads
 autocar.in.th##div[id^="_bz_boxlike"]
 becteroradio.com##div[class^="fancybox"]
-blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 cleothailand.com###survey-popup
-clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
@@ -316,7 +314,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thaijobsgov.com/banner^
 ||thailandbestbeauty.com/*colorbox*
 ||thaimobilecenter.com/colorbox^
-||thaiza.com/nodo.html
 ||thetechr.com/*/jinda-facebook-lightbox/*
 ||toritalk.com/*/uji-popup/*
 ||viu.com/ott/*/tracking/*
@@ -344,8 +341,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv|yaklai.com,important
 ||*-adnow.com$important
-||ads*.bangkokpost.co.th$important
-||ads*.matichon.co.th$important
 ||ais.co.th/advertiser$important
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
@@ -1083,7 +1078,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||optsearch.net$important
 ||oqg84co2z.bkt.clouddn.com$important
 ||outputfx.com$important
-||pages.mli.me$important
 ||panshimob.com$important
 ||peak-serving.com$important
 ||peerfly.com$important
@@ -1113,7 +1107,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||radio.in.th$important
 ||rakcontent.com$important
 ||raptorads.net$important
-||rbt.getcools.com$important
 ||re1store.com$important
 ||redporntube.xyz$important
 ||regaming.com$important
@@ -1231,7 +1224,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||wakau.in$important
 ||walletfun.com$important
 ||wallpapers-girls.com$important
-||wap.getcools.com$important
 ||wap.shinee.com$important
 ||waphub.mobi$important
 ||waplog.com$important
