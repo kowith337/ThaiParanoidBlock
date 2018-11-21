@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201811151900
+! Version: 201811211958
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -601,6 +601,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ddch.dtac.co.th$important
 ||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||sdpwap.dtac.co.th$important
+||ss1.mobilelife.co.th$important
+||ss2.mobilelife.co.th$important
+||ss3.mobilelife.co.th$important
 ||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||vas.dtac.co.th$important
 ||wap.dtac.co.th$important
@@ -1356,7 +1359,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||youtube.com/*/log_event?$important
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/annotations_invideo?instream_ad$important
-||youtube.com/api/stats/$important
+||youtube.com/api/stats/
+||youtube.com/api/stats/atr?$important
+||youtube.com/api/stats/qoe?$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/*/www-pagead-id$important
