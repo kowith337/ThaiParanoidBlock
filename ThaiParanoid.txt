@@ -36,9 +36,7 @@ animeranku.com##.theiaStickySidebar #ads300_250-widget-4
 autocar.in.th##.google-ads
 autocar.in.th##div[id^="_bz_boxlike"]
 becteroradio.com##div[class^="fancybox"]
-blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 cleothailand.com###survey-popup
-clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
@@ -316,7 +314,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thaijobsgov.com/banner^
 ||thailandbestbeauty.com/*colorbox*
 ||thaimobilecenter.com/colorbox^
-||thaiza.com/nodo.html
 ||thetechr.com/*/jinda-facebook-lightbox/*
 ||toritalk.com/*/uji-popup/*
 ||viu.com/ott/*/tracking/*
@@ -410,8 +407,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||adnuntius.com
 ||adok.asia
 ||adop.cc
-||ads*.bangkokpost.co.th
-||ads*.matichon.co.th
 ||ads.boxza.com
 ||ads.gamemonday.com
 ||ads.jarm.com
@@ -607,9 +602,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mobilelife.co.th$domain=~ais.co.th|~mobilelife.co.th,important
 ||sdpwap.dtac.co.th$important
 ||srf.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
-||ss1.mobilelife.co.th$important
-||ss2.mobilelife.co.th$important
-||ss3.mobilelife.co.th$important
 ||vas.dtac.co.th$important
 ||wap.dtac.co.th$important
 
@@ -1081,7 +1073,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||optsearch.net$important
 ||oqg84co2z.bkt.clouddn.com$important
 ||outputfx.com$important
-||pages.mli.me$important
 ||panshimob.com$important
 ||peak-serving.com$important
 ||peerfly.com$important
@@ -1111,7 +1102,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||radio.in.th$important
 ||rakcontent.com$important
 ||raptorads.net$important
-||rbt.getcools.com$important
 ||re1store.com$important
 ||redporntube.xyz$important
 ||regaming.com$important
@@ -1229,7 +1219,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||wakau.in$important
 ||walletfun.com$important
 ||wallpapers-girls.com$important
-||wap.getcools.com$important
 ||wap.shinee.com$important
 ||waphub.mobi$important
 ||waplog.com$important
@@ -1367,9 +1356,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||youtube.com/*/log_event?$important
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/annotations_invideo?instream_ad$important
-||youtube.com/api/stats/
-||youtube.com/api/stats/atr?$important
-||youtube.com/api/stats/qoe?$important
+||youtube.com/api/stats/$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/*/www-pagead-id$important
