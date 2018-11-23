@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201809052137
+! Version: 201811242026
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -38,7 +38,6 @@ autocar.in.th##div[id^="_bz_boxlike"]
 becteroradio.com##div[class^="fancybox"]
 blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 cleothailand.com###survey-popup
-clip-th.com###loginModal
 clip-th.com##div[data-dismiss="modal"]
 compgamer.com##.backgroundPopup
 compgamer.com##div[aria-describedby="alert_popup_dialog"]
@@ -1139,9 +1138,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||sosmob.mobi$important
 ||spak.me$important
 ||sptslmtrafms.com$important
-||ss1.mobilelife.co.th$important
-||ss2.mobilelife.co.th$important
-||ss3.mobilelife.co.th$important
 ||sswap.mobi$important
 ||startappservice.com$important
 ||stormobi.com$important
@@ -1391,7 +1387,6 @@ bbs.pramool.com###AutoNumber1:has(iframe)
 blognone.com###above_comments:has(.view-PremiumCompanies)
 blognone.com###above_comments:has(h2:has-text(/Blognone Workplace/))
 blognone.com###rightbottom_sidebar .region div[id^="block-block"]:has(.content .fb-page)
-blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 doodiza.com##.columns.large-4:has(.yengo_ads)
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
 exteen.com##.content-box center:has(div script)
