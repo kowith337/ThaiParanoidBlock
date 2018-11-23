@@ -436,7 +436,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||generaltagcom.ga$important
 ||go2cloud.org$important
 ||go2speed.org$important
-||google-analytics.l.google.com$important
 ||graph.sanook.com$important
 ||heatmap.it$important
 ||hilightad.kapook.com$important
@@ -1320,7 +1319,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||googlevideo.com/videogoodput?
 ||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
-||s.youtube.com$important
 ||syndication.twimg.com$important,~image
 ||syndication.twitter.com$important
 ||twimg.com/*/google_analytics$script,important
