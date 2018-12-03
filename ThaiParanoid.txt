@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201812032104
+! Version: 201812032131
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -1352,27 +1352,15 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||youtube.com/yts/*/www-pagead-id$important
 ! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
 
-! First party annoyance DOM | Generic
-github.com##div[class^="signup-prompt"]
-twitter.com###signin-dropdown
-youtube.com###hats-container[data-survey-id]
-youtube.com##ytd-consent-bump-renderer
+! [Deprecated] First party annoyance DOM | Generic
 
-! Purge support for Facebook until race condition can be fixed
-! or use directive include: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/FacebookZuckestionKiller.txt
+! Purge support for Facebook, please use FZK in another repo or copy URL below!
+! https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt
 
 ! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
 
-! First party services procedural DOM - contains if/has(-text)/xpath parameter
-! This need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
-github.com##.js-notice:has(.js-dismiss)
-youtube.com##.individual-feed li .branded-page-box:has(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
-! facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/login/?"])
-! facebook.com##div[id^="u_0_"]:has(div a[role="button"][href^="/r.php?"])
-! m.facebook.com,touch.facebook.com##article:has(iframe[src^="/xti.php?"]) // New ads code include 'xti.php' frames in every posts from pages
-
-! Other sites
-! This use for improve accuracy of DOM hiding
+! Procedural DOM - contains has(-text)/not/xpath parameter
+! This use for improve accuracy of DOM hiding, but need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
 4toom.com##.rightwidget div:has(a[href^="http://4toom.com/?p="])
 4toom.com##.single .content div:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
@@ -1495,7 +1483,9 @@ beartai.com###wallpaper:style(background: none !important; display: none !import
 
 ! Directive HTML tag filtering
 ! This need a supported platform to work (only Firefox post-quantum for now, maybe it work for chrom[e|ium] with Nano Adblocker)
+!#if cap_html_filtering
 m.pantip.com##^meta[name^="smartbanner"]
+!#endif
 
 !#if ext_firefox
 ! Specific inline-script hiding
