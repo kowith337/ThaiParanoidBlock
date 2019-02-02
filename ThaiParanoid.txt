@@ -1,12 +1,11 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201812052130
+! Version: 201902022000
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
-
 ! Shared filter rules (from ThaiAntiForceLike)
 ###check-also-box
 ###facebook-like-box-pop-up
@@ -218,7 +217,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner
 thisisgamethailand.com,tigthai.com##.mod_banner_top
 
 ! -------------------------------------------------- Network filters section -------------------------------------------------- !
-
 ! Shared plugins path
 /easy-facebook-likebox
 /facebook-fanbox*
@@ -358,7 +356,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||webtoons.com/js/lib/gak$important
 
 ! ---------------------------------------------------- Domain level block ----------------------------------------------------- !
-
 ! 3P share button
 ||addthis.com
 ||addtoany.com
@@ -624,6 +621,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||113.30.248.2$important
 ||116.68.193.122$important
 ||118.102.141.188$important
+||119.46.113.131$important
 ||121.241.248.6$important
 ||122.160.21.203$important
 ||124.158.4.91$important
@@ -668,30 +666,30 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||223.25.242.95$important
 
 ! Base Domain
+||100000freecontent.com$important
+||12mob.com$important
+||181818.com.my$important
 ||1bet2uthai.net$important
 ||1mov.co$important
+||20150917.com$important
+||321load.com$important
 ||4mobilefunz.com$important
 ||4v4jfe79erfxfu8z8.com$important
+||54646.co$important
+||55555getcontent.com$important
 ||5rio.com$important
 ||5sys.com$important
+||6969jp.xyz$important
+||6988fa.com$important
 ||6f76b4c82656094f26.com$important
 ||7banana.com$important
 ||7me.co$important
+||8086.com.tw$important
 ||9ep.cc$important
 ||9v8p.com$important
-||12mob.com$important
-||321load.com$important
-||6969jp.xyz$important
-||6988fa.com$important
-||8086.com.tw$important
-||54646.co$important
-||55555getcontent.com$important
-||100000freecontent.com$important
-||181818.com.my$important
-||20150917.com$important
+||a.n-d.bz$important
 ||a1n.in$important
 ||a81.me$important
-||a.n-d.bz$important
 ||ab4hr.com$important
 ||achelous.mobi$important
 ||ad5network.com$important
@@ -733,8 +731,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||autoportal.com$important
 ||awolf.mobi$important
 ||awz.bz$important
-||b3st0ff3rs.com$important
 ||b-qq.com$important
+||b3st0ff3rs.com$important
 ||bajajcapital.com$important
 ||beezzi.com$important
 ||bestmobiworld.com$important
@@ -845,11 +843,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||free8888content.com$important
 ||freezone.mobi$important
 ||full-funny.com$important
-||fun2u.biz$important
-||fun4u.co$important
 ||fun-clix.com$important
 ||fun-club.mobi$important
 ||fun-offer-th.com$important
+||fun2u.biz$important
+||fun4u.co$important
 ||fungame.mobi$important
 ||funnyclub.tv$important
 ||funsexy.info$important
@@ -925,6 +923,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||imgamma.com$important
 ||imzog.com$important
 ||innnews.co.th$important
+||innygang.com$important
+||innygang.net$important
 ||instantbabes.mobi$important
 ||iqwmxn.com$important
 ||isport.co.th$important
@@ -953,8 +953,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||loadded.com$important
 ||loadmuns.com$important
 ||looke.mobi$important
-||lovehoro2561.com$important
 ||lovehoro.space$important
+||lovehoro2561.com$important
 ||ltvperf.com$important
 ||lucky6lucky.club$important
 ||lunla.net$important
@@ -982,9 +982,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mli.me$important
 ||mob-api.net$important
 ||mobgkt.com$important
+||mobi-zone.mobi$important
 ||mobi2u.biz$important
 ||mobi2u.mobi$important
-||mobi-zone.mobi$important
 ||mobico.my$important
 ||mobicute.com$important
 ||mobidevil.com$important
@@ -993,9 +993,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mobifunz.com$important
 ||mobihibiz.com$important
 ||mobilart.in$important
-||mobile18.in.com$important
 ||mobile-link.today$important
 ||mobile.mthai.com$important
+||mobile18.in.com$important
 ||mobileacademy.com$important
 ||mobilecontents.mobi$important
 ||mobilefunclub.com$important
@@ -1044,6 +1044,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||n-mobile.net$important
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
+||nenadmilosevic.co$important
 ||neomobilesestatic.azureedge.net$important
 ||netmeds.com$important
 ||newgameeveryday.net$important
@@ -1066,6 +1067,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||oqg84co2z.bkt.clouddn.com$important
 ||outputfx.com$important
 ||panshimob.com$important
+||pdanow.net$important
 ||peak-serving.com$important
 ||peerfly.com$important
 ||perfonspot.com$important
@@ -1077,6 +1079,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||playclub.me$important
 ||playinvaders.com$important
 ||playplay.in.th$important
+||playstarter.mobi$important
 ||playsutra.com$important
 ||playwap.mobi$important
 ||playwork.co.th$important
@@ -1084,6 +1087,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||pluckyaff.com$important
 ||pointificsecure.com$important
 ||porn93.com$important
+||pottymag.com$important
 ||ppvr.page.link$important
 ||privatebay.tv$important
 ||privatewow.tv$important
@@ -1154,8 +1158,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||tdedlove.com$important
 ||tech-vault.com$important
 ||terragonbase.com$important
-||thai2mobi.com$important
 ||thai-iphone.com$important
+||thai2mobi.com$important
 ||thaifun4u.com$important
 ||thaimobile.com$important
 ||thaiza.com$important
@@ -1169,6 +1173,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||tomlekded.com$important
 ||tomyamclub.com$important
 ||toon-land.com$important
+||topfreeload.com$important
 ||trackinit.com$important
 ||trackmeplease.com$important
 ||traffikflow.com$important
@@ -1196,8 +1201,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||vilandsoft.com$important
 ||vipgames.me$important
 ||viral-mix.com$important
-||voluumtrk2.com$important
 ||voluumtrk.com$important
+||voluumtrk2.com$important
 ||vovivooo.com$important
 ||vplus.ais.co.th$important
 ||vstyle4u.com$important
@@ -1234,9 +1239,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||zomobie.com$important
 
 ! -------------------------------------------------- Other lists combination -------------------------------------------------- !
-
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - Anime Leeching List - - - - - - - - - - - - - - - - - - - - - - - - - - !
-
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
@@ -1353,13 +1356,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||youtube.com/yts/*/www-pagead-id$important
 ! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
 
-! [Deprecated] First party annoyance DOM | Generic
-
-! Purge support for Facebook, please use FZK in another repo or copy URL below!
-! https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt
-
 ! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
-
 ! Procedural DOM - contains has(-text)/not/xpath parameter
 ! This use for improve accuracy of DOM hiding, but need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
 4toom.com##.rightwidget div:has(a[href^="http://4toom.com/?p="])
@@ -1488,9 +1485,9 @@ beartai.com###wallpaper:style(background: none !important; display: none !import
 m.pantip.com##^meta[name^="smartbanner"]
 !#endif
 
-!#if ext_firefox
 ! Specific inline-script hiding
 ! This work only Firefox version below than 56 + install legacy version of uBO
+!#if ext_firefox
 autocar.in.th##script:contains(makingdifferent_ppopup)
 boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
