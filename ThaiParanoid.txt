@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201903012323
+! Version: 201903012339
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
@@ -396,6 +396,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ads.postjung.com
 ||ads.siamza.com
 ||ads.techxcite.com
+||adsense.codev.wixapps.net
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
@@ -406,6 +407,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||areyouahuman.com
 ||atdmt.com
 ||aviasales.ru
+||bingsu.pantip.com
 ||bluekai.com
 ||btstatic.com
 ||bumq.com
@@ -422,9 +424,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||csi.gstatic.com
 ||cxense.com
 ||d-stats.com
+||dentsu360th.com
 ||dtscout.com
 ||edgesuite.net
 ||effectivemeasure.net
+||engage.wixapps.net
 ||exdynsrv.com
 ||exoclick.com
 ||exosrv.com
@@ -456,6 +460,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||kiosked.com
 ||luckyorange.com
 ||m88.com
+||mgid.com
 ||moatads.com
 ||mtburn.com
 ||mtburn.jp
@@ -472,6 +477,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||onesignal.com
 ||openx.notebookspec.com
 ||openxmarket.asia
+||opticks.io
 ||padsdel.com
 ||padstm.com
 ||parkingcrew.com
@@ -496,6 +502,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||replase.tk
 ||report-uri.cloudflare.com
 ||revsci.net
+||run-syndicate.com
 ||runtnc.net
 ||ruu-dee.com
 ||sales-frontier.com
@@ -519,6 +526,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thstats.com
 ||thtrackingap.com
 ||tityx.com$important
+||trackjs.com
 ||travelpayouts.com
 ||truehits.in.th
 ||truehits.net
@@ -527,6 +535,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||user-clicks.com
 ||user-red.com
 ||uustoughtonma.org$important
+||va-endpoint.com
+||visitor-analytics.io
 ||whatshelp.io
 ||wmdstat.dev-sanook.com
 ||yengo.com
