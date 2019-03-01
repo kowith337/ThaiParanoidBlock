@@ -1,9 +1,10 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201903012339
+! Version: 201903012346
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
 ! Expires: 2 days
+! Mirror: https://github.com/kowith337/ThaiParanoidBlock/raw/master/ThaiParanoid.txt
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
 ! Shared filter rules (from ThaiAntiForceLike)
