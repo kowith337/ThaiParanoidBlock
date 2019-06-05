@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201905301942
+! Version: 201906051923
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -301,22 +301,24 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||viu.com/ott/*/tracking/*
 ||wp.com/media.go2*.*/*
 
-! Specific request blocking to prevent frame, dependency of trigger.
-! ||linkis.com/ajax^$xmlhttprequest
+! Specific request blocking to prevent frame, script, dependency of trigger.
+! ||pantip.com/files/bingsuscript.js$script // Have problem with timestamp of posts and comments after blocked
+||akamaihd.net/shopee/*/*TrackingRules$script,domain=shopee.co.th
+||akamaihd.net/shopee/*/TrackingRules$script,domain=shopee.co.th
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
-||linkis.com/ajax/update-click?*force_auth
-||linkis.com/index/ln-event?*force-auth
-||linkis.com/signin^$popup
-||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/*/css/preload_ads$stylesheet
+||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/assets/js/ads$script
 ||online-station.net/assets/js/facebook$script
+||shopee.co.th/__t__$xmlhttprequest
+||shopee.co.th/userstats_record$xmlhttprequest
+||shopeemobile.com/th/tr$xmlhttprequest
 ||techmoblog.com/tmb-advertise^$subdocument
 ||tigthai.com/js/popup_facebook.js$script
 
-! Counter bad rules / Strict blocking
+! Counter bad rules with strict blocking
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv,important
@@ -1863,6 +1865,7 @@ lonely-rooyang.com##.banner:has(.adsbygoogle)
 lonely-rooyang.com##.entry-content center:has(div ins.adsbygoogle)
 lonely-rooyang.com##.sidebar aside:has(.textwidget figure.op-ad)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
+m.pantip.com###results .m-thumb:has(.counting-author:has-text(The Review Team))
 matichon.co.th##div[class^="td-header-"]:has(div[id^="ud-dfp-ad-pos-"])
 mthai.com##div[id^="MT_HP_"]:has(.ads-rec-center)
 mthai.com##div[id^="MT_HP_"]:has(.banner)
@@ -1887,6 +1890,8 @@ pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb:has(.subject-ad)
 pantip.com##.m-thumb:has(a[href*="ads.pantip.com"])
 pantip.com##.post-item:has(a[href*="ads.pantip.com"])
+pantip.com##.post-list-wrapper .post-item:has(.post-item-by span.by-name:has-text(The Review Team))
+pantip.com##.post-list-wrapper .thumb-page .post-item:has(.post-item-by span.by-name:has-text(The Review Team))
 pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
