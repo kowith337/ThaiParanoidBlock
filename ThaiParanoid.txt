@@ -1,10 +1,10 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201906060140
+! Version: 201906092006
 ! Expires: 2 days
 ! Author: kowith337
-! Expires: 2 days
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
+! Issues: https://github.com/kowith337/ThaiParanoidBlock/issues
 ! Mirror: https://gitlab.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
@@ -174,9 +174,6 @@ thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
 thairath.co.th##.ad-box
 thairath.co.th##.container .row .ads
 thairath.co.th##div[tabindex][style*="z-index"]
-thaiza.com##.adv2col
-thaiza.com##.adv3col
-thaiza.com##.banner_728_90
 thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
@@ -1991,7 +1988,6 @@ upic.me##script:contains(#basic-modal-content)
 !#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
-! include something fix, such as prevent external link wrapping to track users who go out of their site.
 exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
 exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
 exteen.com##script:inject(abort-on-property-write.js, window._taboola)
@@ -2009,9 +2005,11 @@ online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
 pantip.com##script:inject(abort-on-property-write.js, _comscore)
 pantip.com##script:inject(abort-on-property-write.js, googletag)
 thairath.co.th##script:inject(cookie-remover.js, tr_bId)
-thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
 webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
+
+! [Nano Scriptlets Needed] These scriptlets rules below require to load extra resource from NanoAdblocker
+thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
 ! Experimental for Facebook security pixels, this may break their functionality and security check.
