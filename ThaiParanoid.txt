@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201906092006
+! Version: 201906132155
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -316,7 +316,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||techmoblog.com/tmb-advertise^$subdocument
 ||tigthai.com/js/popup_facebook.js$script
 
-! Counter bad rules with strict blocking
+! Strict blocking (also ignore bad whitelist rules)
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
 /plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv,important
@@ -324,6 +324,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 /plugins/udvideoplayer/*/videojs.ga.$domain=matichon.co.th|khaosod.co.th,important
 /plugins/udvideoplayer/*/videojs.ima.$domain=matichon.co.th|khaosod.co.th,important
 ||*-adnow.com$important
+||110.164.252.137/wpwarn/monomax$important
 ||ads*.bangkokpost.co.th$important
 ||ads*.matichon.co.th$important
 ||ais.co.th/advertiser$important
@@ -779,6 +780,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||affmoney.top$important
 ||afftrack-data.com$important
 ||afftrack.com$important
+||affxx.com$important
 ||aielber.com$important
 ||airpush.com$important
 ||akazoo.com$important
@@ -807,6 +809,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||arco.co.th$important
 ||arenamedia.co.th$important
 ||arenamobile.com$important
+||aromdeemobile.com$important
 ||at2010.net$important
 ||atas.io$important
 ||atmail.nl$important
@@ -936,6 +939,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||datapremium.com$important
 ||datapremium.com.ve$important
 ||datapremium.net$important
+||datelocalteens.com$important
 ||datinggirls.info$important
 ||datingsexy.org$important
 ||ddzey.com$important
@@ -1086,6 +1090,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||greatmobilegames.mobi$important
 ||grenadatradecentre.com$important
 ||guideball.com$important
+||guru3step.com$important
 ||gw2cloud.com$important
 ||gzazone.com$important
 ||halocell.com$important
@@ -1110,6 +1115,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||horotalk.com$important
 ||horoworld.com$important
 ||hotandspicyvideosonline.com$important
+||hotangelz.mobi$important
 ||hotleague.com$important
 ||hotstar.com$important
 ||hottz.mobi$important
@@ -1454,6 +1460,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||retargetcore.com$important
 ||retromedya.com$important
 ||rewardnow.com$important
+||rfebet.tk$important
 ||rhmobi.com$important
 ||ringtoneth.com$important
 ||rockymobi.com$important
@@ -1622,6 +1629,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||tzkbet.tk$important
 ||u-nee.com$important
 ||ude182.com$important
+||ugjbet.tk$important
 ||umobi.biz$important
 ||unpuzzled.net$important
 ||vasglobalnetwork.com$important
@@ -1656,6 +1664,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||vuclip.com$important
 ||vuclipgamesat.com$important
 ||vvidiacom.com$important
+||w88scnx.tk$important
 ||wakau.in$important
 ||walletfun.com$important
 ||wallpapers-girls.com$important
@@ -1677,10 +1686,12 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||wiseforwarding.com$important
 ||womanceri.pw$important
 ||worldgamespn.mobi$important
+||wowcool.net$important
 ||wppbbm.com$important
 ||wpwhatsappplus.com$important
 ||wrtual.com$important
 ||wurfl.io$important
+||xm88d.tk$important
 ||xm88g.tk$important
 ||xn--12cabv1md8aw2c8h.com$important
 ||xn--22c0bau8bor5ac4k7cc6g8a.net$important
@@ -1690,6 +1701,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||xspicyvideos.com$important
 ||yasune360.com$important
 ||yibsee.com$important
+||yim88.tk$important
 ||youlaugh.online$important
 ||your-sweet-girls1.com$important
 ||ypzsls.com$important
