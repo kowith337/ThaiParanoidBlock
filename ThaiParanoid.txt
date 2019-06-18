@@ -1,6 +1,6 @@
 [uBlock Origin 1.16.0]
 ! Title: Thai Paranoid Block
-! Version: 201906132148
+! Version: 201906181917
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -410,6 +410,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||aviasales.ru
 ||bingsu.pantip.com
 ||bluekai.com
+||browsehappy.com
 ||btstatic.com
 ||bumq.com
 ||byteark-analytics.thairath.co.th
@@ -441,6 +442,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||gbotvisit.com
 ||gbox.sc
 ||generaltagcom.ga
+||geoplugin.net
 ||go2cloud.org
 ||go2speed.org
 ||graph.sanook.com
@@ -993,6 +995,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||fashionbunny.com$important
 ||fblives.net$important
 ||feminum.pw$important
+||files-media.com$important
 ||fim88.tk$important
 ||findgit.com$important
 ||fly2.me$important
@@ -1177,6 +1180,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||korverit.pw$important
 ||kplaw.kz$important
 ||kronsurf.pw$important
+||kumchanod.com$important
 ||kwizu.club$important
 ||laanbok.pw$important
 ||lalamobi.com$important
@@ -1477,6 +1481,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||safedown.s3.amazonaws.com$important
 ||saleplus.vn$important
 ||salvage-shop.com$important
+||samart-digitalmedia.com$important
 ||samartbug.com$important
 ||samartdigitalmedia.com$important
 ||samartmedia.com$important
