@@ -1,6 +1,6 @@
-[uBlock Origin 1.16.0]
+[uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201906181922
+! Version: 201907021929
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -548,7 +548,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||zemanta.com$important
 
 ! Strictly block Google Ads and/or Tracking (YouTube Included)
-/generate_204$important,~document
+/generate_204$all,important,~document
 ||2mdn.net$important
 ||admob.com$important
 ||ads.youtube.com$important
@@ -571,6 +571,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||s2.youtube.com$important
 
 ! Allowed only 1P
+||110.164.252.137$third-party,important
 ||lazada.co.th$third-party,important
 ||line.me$third-party
 ||line-scdn.net$third-party,domain=~line.me
@@ -588,9 +589,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 !          every month, or every each messages that they've sent to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
-! ##a[href^="sms:"]:style(pointer-events: none !important)
-! ##a[href^="tel:"]:style(pointer-events: none !important)
-! ##a[href^="wtai:"]:style(pointer-events: none !important)
+!#if env_mobile
+##a[href^="sms:"]:style(pointer-events: none !important)
+##a[href^="tel:"]:style(pointer-events: none !important)
+##a[href^="wtai:"]:style(pointer-events: none !important)
+!#endif
 
 ! Even operator...
 ||ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
@@ -625,37 +628,38 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||10.104.143.133$important
 ||13.76.87.1$important
 ||27.100.44.214$important
-||27.254.82.82$important
 ||27.254.82.83$important
+||27.254.82.82$important
 ||43.231.124.161$important
 ||49.50.69.80$important
 ||52.76.52.18$important
-||52.76.89.151$important
-||52.76.242.20$important
 ||52.187.132.230$important
 ||52.220.167.186$important
-||54.169.14.129$important
+||52.76.89.151$important
+||52.76.242.20$important
 ||54.169.240.216$important
-||54.186.88.28$important
 ||54.254.176.233$important
+||54.169.14.129$important
+||54.186.88.28$important
 ||56.76.86.177$important
 ||58.137.160.133$important
 ||58.137.160.134$important
 ||58.137.222.222$important
 ||58.181.206.44$important
+||61.91.6.131$important
 ||61.16.174.219$important
 ||61.19.249.34$important
 ||61.47.40.132$important
-||61.91.6.131$important
 ||65.49.33.31$important
 ||103.16.143.120$important
 ||103.16.143.144$important
-||103.56.210.21$important
 ||103.241.146.159$important
+||103.56.210.21$important
 ||103.246.17.65$important
 ||103.246.17.72$important
 ||103.246.17.87$important
 ||107.170.154.51$important
+||111.118.179.72$important
 ||113.30.248.2$important
 ||116.68.193.122$important
 ||118.102.141.188$important
@@ -665,41 +669,39 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||124.40.232.180$important
 ||124.158.4.91$important
 ||125.63.68.111$important
-||139.59.44.57$important
 ||139.162.57.169$important
+||139.59.44.57$important
 ||162.243.33.148$important
 ||162.243.73.231$important
-||162.243.74.32$important
 ||162.243.217.139$important
+||162.243.74.32$important
+||180.179.108.50$important
+||180.179.236.26$important
 ||180.151.100.230$important
 ||180.179.103.240$important
 ||180.179.103.253$important
-||180.179.108.50$important
 ||180.179.207.111$important
 ||180.179.207.113$important
 ||180.179.207.246$important
-||180.179.236.26$important
 ||182.71.228.49$important
-||192.241.162.245$important
 ||192.241.180.55$important
+||192.241.162.245$important
 ||192.241.249.228$important
-||198.15.67.85$important
 ||198.15.104.214$important
-||202.9.104.118$important
-||202.38.172.244$important
+||198.15.67.85$important
 ||202.57.163.235$important
-||202.87.41.147$important
-||202.91.22.224$important
+||202.38.172.244$important
 ||202.174.122.12$important
 ||202.191.128.157$important
-||203.107.133.238$important
+||202.91.22.224$important
+||202.9.104.118$important
+||202.87.41.147$important
 ||203.115.195.57$important
-||203.122.58.93$important
-||203.146.208.145$important
 ||203.146.249.21$important
+||203.107.133.238$important
+||203.146.208.145$important
 ||203.146.251.210$important
 ||203.146.251.229$important
-||203.149.7.100$important
 ||203.151.206.100$important
 ||203.151.206.102$important
 ||203.151.232.156$important
@@ -707,6 +709,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||203.170.193.118$important
 ||203.223.147.133$important
 ||203.223.159.245$important
+||203.122.58.93$important
+||203.149.7.100$important
 ||205.147.96.155$important
 ||220.226.188.56$important
 ||223.25.242.68$important
@@ -754,6 +758,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||achelous.mobi$important
 ||acl-wireless.com$important
 ||acme-mobile.com$important
+||ad5media.com$important
 ||ad5network.com$important
 ||addictiveads.com$important
 ||addlink.mobi$important
@@ -783,6 +788,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||afftrack-data.com$important
 ||afftrack.com$important
 ||affxx.com$important
+||ahyoyo.com$important
 ||aielber.com$important
 ||airpush.com$important
 ||akazoo.com$important
@@ -892,6 +898,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ckwizard.com$important
 ||clausiafze.com$important
 ||click404.net$important
+||clickdealer.com$important
 ||clickmlife.com$important
 ||clickmultimedia.co.th$important
 ||clickstk.com$important
@@ -925,6 +932,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||cpgnrotationurl.com$important
 ||cpitraffic.com$important
 ||cpweb.com$important
+||cswinpz.com$important
 ||ct9.me$important
 ||ctrackz.net$important
 ||cuteclub.tv$important
@@ -983,6 +991,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||eskimi.com$important
 ||espabit.net$important
 ||etexator.pw$important
+||etopgame.com$important
 ||etracker.cc$important
 ||etsthailand.com$important
 ||exezhanqun.com$important
@@ -1053,11 +1062,13 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||gamezine.in$important
 ||gameziz.com$important
 ||gamezzone.me$important
+||gamiebox.com$important
 ||gammo.me$important
 ||gamzones.com$important
 ||gangzaa.net$important
 ||gcvw.mobi$important
 ||gdmconvtrck.com$important
+||gdmgsecure.com$important
 ||genieessp.com$important
 ||get-intouch.com$important
 ||getclick.mobi$important
@@ -1179,6 +1190,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||kodfin.com$important
 ||kodporno.com$important
 ||kodsextoy.com$important
+||kodzed.com$important
 ||korverit.pw$important
 ||kplaw.kz$important
 ||kronsurf.pw$important
@@ -1248,6 +1260,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||medgeidea.com$important
 ||media-bucket.com$important
 ||mexcomm.net$important
+||mfun521.com$important
 ||mfunz.mobi$important
 ||micrayer.pw$important
 ||min4.com$important
@@ -1296,6 +1309,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mobillium.mobi$important
 ||mobindy.com$important
 ||mobiplus.me$important
+||mobipotato.com$important
 ||mobiprofit.com$important
 ||mobistarcorp.net$important
 ||mobistos.com$important
@@ -1380,6 +1394,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||officeprs.cf$important
 ||officeprs.gq$important
 ||offrtrking.com$important
+||oho-mobile.com$important
 ||oli.tools$important
 ||omaharlog.pw$important
 ||onelinkgroup.com$important
@@ -1438,6 +1453,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||premiumtraff.com$important
 ||previsupe.pw$important
 ||privatebay.tv$important
+||privatevideoz.com$important
 ||privatewant.com$important
 ||privatewow.tv$important
 ||pubmt.ch$important
@@ -1455,6 +1471,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||re1store.com$important
 ||real-prizesday.life$important
 ||realgirls.mobi$important
+||redclub.mobi$important
 ||redporntube.xyz$important
 ||regaming.com$important
 ||relingsh.pw$important
@@ -1493,6 +1510,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||scientiamobile.com$important
 ||seacom.co.th$important
 ||seaman2u.com$important
+||secudatago.com$important
 ||securecloud-mb.com$important
 ||sedapmeesiam.gold$important
 ||segimaid.com$important
@@ -1637,6 +1655,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ugjbet.tk$important
 ||umobi.biz$important
 ||unpuzzled.net$important
+||upp.st$important
 ||vasglobalnetwork.com$important
 ||vasgn.com$important
 ||vassolution.com$important
@@ -1725,14 +1744,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||zsaqls.com$important
 
 ! -------------------------------------------------- Other lists combination -------------------------------------------------- !
-! - - - - - - - - - - - - - - - - - - - - - - - - - - Anime Leeching List - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! - - - - - - - - - - - - - - - - - - - - - - - - - -  Anime Leeching List  - - - - - - - - - - - - - - - - - - - - - - - - - - !
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
 
-! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from
-! various fansubs, also publish retail products/contents on their site (even it's unauthorized by local license), they
-! earn profits and revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)
+! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various
+! fansubs, also publish retail products/contents on their site (it's unauthorized by local license), they earn profits and
+! revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)
 ! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
 ! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
 
@@ -1746,6 +1765,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||anime-sugoi.com$document
 ||anime-thclub.com$document
 ||anime-zeed.com$document
+||animedd.xyz$document
+||animeloli.com$document
 ||animelovestory.com$document
 ||animemovie-club.in$document
 ||animethailovelove.blogspot.com$document
@@ -1776,6 +1797,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||miruanime.net$document
 ||misa-anime.com$document
 ||neko-miku.com$document
+||nemuriafansub.com$document
 ||newb-anime.com$document
 ||nice-anime.com$document
 ||now-anime.com$document
@@ -2002,6 +2024,11 @@ share-si.com##script:contains(ccpop)
 teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
+!#endif
+
+! Backward Compatibility
+!#if env_firefox
+/generate_204$important,~document
 !#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
