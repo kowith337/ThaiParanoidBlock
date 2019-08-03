@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201907021929
+! Version: 201908031351
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -346,6 +346,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
+||openx.*$first-party,important
+||openx.*$third-party,important
 ||referrer.disqus.com$important
 ||siamha.com/truehits/stat$important
 ||thairath.co.th/assets/js/firebase$important
@@ -384,6 +386,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||wisemana.com$important
 
 ! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
+
 ||24x7th.com$important
 ||accesstrade.in.th$important
 ||adasiaholdings.com$important
@@ -515,7 +518,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||shinobi.jp$important
 ||silkspan.com$important
 ||simba-digital.com$important
-||smemove.com$important
 ||socdm.com$important
 ||stat.matichon.co.th$important
 ||statmt.matichon.co.th$important
