@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201908031413
+! Version: 201908031424
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -386,7 +386,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||wisemana.com$important
 
 ! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
-
 ||24x7th.com$important
 ||accesstrade.in.th$important
 ||adasiaholdings.com$important
@@ -401,12 +400,15 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ads.postjung.com$important
 ||ads.siamza.com$important
 ||ads.techxcite.com$important
+||ads.thaiware.com$important
 ||adsense.codev.wixapps.net$important
 ||adsniper.ru$important
 ||adsoptimal.com$important
 ||adtplatform.com$important
+||alexametrics.com$important
 ||amung.us$important
 ||anonymousdemographics.com$important
+||ao0c.club$important
 ||app-measurement.com$important
 ||appsflyer.com$important
 ||areyouahuman.com$important
@@ -421,6 +423,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||clickadu.com$important
 ||clicksgear.com$important
 ||connextra.com$important
+||consensu.org$important
 ||crashlytics.com$important
 ||crazyegg.com$important
 ||criteo.com$important
@@ -430,6 +433,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||csi.gstatic.com$important
 ||cxense.com$important
 ||d-stats.com$important
+||da-ads.com$important
+||dapxl.com$important
+||demand.supply$important
 ||dentsu360th.com$important
 ||dtscout.com$important
 ||edgesuite.net$important
@@ -454,12 +460,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hilightad.kapook.com$important
 ||histats.com$important
 ||hotjar.com$important
+||igmedianow.com$important
 ||imprezzer.com$important
 ||imrworldwide.com$important
 ||inmobi.com$important
 ||innity.com$important
 ||innity.net$important
 ||inspectlet.com$important
+||instant.page$important
 ||isgstat.sanook.com$important
 ||iyfnzgb.com$important
 ||izooto.com$important
@@ -492,6 +500,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||pc1ads.com$important
 ||pc2ads.com$important
 ||pc3ads.com$important
+||pikdo.net$important
 ||ping-fast.com$important
 ||pingdom.net$important
 ||pixeldigitalstudios.com$important
@@ -509,6 +518,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||replase.tk$important
 ||report-uri.cloudflare.com$important
 ||revsci.net$important
+||rgvqcsxqge.com$important
 ||run-syndicate.com$important
 ||runtnc.net$important
 ||ruu-dee.com$important
