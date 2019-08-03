@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201908031348
+! Version: 201908031411
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -295,7 +295,6 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thailandbestbeauty.com/*colorbox*
 ||thaimobilecenter.com/colorbox^
 ||thetechr.com/*/jinda-facebook-lightbox/*
-||viu.com/ott/*/tracking/*
 ||wp.com/media.go2*.*/*
 
 ! Specific request blocking to prevent frame, script, dependency of trigger.
@@ -314,6 +313,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||shopeemobile.com/th/tr$xmlhttprequest
 ||techmoblog.com/tmb-advertise^$subdocument
 ||tigthai.com/js/popup_facebook.js$script
+||viu.com/ott/*/tracking/*$third-party
 
 ! Strict blocking (also ignore bad whitelist rules)
 ! Note: Sometime I can't block those requests normally without the need of $important tag
@@ -717,6 +717,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||223.25.242.95$important
 
 ! Base Domain
+||0frmluki.tw$important
 ||100000freecontent.com$important
 ||125-telecom.com$important
 ||12horo.com$important
@@ -730,6 +731,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||2-spot.com$important
 ||20150917.com$important
 ||321load.com$important
+||33luo.com$important
+||3mobilecontents.net$important
+||3storage.net$important
 ||4mobilefunz.com$important
 ||4v4jfe79erfxfu8z8.com$important
 ||54646.co$important
@@ -741,9 +745,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||6f76b4c82656094f26.com$important
 ||6g.cx$important
 ||70characters.com$important
+||755m.com$important
 ||7banana.com$important
 ||7me.co$important
 ||8086.com.tw$important
+||81wm.com$important
+||8mobi.co.th$important
+||918kissauto.com$important
+||918kisskiss918.com$important
 ||9ep.cc$important
 ||9v8p.com$important
 ||9yam.com$important
@@ -757,6 +766,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||achelous.mobi$important
 ||acl-wireless.com$important
 ||acme-mobile.com$important
+||acupofcafeconleche.com$important
 ||ad5media.com$important
 ||ad5network.com$important
 ||addictiveads.com$important
@@ -794,11 +804,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||alchemy.n-d.bz$important
 ||alert301.com$important
 ||alice2appsmart.com$important
+||allbet24hr.com$important
+||allforbetthailand.com$important
 ||alpha-mobi.com$important
 ||ametechnology.co.th$important
 ||amkomobile.com$important
 ||amkoonline.com$important
 ||androidappsfree.mobi$important
+||angellanguageacademy.com$important
 ||anolog.mobi$important
 ||aplay.tv$important
 ||aplaydigital.com$important
@@ -817,8 +830,10 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||arenamedia.co.th$important
 ||arenamobile.com$important
 ||aromdeemobile.com$important
+||arosg.com$important
 ||at2010.net$important
 ||atas.io$important
+||atlanbox.com$important
 ||atmail.nl$important
 ||authbill.com$important
 ||autoportal.com$important
@@ -826,12 +841,15 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||awz.bz$important
 ||b-qq.com$important
 ||b3st0ff3rs.com$important
+||bacc1688.mobi$important
+||bacc1688a.com$important
 ||backstory.ru$important
 ||bajajcapital.com$important
 ||bakerssolution.com$important
 ||ballhotclub.com$important
 ||bamobile.com$important
 ||bandlane.com$important
+||bbcmvdo.com$important
 ||bbcontent.co.th$important
 ||bcomnetwork.com$important
 ||beacstyle.pw$important
@@ -852,6 +870,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||bkkonline.com$important
 ||blastoffgaming.com$important
 ||bldtrax.com$important
+||bluedr.net$important
 ||bluestwep.pw$important
 ||bmobil.me$important
 ||bmobil.net$important
@@ -873,21 +892,26 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||bytl.io$important
 ||bzadx.pro$important
 ||cabmu.com$important
+||callingallmonsters.com$important
 ||callingsticker.com$important
 ||caravan.mobi$important
 ||caravancampingsales.com.au$important
+||carlydibona.com$important
 ||cd-mob.com$important
 ||cdnfiber.com$important
 ||celeryleek.com$important
 ||cellvidz.com$important
 ||centili.com$important
+||cfallasd.com$important
 ||chaiyo-mobile.com$important
 ||chatded.com$important
+||chcipujcit.com$important
 ||cheesemobile.com$important
 ||cherryzone.com.ph$important
 ||cheyouju.net$important
 ||chickcell.com$important
 ||chickyclub.net$important
+||chiencenter.com$important
 ||chilliclubs.com$important
 ||chocoboard.com$important
 ||chupa.mobi$important
@@ -929,6 +953,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||cosmik-ltd.com$important
 ||cpactions.com$important
 ||cpgnrotationurl.com$important
+||cpinfantil.com$important
 ||cpitraffic.com$important
 ||cpweb.com$important
 ||cswinpz.com$important
@@ -942,6 +967,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||d22ndsbwwggzum.cloudfront.net$important
 ||damneddevastator.com$important
 ||dangduter.com$important
+||daniellefriedland.com$important
 ||dantri.com.vn$important
 ||darapayakorn.com$important
 ||datapremium.$important
@@ -968,6 +994,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||dmk365.com$important
 ||dobmobile.com$important
 ||dobmobile.xyz$important
+||doonung.com$important
 ||dooplus.tv$important
 ||dosbuy.com$important
 ||downloadhub.me$important
@@ -979,6 +1006,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||e668ou.com$important
 ||ebizmobile.com$important
 ||ectionma.pw$important
+||edenadoptionagency.com$important
 ||eggdigital.com$important
 ||eggreadyweb.com$important
 ||eiei.net$important
@@ -1048,6 +1076,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||g-mm.co$important
 ||g.zm.my$important
 ||gadmobe.com$important
+||game.xyz$important
 ||gamebuffet.mobi$important
 ||gameloft.co.th$important
 ||gameloft.com$important
@@ -1065,6 +1094,20 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||gammo.me$important
 ||gamzones.com$important
 ||gangzaa.net$important
+||gclub-casino.com$important
+||gclub-plaza.com$important
+||gclub.guru$important
+||gclub123.com$important
+||gclub168.casino$important
+||gclub168.net$important
+||gclub24hr.com$important
+||gclub7000.com$important
+||gclub8000.com$important
+||gclub888.org$important
+||gclub9.com$important
+||gclub9000.net$important
+||gclubgames.com$important
+||gclubslot898.com$important
 ||gcvw.mobi$important
 ||gdmconvtrck.com$important
 ||gdmgsecure.com$important
@@ -1093,6 +1136,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||go2cloud.org$important
 ||godnearme.com$important
 ||gogameportal.com$important
+||golden-slot.com$important
 ||gomasti.in$important
 ||goohd.tv$important
 ||goorulife.com$important
@@ -1102,16 +1146,19 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||greatestapps.mobi$important
 ||greatmobilegames.mobi$important
 ||grenadatradecentre.com$important
+||gtzlz.com$important
 ||guideball.com$important
 ||guru3step.com$important
 ||gw2cloud.com$important
 ||gzazone.com$important
+||hack-dragon-city.com$important
 ||halocell.com$important
 ||handysms.com$important
 ||happytube.mobi$important
 ||harddayforall30.icu$important
 ||havfun.mobi$important
 ||hayhaa.com$important
+||hbengineeringworks.com$important
 ||hclips.net$important
 ||hd0y.com$important
 ||hehemobi.com$important
@@ -1121,6 +1168,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hfa.mobi$important
 ||hito.co.vu$important
 ||hm5.me$important
+||hoguhotels.com$important
 ||hollywoodmobile.com$important
 ||hombet.tk$important
 ||hornygirls.mobi$important
@@ -1156,9 +1204,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||innygang.com$important
 ||innygang.net$important
 ||instantbabes.mobi$important
+||integrativeanalytic.com$important
 ||interchan.com$important
 ||ipxxxzeed.com$important
 ||iqwmxn.com$important
+||isc888th.com$important
 ||islatively.com$important
 ||isport.co.th$important
 ||isub.me$important
@@ -1168,16 +1218,22 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ivalent.com$important
 ||izenmobi.com$important
 ||jibhd.com$important
+||jinshengpacking.com$important
 ||jiudianzhaopin.com$important
 ||jmtt.co.th$important
+||joker123xo.com$important
+||joybaerfrescoes.com$important
 ||jtsws.com$important
+||juliaogdenblog.com$important
 ||justdownit.s3.amazonaws.com$important
 ||kaka-games.com$important
 ||kangped.com$important
 ||kangsom.com$important
 ||karysale.pw$important
 ||katrac.com$important
+||key-travel.com$important
 ||khelbazar.in$important
+||kilomniadstaz.info$important
 ||kingstar.pw$important
 ||kinreyal.pw$important
 ||kissmyads.com$important
@@ -1207,20 +1263,25 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||lehbet.tk$important
 ||letgomobile.com$important
 ||liferrim.pw$important
+||likefreever.com$important
+||likemyhistory.info$important
 ||link-boost.com$important
 ||linkbooster.xyz$important
 ||linkingclicks.com$important
 ||lipsxipac.pw$important
+||livingingroutfits.com$important
 ||load55.com$important
 ||loadded.com$important
 ||loadfree2u.com$important
 ||loadmuns.com$important
 ||logandload.com$important
 ||looke.mobi$important
+||lottoasian.com$important
 ||lovehoro.space$important
 ||lovehoro2561.com$important
 ||lovenights.net$important
 ||lpalice2appsmart.com$important
+||lpaosub.com$important
 ||ltvperf.com$important
 ||lucky6lucky.club$important
 ||luckymobileuser.club$important
@@ -1232,10 +1293,12 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||m3shoppe.in.th$important
 ||m3tech.co.th$important
 ||ma3.co$important
+||maciejdoryk.com$important
 ||macrokiosk.com$important
 ||maejaow.com$important
 ||magent.my$important
 ||magikmobile.mobi$important
+||mai88.com$important
 ||malanden.pw$important
 ||manymy.com$important
 ||mastermovie-hd.mobi$important
@@ -1336,6 +1399,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mono2u.com$important
 ||monogame.in.th$important
 ||monoinfosystems.com$important
+||monomax.me$important
+||monomaxx.com$important
 ||monotechnology.com$important
 ||monozone.com$important
 ||moo.mn$important
@@ -1346,14 +1411,17 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||moviegroups88.com$important
 ||movilfun4u.com$important
 ||mp3-shared.com$important
+||mrlittlejohn.com$important
 ||mtertain.com$important
 ||mtouche.com$important
 ||mugforward.com$important
+||multicakes.com$important
 ||muraltent.pw$important
 ||mweb.com$important
 ||mydala.com$important
 ||myfortune.space$important
 ||mygirlshow.com$important
+||mymaxbet.com$important
 ||mymgw.com$important
 ||mynewrotationlink.com$important
 ||myscoobi.com$important
@@ -1381,12 +1449,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||nicenews.pw$important
 ||niitcloudcampus.com$important
 ||nipa.co.th$important
+||njysmy.com$important
 ||nkrbt.com$important
 ||nmpcenter.com$important
 ||noclef.com$important
 ||notesdav.pw$important
 ||nowportal.net$important
 ||nrs-group.com$important
+||nusa-putra.com$important
 ||obet88.tk$important
 ||offergold.online$important
 ||offerstrack.net$important
@@ -1403,6 +1473,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||onwardinated.com$important
 ||oomph.club$important
 ||opencurvemedia.com$important
+||operastarz.com$important
 ||operonsh.pw$important
 ||opticks.io$important
 ||optsearch.net$important
@@ -1445,6 +1516,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||pluckyaff.com$important
 ||podanover.pw$important
 ||pointificsecure.com$important
+||pokienation.com$important
 ||porn93.com$important
 ||pornpt.icu$important
 ||pottymag.com$important
@@ -1455,11 +1527,13 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||privatevideoz.com$important
 ||privatewant.com$important
 ||privatewow.tv$important
+||programablecontrol.com$important
 ||pubmt.ch$important
 ||pure-babe.com$important
 ||puteez.com$important
 ||python-libs.com$important
 ||questionfly.com$important
+||r9987.com$important
 ||rabreptancalbe.info$important
 ||radio.in.th$important
 ||radiologistas.com.br$important
@@ -1489,6 +1563,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||royalads.net$important
 ||rushvip.net$important
 ||ryhopset.pw$important
+||s-bobet.com$important
 ||s-onetelecom.com$important
 ||sabai5555.com$important
 ||sabdee.com$important
@@ -1504,9 +1579,23 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||samartdigitalmedia.com$important
 ||samartmedia.com$important
 ||sanookde.com$important
+||sbobet-365.com$important
+||sbobet-onlinecasino.com$important
+||sbobet-sports.com$important
+||sbobets.tips$important
+||sbobetthai88.com$important
+||sbobettm.com$important
 ||scan-do.com$important
 ||scattertraff.com$important
 ||scientiamobile.com$important
+||scr888-vip.com$important
+||scr888hd.com$important
+||scr888rdg.com$important
+||scr888sp.com$important
+||scr888th.com$important
+||scr888th.live$important
+||scr888thcasino.com$important
+||scr888thslot.com$important
 ||seacom.co.th$important
 ||seaman2u.com$important
 ||secudatago.com$important
@@ -1528,11 +1617,13 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||shieldministry.com$important
 ||shinee.com$important
 ||shoopadoo.com$important
+||shopandersons.com$important
 ||shoutingnetwork.com$important
 ||shrum-studio.com$important
 ||siam2you.com$important
 ||siamfun4u.com$important
 ||siamguru.com$important
+||siammaxbet.com$important
 ||siamtouch.com$important
 ||sifinmar.pw$important
 ||silk69.in$important
@@ -1542,6 +1633,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||skype4mobile.com$important
 ||slimcdn.com$important
 ||slot1688.com$important
+||slotxo24hr.com$important
 ||slypee.com$important
 ||sm4link.com$important
 ||smartadurl.com$important
@@ -1560,6 +1652,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||softwood.pw$important
 ||sohs.co$important
 ||solutiononeholding.com$important
+||somaticiens.com$important
 ||sosmob.mobi$important
 ||spak.me$important
 ||sparklemob.com$important
@@ -1585,8 +1678,10 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||sunnygames.club$important
 ||supergirls.one$important
 ||surfto.mobi$important
+||sutanrajacirebon.com$important
 ||svkrg.com$important
 ||sybyrl.com$important
+||syjxwl.com$important
 ||symbioticinfo.com$important
 ||symediatech.com$important
 ||t3mobileadvertising.xyz$important
@@ -1598,9 +1693,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||tech-vault.com$important
 ||temenjalan.com$important
 ||terragonbase.com$important
+||th-scr888.com$important
 ||th1cs.com$important
 ||thai-iphone.com$important
 ||thai-sms.com$important
+||thai-voucher.com$important
 ||thai2mobi.com$important
 ||thaiboxwap.com$important
 ||thaifun4u.com$important
@@ -1641,15 +1738,18 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||trend-tech.net$important
 ||trippointz.com$important
 ||trktoken.com$important
+||tsalebag.com$important
 ||tubecorporate.com$important
 ||tubidy.mobi$important
 ||tunkagist.pw$important
 ||turbob.mobi$important
 ||tvplanet.co$important
 ||tweetsms.com.my$important
+||twomikesband.com$important
 ||txtnation.com$important
 ||tzkbet.tk$important
 ||u-nee.com$important
+||ubic-global.com$important
 ||ude182.com$important
 ||ugjbet.tk$important
 ||umobi.biz$important
@@ -1682,6 +1782,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||voluumtrk2.com$important
 ||vovivooo.com$important
 ||vplus.ais.co.th$important
+||vrscr888.com$important
+||vsjcommsource.com$important
 ||vstyle4u.com$important
 ||vuclip.ais.co.th$important
 ||vuclip.com$important
@@ -1701,7 +1803,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||waypeach.pw$important
 ||wealthandwealth.com$important
 ||wealthclick.net$important
+||weddingdayphotographerparis.com$important
 ||wesliptu.pw$important
+||wheretobuydiettrex.com$important
 ||wifistudy.com$important
 ||windmacr.pw$important
 ||windyalerts.com$important
@@ -1750,7 +1854,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 
 ! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various
 ! fansubs, also publish retail products/contents on their site (it's unauthorized by local license), they earn profits and
-! revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)
+! revenue from ad services. (e.g. insert banner, popunder, coin miner, many tracking and monetisation services, ...)
 ! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
 ! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
 
@@ -1839,7 +1943,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
 ||s.youtube.com
-||syndication.twimg.com$important,~image
+||syndication.twimg.com$~image
 ||syndication.twitter.com$important
 ||twimg.com/*/google_analytics$script,important
 ||twimg.com/i/jot$important
