@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201908031411
+! Version: 201908031421
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -399,12 +399,15 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ads.postjung.com
 ||ads.siamza.com
 ||ads.techxcite.com
+||ads.thaiware.com
 ||adsense.codev.wixapps.net
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
+||alexametrics.com
 ||amung.us
 ||anonymousdemographics.com
+||ao0c.club
 ||app-measurement.com
 ||appsflyer.com
 ||areyouahuman.com
@@ -419,6 +422,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||clickadu.com
 ||clicksgear.com
 ||connextra.com
+||consensu.org
 ||crashlytics.com
 ||crazyegg.com
 ||criteo.com
@@ -428,6 +432,9 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||csi.gstatic.com
 ||cxense.com
 ||d-stats.com
+||da-ads.com
+||dapxl.com
+||demand.supply
 ||dentsu360th.com
 ||dtscout.com
 ||edgesuite.net
@@ -452,12 +459,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hilightad.kapook.com
 ||histats.com
 ||hotjar.com
+||igmedianow.com
 ||imprezzer.com
 ||imrworldwide.com
 ||inmobi.com
 ||innity.com
 ||innity.net
 ||inspectlet.com
+||instant.page
 ||isgstat.sanook.com
 ||iyfnzgb.com
 ||izooto.com
@@ -490,6 +499,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||pc1ads.com
 ||pc2ads.com
 ||pc3ads.com
+||pikdo.net
 ||ping-fast.com
 ||pingdom.net
 ||pixeldigitalstudios.com
@@ -507,6 +517,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||replase.tk
 ||report-uri.cloudflare.com
 ||revsci.net
+||rgvqcsxqge.com
 ||run-syndicate.com
 ||runtnc.net
 ||ruu-dee.com
