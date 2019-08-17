@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201908031424
+! Version: 201908172302
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -84,6 +84,9 @@ m.online-station.net##figure[class^="os-ad"]
 m.pantip.com##.smartbanner
 m.pantip.com##.social-banner
 m.webtoons.com##.downapp_area
+majorcineplex.com##header #leaderboard
+majorcineplex.com###wrapper .blogR .blogbannerMR
+majorcineplex.com###wrapper .blogR .blogbannerHPAd
 marketingoops.com###popup_countdown
 marketingoops.com##div[id^="itro_"]
 meepanda.com##.adsense-leadin
@@ -138,6 +141,7 @@ rabbit.co.th##.exit-overlay
 rabbit.co.th##.post-entry .ads
 rabbit.co.th##.subscribe-form
 rabbit.co.th##.ui-front.ui-widget-overlay
+sanook.com##div[class^="jsx-"].billboard
 share-si.com###overlay
 share-si.com###yengo-inline-ads
 share-si.com##.yengo-x
@@ -174,6 +178,11 @@ thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
 thairath.co.th##.ad-box
 thairath.co.th##.container .row .ads
 thairath.co.th##div[tabindex][style*="z-index"]
+thaiware.com###MainPopup
+thaiware.com##div[id^="fan-exit"]
+thaiware.com##div[id^="fanback"]
+thaiware.com##div[id^="fanbox"]
+thaiware.com##div[id^="fanclose"]
 thetechr.com##.jinda-content-block
 thetechr.com##.jinda-facebook-like-box
 thetechr.com##.jinda-overlay-background
@@ -298,7 +307,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||thetechr.com/*/jinda-facebook-lightbox/*
 ||wp.com/media.go2*.*/*
 
-! Specific request blocking to prevent frame, script, dependency of trigger.
+! Specific request blocking to prevent frame, script, AJAX requests, dependency of trigger.
 ! ||pantip.com/files/bingsuscript.js$script // Have problem with timestamp of posts and comments after blocked
 ||akamaihd.net/shopee/*/*TrackingRules$script,domain=shopee.co.th
 ||akamaihd.net/shopee/*/TrackingRules$script,domain=shopee.co.th
@@ -330,6 +339,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ais.co.th/advertiser$important
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
+||bloggang.com/truehitsstat.php?$important
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
@@ -348,11 +358,15 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||online-station.net/assets/js/google*$important
 ||openx.*$first-party,important
 ||openx.*$third-party,important
+||pantip.com/api/forum-service/forum/get_promote_box?$important
+||pantip.com/api/forum-service/forum/get_promote_tag?$important
+||pantipmarket.com/_data/ads$important
 ||referrer.disqus.com$important
 ||siamha.com/truehits/stat$important
 ||thairath.co.th/assets/js/firebase$important
 ||thairath.co.th/js/autotrack$important
 ||thairath.co.th/js/tr_$script,important
+||thaiware.com/popup/$important
 ||toosthai.com$important
 ||visualwebsiteoptimizer.com$important
 ||webtoons.com/js/lib/*_logger$important
@@ -596,7 +610,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ! Mobile Badvertisers
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand,
 !          because visiting those domain or specific page will also sent request to mobile operator to subscribe useless content services
-!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content, such as download games, videos,
+!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content such as download games, videos,
 !          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
 !          every month, or every each messages that they've sent to you...
 
@@ -714,6 +728,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||203.146.208.145$important
 ||203.146.251.210$important
 ||203.146.251.229$important
+||203.149.30.86$important
 ||203.151.206.100$important
 ||203.151.206.102$important
 ||203.151.232.156$important
@@ -743,6 +758,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||1mov.co$important
 ||2-spot.com$important
 ||20150917.com$important
+||2abdanismanlik.com$important
 ||321load.com$important
 ||33luo.com$important
 ||3mobilecontents.net$important
@@ -814,6 +830,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||aielber.com$important
 ||airpush.com$important
 ||akazoo.com$important
+||alawael-news.com$important
 ||alchemy.n-d.bz$important
 ||alert301.com$important
 ||alice2appsmart.com$important
@@ -1056,6 +1073,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||flygemobi.com$important
 ||flygree.pw$important
 ||flyrlk.com$important
+||fm88e.tk$important
 ||focusonone.cc$important
 ||formulawire.com$important
 ||free8888content.com$important
@@ -1178,8 +1196,11 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hello1.in$important
 ||hempsmort.pw$important
 ||hex-cube.com$important
+||hexcube.net$important
 ||hfa.mobi$important
+||hgzbet.tk$important
 ||hito.co.vu$important
+||hjmbet.tk$important
 ||hm5.me$important
 ||hoguhotels.com$important
 ||hollywoodmobile.com$important
@@ -1190,10 +1211,12 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||horoworld.com$important
 ||hotandspicyvideosonline.com$important
 ||hotangelz.mobi$important
+||hotfun88.com$important
 ||hotleague.com$important
 ||hotstar.com$important
 ||hottz.mobi$important
 ||house365.com$important
+||hunsa.com$important
 ||hurvewa.com$important
 ||hushlove.com$important
 ||hypermobiworld.com$important
@@ -1246,6 +1269,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||katrac.com$important
 ||key-travel.com$important
 ||khelbazar.in$important
+||khwansiri.com$important
 ||kilomniadstaz.info$important
 ||kingstar.pw$important
 ||kinreyal.pw$important
@@ -1262,12 +1286,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||korverit.pw$important
 ||kplaw.kz$important
 ||kronsurf.pw$important
+||ku88ku.tk$important
 ||kumchanod.com$important
 ||kwizu.club$important
 ||laanbok.pw$important
 ||lalamobi.com$important
 ||landorum.pw$important
 ||larnload.com$important
+||lbc8.tk$important
 ||lce9v.com$important
 ||leadboltapps.net$important
 ||leadzuaf.com$important
@@ -1290,11 +1316,13 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||logandload.com$important
 ||looke.mobi$important
 ||lottoasian.com$important
+||lovehora.com$important
 ||lovehoro.space$important
 ||lovehoro2561.com$important
 ||lovenights.net$important
 ||lpalice2appsmart.com$important
 ||lpaosub.com$important
+||lqmbet.tk$important
 ||ltvperf.com$important
 ||lucky6lucky.club$important
 ||luckymobileuser.club$important
@@ -1536,6 +1564,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ppvr.page.link$important
 ||premiumtraff.com$important
 ||previsupe.pw$important
+||primaria9.com$important
 ||privatebay.tv$important
 ||privatevideoz.com$important
 ||privatewant.com$important
@@ -1562,6 +1591,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||regaming.com$important
 ||relingsh.pw$important
 ||renitaburgess.com$important
+||renovationsandredorais.com$important
 ||retail9.com$important
 ||retail9ventures.com$important
 ||retargetcore.com$important
@@ -1570,6 +1600,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||rfebet.tk$important
 ||rhmobi.com$important
 ||ringtoneth.com$important
+||ro88ro.tk$important
 ||rockymobi.com$important
 ||rotatemyurls.com$important
 ||rotationurls.com$important
@@ -1578,6 +1609,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||ryhopset.pw$important
 ||s-bobet.com$important
 ||s-onetelecom.com$important
+||sa88sa.tk$important
 ||sabai5555.com$important
 ||sabdee.com$important
 ||sabmobile.com$important
@@ -1754,6 +1786,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||tsalebag.com$important
 ||tubecorporate.com$important
 ||tubidy.mobi$important
+||tumnai.com$important
 ||tunkagist.pw$important
 ||turbob.mobi$important
 ||tvplanet.co$important
@@ -1802,6 +1835,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||vuclip.com$important
 ||vuclipgamesat.com$important
 ||vvidiacom.com$important
+||w88noc.tk$important
 ||w88scnx.tk$important
 ||wakau.in$important
 ||walletfun.com$important
@@ -2113,6 +2147,8 @@ m.pantip.com##^meta[name^="smartbanner"]
 ! This work only Firefox version below than 56 + install legacy version of uBO
 !#if ext_firefox
 autocar.in.th##script:contains(makingdifferent_ppopup)
+bloggang.com##script:contains(pageTracker)
+bloggang.com##script:contains(gptAdSlots)
 boxza.com##script:contains(bzpopup_timer)
 boxzaracing.com##script:contains(bzpopup_timer)
 dspzeeplus.com##script:contains(popup_facebook_box)
@@ -2175,10 +2211,15 @@ thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 ! Experimental for Facebook security pixels, this may break their functionality and security check.
 ||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
 ||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noopframe
+||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noopframe
+||pantip.com/api/forum-service/forum/get_promote_box?$xmlhttprequest,important,redirect=nooptext
+||pantip.com/api/forum-service/forum/get_promote_tag?$xmlhttprequest,important,redirect=nooptext
 ! ||pantip.com/files/bingsuscript.js$script,important,redirect=noopjs
 ||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
 ||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=nooptext,domain=shopee.co.th
+||siamfishing.com/_ajax/isblocked_localcomid.php?$xmlhttprequest,important,redirect=nooptext
+||siamfishing.com/_js/adsbygoogle.js$script,important,redirect=noopjs
 
 ! [Extra] To load disqus comment on-demand.
 ! Followed from gorhill's gist.: https://gist.github.com/gorhill/ef1b62d606473c68d524
