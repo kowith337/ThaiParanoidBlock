@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201908172302
+! Version: 201909051853
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -223,6 +223,9 @@ thaihitz.com,thaijobsgov.com##.SC_TBlock
 thailandbestbeauty.com###colorbox
 thisisgamethailand.com,tigthai.com##.mod_banner
 thisisgamethailand.com,tigthai.com##.mod_banner_top
+
+! Unbreak Visibility
+tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! -------------------------------------------------- Network filters section -------------------------------------------------- !
 ! Shared plugins path
@@ -783,6 +786,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||918kissauto.com$important
 ||918kisskiss918.com$important
 ||9ep.cc$important
+||9lotto168.com$important
 ||9v8p.com$important
 ||9yam.com$important
 ||a.n-d.bz$important
@@ -798,6 +802,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||acupofcafeconleche.com$important
 ||ad5media.com$important
 ||ad5network.com$important
+||adcamie.com$important
+||adcolony.com$important
 ||addictiveads.com$important
 ||addlink.mobi$important
 ||addtechhub.com$important
@@ -814,6 +820,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||adsfast.com$important
 ||adsmain.com$important
 ||adsmile.net$important
+||adsmoloco.com$important
+||adtilt.com$important
 ||adultd8.com$important
 ||adultvidoes.com$important
 ||adultvids.mobi$important
@@ -821,6 +829,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||adver.me$important
 ||adzsx.pro$important
 ||affichaos.com$important
+||affise.com$important
 ||affmob.com$important
 ||affmoney.top$important
 ||afftrack-data.com$important
@@ -834,6 +843,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||alchemy.n-d.bz$important
 ||alert301.com$important
 ||alice2appsmart.com$important
+||alivetoyou.com$important
 ||allbet24hr.com$important
 ||allforbetthailand.com$important
 ||alpha-mobi.com$important
@@ -843,12 +853,14 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||androidappsfree.mobi$important
 ||angellanguageacademy.com$important
 ||anolog.mobi$important
+||apiv9.com$important
 ||aplay.tv$important
 ||aplaydigital.com$important
 ||appave.mobi$important
 ||appk.mobi$important
 ||applikteca.mobi$important
 ||appsdorado.com$important
+||appsflyer.com$important
 ||appsforyourphone.mobi$important
 ||appsilike.mobi$important
 ||apsalar.com$important
@@ -869,6 +881,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||autoportal.com$important
 ||awolf.mobi$important
 ||awz.bz$important
+||axmtracker.com$important
 ||b-qq.com$important
 ||b3st0ff3rs.com$important
 ||bacc1688.mobi$important
@@ -884,6 +897,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||bcomnetwork.com$important
 ||beacstyle.pw$important
 ||beezzi.com$important
+||bemobtrk.com$important
 ||bestmobi2u.com$important
 ||bestmobiworld.com$important
 ||bestperform3nce.com$important
@@ -904,6 +918,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||bluestwep.pw$important
 ||bmobil.me$important
 ||bmobil.net$important
+||bonbonmob.com$important
 ||bothtrk.com$important
 ||bptr88.com$important
 ||braverymobtracking.com$important
@@ -927,6 +942,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||caravan.mobi$important
 ||caravancampingsales.com.au$important
 ||carlydibona.com$important
+||carriersignal.info$important
+||carsales.com.au$important
 ||cd-mob.com$important
 ||cdnfiber.com$important
 ||celeryleek.com$important
@@ -981,6 +998,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||cool4mob.com$important
 ||coolzee.net$important
 ||cosmik-ltd.com$important
+||countevt.com$important
 ||cpactions.com$important
 ||cpgnrotationurl.com$important
 ||cpinfantil.com$important
@@ -1106,6 +1124,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||fyybox.com$important
 ||g-mm.co$important
 ||g.zm.my$important
+||g2afse.com$important
 ||gadmobe.com$important
 ||game.xyz$important
 ||gamebuffet.mobi$important
@@ -1144,6 +1163,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||gdmgsecure.com$important
 ||genieessp.com$important
 ||get-intouch.com$important
+||getapiv.com$important
 ||getclick.mobi$important
 ||getcools.com$important
 ||getfeelgood.com$important
@@ -1216,6 +1236,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||hotstar.com$important
 ||hottz.mobi$important
 ||house365.com$important
+||hugwealth.com$important
 ||hunsa.com$important
 ||hurvewa.com$important
 ||hushlove.com$important
@@ -1279,6 +1300,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||klinikasmara.com$important
 ||km928bonprabang.club$important
 ||knsbet.tk$important
+||koapkmobi.com$important
 ||kodfin.com$important
 ||kodporno.com$important
 ||kodsextoy.com$important
@@ -1300,6 +1322,8 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||leadzupc.com$important
 ||leconcev.pw$important
 ||lehbet.tk$important
+||lemon91.com$important
+||lemon91.top$important
 ||letgomobile.com$important
 ||liferrim.pw$important
 ||likefreever.com$important
@@ -1316,6 +1340,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||logandload.com$important
 ||looke.mobi$important
 ||lottoasian.com$important
+||lottovip.com$important
 ||lovehora.com$important
 ||lovehoro.space$important
 ||lovehoro2561.com$important
@@ -1352,6 +1377,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mb-npltfpro.com$important
 ||mba788.tk$important
 ||mbounce.com$important
+||mcatch.com$important
 ||mcommedia.com$important
 ||mcommsg.com$important
 ||mconverge.in$important
@@ -1365,6 +1391,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mexcomm.net$important
 ||mfun521.com$important
 ||mfunz.mobi$important
+||miccou.com$important
 ||micrayer.pw$important
 ||min4.com$important
 ||minivideo.club$important
@@ -1428,6 +1455,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||mobrain.xyz$important
 ||mobusi.com$important
 ||mobzeed.com$important
+||moceanwp.com$important
 ||mocomecome.com$important
 ||mogamo.com$important
 ||mohawkprost.pw$important
@@ -1505,6 +1533,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||officeprs.gq$important
 ||offrtrking.com$important
 ||oho-mobile.com$important
+||okyesmobi.com$important
 ||oli.tools$important
 ||omaharlog.pw$important
 ||onelinkgroup.com$important
@@ -1535,6 +1564,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||peerfly.com$important
 ||perfonspot.com$important
 ||performancerevenues.com$important
+||phadoo-mobile.com$important
 ||phonemobileapps.com$important
 ||phubbers.com$important
 ||pickeringtown.info$important
@@ -1574,6 +1604,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||pure-babe.com$important
 ||puteez.com$important
 ||python-libs.com$important
+||qiezi19880621.com$important
 ||questionfly.com$important
 ||r9987.com$important
 ||rabreptancalbe.info$important
@@ -1585,6 +1616,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||raptornetwork.com$important
 ||re1store.com$important
 ||real-prizesday.life$important
+||realcenter-mobileapps2.com$important
 ||realgirls.mobi$important
 ||redclub.mobi$important
 ||redporntube.xyz$important
@@ -1601,6 +1633,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||rhmobi.com$important
 ||ringtoneth.com$important
 ||ro88ro.tk$important
+||robotcaptcha2.info$important
 ||rockymobi.com$important
 ||rotatemyurls.com$important
 ||rotationurls.com$important
@@ -1665,6 +1698,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||shopandersons.com$important
 ||shoutingnetwork.com$important
 ||shrum-studio.com$important
+||shuyumsy.com$important
 ||siam2you.com$important
 ||siamfun4u.com$important
 ||siamguru.com$important
@@ -1776,12 +1810,16 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||toon-land.com$important
 ||topfreeload.com$important
 ||topphoneapps.mobi$important
+||toptiptrack85.life$important
 ||trackinit.com$important
 ||trackmeplease.com$important
+||trackvoluum.com$important
+||traffic-c.com$important
 ||traffikflow.com$important
 ||trakkthisfor.info$important
 ||trend-tech.net$important
 ||trippointz.com$important
+||trk-indexmobi.com$important
 ||trktoken.com$important
 ||tsalebag.com$important
 ||tubecorporate.com$important
@@ -1827,6 +1865,7 @@ thisisgamethailand.com,tigthai.com##.mod_banner_top
 ||voluumtrk.com$important
 ||voluumtrk2.com$important
 ||vovivooo.com$important
+||vplaynow.com$important
 ||vplus.ais.co.th$important
 ||vrscr888.com$important
 ||vsjcommsource.com$important
