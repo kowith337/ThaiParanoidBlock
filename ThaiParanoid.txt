@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201909051853
+! Version: 201909131913
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -432,6 +432,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||atdmt.com$important
 ||aviasales.ru$important
 ||bingsu.pantip.com$important
+||bingsu.devpantip.com$important
 ||bluekai.com$important
 ||browsehappy.com$important
 ||btstatic.com$important
@@ -610,12 +611,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gravatar.com$third-party
 @@||gravatar.com/avatar$image
 
-! Mobile Badvertisers
-! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand,
-!          because visiting those domain or specific page will also sent request to mobile operator to subscribe useless content services
-!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content such as download games, videos,
-!          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
-!          every month, or every each messages that they've sent to you...
+! -------------------------------------------------- Other lists combination -------------------------------------------------- !
+! - - - - - - - - - - - - - - - - - - - - - Mobile Badvertisers from ThaiConsentHosts - - - - - - - - - - - - - - - - - - - - - !
+! These rules below are modified from https://github.com/kowith337/ThaiConsentHosts
+! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in
+!          Thailand, because visiting those domain or specific page will also sent request to mobile operator to subscribe
+!          useless content services e.g. specific annual SMS sent such as daily news, horoscope, fake lotto, wap push content
+!          download such as games, videos, ringtones or they never sent anything to you but simply charge service fee or deduct
+!          your calling balance everyday, every week every month, or every each messages that they've sent to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
 !#if env_mobile
@@ -1487,6 +1490,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||multicakes.com$important
 ||muraltent.pw$important
 ||mweb.com$important
+||myappfree.com$important
 ||mydala.com$important
 ||myfortune.space$important
 ||mygirlshow.com$important
@@ -1650,6 +1654,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||sabver.com$important
 ||sadman3.icu$important
 ||safedown.s3.amazonaws.com$important
+||sagame66.co$important
+||sagame66.com$important
 ||saleplus.vn$important
 ||salvage-shop.com$important
 ||samart-digitalmedia.com$important
@@ -1709,6 +1715,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||silverlines.info$important
 ||sinocoo.com$important
 ||skinfie.pw$important
+||skmob.xyz$important
 ||skype4mobile.com$important
 ||slimcdn.com$important
 ||slot1688.com$important
@@ -1932,7 +1939,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||zomobie.com$important
 ||zsaqls.com$important
 
-! -------------------------------------------------- Other lists combination -------------------------------------------------- !
 ! - - - - - - - - - - - - - - - - - - - - - - - - - -  Anime Leeching List  - - - - - - - - - - - - - - - - - - - - - - - - - - !
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
@@ -2121,7 +2127,7 @@ petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
 picnic.ly##.textwidget:has(.adsbygoogle)
 playulti.com##.card .box:has(.box-banner)
-playulti.com##.card-content.card:has(a[href="https://www.facebook.com/playinter.th"][rel="external"])
+playulti.com##.card-content.card:has(a[href*="facebook.com/playinter.th"][rel="external"])
 playulti.com##.card.game_page:has(.box:has(.box-banner))
 playulti.com##div[class^="card"]:has(h4:has-text(/RECOMMEND APPS/))
 popcornfor2.com###content div[style*="float:center"]:has(a[href*="yengo.com"])
@@ -2247,13 +2253,14 @@ webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
-! Experimental for Facebook security pixels, this may break their functionality and security check.
 ||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
 ||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noopframe
+||bingsu.pantip.com/fruity$xmlhttprequest,important,redirect=nooptext
+||bingsu.pantip.com/frukt/page/$xmlhttprequest,important,redirect=nooptext
 ||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noopframe
+||pantip.com/ads.php$subdocument,important,redirect=noopframe
 ||pantip.com/api/forum-service/forum/get_promote_box?$xmlhttprequest,important,redirect=nooptext
 ||pantip.com/api/forum-service/forum/get_promote_tag?$xmlhttprequest,important,redirect=nooptext
-! ||pantip.com/files/bingsuscript.js$script,important,redirect=noopjs
 ||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
 ||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=nooptext,domain=shopee.co.th
