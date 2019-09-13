@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201909051852
+! Version: 201909131901
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -431,6 +431,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||atdmt.com
 ||aviasales.ru
 ||bingsu.pantip.com
+||bingsu.devpantip.com
 ||bluekai.com
 ||browsehappy.com
 ||btstatic.com
@@ -597,6 +598,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||s1.youtube.com$important
 ||s2.youtube.com$important
 
+! Unbreak
+! 1. Pantip need some resources from Bingsu subdomain
+@@||bingsu.pantip.com/fetch.js$script
+@@||bingsu.pantip.com/bluebird.min.js$script
+@@||bingsu.pantip.com/assets/js/fetch.min.js$script
+@@||bingsu.pantip.com/assets/js/bluebird.min.js$script
+@@||bingsu.pantip.com/script_frukt.js$script
+
 ! Allowed only 1P
 ||110.164.252.137$third-party,important
 ||lazada.co.th$third-party,important
@@ -608,12 +617,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gravatar.com$third-party
 @@||gravatar.com/avatar$image
 
-! Mobile Badvertisers
-! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in Thailand,
-!          because visiting those domain or specific page will also sent request to mobile operator to subscribe useless content services
-!          e.g. specific annual SMS sent such as daily news, horo, download, fake lotto, wap push content such as download games, videos,
-!          ringtones or they never sent anything to you but simply charge service fee or deduct your calling balance everyday, every week
-!          every month, or every each messages that they've sent to you...
+! -------------------------------------------------- Other lists combination -------------------------------------------------- !
+! - - - - - - - - - - - - - - - - - - - - - Mobile Badvertisers from ThaiConsentHosts - - - - - - - - - - - - - - - - - - - - - !
+! These rules below are modified from https://github.com/kowith337/ThaiConsentHosts
+! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in
+!          Thailand, because visiting those domain or specific page will also sent request to mobile operator to subscribe
+!          useless content services e.g. specific annual SMS sent such as daily news, horoscope, fake lotto, wap push content
+!          download such as games, videos, ringtones or they never sent anything to you but simply charge service fee or deduct
+!          your calling balance everyday, every week every month, or every each messages that they've sent to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
 !#if env_mobile
@@ -1485,6 +1496,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||multicakes.com$important
 ||muraltent.pw$important
 ||mweb.com$important
+||myappfree.com$important
 ||mydala.com$important
 ||myfortune.space$important
 ||mygirlshow.com$important
@@ -1648,6 +1660,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||sabver.com$important
 ||sadman3.icu$important
 ||safedown.s3.amazonaws.com$important
+||sagame66.co$important
+||sagame66.com$important
 ||saleplus.vn$important
 ||salvage-shop.com$important
 ||samart-digitalmedia.com$important
@@ -1707,6 +1721,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||silverlines.info$important
 ||sinocoo.com$important
 ||skinfie.pw$important
+||skmob.xyz$important
 ||skype4mobile.com$important
 ||slimcdn.com$important
 ||slot1688.com$important
@@ -1930,7 +1945,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||zomobie.com$important
 ||zsaqls.com$important
 
-! -------------------------------------------------- Other lists combination -------------------------------------------------- !
 ! - - - - - - - - - - - - - - - - - - - - - - - - - -  Anime Leeching List  - - - - - - - - - - - - - - - - - - - - - - - - - - !
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
@@ -2122,7 +2136,7 @@ petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
 picnic.ly##.textwidget:has(.adsbygoogle)
 playulti.com##.card .box:has(.box-banner)
-playulti.com##.card-content.card:has(a[href="https://www.facebook.com/playinter.th"][rel="external"])
+playulti.com##.card-content.card:has(a[href*="facebook.com/playinter.th"][rel="external"])
 playulti.com##.card.game_page:has(.box:has(.box-banner))
 playulti.com##div[class^="card"]:has(h4:has-text(/RECOMMEND APPS/))
 popcornfor2.com###content div[style*="float:center"]:has(a[href*="yengo.com"])
