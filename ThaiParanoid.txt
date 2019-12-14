@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201912141655
+! Version: 201912141659
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -632,10 +632,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! WARNING: Some blocked domains are well-know that can cost your montly bill or prepaid balance for mobile cellphone users in
 !          Thailand, because visiting those domain or specific page will also sent request to mobile operator to subscribe
 !          useless content services e.g. specific annual SMS sent such as daily news, horoscope, fake lotto, wap push content
-!          download such as games, videos, ringtones or they never sent anything to you but simply charge service fee or deduct
-!          your calling balance everyday, every week every month, or every each messages that they've sent to you...
+!          download such as games, videos, ringtones that can charge service fee or deduct your calling balance everyday
+!          every week, every month, every each messages that they've sent to you and/or some provider still charging costs even
+!          they never sent anything to you...
 
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
+! Note: Affected to real mobile device only!
 !#if env_mobile
 ##a[href^="sms:"]:style(pointer-events: none !important)
 ##a[href^="tel:"]:style(pointer-events: none !important)
@@ -1986,8 +1988,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
 
 ! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various
-! fansubs, also publish retail products/contents on their site (it's unauthorized by local license), they earn profits and
-! revenue from ad services. (e.g. insert banner, popunder, coin miner, many tracking and monetisation services, ...)
+! fansubs, also publish retail products/contents on their site (it's unauthorized by local license and law), they earn profits
+! and revenue from ad services. (e.g. insert banner, popunder, coin miner, many tracking and monetisation services, ...)
 ! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
 ! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
 
