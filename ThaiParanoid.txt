@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201912141640
+! Version: 201912141652
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -430,9 +430,10 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||appsflyer.com$important
 ||areyouahuman.com$important
 ||atdmt.com$important
+||audiencerun.com$important
 ||aviasales.ru$important
-||bingsu.pantip.com$important
 ||bingsu.devpantip.com$important
+||bingsu.pantip.com$important
 ||bluekai.com$important
 ||browsehappy.com$important
 ||btstatic.com$important
@@ -453,6 +454,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||d-stats.com$important
 ||da-ads.com$important
 ||dapxl.com$important
+||daznservices.com$important
 ||demand.supply$important
 ||dentsu360th.com$important
 ||dtscout.com$important
@@ -464,8 +466,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||exosrv.com$important
 ||eyeota.net$important
 ||feedjit.com$important
+||fhanierio.me$important
 ||filadmir.site$important
+||footprint.net$important
 ||fout.jp$important
+||frukt.devpantip.com$important
+||frukt.pantip.com$important
 ||gammaplatform.com$important
 ||gbotvisit.com$important
 ||gbox.sc$important
@@ -497,6 +503,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||moatads.com$important
 ||mtburn.com$important
 ||mtburn.jp$important
+||netcpms.com$important
 ||newrelic.com$important
 ||nr-data.com$important
 ||nr-data.net$important
@@ -570,9 +577,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||user-red.com$important
 ||uustoughtonma.org$important$important
 ||va-endpoint.com$important
+||vidoomy.com$important
 ||visitor-analytics.io$important
 ||whatshelp.io$important
 ||wmdstat.dev-sanook.com$important
+||xm.com$important
 ||yengo.com$important
 ||yu0123456.com$important
 ||zemanta.com$important
