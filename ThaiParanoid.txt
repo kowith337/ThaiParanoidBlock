@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201909131901
+! Version: 201912141636
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -638,6 +638,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ais.co.th/aisnow$domain=~ais.co.th|~mobilelife.co.th,important
 ||ais.co.th/games/gameloftclub$important
 ||comenu.ais.co.th$domain=~ais.co.th|~mobilelife.co.th,important
+||consent.dtac.co.th$important
 ||consentprt.dtac.co.th$important
 ||ddch.dtac.co.th$important
 ||dtacplay.com$important
@@ -665,38 +666,42 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! IP Address
 ||10.104.143.133$important
 ||13.76.87.1$important
+||27.100.44.80$important
 ||27.100.44.214$important
-||27.254.82.83$important
 ||27.254.82.82$important
+||27.254.82.83$important
 ||43.231.124.161$important
 ||49.50.69.80$important
 ||52.76.52.18$important
-||52.187.132.230$important
-||52.220.167.186$important
 ||52.76.89.151$important
 ||52.76.242.20$important
-||54.169.240.216$important
-||54.254.176.233$important
+||52.187.132.230$important
+||52.220.167.186$important
 ||54.169.14.129$important
+||54.169.240.216$important
 ||54.186.88.28$important
+||54.254.176.233$important
 ||56.76.86.177$important
 ||58.137.160.133$important
 ||58.137.160.134$important
 ||58.137.222.222$important
 ||58.181.206.44$important
-||61.91.6.131$important
 ||61.16.174.219$important
 ||61.19.249.34$important
 ||61.47.40.132$important
+||61.91.6.131$important
 ||65.49.33.31$important
+||103.10.234.164$important
 ||103.16.143.120$important
 ||103.16.143.144$important
-||103.241.146.159$important
 ||103.56.210.21$important
+||103.241.146.159$important
 ||103.246.17.65$important
 ||103.246.17.72$important
 ||103.246.17.87$important
 ||107.170.154.51$important
+||110.164.252.137$important
+||111.118.179.35$important
 ||111.118.179.72$important
 ||113.30.248.2$important
 ||116.68.193.122$important
@@ -707,39 +712,41 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||124.40.232.180$important
 ||124.158.4.91$important
 ||125.63.68.111$important
-||139.162.57.169$important
 ||139.59.44.57$important
+||139.162.57.169$important
 ||162.243.33.148$important
 ||162.243.73.231$important
-||162.243.217.139$important
 ||162.243.74.32$important
-||180.179.108.50$important
-||180.179.236.26$important
+||162.243.217.139$important
 ||180.151.100.230$important
 ||180.179.103.240$important
 ||180.179.103.253$important
+||180.179.108.50$important
 ||180.179.207.111$important
 ||180.179.207.113$important
 ||180.179.207.246$important
+||180.179.236.26$important
 ||182.71.228.49$important
-||192.241.180.55$important
 ||192.241.162.245$important
+||192.241.180.55$important
 ||192.241.249.228$important
-||198.15.104.214$important
 ||198.15.67.85$important
-||202.57.163.235$important
+||198.15.104.214$important
+||202.9.104.118$important
 ||202.38.172.244$important
+||202.57.163.235$important
+||202.87.41.147$important
+||202.91.22.224$important
 ||202.174.122.12$important
 ||202.191.128.157$important
-||202.91.22.224$important
-||202.9.104.118$important
-||202.87.41.147$important
-||203.115.195.57$important
-||203.146.249.21$important
 ||203.107.133.238$important
+||203.115.195.57$important
+||203.122.58.93$important
 ||203.146.208.145$important
+||203.146.249.21$important
 ||203.146.251.210$important
 ||203.146.251.229$important
+||203.149.7.100$important
 ||203.149.30.86$important
 ||203.151.206.100$important
 ||203.151.206.102$important
@@ -748,8 +755,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||203.170.193.118$important
 ||203.223.147.133$important
 ||203.223.159.245$important
-||203.122.58.93$important
-||203.149.7.100$important
 ||205.147.96.155$important
 ||220.226.188.56$important
 ||223.25.242.68$important
@@ -771,6 +776,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||2-spot.com$important
 ||20150917.com$important
 ||2abdanismanlik.com$important
+||2get2load.com$important
 ||321load.com$important
 ||33luo.com$important
 ||3mobilecontents.net$important
@@ -1021,7 +1027,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||cutties.net$important
 ||cypher-sys.com$important
 ||czlbc.net$important
+||d0yd6ulp.com$important
 ||d22ndsbwwggzum.cloudfront.net$important
+||d9h.me$important
 ||damneddevastator.com$important
 ||dangduter.com$important
 ||daniellefriedland.com$important
@@ -1035,13 +1043,13 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||datinggirls.info$important
 ||datingsexy.org$important
 ||ddzey.com$important
+||dealsonline24-7.com$important
 ||deepbluetech.biz$important
 ||deloplen.com$important
 ||desisilk.com$important
 ||despiteracy.com$important
 ||devss.com$important
 ||dgmobix.com$important
-||digi.com.my$important
 ||digitalmerkat.com$important
 ||digitalngo.com$important
 ||digitalzoneng.com$important
@@ -1126,6 +1134,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||funspaz.com$important
 ||funstar.mobi$important
 ||funster.mobi$important
+||funzahub.com$important
 ||funzone.mobi$important
 ||funzytv.com$important
 ||fusetracking.com$important
@@ -1137,6 +1146,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gadmobe.com$important
 ||game.xyz$important
 ||gamebuffet.mobi$important
+||gamehack.bid$important
 ||gameloft.co.th$important
 ||gameloft.com$important
 ||gamepanda.me$important
@@ -1191,6 +1201,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||glzelnk.com$important
 ||gmmdigital.com$important
 ||gmmwireless.com$important
+||gmp.mobi$important
 ||gmpmobi.com$important
 ||go2affise.com$important
 ||go2cloud.org$important
@@ -1215,6 +1226,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||halocell.com$important
 ||handysms.com$important
 ||happytube.mobi$important
+||happywinning.com$important
 ||harddayforall30.icu$important
 ||havfun.mobi$important
 ||hayhaa.com$important
@@ -1275,6 +1287,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ipxxxzeed.com$important
 ||iqwmxn.com$important
 ||isc888th.com$important
+||isgivingawayfreestuff.com$important
 ||islatively.com$important
 ||isport.co.th$important
 ||isub.me$important
@@ -1348,6 +1361,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||loadmuns.com$important
 ||logandload.com$important
 ||looke.mobi$important
+||lottery789.net$important
 ||lottoasian.com$important
 ||lottovip.com$important
 ||lovehora.com$important
@@ -1397,6 +1411,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||measurementapi.com$important
 ||medgeidea.com$important
 ||media-bucket.com$important
+||megafun24.com$important
 ||mexcomm.net$important
 ||mfun521.com$important
 ||mfunz.mobi$important
@@ -1500,6 +1515,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||mydala.com$important
 ||myfortune.space$important
 ||mygirlshow.com$important
+||myhoro.space$important
 ||mymaxbet.com$important
 ||mymgw.com$important
 ||mynewrotationlink.com$important
@@ -1525,6 +1541,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nexg.tv$important
 ||nfsolution.com$important
 ||ngdfx.com$important
+||ngeblaki.com$important
 ||nicenews.pw$important
 ||niitcloudcampus.com$important
 ||nipa.co.th$important
@@ -1543,6 +1560,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||officeprs.gq$important
 ||offrtrking.com$important
 ||oho-mobile.com$important
+||okjojihgv.com$important
 ||okyesmobi.com$important
 ||oli.tools$important
 ||omaharlog.pw$important
@@ -1595,12 +1613,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||playzone.mobi$important
 ||pleasurehere.com$important
 ||pluckyaff.com$important
+||pluckynetwork.com$important
 ||podanover.pw$important
 ||pointificsecure.com$important
 ||pokienation.com$important
 ||porn93.com$important
 ||pornpt.icu$important
 ||pottymag.com$important
+||powerlion.space$important
 ||ppvr.page.link$important
 ||premiumtraff.com$important
 ||previsupe.pw$important
@@ -1648,6 +1668,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||rotatemyurls.com$important
 ||rotationurls.com$important
 ||royalads.net$important
+||rsalcch.com$important
 ||rushvip.net$important
 ||ryhopset.pw$important
 ||s-bobet.com$important
@@ -1668,6 +1689,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||samartbug.com$important
 ||samartdigitalmedia.com$important
 ||samartmedia.com$important
+||samartpay.com$important
 ||sanookde.com$important
 ||sbobet-365.com$important
 ||sbobet-onlinecasino.com$important
@@ -1692,6 +1714,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||securecloud-mb.com$important
 ||sedapmeesiam.gold$important
 ||segimaid.com$important
+||sendo.club$important
 ||seospeedy.com$important
 ||sexonthephone.mobi$important
 ||sexy-here.com$important
@@ -1880,6 +1903,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||vovivooo.com$important
 ||vplaynow.com$important
 ||vplus.ais.co.th$important
+||vpnshieldplus2.com$important
 ||vrscr888.com$important
 ||vsjcommsource.com$important
 ||vstyle4u.com$important
@@ -1902,6 +1926,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||waypeach.pw$important
 ||wealthandwealth.com$important
 ||wealthclick.net$important
+||weatherpembe.com$important
 ||weddingdayphotographerparis.com$important
 ||wesliptu.pw$important
 ||wheretobuydiettrex.com$important
@@ -1910,6 +1935,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||windyalerts.com$important
 ||wirelesstube.mobi$important
 ||wiseforwarding.com$important
+||wizlimited.com$important
 ||womanceri.pw$important
 ||worldgamespn.mobi$important
 ||wowcool.net$important
