@@ -1,9 +1,10 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 201912141636
+! Version: 201912141647
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
+! Issues: https://github.com/kowith337/ThaiParanoidBlock/issues
 ! Mirror: https://gitlab.com/kowith337/ThaiParanoidBlock/raw/master/ThaiParanoid.txt
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
@@ -429,9 +430,10 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||appsflyer.com
 ||areyouahuman.com
 ||atdmt.com
+||audiencerun.com
 ||aviasales.ru
-||bingsu.pantip.com
 ||bingsu.devpantip.com
+||bingsu.pantip.com
 ||bluekai.com
 ||browsehappy.com
 ||btstatic.com
@@ -452,6 +454,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||d-stats.com
 ||da-ads.com
 ||dapxl.com
+||daznservices.com
 ||demand.supply
 ||dentsu360th.com
 ||dtscout.com
@@ -463,8 +466,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||exosrv.com
 ||eyeota.net
 ||feedjit.com
+||fhanierio.me
 ||filadmir.site
+||footprint.net
 ||fout.jp
+||frukt.devpantip.com
+||frukt.pantip.com
 ||gammaplatform.com
 ||gbotvisit.com
 ||gbox.sc
@@ -496,6 +503,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||moatads.com
 ||mtburn.com
 ||mtburn.jp
+||netcpms.com
 ||newrelic.com
 ||nr-data.com
 ||nr-data.net
@@ -569,9 +577,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||user-red.com
 ||uustoughtonma.org$important
 ||va-endpoint.com
+||vidoomy.com
 ||visitor-analytics.io
 ||whatshelp.io
 ||wmdstat.dev-sanook.com
+||xm.com
 ||yengo.com
 ||yu0123456.com
 ||zemanta.com
