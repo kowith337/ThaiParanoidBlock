@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 201912141710
+! Version: 202001072332
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -649,7 +649,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||dtacplay.com$important
 ||freezone.dtacplay.com$important
 ||gameroom.dtacplay.com$important
-||m.ais.co.th$important
+||m.ais.co.th$document
+||m.ais.co.th$important,~first-party
 ||m1.truelife.com$important
 ||m2.truelife.com$important
 ||m3.truelife.com$important
@@ -876,6 +877,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||apiv9.com$important
 ||aplay.tv$important
 ||aplaydigital.com$important
+||aplaymusic.com$important
 ||appave.mobi$important
 ||appk.mobi$important
 ||applikteca.mobi$important
@@ -899,6 +901,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||atmail.nl$important
 ||authbill.com$important
 ||autoportal.com$important
+||awap.tv$important
 ||awolf.mobi$important
 ||awz.bz$important
 ||axmtracker.com$important
@@ -918,6 +921,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||beacstyle.pw$important
 ||beezzi.com$important
 ||bemobtrk.com$important
+||bestgamebook.mobi$important
+||bestgamebox.mobi$important
+||bestgameworld.mobi$important
 ||bestmobi2u.com$important
 ||bestmobiworld.com$important
 ||bestperform3nce.com$important
@@ -938,6 +944,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||bluestwep.pw$important
 ||bmobil.me$important
 ||bmobil.net$important
+||bodelen.com$important
 ||bonbonmob.com$important
 ||bothtrk.com$important
 ||bptr88.com$important
@@ -971,6 +978,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||centili.com$important
 ||cfallasd.com$important
 ||chaiyo-mobile.com$important
+||championplayground.mobi$important
 ||chatded.com$important
 ||chcipujcit.com$important
 ||cheesemobile.com$important
@@ -1106,6 +1114,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||files-media.com$important
 ||fim88.tk$important
 ||findgit.com$important
+||finegames.mobi$important
 ||fly2.me$important
 ||fly2me.com$important
 ||flybi.store$important
@@ -1115,6 +1124,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||flyrlk.com$important
 ||fm88e.tk$important
 ||focusonone.cc$important
+||footballzean.com$important
 ||formulawire.com$important
 ||free8888content.com$important
 ||freecot.pw$important
@@ -1150,10 +1160,16 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||g2afse.com$important
 ||gadmobe.com$important
 ||game.xyz$important
+||gamebang.mobi$important
+||gamebench.mobi$important
+||gameboomer.mobi$important
 ||gamebuffet.mobi$important
+||gamefuse.com$important
+||gamefuse.mobi$important
 ||gamehack.bid$important
 ||gameloft.co.th$important
 ||gameloft.com$important
+||gamelux.mobi$important
 ||gamepanda.me$important
 ||gameplaydd.com$important
 ||games-live.s3.amazonaws.com$important
@@ -1238,6 +1254,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||hbengineeringworks.com$important
 ||hclips.net$important
 ||hd0y.com$important
+||hdfreemovie007.com$important
 ||hehemobi.com$important
 ||hello1.in$important
 ||hempsmort.pw$important
@@ -1444,6 +1461,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||mobifun4u.com$important
 ||mobifunz.com$important
 ||mobigods.in.th$important
+||mobigods.net$important
 ||mobihibiz.com$important
 ||mobilart.in$important
 ||mobile-link.today$important
@@ -1474,6 +1492,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||mobistos.com$important
 ||mobiteacher.com$important
 ||mobiteacher.me$important
+||mobiunigame.mobi$important
 ||mobivite.net$important
 ||mobixing.com$important
 ||mobiz.guru$important
@@ -1515,6 +1534,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||mugforward.com$important
 ||multicakes.com$important
 ||muraltent.pw$important
+||mv1.in$important
 ||mweb.com$important
 ||myappfree.com$important
 ||mydala.com$important
@@ -1585,6 +1605,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ourbestcontent.com$important
 ||outputfx.com$important
 ||overtleva.pw$important
+||oxyvid.mobi$important
 ||ozura.com$important
 ||panshimob.com$important
 ||parisedlittled.info$important
@@ -1761,6 +1782,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||smartcalltech.co.za$important
 ||smartoffer.site$important
 ||smarttelebiz.com$important
+||smartvid.mobi$important
 ||smilesms.com$important
 ||smrtx.net$important
 ||smsgateway.cc$important
@@ -1825,6 +1847,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||thaisync.com$important
 ||thaiwapportal.com$important
 ||thaiza.com$important
+||tharbadir.com$important
 ||thepind.mobi$important
 ||thestandardlife.com$important
 ||thevelnit.pw$important
@@ -1852,16 +1875,21 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||topfreeload.com$important
 ||topphoneapps.mobi$important
 ||toptiptrack85.life$important
+||topvids.mobi$important
 ||trackinit.com$important
 ||trackmeplease.com$important
 ||trackvoluum.com$important
 ||traffic-c.com$important
 ||traffikflow.com$important
 ||trakkthisfor.info$important
+||travid.mobi$important
 ||trend-tech.net$important
 ||trippointz.com$important
 ||trk-indexmobi.com$important
 ||trktoken.com$important
+||truevid.mobi$important
+||truevids.mobi$important
+||truevivid.mobi$important
 ||tsalebag.com$important
 ||tubecorporate.com$important
 ||tubidy.mobi$important
@@ -1940,6 +1968,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||windyalerts.com$important
 ||wirelesstube.mobi$important
 ||wiseforwarding.com$important
+||wish-you.co$important
 ||wizlimited.com$important
 ||womanceri.pw$important
 ||worldgamespn.mobi$important
@@ -1967,6 +1996,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||yuqazate.com$important
 ||zagmob.com$important
 ||zeanhot.com$important
+||zeankickoff.com$important
 ||zedo.com$important
 ||zigifun.com$important
 ||zim88.tk$important
@@ -2300,8 +2330,8 @@ thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
 ! ||bingsu.pantip.com/frukt/page/$xmlhttprequest,important,redirect=nooptext
 ||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noopframe
 ||pantip.com/ads.php$subdocument,important,redirect=noopframe
-||pantip.com/api/forum-service/forum/get_promote_box?$xmlhttprequest,important,redirect=nooptext
-||pantip.com/api/forum-service/forum/get_promote_tag?$xmlhttprequest,important,redirect=nooptext
+! ||pantip.com/api/forum-service/forum/get_promote_box?$xmlhttprequest,important,redirect=nooptext
+! ||pantip.com/api/forum-service/forum/get_promote_tag?$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
 ||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=nooptext,domain=shopee.co.th
