@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202001072332
+! Version: 202001291821
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -51,6 +51,10 @@ exteen.com##.banner-box
 exteen.com##.feature-box
 exteen.com##.pr-box
 exteen.com##.promote-box
+flashfly.net##.jeg_ad
+flashfly.net##.jnews_inline_related_post
+flashfly.net##div[class^="jnews_popup_post"]
+flashfly.net##iframe[src*="/banner/"]
 game-tep.com##.leftBanner
 game-tep.com##.rightBanner
 game-tep.com##.td-more-articles-box
@@ -84,9 +88,9 @@ m.online-station.net##figure[class^="os-ad"]
 m.pantip.com##.smartbanner
 m.pantip.com##.social-banner
 m.webtoons.com##.downapp_area
-majorcineplex.com##header #leaderboard
-majorcineplex.com###wrapper .blogR .blogbannerMR
 majorcineplex.com###wrapper .blogR .blogbannerHPAd
+majorcineplex.com###wrapper .blogR .blogbannerMR
+majorcineplex.com##header #leaderboard
 marketingoops.com###popup_countdown
 marketingoops.com##div[id^="itro_"]
 meepanda.com##.adsense-leadin
@@ -101,6 +105,7 @@ mustplay.in.th##.YouTubeModal
 notebookspec.com###overlay_ads
 notebookspec.com##.cover_banner_bg
 ohlor.com###upprev_box
+one31.net##.ads-head
 online-station.net###ads-overlay
 online-station.net###ads-preload-popup
 online-station.net###close-preload
@@ -733,6 +738,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||180.179.207.246$important
 ||180.179.236.26$important
 ||182.71.228.49$important
+||188.166.180.115$important
 ||192.241.162.245$important
 ||192.241.180.55$important
 ||192.241.249.228$important
@@ -1102,6 +1108,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||exezhanqun.com$important
 ||exprtmb.com$important
 ||ezym.net$important
+||ezymedia.mobi$important
 ||fabruary30.com$important
 ||facabooks.com$important
 ||facishat.pw$important
@@ -1143,6 +1150,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||funmobile.com$important
 ||funmobileth.com$important
 ||funnyclub.tv$important
+||funnytime.guru$important
 ||funseahk.com$important
 ||funsexy.info$important
 ||funsmobi.com$important
@@ -1296,6 +1304,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||illcorp.com$important
 ||ilovemobi.com$important
 ||imgamma.com$important
+||important-notices.com$important
 ||imzog.com$important
 ||indiagames.com$important
 ||inediair.pw$important
@@ -1441,6 +1450,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||micrayer.pw$important
 ||min4.com$important
 ||minivideo.club$important
+||mitsuiict.com$important
 ||mktrack.com$important
 ||mli.me$important
 ||mmtgo.me$important
@@ -1596,6 +1606,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||onwardinated.com$important
 ||oomph.club$important
 ||opencurvemedia.com$important
+||opendayz.com$important
 ||operastarz.com$important
 ||operonsh.pw$important
 ||opticks.io$important
