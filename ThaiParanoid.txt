@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202001302140
+! Version: 202001302145
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -1374,6 +1374,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||km928bonprabang.club$important
 ||knsbet.tk$important
 ||koapkmobi.com$important
+||kochava.com$important
 ||kodfin.com$important
 ||kodporno.com$important
 ||kodsextoy.com$important
@@ -1967,6 +1968,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||vovivooo.com$important
 ||vplaynow.com$important
 ||vplus.ais.co.th$important
+||vpnprotectplus.com$important
 ||vpnshieldplus2.com$important
 ||vrscr888.com$important
 ||vsjcommsource.com$important
