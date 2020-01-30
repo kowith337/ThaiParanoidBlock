@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202001291401
+! Version: 202001302137
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -409,6 +409,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
 ||24x7th.com
+||2o7.net
+||a8.net
 ||accesstrade.in.th
 ||adasiaholdings.com
 ||adnuntius.com
@@ -427,6 +429,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||adsniper.ru
 ||adsoptimal.com
 ||adtplatform.com
+||affex.org
 ||alexametrics.com
 ||amung.us
 ||anonymousdemographics.com
@@ -434,7 +437,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||app-measurement.com
 ||appsflyer.com
 ||areyouahuman.com
+||at-o.net
 ||atdmt.com
+||ati-host.net
 ||audiencerun.com
 ||aviasales.ru
 ||bingsu.devpantip.com
@@ -461,10 +466,13 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||daznservices.com
 ||demand.supply
 ||dentsu360th.com
+||dnsdelegation.io
 ||dtscout.com
+||ebis.ne.jp
 ||edgesuite.net
 ||effectivemeasure.net
 ||engage.wixapps.net
+||eulerian.net
 ||exdynsrv.com
 ||exoclick.com
 ||exosrv.com
@@ -481,6 +489,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gbox.sc
 ||generaltagcom.ga
 ||geoplugin.net
+||gigya.com
 ||go2cloud.org
 ||go2speed.org
 ||graph.sanook.com
@@ -494,12 +503,15 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||inmobi.com
 ||innity.com
 ||innity.net
+||inscname.net
 ||inspectlet.com
 ||instant.page
+||intentmedia.net
 ||isgstat.sanook.com
 ||iyfnzgb.com
 ||izooto.com
 ||joox-affiliate.sanook.com
+||keyade.com
 ||kiosked.com
 ||luckyorange.com
 ||m88.com
@@ -515,7 +527,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nuffnang.com
 ||nytive.com
 ||oclaserver.com
+||oghub.io
 ||oilchange.website
+||omtrdc.net
 ||onclasrv.com
 ||onclickads.net
 ||onesignal.com
@@ -562,10 +576,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||statmt.matichon.co.th
 ||stats.in.th
 ||stats.wp.com
+||storetail.io
 ||sumome.com
 ||synergy-e.com
 ||ta.sanook.com
 ||taboola.com
+||tagcommander.com
 ||tagserve.asia
 ||tapad.com
 ||thstats.com
@@ -583,8 +599,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||va-endpoint.com
 ||vidoomy.com
 ||visitor-analytics.io
+||webspectator.com
+||webtrekk.net
 ||whatshelp.io
+||wizaly.com
 ||wmdstat.dev-sanook.com
+||wt-eu02.net
 ||xm.com
 ||yengo.com
 ||yu0123456.com
