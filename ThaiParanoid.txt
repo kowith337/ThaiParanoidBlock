@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202001291821
+! Version: 202001302140
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -409,6 +409,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Ads Server / Malvertising / Tracking / Marketing / Article Suggestions
 ||24x7th.com$important
+||2o7.net$important
+||a8.net$important
 ||accesstrade.in.th$important
 ||adasiaholdings.com$important
 ||adnuntius.com$important
@@ -427,6 +429,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||adsniper.ru$important
 ||adsoptimal.com$important
 ||adtplatform.com$important
+||affex.org$important
 ||alexametrics.com$important
 ||amung.us$important
 ||anonymousdemographics.com$important
@@ -434,7 +437,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||app-measurement.com$important
 ||appsflyer.com$important
 ||areyouahuman.com$important
+||at-o.net$important
 ||atdmt.com$important
+||ati-host.net$important
 ||audiencerun.com$important
 ||aviasales.ru$important
 ||bingsu.devpantip.com$important
@@ -462,10 +467,13 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||daznservices.com$important
 ||demand.supply$important
 ||dentsu360th.com$important
+||dnsdelegation.io$important
 ||dtscout.com$important
+||ebis.ne.jp$important
 ||edgesuite.net$important
 ||effectivemeasure.net$important
 ||engage.wixapps.net$important
+||eulerian.net$important
 ||exdynsrv.com$important
 ||exoclick.com$important
 ||exosrv.com$important
@@ -482,6 +490,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gbox.sc$important
 ||generaltagcom.ga$important
 ||geoplugin.net$important
+||gigya.com$important
 ||go2cloud.org$important
 ||go2speed.org$important
 ||graph.sanook.com$important
@@ -495,12 +504,15 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||inmobi.com$important
 ||innity.com$important
 ||innity.net$important
+||inscname.net$important
 ||inspectlet.com$important
 ||instant.page$important
+||intentmedia.net$important
 ||isgstat.sanook.com$important
 ||iyfnzgb.com$important
 ||izooto.com$important
 ||joox-affiliate.sanook.com$important
+||keyade.com$important
 ||kiosked.com$important
 ||luckyorange.com$important
 ||m88.com$important
@@ -516,7 +528,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nuffnang.com$important
 ||nytive.com$important
 ||oclaserver.com$important
+||oghub.io$important
 ||oilchange.website$important
+||omtrdc.net$important
 ||onclasrv.com$important
 ||onclickads.net$important
 ||onesignal.com$important
@@ -563,10 +577,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||statmt.matichon.co.th$important
 ||stats.in.th$important
 ||stats.wp.com$important
+||storetail.io$important
 ||sumome.com$important
 ||synergy-e.com$important
 ||ta.sanook.com$important
 ||taboola.com$important
+||tagcommander.com$important
 ||tagserve.asia$important
 ||tapad.com$important
 ||thstats.com$important
@@ -584,8 +600,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||va-endpoint.com$important
 ||vidoomy.com$important
 ||visitor-analytics.io$important
+||webspectator.com$important
+||webtrekk.net$important
 ||whatshelp.io$important
+||wizaly.com$important
 ||wmdstat.dev-sanook.com$important
+||wt-eu02.net$important
 ||xm.com$important
 ||yengo.com$important
 ||yu0123456.com$important
