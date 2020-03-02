@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202001302145
+! Version: 202003022345
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -464,7 +464,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||d-stats.com$important
 ||da-ads.com$important
 ||dapxl.com$important
-||daznservices.com$important
 ||demand.supply$important
 ||dentsu360th.com$important
 ||dnsdelegation.io$important
@@ -489,6 +488,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gbotvisit.com$important
 ||gbox.sc$important
 ||generaltagcom.ga$important
+||geolocation.daznservices.com$important
 ||geoplugin.net$important
 ||gigya.com$important
 ||go2cloud.org$important
@@ -636,6 +636,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Allowed only 1P
 ||110.164.252.137$third-party,important
+||daznservices.com$third-party,~image
 ||lazada.co.th$third-party,important
 ||line.me$third-party
 ||line-scdn.net$third-party,domain=~line.me
@@ -885,6 +886,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ahyoyo.com$important
 ||aielber.com$important
 ||airpush.com$important
+||ais-coth.com$important
 ||akazoo.com$important
 ||alawael-news.com$important
 ||alchemy.n-d.bz$important
@@ -977,6 +979,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||braverymobtracking.com$important
 ||brazzers93.com$important
 ||breathing-love.com$important
+||bridgemob.com$important
 ||brucelead.com$important
 ||brvaffs.com$important
 ||bsnlhellotv.in$important
@@ -1119,6 +1122,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||enfothe.pw$important
 ||enjoy108.com$important
 ||enpocket.com$important
+||enquetes-today-online.com$important
 ||eskimi.com$important
 ||espabit.net$important
 ||etexator.pw$important
@@ -1153,6 +1157,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||focusonone.cc$important
 ||footballzean.com$important
 ||formulawire.com$important
+||frechint.com$important
 ||free8888content.com$important
 ||freecot.pw$important
 ||freezone.mobi$important
@@ -1238,6 +1243,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||getridofmylien.com$important
 ||gexiuyixibai.com$important
 ||ggtwpviko.tk$important
+||gift4u.today$important
 ||gigth.com$important
 ||girlsonfire.mobi$important
 ||girlsvideosonline.info$important
@@ -1272,6 +1278,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gw2cloud.com$important
 ||gzazone.com$important
 ||hack-dragon-city.com$important
+||hacking-incidents.com$important
 ||halocell.com$important
 ||handysms.com$important
 ||happytube.mobi$important
@@ -1296,6 +1303,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||hoguhotels.com$important
 ||hollywoodmobile.com$important
 ||hombet.tk$important
+||homedeal.xyz$important
 ||hornygirls.mobi$important
 ||horolive.com$important
 ||horotalk.com$important
@@ -1651,6 +1659,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||perfonspot.com$important
 ||performancerevenues.com$important
 ||phadoo-mobile.com$important
+||phone-notify.com$important
 ||phonemobileapps.com$important
 ||phubbers.com$important
 ||pickeringtown.info$important
@@ -1749,6 +1758,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||samartmedia.com$important
 ||samartpay.com$important
 ||sanookde.com$important
+||satisfactional-survey-platform.com$important
 ||sbobet-365.com$important
 ||sbobet-onlinecasino.com$important
 ||sbobet-sports.com$important
@@ -1766,6 +1776,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||scr888th.live$important
 ||scr888thcasino.com$important
 ||scr888thslot.com$important
+||scratch-surveys.co$important
 ||seacom.co.th$important
 ||seaman2u.com$important
 ||secudatago.com$important
@@ -1852,6 +1863,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||sunnygames.club$important
 ||supergirls.one$important
 ||surfto.mobi$important
+||surveyprizedraw.com$important
 ||sutanrajacirebon.com$important
 ||svkrg.com$important
 ||sybyrl.com$important
@@ -1887,6 +1899,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||thinksmart.co.th$important
 ||thisilike.net$important
 ||thmobi.com$important
+||thquestionnaire.com$important
+||thsurveys.com$important
 ||thtrackingap.com$important
 ||thumbr.com$important
 ||thumbsms.com$important
@@ -1922,6 +1936,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||truevid.mobi$important
 ||truevids.mobi$important
 ||truevivid.mobi$important
+||tryacf01.com$important
 ||tsalebag.com$important
 ||tubecorporate.com$important
 ||tubidy.mobi$important
