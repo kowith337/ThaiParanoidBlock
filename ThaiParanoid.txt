@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202003022337
+! Version: 202003022345
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -642,11 +642,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Allowed only 1P
 ||110.164.252.137$third-party,important
+||daznservices.com$third-party,~image
 ||lazada.co.th$third-party,important
 ||line.me$third-party
 ||line-scdn.net$third-party,domain=~line.me
 ||nipa.co.th$third-party,important
-||daznservices.com$third-party,~image
 
 ! It's OK to show only what things needed, not other things
 ||gravatar.com$third-party
