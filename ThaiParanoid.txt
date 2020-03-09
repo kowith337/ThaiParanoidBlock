@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202003092123
+! Version: 202003092133
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2361,6 +2361,12 @@ upic.me##script:contains(#basic-modal-content)
 !#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
+akibatan.com##script:inject(remove-attr.js, td_more_articles_box.is_box_visible)
+akibatan.com##script:inject(set-constant.js, OneSignal.push, noopFunc)
+akibatan.com##script:inject(set-constant.js, _Hasync, noopFunc)
+akibatan.com##script:inject(set-constant.js, __gaTracker, noopFunc)
+akibatan.com##script:inject(set-constant.js, mi_track_user, false)
+akibatan.com##script:inject(set-constant.js, tdAnalytics, noopFunc)
 exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
 exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
 exteen.com##script:inject(abort-on-property-write.js, window._taboola)
@@ -2375,24 +2381,22 @@ online-station.net##script:inject(abort-on-property-write.js, PLISTA)
 online-station.net##script:inject(abort-on-property-write.js, googletag)
 online-station.net##script:inject(abort-on-property-write.js, ssPage)
 online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
-! pantip.com##script:inject(abort-on-property-write.js, _comscore)
-! pantip.com##script:inject(abort-on-property-write.js, googletag)
 thairath.co.th##script:inject(cookie-remover.js, tr_bId)
 webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
 webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
 
-! [Nano Scriptlets Needed] These scriptlets rules below require to load extra resource from NanoAdblocker
-thairath.co.th##script:inject(nanop-easy-set-cookie.js, lightboxed=1)
+! [uBlock-user Scriptlets Needed] These scriptlets rules below require to load extra snippets that maintained by @uBlock-user
+! View repository: https://github.com/uBlock-user/uBO-Scriptlets
+! Raw Link: https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.txt
+akibatan.com##script:inject(cookie-set.js, disableStr, true, 2147483647)
+akibatan.com##script:inject(cookie-set.js, td-cookie-more-articles, hide-more-articles-box, 172800)
+thairath.co.th##script:inject(cookie-set.js, lightboxed, 1)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
 ||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
 ||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noopframe
-! ||bingsu.pantip.com/fruity$xmlhttprequest,important,redirect=nooptext
-! ||bingsu.pantip.com/frukt/page/$xmlhttprequest,important,redirect=nooptext
 ||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noopframe
 ||pantip.com/ads.php$subdocument,important,redirect=noopframe
-! ||pantip.com/api/forum-service/forum/get_promote_box?$xmlhttprequest,important,redirect=nooptext
-! ||pantip.com/api/forum-service/forum/get_promote_tag?$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
 ||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=nooptext,domain=shopee.co.th
