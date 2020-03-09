@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202003022345
+! Version: 202003092123
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -800,6 +800,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||125-telecom.com$important
 ||12horo.com$important
 ||12mob.com$important
+||12xlwin3.net$important
 ||133ms2u.com$important
 ||157gamestudios.com$important
 ||181818.com.my$important
@@ -850,6 +851,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||acupofcafeconleche.com$important
 ||ad5media.com$important
 ||ad5network.com$important
+||adadept.space$important
 ||adcamie.com$important
 ||adcolony.com$important
 ||addictiveads.com$important
@@ -890,6 +892,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akazoo.com$important
 ||alawael-news.com$important
 ||alchemy.n-d.bz$important
+||alert-cleaner.club$important
 ||alert301.com$important
 ||alice2appsmart.com$important
 ||alivetoyou.com$important
@@ -1052,6 +1055,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||contentfall.com$important
 ||contentformen.mobi$important
 ||contentsdaily.com$important
+||cook-giant-under-leg.xyz$important
 ||cool4mob.com$important
 ||coolzee.net$important
 ||cosmik-ltd.com$important
@@ -1107,6 +1111,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||downloadhub.me$important
 ||downloadwap.co.uk$important
 ||downloadwap.com$important
+||dreamgame33.com$important
 ||dsglp.com$important
 ||dsgpy.com$important
 ||durarenti.pw$important
@@ -1559,6 +1564,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||monomaxx.com$important
 ||monotechnology.com$important
 ||monozone.com$important
+||monthlywinners.com$important
 ||moo.mn$important
 ||moobig.com$important
 ||mookjoke.com$important
@@ -1614,6 +1620,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nmpcenter.com$important
 ||noclef.com$important
 ||notesdav.pw$important
+||notice-iphone.club$important
 ||nowportal.net$important
 ||nrs-group.com$important
 ||nusa-putra.com$important
@@ -1692,11 +1699,13 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||premiumtraff.com$important
 ||previsupe.pw$important
 ||primaria9.com$important
+||privacy-protect-webs-phone.club$important
 ||privatebay.tv$important
 ||privatevideoz.com$important
 ||privatewant.com$important
 ||privatewow.tv$important
 ||programablecontrol.com$important
+||protectad.online$important
 ||pubmt.ch$important
 ||pure-babe.com$important
 ||puteez.com$important
@@ -1926,6 +1935,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||trackmeplease.com$important
 ||trackvoluum.com$important
 ||traffic-c.com$important
+||trafficshark.pro$important
 ||traffikflow.com$important
 ||trakkthisfor.info$important
 ||travid.mobi$important
@@ -1953,6 +1963,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ude182.com$important
 ||ugjbet.tk$important
 ||umobi.biz$important
+||unithese-resteven.icu$important
 ||unpuzzled.net$important
 ||upp.st$important
 ||vasglobalnetwork.com$important
@@ -1983,6 +1994,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||vovivooo.com$important
 ||vplaynow.com$important
 ||vplus.ais.co.th$important
+||vpn1aprotectplus.com$important
 ||vpnprotectplus.com$important
 ||vpnshieldplus2.com$important
 ||vrscr888.com$important
@@ -2038,6 +2050,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||yim88.tk$important
 ||youlaugh.online$important
 ||your-sweet-girls1.com$important
+||yourstukov.com$important
 ||ypzsls.com$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
