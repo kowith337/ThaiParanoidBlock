@@ -1,6 +1,6 @@
-[uBlock Origin 1.20.0]
+[uBlock Origin 1.27.11]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202006060717
+! Version: 202006221843
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2356,35 +2356,30 @@ tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
 !#endif
 
-! Backward Compatibility
-!#if env_firefox
-/generate_204$important,~document
-!#endif
-
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
-akibatan.com##script:inject(remove-attr.js, td_more_articles_box.is_box_visible)
-akibatan.com##script:inject(set-constant.js, OneSignal.push, noopFunc)
-akibatan.com##script:inject(set-constant.js, _Hasync, noopFunc)
-akibatan.com##script:inject(set-constant.js, __gaTracker, noopFunc)
-akibatan.com##script:inject(set-constant.js, mi_track_user, false)
-akibatan.com##script:inject(set-constant.js, tdAnalytics, noopFunc)
-exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
-exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
-exteen.com##script:inject(abort-on-property-write.js, window._taboola)
-liekr.com##script:inject(abort-on-property-read.js, $showLikePopup)
-liekr.com##script:inject(abort-on-property-write.js, $showLikePopup)
-m.webtoons.com##script:inject(abort-on-property-read.js, oSmartAppBanner)
-m.webtoons.com##script:inject(abort-on-property-write.js, oSmartAppBanner)
-mthai.com##script:inject(abort-on-property-read.js, googletag)
-mthai.com##script:inject(abort-on-property-write.js, googletag)
-online-station.net##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
-online-station.net##script:inject(abort-on-property-write.js, PLISTA)
-online-station.net##script:inject(abort-on-property-write.js, googletag)
-online-station.net##script:inject(abort-on-property-write.js, ssPage)
-online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
-thairath.co.th##script:inject(cookie-remover.js, tr_bId)
-webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
-webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
+akibatan.com##+js(remove-attr, td_more_articles_box.is_box_visible)
+akibatan.com##+js(set-constant, OneSignal.push, noopFunc)
+akibatan.com##+js(set-constant, _Hasync, noopFunc)
+akibatan.com##+js(set-constant, __gaTracker, noopFunc)
+akibatan.com##+js(set-constant, mi_track_user, false)
+akibatan.com##+js(set-constant, tdAnalytics, noopFunc)
+exteen.com##+js(abort-on-property-write, GoogleAnalyticsObject)
+exteen.com##+js(abort-on-property-write, _taboola.push)
+exteen.com##+js(abort-on-property-write, window._taboola)
+liekr.com##+js(abort-on-property-read, $showLikePopup)
+liekr.com##+js(abort-on-property-write, $showLikePopup)
+m.webtoons.com##+js(abort-on-property-read, oSmartAppBanner)
+m.webtoons.com##+js(abort-on-property-write, oSmartAppBanner)
+mthai.com##+js(abort-on-property-read, googletag)
+mthai.com##+js(abort-on-property-write, googletag)
+online-station.net##+js(abort-on-property-write, GoogleAnalyticsObject)
+online-station.net##+js(abort-on-property-write, PLISTA)
+online-station.net##+js(abort-on-property-write, googletag)
+online-station.net##+js(abort-on-property-write, ssPage)
+online-station.net##+js(abort-on-property-write, ssProtocol)
+thairath.co.th##+js(cookie-remover, tr_bId)
+webtoons.com##+js(abort-on-property-read, DFPHelper)
+webtoons.com##+js(abort-on-property-write, DFPHelper)
 
 ! [uBlock-user Scriptlets Needed] These scriptlets rules below require to load extra snippets that maintained by @uBlock-user
 ! View repository: https://github.com/uBlock-user/uBO-Scriptlets
@@ -2410,3 +2405,34 @@ thairath.co.th##script:inject(cookie-set.js, lightboxed, 1)
 ||disqus.com/embed.js$script,redirect=disqus.com/embed.js
 ||disqus.com/count.js$script
 @@||disqus.com/embed.js?$script
+
+! -------------------------------------------------- Backward Compatibility -------------------------------------------------- !
+!#if env_firefox
+! The use of document exception isn't supported, only XUL-based fork of Firefox before quantum era can read. (aka. Legacy)
+/generate_204$important,~document
+
+! Old scriptlets injection are no longer support in the future, same as above.
+akibatan.com##script:inject(remove-attr.js, td_more_articles_box.is_box_visible)
+akibatan.com##script:inject(set-constant.js, OneSignal.push, noopFunc)
+akibatan.com##script:inject(set-constant.js, _Hasync, noopFunc)
+akibatan.com##script:inject(set-constant.js, __gaTracker, noopFunc)
+akibatan.com##script:inject(set-constant.js, mi_track_user, false)
+akibatan.com##script:inject(set-constant.js, tdAnalytics, noopFunc)
+exteen.com##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
+exteen.com##script:inject(abort-on-property-write.js, _taboola.push)
+exteen.com##script:inject(abort-on-property-write.js, window._taboola)
+liekr.com##script:inject(abort-on-property-read.js, $showLikePopup)
+liekr.com##script:inject(abort-on-property-write.js, $showLikePopup)
+m.webtoons.com##script:inject(abort-on-property-read.js, oSmartAppBanner)
+m.webtoons.com##script:inject(abort-on-property-write.js, oSmartAppBanner)
+mthai.com##script:inject(abort-on-property-read.js, googletag)
+mthai.com##script:inject(abort-on-property-write.js, googletag)
+online-station.net##script:inject(abort-on-property-write.js, GoogleAnalyticsObject)
+online-station.net##script:inject(abort-on-property-write.js, PLISTA)
+online-station.net##script:inject(abort-on-property-write.js, googletag)
+online-station.net##script:inject(abort-on-property-write.js, ssPage)
+online-station.net##script:inject(abort-on-property-write.js, ssProtocol)
+thairath.co.th##script:inject(cookie-remover.js, tr_bId)
+webtoons.com##script:inject(abort-on-property-read.js, DFPHelper)
+webtoons.com##script:inject(abort-on-property-write.js, DFPHelper)
+!#endif
