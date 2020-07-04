@@ -1,6 +1,6 @@
 [uBlock Origin 1.27.11]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202006241617
+! Version: 202007041746
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2276,7 +2276,7 @@ pramool.com##tbody table tr:has(a[target="ads"])
 pramool.com##tbody table tr:has(iframe)
 pramool.com##tbody table tr:has(noscript)
 rabbit.co.th##.widget-box:has(.ads-sidebar-top)
-share-si.com##.post > div:has(script[src*="code.yengo.com"])
+share-si.com##.post > div:has(script[src*="code.yengo."])
 share-si.com##.post div:has(.adsbygoogle)
 siamok.com##.Sweb_right table:has(iframe[src="/ads/right-yengo.php"])
 siamok.com##.head_bg table:has(iframe[src*="/ads/"])
@@ -2284,7 +2284,7 @@ siamphone.com###banner:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.news_cate li ul:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.news_cate ul li:has(a img[src="/images/ads_menu.png"])
 siamphone.com##.swiper-slide:has(a img[src="/images/sp_ads.png"])
-siamphone.com##.swiper-slide:has(iframe[src*=ads.siamphone.com"])
+siamphone.com##.swiper-slide:has(iframe[src*="ads.siamphone.com"])
 siamphone.com##.top_banner:has(div span:has(iframe[src*="ads.siamphone.com"]))
 siamphone.com##div[class^="banner"]:has(iframe[src*="ads.siamphone.com"])
 sistacafe.com###summary div:has(img[title="downloadapp"])
@@ -2297,14 +2297,14 @@ specphone.com##.home_banner_top:has(iframe[src*="openx."])
 specphone.com##.td-header-menu-wrap-full div[style]:has(#AdsTop)
 specphone.com##.td-header-sp-recs:has(div > iframe[src*="openx."])
 techmoblog.com##.container center:has(table div iframe[src*="/tmb-advertise/"])
-techtalkthai.com##.theiaStickySidebar .widget:has(.widget-container p:has(a[rel="noopener"]))
+techtalkthai.com##.theiaStickySidebar .widget:has(.widget-container p:has(a[rel*="noopener"]))
 techxcite.com##.shopping:has(script[async][src*="techxcite.com/ads/revive"])
 thaihitz.com##.post-single-content center:has(.adsbygoogle)
 thaiidol.com##.td-g-rec:has(.adsbygoogle)
 thaiidol.com##.wpb_wrapper:has(.adsbygoogle)
 thaijobsgov.com##.content center:has(.adsbygoogle)
 thaijobsgov.com##.content center:has-text(/Advertisement/)
-thailandbestbeauty.com##.td-post-template-default a[target="_blank"]:has(img[class*="wp-image-"])
+thailandbestbeauty.com##.td-post-template-default a[target]:has(img[class*="wp-image-"])
 thaimobilecenter.com###divleft:has(a[href*="/ad_click"])
 thaimobilecenter.com###divright:has(a[href*="/ad_click"])
 thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
