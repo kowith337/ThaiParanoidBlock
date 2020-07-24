@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202007241959
+! Version: 202007242024
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -46,11 +46,6 @@ dodeden.com##div[class^="banner-X2"]
 dspzeeplus.com###twist-blogger-fan-page
 dspzeeplus.com##.popup-box
 dspzeeplus.com##div[id^="fbox-"]
-exteen.com###promote
-exteen.com##.banner-box
-exteen.com##.feature-box
-exteen.com##.pr-box
-exteen.com##.promote-box
 flashfly.net##.jeg_ad
 flashfly.net##.jnews_inline_related_post
 flashfly.net##div[class^="jnews_popup_post"]
@@ -2330,9 +2325,6 @@ blognone.com###above_comments:has(h2:has-text(/Blognone Workplace/))
 blognone.com###rightbottom_sidebar .region div[id^="block-block"]:has(.content .fb-page)
 blognone.com###rightbottom_sidebar .region div[id^="block-views-jobs"]
 everythingisee.in.th##.widget-header:has(.adsbygoogle)
-exteen.com##.content-box center:has(div script)
-exteen.com##.content-box:has(.prnews)
-exteen.com##div[class^="grid_"]:has(div[id^="div-gpt-ad"])
 game-tep.com##.td-header-sp-recs:has(img[onload])
 game-tep.com##.td-post-content .td-a-rec .g:has(a[onclick^="ga"])
 gamemonday.com##a:has(img[onload])
