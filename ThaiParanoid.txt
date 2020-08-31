@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202007242022
+! Version: 202009010000
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -22,6 +22,7 @@
 ###fbpop_box2
 ###loginModal
 ###makingdifferentpopup
+###pdpa-popup
 ##.facebook-like-box-pop-up-overlay
 ##.fb-popup
 ##.fb_overlay
@@ -197,8 +198,6 @@ tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
 upic.me###basic-modal-content
 upic.me##div[id^="simplemodal"]
-worldcosplay.net###registerPopup
-worldcosplay.net##.registration-modal-bg
 zaapmak.com##iframe
 
 ! Multiple domains that shared same element names
@@ -232,13 +231,13 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 /easy-facebook-likebox
 /facebook-fanbox*
 /facebook-page-promoter-lightbox*
-/facebook-popup-box
 /facebook_popup*
 /fb-traffic-pop
 /floating-social-bar
 /like-fb
 /like_box*
 /new-facebook-popup-likebox-responsive
+/plugin-pdpa
 /plugins/add-to-any
 /social-popup
 /ud-social
@@ -2277,6 +2276,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ads-twitter.com$important
 ||analytics.twitter.com$important
 ||error.facebook.com$important
+||google.*/ads/$important
 ||google.*/jsapi?autoload$important
 ||google.*/pagead/$important
 ||google.*/promos$important
@@ -2302,10 +2302,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||youtube.com/*/log_interaction?$important
 ||youtube.com/annotations_invideo?instream_ad$important
 ||youtube.com/api/stats$important
+||youtube.com/api/stats/atr?$important
+||youtube.com/api/stats/qoe?$important
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||youtube.com/yts/*/www-pagead-id$important
-! ||twitter.com/i/trends // Avoid disable "Trends" if you still need it.
 
 ! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
 ! Procedural DOM - contains has(-text)/not/xpath parameter
