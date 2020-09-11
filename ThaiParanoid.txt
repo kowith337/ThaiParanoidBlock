@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202009010000
+! Version: 202009112215
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -127,6 +127,7 @@ pantip.com##iframe[src*="ads.pantip.com"]
 pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
+pantip.com##.pt-snackbar
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
@@ -653,10 +654,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Allowed only 1P
 ||110.164.252.137$third-party,important
-||daznservices.com$third-party,~image
 ||lazada.co.th$third-party,important
-||line.me$third-party
-||line-scdn.net$third-party,domain=~line.me
+||line.me$third-party,domain=~naver.com
+||line-scdn.net$third-party,domain=~line.me|~naver.com
 ||nipa.co.th$third-party,important
 
 ! It's OK to show only what things needed, not other things
