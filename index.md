@@ -10,6 +10,6 @@ Separate filter lists from a former [Thai AntiForceLike](http://pastebin.com/VU7
     - [AdBlock Thai](https://github.com/adblock-thai/thai-ads-filter) (Focused for uBO users and other proper forks)
 	- [EasyList Thailand](https://github.com/easylist-thailand/easylist-thailand) (For ABP users due to I won't supported that extension)
   - If you having problem with those sites, report to one of two repo above (or both), I won't risk my life into the pitfall lair of ads and tracking! **(Indeed!!)**
-- Any sites that was strictly blocked for certain reason (e.g. use as mobile download content) will cease to support and **no way to whitelist** for skae of prevent money loss and/or additional charge over mobile carrier!
+- Any sites that was strictly blocked for certain reason (e.g. use as mobile download content) will cease to support and **no way to whitelist** for sake of prevent money loss and/or additional charge over mobile carrier!
 
 For alternative version (aka. **MAXIMUM MODE**), [click here](https://github.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt) or use [mirror](https://gitlab.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt)!
