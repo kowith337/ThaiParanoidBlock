@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202009112113
+! Version: 202010030021
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -312,8 +312,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Specific request blocking to prevent frame, script, AJAX requests, dependency of trigger.
 ! ||pantip.com/files/bingsuscript.js$script // Have problem with timestamp of posts and comments after blocked
-||akamaihd.net/shopee/*/*TrackingRules$script,domain=shopee.co.th
-||akamaihd.net/shopee/*/TrackingRules$script,domain=shopee.co.th
+||akamaihd.net/shopee/*TrackingRules$script,domain=shopee.co.th
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
@@ -331,7 +330,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! Strict blocking (also ignore bad whitelist rules)
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
-/plugins/ud-social$domain=matichon.co.th|khaosod.co.th|spokedark.tv,important
 /plugins/udvideoplayer/*/videojs.ads.$domain=matichon.co.th|khaosod.co.th,important
 /plugins/udvideoplayer/*/videojs.ga.$domain=matichon.co.th|khaosod.co.th,important
 /plugins/udvideoplayer/*/videojs.ima.$domain=matichon.co.th|khaosod.co.th,important
@@ -361,8 +359,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||online-station.net/*/ads/*$important
 ||online-station.net/assets/*/os-adhoc$important
 ||online-station.net/assets/js/google*$important
-||openx.*$first-party,important
-||openx.*$third-party,important
+||openx.*$important
 ||pantip.com/api/forum-service/forum/get_promote_box?$important
 ||pantip.com/api/forum-service/forum/get_promote_tag?$important
 ||pantip.com/api/statistics-service/stream_click/send_data$important
@@ -370,7 +367,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||pantipmarket.com/_data/ads$important
 ||referrer.disqus.com$important
 ||services.trueinternet.co.th$document,important
-||siamha.com/truehits/stat$important
 ||thairath.co.th/assets/js/firebase$important
 ||thairath.co.th/js/autotrack$important
 ||thairath.co.th/js/tr_$script,important
@@ -407,10 +403,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||toptools100.com
 ||wisemana.com
 
-! Ads Server / Malvertising / Tracking / Marketing / Article Zuckestions
+! Ads Server / Malvertising / Tracking / Marketing / Article Zuckestions / SEO
+||24thai.com
 ||24x7th.com
 ||2o7.net
 ||a8.net
+||abc-yoga.biz
 ||accesstrade.in.th
 ||ad-m.asia
 ||adasiaholdings.com
@@ -439,13 +437,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||anonymousdemographics.com
 ||ao0c.club
 ||app-measurement.com
-||appsflyer.com
+||appjob.com
 ||areyouahuman.com
 ||at-o.net
 ||atdmt.com
 ||ati-host.net
 ||audiencerun.com
-||aviasales.ru
 ||bingsu.devpantip.com
 ||bluekai.com
 ||browsehappy.com
@@ -470,6 +467,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||d-stats.com
 ||da-ads.com
 ||dapxl.com
+||darathai.info
 ||demand.supply
 ||dentsu360th.com
 ||dnsdelegation.io
@@ -492,6 +490,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||frukt.devpantip.com
 ||frukt.pantip.com
 ||fw-ad.jp
+||fwdder.com
 ||gammaplatform.com
 ||gbotvisit.com
 ||gbox.sc
@@ -499,7 +498,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||geolocation.daznservices.com
 ||geoplugin.net
 ||gigya.com
-||go2cloud.org
 ||go2speed.org
 ||graph.sanook.com
 ||hariken.co
@@ -518,20 +516,27 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||instant.page
 ||intentmedia.net
 ||isgstat.sanook.com
+||itzaa.com
 ||iyfnzgb.com
 ||izooto.com
+||jeedza.com
 ||joox-affiliate.sanook.com
 ||keyade.com
 ||kiosked.com
+||konthai.com
 ||luckyorange.com
+||lud0xgirlsclub.com
 ||m88.com
 ||mainroll.com
+||meemodel.com
 ||mgid.com
 ||ml314.com
 ||moatads.com
+||moohin.com
 ||mookie1.com
 ||mtburn.com
 ||mtburn.jp
+||mydrmobile.com
 ||netcpms.com
 ||newrelic.com
 ||nr-data.com
@@ -541,17 +546,18 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nytive.com
 ||oclaserver.com
 ||oghub.io
+||ohocute.com
+||ohsanook.com
 ||oilchange.website
 ||omtrdc.net
 ||onaudience.com
 ||onclasrv.com
 ||onclickads.net
 ||onesignal.com
-||openx.notebookspec.com
 ||openxmarket.asia
-||opticks.io
 ||padsdel.com
 ||padstm.com
+||pangza.com
 ||parkingcrew.com
 ||parkingcrew.net
 ||pc1ads.com
@@ -584,9 +590,10 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||scorecardresearch.com
 ||serving-sys.com
 ||shinobi.jp
+||siamha.com
+||siamhrm.com
 ||silkspan.com
 ||simba-digital.com
-||socdm.com
 ||spotxchange.com
 ||stat.matichon.co.th
 ||statmt.matichon.co.th
@@ -600,11 +607,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||tagcommander.com
 ||tagserve.asia
 ||tapad.com
+||thaieasyjob.com
+||thaigirlnextdoor.com
 ||thstats.com
-||thtrackingap.com
+||tidtak.com
 ||tityx.com
 ||trackjs.com
 ||travelpayouts.com
+||trirong.com
 ||truehits.in.th
 ||truehits.net
 ||tynt.com
@@ -624,12 +634,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||xm.com
 ||yengo.com
 ||yieldmo.com
+||yingza.com
 ||yu0123456.com
 ||zemanta.com
+||zengped.com
 ||zeotap.com
 
 ! Strictly block Google Ads and/or Tracking (YouTube Included)
-/generate_204$all,important,~document
+/generate_204$important
 ||2mdn.net$important
 ||admob.com$important
 ||ads.youtube.com$important
@@ -663,7 +675,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||lazada.co.th$third-party,important
 ||line.me$third-party,domain=~naver.com
 ||line-scdn.net$third-party,domain=~line.me|~naver.com
-||nipa.co.th$third-party,important
 
 ! It's OK to show only what things needed, not other things
 ||gravatar.com$third-party
@@ -781,7 +792,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||103.246.17.72$important
 ||103.246.17.87$important
 ||107.170.154.51$important
-||110.164.252.137$important
 ||111.118.179.35$important
 ||111.118.179.72$important
 ||113.30.248.2$important
@@ -849,6 +859,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||protection-*.*$important
 ||secure-mobile.*$important
 ||vpn*plus.com$important
+||vpn*plus*.*$important
 
 ! Base Domain
 ||0frmluki.tw$important
@@ -896,7 +907,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||9lotto168.com$important
 ||9v8p.com$important
 ||9yam.com$important
-||a.n-d.bz$important
 ||a1n.in$important
 ||a81.me$important
 ||ab4hr.com$important
@@ -951,7 +961,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akazoo.com$important
 ||alawael-news.com$important
 ||alchemy.n-d.bz$important
-||alert-cleaner.club$important
 ||alert301.com$important
 ||alice2appsmart.com$important
 ||alivetoyou.com$important
@@ -1122,7 +1131,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||comedy-club.mobi$important
 ||comedymunch.com$important
 ||comudjet.pw$important
-||consentprt.dtac.co.th$important
 ||consested-opplyield.com$important
 ||content-cafe.com$important
 ||contentbox.stream$important
@@ -1157,10 +1165,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||daniellefriedland.com$important
 ||dantri.com.vn$important
 ||darapayakorn.com$important
-||datapremium.$important
-||datapremium.com$important
-||datapremium.com.ve$important
-||datapremium.net$important
+||datapremium.*$important
 ||datelocalteens.com$important
 ||datinggirls.info$important
 ||datingsexy.org$important
@@ -1231,8 +1236,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||fly2.me$important
 ||fly2me.com$important
 ||flybi.store$important
-||flygemobi.$important
-||flygemobi.com$important
+||flygemobi.*$important
 ||flygree.pw$important
 ||flyrlk.com$important
 ||fm88e.tk$important
@@ -1721,7 +1725,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nmpcenter.com$important
 ||noclef.com$important
 ||notesdav.pw$important
-||notice-iphone.club$important
 ||nowportal.net$important
 ||nrs-group.com$important
 ||nusa-putra.com$important
@@ -1868,8 +1871,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||sabver.com$important
 ||sadman3.icu$important
 ||safedown.s3.amazonaws.com$important
-||sagame66.co$important
-||sagame66.com$important
+||sagame66.*$important
 ||saleplus.vn$important
 ||salvage-shop.com$important
 ||samart-digitalmedia.com$important
@@ -2117,9 +2119,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||vovivooo.com$important
 ||vplaynow.com$important
 ||vplus.ais.co.th$important
-||vpn1aprotectplus.com$important
-||vpnprotectplus.com$important
-||vpnshieldplus2.com$important
 ||vrscr888.com$important
 ||vsjcommsource.com$important
 ||vstyle4u.com$important
@@ -2132,7 +2131,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||wakau.in$important
 ||walletfun.com$important
 ||wallpapers-girls.com$important
-||wap.shinee.com$important
 ||wap50.com$important
 ||waphub.mobi$important
 ||waplog.com$important
