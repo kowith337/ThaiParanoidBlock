@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202010061330
+! Version: 202010061334
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2505,6 +2505,8 @@ pantip.com##+js(json-prune, firebase)
 pantip.com##+js(json-prune, mobileTopBanner, false)
 pantip.com##+js(json-prune, tabloid, false)
 pantip.com##+js(no-setTimeout-if, sendNewPolls)
+pantip.com##+js(set-constant, MozWebSocket, noopFunc)
+pantip.com##+js(set-constant, WebSocket, noopFunc)
 pantip.com##+js(set-constant, mySock, noopFunc)
 thairath.co.th##+js(cookie-remover, tr_bId)
 webtoons.com##+js(acis, DFPHelper)
