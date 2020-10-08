@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202010082042
+! Version: 202010082047
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2511,9 +2511,9 @@ webtoons.com##+js(acis, DFPHelper)
 ! NanoAdblocker or need an additional setup in case if you've also installed NanoDefender
 ! View the guide: https://jspenguin2017.github.io/uBlockProtector#extra-installation-steps-for-ublock-origin
 ! Raw Link: https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
-akibatan.com##script:inject(nanop-easy-set-cookie, disableStr=true)
-akibatan.com##script:inject(nanop-easy-set-cookie, td-cookie-more-articles=hide-more-articles-box)
-thairath.co.th##script:inject(nanop-easy-set-cookie, lightboxed=1)
+akibatan.com##+js(nanop-easy-set-cookie, disableStr=true)
+akibatan.com##+js(nanop-easy-set-cookie, td-cookie-more-articles=hide-more-articles-box)
+thairath.co.th##+js(nanop-easy-set-cookie, lightboxed=1)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
 ||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
