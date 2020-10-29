@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202010082047
+! Version: 202010292141
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2434,17 +2434,10 @@ tnews.co.th##.hidden-sm.hidden-xs:has(div script[src*="code.yengo.com"])
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
 
-! Directive HTML tag filtering
-! This need a supported platform to work (only Firefox post-quantum for now, maybe it work for chrom[e|ium] with Nano Adblocker)
-!#if cap_html_filtering
-m.pantip.com##^meta[name^="smartbanner"]
-!#endif
-
 ! Specific inline-script hiding
 ! For any Firefox version below than 56- (or aka. XUL Fork) and install uBlock0 Legacy
 ! e.g. Basilisk, Borealis (Soon?), Iceweasel, Pale Moon, Waterfox classic, etc.
 ! These rules below also work with post-quantum (and it's auto convert to new rules format),
-! for Chrome and Chromium may possible if you've install NanoAdblocker instead of uBlock Origin.
 autocar.in.th##script:contains(makingdifferent_ppopup)
 bloggang.com##script:contains(pageTracker)
 bloggang.com##script:contains(gptAdSlots)
@@ -2476,9 +2469,13 @@ teededball.com##script:contains(bzpopup_timer)
 tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
 
-! New format for post-quantum and newer
+! Directive HTML tag filtering
+! This need a supported platform to work (only Firefox post-quantum for now)
+!#if cap_html_filtering
+m.pantip.com##^meta[name^="smartbanner"]
 pantip.com##^noscript
 pantip.com##^script.next-head
+!#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
 akibatan.com##+js(ra, td_more_articles_box.is_box_visible)
@@ -2495,15 +2492,15 @@ online-station.net##+js(acis, PLISTA)
 online-station.net##+js(acis, googletag)
 online-station.net##+js(acis, ssPage)
 online-station.net##+js(acis, ssProtocol)
-pantip.com##+js(abort-on-property-read, applicationId)
-pantip.com##+js(addEventListener-defuser, mySock)
+pantip.com##+js(aopr, applicationId)
+pantip.com##+js(aeld, mySock)
 pantip.com##+js(json-prune, firebase)
 pantip.com##+js(json-prune, mobileTopBanner, false)
 pantip.com##+js(json-prune, tabloid, false)
-pantip.com##+js(no-setTimeout-if, sendNewPolls)
-pantip.com##+js(set-constant, MozWebSocket, noopFunc)
-pantip.com##+js(set-constant, WebSocket, noopFunc)
-pantip.com##+js(set-constant, mySock, noopFunc)
+pantip.com##+js(nostif, sendNewPolls)
+pantip.com##+js(set, MozWebSocket, noopFunc)
+pantip.com##+js(set, WebSocket, noopFunc)
+pantip.com##+js(set, mySock, noopFunc)
 thairath.co.th##+js(cookie-remover, tr_bId)
 webtoons.com##+js(acis, DFPHelper)
 
@@ -2516,22 +2513,15 @@ akibatan.com##+js(nanop-easy-set-cookie, td-cookie-more-articles=hide-more-artic
 thairath.co.th##+js(nanop-easy-set-cookie, lightboxed=1)
 
 ! [Resources Replace] Instead of just blocking, then redirect to neutered resources
-||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noopframe
-||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noopframe
-||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noopframe
-||pantip.com/ads.php$subdocument,important,redirect=noopframe
-||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
-||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
-||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=nooptext,domain=shopee.co.th
-||siamfishing.com/_ajax/isblocked_localcomid.php?$xmlhttprequest,important,redirect=nooptext
-||siamfishing.com/_js/adsbygoogle.js$script,important,redirect=noopjs
-
-! [Extra] To load disqus comment on-demand.
-! Followed from gorhill's gist.: https://gist.github.com/gorhill/ef1b62d606473c68d524
-||disqus.com/forums/*/embed.js$script,redirect=disqus.com/forums/*/embed.js
-||disqus.com/embed.js$script,redirect=disqus.com/embed.js
-||disqus.com/count.js$script
-@@||disqus.com/embed.js?$script
+||becteroradio.com/2014/hidden-ad-inner.php?$subdocument,important,redirect=noop.php
+||becteroradio.com/truehitsstat.php?$subdocument,important,redirect=noop.php
+||bloggang.com/truehitsstat.php?$subdocument,important,redirect=noop.php
+||pantip.com/ads.php$subdocument,important,redirect=noop.php
+||shopee.co.th/__t__$xmlhttprequest,important,redirect=noop.txt
+||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=noop.txt
+||shopeemobile.com/th/tr$xmlhttprequest,important,redirect=noop.txt,domain=shopee.co.th
+||siamfishing.com/_ajax/isblocked_localcomid.php?$xmlhttprequest,important,redirect=noop.txt
+||siamfishing.com/_js/adsbygoogle.js$script,important,redirect=noop.js
 
 ! -------------------------------------------------- Backward Compatibility -------------------------------------------------- !
 !#if env_firefox
