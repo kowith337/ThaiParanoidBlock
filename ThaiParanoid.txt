@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202012082112
+! Version: 202012090017
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -57,6 +57,18 @@ game-tep.com##.td-more-articles-box
 game-tep.com##div[id^="divFLRALeft"]
 game-tep.com##div[id^="divFLRARight"]
 game-tep.com##div[id^="wh-widget"]
+gamefever.co###home-web #adscover
+gamefever.co###post-mobile > div[style^="width:100vw;height:"]
+gamefever.co##.fancybox-overlay
+gamefever.co##a#top-ads
+gamefever.co##a[class^="ads-mobile"]
+gamefever.co##a[href*="facebook.com/groups/"]
+gamefever.co##a[id^="ads-"][href*="bit.ly"]
+gamefever.co##a[id^="ads-mobile"]
+gamefever.co##div[class^="ads-mobile-"]
+gamefever.co##div[id^="ads"][id*="content"]
+gamefever.co##div[id^="ads-mobile-"]
+gamefever.co##div[id^="popup"][id*="ads"]
 gamegeek.in.th##.wppaszone
 gamegeek.in.th##div[data-title="Home popup"]
 gamemonday.com###my-welcome-message
@@ -344,6 +356,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
+||gamefever.co/*&action=insertads$important
+||gamefever.co/*/jquery.fancybox$important
+||gamefever.co/?action=insertads$important
+||gamefever.co/ads/$important
+||gamefever.co/jquery.fancybox$important
 ||home.trueid.net$document,important
 ||img.in.th/?ping$important
 ||isanook.com/*/beacon$important
@@ -2453,6 +2470,7 @@ tnews.co.th##.hidden-sm.hidden-xs:has(div script[src*="code.yengo.com"])
 
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
+gamefever.co###home-web:style(padding-top: 0px !important)
 
 ! Specific inline-script hiding
 ! For any Firefox version below than 56- (or aka. XUL Fork) and install uBlock0 Legacy
@@ -2497,6 +2515,20 @@ pantip.com##^noscript
 pantip.com##^script.next-head
 !#endif
 
+! Specific platform supports
+!#if !env_legacy
+! Only Non-XUL browsers can completely remove unwanted DOM node entirely. aka. the `:remove()` chaining
+gamefever.co###home-web #adscover:remove()
+gamefever.co##.fancybox-overlay:remove()
+gamefever.co##a#top-ads:remove()
+gamefever.co##a[href*="facebook.com/groups/"]:remove()
+gamefever.co##a[id^="ads-"][href*="bit.ly"]:remove()
+gamefever.co##div[class^="ads-mobile-"]:remove()
+gamefever.co##div[id^="ads"][id*="content"]:remove()
+gamefever.co##div[id^="ads-mobile-"]:remove()
+gamefever.co##div[id^="popup"][id*="ads"]:remove()
+!#endif
+
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
 akibatan.com##+js(ra, td_more_articles_box.is_box_visible)
 akibatan.com##+js(set, OneSignal.push, noopFunc)
@@ -2504,6 +2536,8 @@ akibatan.com##+js(set, _Hasync, noopFunc)
 akibatan.com##+js(set, __gaTracker, noopFunc)
 akibatan.com##+js(set, mi_track_user, false)
 akibatan.com##+js(set, tdAnalytics, noopFunc)
+gamefever.co##+js(cookie-remover, visited)
+gamefever.co##+js(acis, visited)
 liekr.com##+js(acis, $showLikePopup)
 m.webtoons.com##+js(acis, oSmartAppBanner)
 mthai.com##+js(acis, googletag)
