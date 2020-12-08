@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202012052037
+! Version: 202012082105
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -382,7 +382,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||addthis.com
 ||addtoany.com
 ||hellobar.com
-
 ! Baidu/Hao123/DesktopWeather
 ! http://pantip.com/topic/30586979
 ! http://pantip.com/topic/33939110
@@ -690,7 +689,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 !          download such as games, videos, ringtones that can charge service fee or deduct your calling balance everyday
 !          every week, every month, every each messages that they've sent to you and/or some provider still charging costs even
 !          they never sent anything to you...
-
 ! Disable hyperlink interaction that beginning with sms/tel/wtai because it can directly call or sent SMS to those services
 ! Note: Affected to real mobile device only!
 !#if env_mobile
@@ -773,6 +771,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||54.169.14.129$important
 ||54.169.240.216$important
 ||54.186.88.28$important
+||54.251.73.152$important
+||54.251.224.218$important
 ||54.254.176.233$important
 ||56.76.86.177$important
 ||58.137.160.133$important
@@ -856,11 +856,17 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 
 ! Wildcard to blocking iOS spam that use WebCal as abusive way...
 ||alert-*.*$important
+||datapremium.*$important
+||flygemobi.*$important
+||gclub*.*$important
 ||notice-*.*$important
 ||protection-*.*$important
+||sagame66.*$important
+||sbobet*.*$important
+||scr888*.*$important
 ||secure-mobile.*$important
-||vpn*plus.com$important
 ||vpn*plus*.*$important
+||vpn*plus.com$important
 
 ! Base Domain
 ||0frmluki.tw$important
@@ -877,10 +883,15 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||1mov.co$important
 ||2-spot.com$important
 ||20150917.com$important
+||20icipp.com$important
 ||2abdanismanlik.com$important
 ||2get2load.com$important
 ||321load.com$important
+||32255.com$important
 ||33luo.com$important
+||38.net$important
+||3838111.com$important
+||38thd.com$important
 ||3mobilecontents.net$important
 ||3storage.net$important
 ||430.com$important
@@ -1038,6 +1049,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||bestwomenintown.com$important
 ||betreat.com$important
 ||bigdoremi.com$important
+||bigfunspace.com$important
 ||biggerthanyou14.live$important
 ||bigolives.tv$important
 ||bikesales.com.au$important
@@ -1054,10 +1066,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||bmobil.net$important
 ||bodelen.com$important
 ||bonbonmob.com$important
+||boobi.biz$important
 ||bothtrk.com$important
 ||bptr88.com$important
 ||braverymobtracking.com$important
 ||brazzers93.com$important
+||breaknews.life$important
 ||breathing-love.com$important
 ||bridgemob.com$important
 ||brucelead.com$important
@@ -1080,6 +1094,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||carlydibona.com$important
 ||carriersignal.info$important
 ||carsales.com.au$important
+||cat-judge-call-accept.xyz$important
 ||cd-mob.com$important
 ||cdnfiber.com$important
 ||celeryleek.com$important
@@ -1133,6 +1148,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||comedymunch.com$important
 ||comudjet.pw$important
 ||consested-opplyield.com$important
+||consummate.shop$important
 ||content-cafe.com$important
 ||contentbox.stream$important
 ||contentdd.net$important
@@ -1150,6 +1166,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||cpinfantil.com$important
 ||cpitraffic.com$important
 ||cpweb.com$important
+||cronusbid.com$important
 ||cswinpz.com$important
 ||ct9.me$important
 ||ctrackz.net$important
@@ -1166,7 +1183,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||daniellefriedland.com$important
 ||dantri.com.vn$important
 ||darapayakorn.com$important
-||datapremium.*$important
+||datapremium.com$important
+||datapremium.com.ve$important
+||datapremium.net$important
 ||datelocalteens.com$important
 ||datinggirls.info$important
 ||datingsexy.org$important
@@ -1181,6 +1200,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||digitalmerkat.com$important
 ||digitalngo.com$important
 ||digitalzoneng.com$important
+||dilapiaroaw.club$important
 ||dindo.co.th$important
 ||dinoraptzor.org$important
 ||dittolite.com$important
@@ -1198,6 +1218,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||dsglp.com$important
 ||dsgpy.com$important
 ||durarenti.pw$important
+||e-nee.co$important
 ||e668ou.com$important
 ||ebizmobile.com$important
 ||ectionma.pw$important
@@ -1207,6 +1228,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||eiei.net$important
 ||eim88.tk$important
 ||ejobet.tk$important
+||enemy-adult-scared-there.xyz$important
 ||enfothe.pw$important
 ||enjoy108.com$important
 ||enpocket.com$important
@@ -1237,7 +1259,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||fly2.me$important
 ||fly2me.com$important
 ||flybi.store$important
-||flygemobi.*$important
 ||flygree.pw$important
 ||flyrlk.com$important
 ||fm88e.tk$important
@@ -1298,6 +1319,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||games-unlimited.mobi$important
 ||gamescentreom.com$important
 ||gamesclub.tv$important
+||gamesteka.com$important
 ||gameth.net$important
 ||gamezine.in$important
 ||gameziz.com$important
@@ -1306,20 +1328,6 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gammo.me$important
 ||gamzones.com$important
 ||gangzaa.net$important
-||gclub-casino.com$important
-||gclub-plaza.com$important
-||gclub.guru$important
-||gclub123.com$important
-||gclub168.casino$important
-||gclub168.net$important
-||gclub24hr.com$important
-||gclub7000.com$important
-||gclub8000.com$important
-||gclub888.org$important
-||gclub9.com$important
-||gclub9000.net$important
-||gclubgames.com$important
-||gclubslot898.com$important
 ||gcvw.mobi$important
 ||gdmconvtrck.com$important
 ||gdmgsecure.com$important
@@ -1356,6 +1364,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||gogameportal.com$important
 ||golden-slot.com$important
 ||gomasti.in$important
+||goodymoby.com$important
 ||goohd.tv$important
 ||goorulife.com$important
 ||gotd.mobi$important
@@ -1364,6 +1373,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||greatestapps.mobi$important
 ||greatmobilegames.mobi$important
 ||grenadatradecentre.com$important
+||gs-jp.com$important
 ||gtzlz.com$important
 ||guideball.com$important
 ||guru3step.com$important
@@ -1383,6 +1393,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||hclips.net$important
 ||hd0y.com$important
 ||hdfreemovie007.com$important
+||healthdee.co$important
 ||hehemobi.com$important
 ||hello1.in$important
 ||hempsmort.pw$important
@@ -1452,10 +1463,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ivalent.com$important
 ||izenmobi.com$important
 ||jadjann.com$important
+||jaidee5555.com$important
 ||jamloey.com$important
 ||jibhd.com$important
 ||jinshengpacking.com$important
 ||jiudianzhaopin.com$important
+||jkuailai.com$important
 ||jmtt.co.th$important
 ||joker123xo.com$important
 ||joybaerfrescoes.com$important
@@ -1533,6 +1546,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||lpaosub.com$important
 ||lqmbet.tk$important
 ||ltvperf.com$important
+||lucabetasia.com$important
 ||lucky6lucky.club$important
 ||luckymobileuser.club$important
 ||luckyyouna.com$important
@@ -1551,6 +1565,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||magent.my$important
 ||magikmobile.mobi$important
 ||mai88.com$important
+||makeprogress.shop$important
+||makingcompensate.shop$important
 ||malanden.pw$important
 ||manymy.com$important
 ||marhasanook.com$important
@@ -1700,6 +1716,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||n-content.com$important
 ||n-d.bz$important
 ||n-mobile.net$important
+||nbryb.com$important
 ||ncontent.tv$important
 ||ncontentmobile.com$important
 ||ncontentmv.com$important
@@ -1726,6 +1743,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nmpcenter.com$important
 ||noclef.com$important
 ||notesdav.pw$important
+||notifguide.online$important
 ||nowportal.net$important
 ||nrs-group.com$important
 ||nusa-putra.com$important
@@ -1764,6 +1782,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||parcel-track-trace.co$important
 ||parisedlittled.info$important
 ||passwon.com$important
+||patihan.co$important
 ||pdanow.net$important
 ||peak-serving.com$important
 ||peakonspot.com$important
@@ -1773,6 +1792,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||perfonspot.com$important
 ||performancerevenues.com$important
 ||phadoo-mobile.com$important
+||phoemobi.com$important
 ||phone-notify.com$important
 ||phonemobileapps.com$important
 ||phonespeedmineinstalls.club$important
@@ -1803,6 +1823,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||porn93.com$important
 ||pornpt.icu$important
 ||post-track-trace.com$important
+||potiongames.com$important
 ||pottymag.com$important
 ||powerlion.space$important
 ||ppvr.page.link$important
@@ -1812,6 +1833,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||primaria9.com$important
 ||privacy-protect-webs-phone.club$important
 ||privatebay.tv$important
+||privatedevprotectphone.club$important
 ||privatevideoz.com$important
 ||privatewant.com$important
 ||privatewow.tv$important
@@ -1824,6 +1846,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||python-libs.com$important
 ||qiezi19880621.com$important
 ||questionfly.com$important
+||qwertyamerica.com$important
 ||r9987.com$important
 ||rabreptancalbe.info$important
 ||radio.in.th$important
@@ -1843,6 +1866,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||relingsh.pw$important
 ||renitaburgess.com$important
 ||renovationsandredorais.com$important
+||reportantsf.club$important
 ||retail9.com$important
 ||retail9ventures.com$important
 ||retargetcore.com$important
@@ -1855,10 +1879,12 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||ro88ro.tk$important
 ||robotcaptcha2.info$important
 ||rockymobi.com$important
+||romsupport.com$important
 ||rotatemyurls.com$important
 ||rotationurls.com$important
 ||royalads.net$important
 ||rsalcch.com$important
+||ruay.com$important
 ||runewfugift.xyz$important
 ||rushvip.net$important
 ||ryhopset.pw$important
@@ -1872,7 +1898,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||sabver.com$important
 ||sadman3.icu$important
 ||safedown.s3.amazonaws.com$important
-||sagame66.*$important
+||sagame-auto.com$important
 ||saleplus.vn$important
 ||salvage-shop.com$important
 ||samart-digitalmedia.com$important
@@ -1882,23 +1908,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||samartpay.com$important
 ||sanookde.com$important
 ||satisfactional-survey-platform.com$important
-||sbobet-365.com$important
-||sbobet-onlinecasino.com$important
-||sbobet-sports.com$important
-||sbobets.tips$important
-||sbobetthai88.com$important
-||sbobettm.com$important
 ||scan-do.com$important
 ||scattertraff.com$important
 ||scientiamobile.com$important
-||scr888-vip.com$important
-||scr888hd.com$important
-||scr888rdg.com$important
-||scr888sp.com$important
-||scr888th.com$important
-||scr888th.live$important
-||scr888thcasino.com$important
-||scr888thslot.com$important
 ||scratch-surveys.co$important
 ||seacom.co.th$important
 ||seaman2u.com$important
@@ -1960,6 +1972,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||socialnews.mobi$important
 ||softwood.pw$important
 ||sohs.co$important
+||sol222.com$important
 ||solutiononeholding.com$important
 ||somaticiens.com$important
 ||sosmob.mobi$important
@@ -2000,6 +2013,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||t3mobileadvertising.xyz$important
 ||tc-clicks.com$important
 ||tcplndr.club$important
+||tdedfootball.net$important
 ||tdedlove.com$important
 ||tdedteng.com$important
 ||tdedthai.com$important
@@ -2017,6 +2031,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||thaibetsite.com$important
 ||thaiboxwap.com$important
 ||thaifun4u.com$important
+||thaimob4u.com$important
 ||thaimobile.com$important
 ||thaisync.com$important
 ||thaiwapportal.com$important
@@ -2061,12 +2076,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||trafficshark.pro$important
 ||traffikflow.com$important
 ||trakkthisfor.info$important
+||transcendent.shop$important
 ||travid.mobi$important
 ||trck2020.club$important
 ||trclndrs.xyz$important
 ||trend-tech.net$important
 ||trippointz.com$important
 ||trk-indexmobi.com$important
+||trksontrks.com$important
 ||trktoken.com$important
 ||truevid.mobi$important
 ||truevids.mobi$important
@@ -2092,6 +2109,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||unpuzzled.net$important
 ||upp.st$important
 ||uropportunity.com$important
+||v432.com$important
 ||vasglobalnetwork.com$important
 ||vasgn.com$important
 ||vassolution.com$important
@@ -2119,11 +2137,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||voluumtrk2.com$important
 ||vovivooo.com$important
 ||vplaynow.com$important
-||vplus.ais.co.th$important
 ||vrscr888.com$important
 ||vsjcommsource.com$important
 ||vstyle4u.com$important
-||vuclip.ais.co.th$important
 ||vuclip.com$important
 ||vuclipgamesat.com$important
 ||vvidiacom.com$important
@@ -2143,6 +2159,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||wealthclick.net$important
 ||weatherpembe.com$important
 ||web-parcel-tracking.com$important
+||webdevwebsnew.club$important
 ||weddingdayphotographerparis.com$important
 ||wesliptu.pw$important
 ||wheretobuydiettrex.com$important
@@ -2156,6 +2173,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||womanceri.pw$important
 ||worldgamespn.mobi$important
 ||wowcool.net$important
+||wowredirect.com$important
 ||wppbbm.com$important
 ||wpwhatsappplus.com$important
 ||wrtual.com$important
@@ -2174,11 +2192,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||youlaugh.online$important
 ||your-sweet-girls1.com$important
 ||yourstukov.com$important
+||youwinner.info$important
 ||ypzsls.com$important
 ||yuppytv.com$important
 ||yuppyuppytv.com$important
 ||yuqazate.com$important
 ||z8.com$important
+||z82020.com$important
+||z8888.app$important
 ||zagmob.com$important
 ||zeanhot.com$important
 ||zeankickoff.com$important
@@ -2196,13 +2217,11 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! These rules below are modified from https://github.com/pureexe/LeeCh-List
 ! Copyright (c) 2017 Pakkapon Phongthawee
 ! LICENSE: https://github.com/pureexe/LeeCh-List/raw/master/LICENSE
-
 ! These list below are well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various
 ! fansubs, also publish retail products/contents on their site (it's unauthorized by local license and law), they earn profits
 ! and revenue from ad services. (e.g. insert banner, popunder, coin miner, many tracking and monetisation services, ...)
 ! This list will use $document tag for strict blocking to prevent visiting those sites, however, you can turn off strict blocking
 ! (temporary or permanently when uBlock showing the yellow triangle warning, as your choice) if you still want to visit them.
-
 ||1000toon.blogspot.com$document
 ||am4th.com$document
 ||anime-i.com$document
@@ -2439,7 +2458,6 @@ beartai.com###wallpaper:style(background: none !important; display: none !import
 ! This need a supported platform to work (only Firefox post-quantum for now, maybe it work for chrom[e|ium] with Nano Adblocker)
 !#if cap_html_filtering
 m.pantip.com##^meta[name^="smartbanner"]
-!#endif
 
 ! Specific inline-script hiding
 ! For any Firefox version below than 56- (or aka. XUL Fork) and install uBlock0 Legacy
@@ -2478,6 +2496,5 @@ tnews.co.th##script:contains(ShowModal)
 upic.me##script:contains(#basic-modal-content)
 
 ! Backward Compatibility
-!#if env_firefox
+!#if env_legacy
 /generate_204$important,~document
-!#endif
