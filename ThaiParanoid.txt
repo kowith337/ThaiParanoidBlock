@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202012090012
+! Version: 202012101422
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -356,9 +356,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
-||gamefever.co/*&action=insertads$important
+||gamefever.co/*&action=insert$important
 ||gamefever.co/*/jquery.fancybox$important
-||gamefever.co/?action=insertads$important
+||gamefever.co/?action=insert$important
 ||gamefever.co/ads/$important
 ||gamefever.co/jquery.fancybox$important
 ||home.trueid.net$document,important
