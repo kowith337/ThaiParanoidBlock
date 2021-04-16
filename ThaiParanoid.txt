@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202012101422
+! Version: 202104162232
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -133,13 +133,13 @@ online-station.net##section.bigbanner-ad
 pantip.com##.ads-tabloid
 pantip.com##.m-block a[href*="ads.pantip.com"]
 pantip.com##.post-pick-ad
+pantip.com##.pt-snackbar
 pantip.com##div[class^="ads-"]
 pantip.com##div[id^="ads-"]
 pantip.com##iframe[src*="ads.pantip.com"]
 pantip.com##iframe[src="https://pantip.com/home/get_activity_main"]
 pantip.com##img[src*="tapad.com"]
 pantip.com##noscript
-pantip.com##.pt-snackbar
 petmaya.com###arvlbdata
 picnic.ly##.essb-popup
 picnic.ly##.essb_bottombar
@@ -209,6 +209,8 @@ tnews.co.th###myModal
 tnews.co.th###uniads
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
+today.line.me##.theContainer.foryou
+today.line.me##div[class^="midAdModule"][id^="ad-module"]
 upic.me###basic-modal-content
 upic.me##div[id^="simplemodal"]
 zaapmak.com##iframe
@@ -328,6 +330,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
+||line-scdn.net/dist/*foryou$script,domain=liff.line.me|today.line.me
+||line.me/webapi/*/recommendation$script
 ||online-station.net/*/css/preload_ads$stylesheet
 ||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/assets/js/ads$script
@@ -2321,15 +2325,15 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||google.*/promos$important
 ||google.*/uds/api/ads/$important
 ||google.*/uds/stats?$important
-||googlevideo.com/videogoodput?
+||googlevideo.com/videogoodput?$all
 ||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
 ||s.youtube.com
 ||syndication.twimg.com$~image,~media
 ||syndication.twitter.com$important
-||twimg.com/*/google_analytics$script,important
+||twimg.com/*/google_analytics$important
 ||twimg.com/i/jot$important
-||twitter.com/*/google_analytics$script,important
+||twitter.com/*/google_analytics$important
 ||twitter.com/*/recommendations$important
 ||twitter.com/i/cards/*?advertiser_name$important
 ||twitter.com/i/jot$important
@@ -2467,6 +2471,7 @@ thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
 thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
 tnews.co.th##.hidden-sm.hidden-xs:has(div script[src^="//code.yengo.com/"])
+today.line.me##.bottom-window:has(.snackBar)
 
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
@@ -2480,7 +2485,6 @@ m.pantip.com##^meta[name^="smartbanner"]
 ! For any Firefox version below than 56- (or aka. XUL Fork) and install uBlock0 Legacy
 ! e.g. Basilisk, Borealis (Soon?), Iceweasel, Pale Moon, Waterfox classic, etc.
 ! These rules below also work with post-quantum (and it's auto convert to new rules format),
-! for Chrome and Chromium may possible if you've install NanoAdblocker instead of uBlock Origin.
 autocar.in.th##script:contains(makingdifferent_ppopup)
 bloggang.com##script:contains(pageTracker)
 bloggang.com##script:contains(gptAdSlots)
@@ -2515,3 +2519,4 @@ upic.me##script:contains(#basic-modal-content)
 ! Backward Compatibility
 !#if env_legacy
 /generate_204$important,~document
+!#endif
