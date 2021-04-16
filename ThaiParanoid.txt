@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202012101425
+! Version: 202104162238
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -209,6 +209,8 @@ tnews.co.th###myModal
 tnews.co.th###uniads
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
+today.line.me##.theContainer.foryou
+today.line.me##div[class^="midAdModule"][id^="ad-module"]
 upic.me###basic-modal-content
 upic.me##div[id^="simplemodal"]
 zaapmak.com##iframe
@@ -328,6 +330,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
+||line-scdn.net/dist/*foryou$script,domain=liff.line.me|today.line.me
+||line.me/webapi/*/recommendation$script
 ||online-station.net/*/css/preload_ads$stylesheet
 ||online-station.net/assets/css/ads$stylesheet
 ||online-station.net/assets/js/ads$script
@@ -2318,14 +2322,14 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||google.*/promos$important
 ||google.*/uds/api/ads/$important
 ||google.*/uds/stats?$important
-||googlevideo.com/videogoodput?
+||googlevideo.com/videogoodput?$all
 ||graph.facebook.com/*/act_*/customconversions$important
 ||pixel.facebook.com$important
 ||syndication.twimg.com$important,~image
 ||syndication.twitter.com$important
-||twimg.com/*/google_analytics$script,important
+||twimg.com/*/google_analytics$important
 ||twimg.com/i/jot$important
-||twitter.com/*/google_analytics$script,important
+||twitter.com/*/google_analytics$important
 ||twitter.com/*/recommendations$important
 ||twitter.com/i/cards/*?advertiser_name$important
 ||twitter.com/i/jot$important
@@ -2467,6 +2471,7 @@ thaimobilecenter.com###exp-normal:has(a[href*="/ad_click"])
 thetechr.com##.rev-block:has(.adsbygoogle)
 thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
 tnews.co.th##.hidden-sm.hidden-xs:has(div script[src*="code.yengo.com"])
+today.line.me##.bottom-window:has(.snackBar)
 
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
@@ -2582,7 +2587,8 @@ thairath.co.th##+js(nanop-easy-set-cookie, lightboxed=1)
 ||siamfishing.com/_js/adsbygoogle.js$script,important,redirect=noopjs
 
 ! -------------------------------------------------- Backward Compatibility -------------------------------------------------- !
-!#if env_firefox
+! Backward Compatibility
 ! - The use of document exception isn't supported, only XUL-based fork of Firefox before quantum era can read. (aka. Legacy)
+!#if env_legacy
 /generate_204$important,~document
 !#endif
