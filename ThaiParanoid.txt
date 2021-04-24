@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202104242108
+! Version: 202104242119
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -330,6 +330,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
 ||iwilldoforking.com/coverpage.js$script,third-party
+||lcs.line.me/m?$image,important
 ||line-scdn.net/dist/*foryou$script,domain=liff.line.me|today.line.me
 ||line.me/webapi/*/recommendation$script
 ||online-station.net/*/css/preload_ads$stylesheet
@@ -2581,6 +2582,7 @@ thairath.co.th##+js(nanop-easy-set-cookie, lightboxed=1)
 ||gamefever.co/*&action=insertlog$xmlhttprequest,important,redirect=nooptext
 ||gamefever.co/?action=insertads$xmlhttprequest,important,redirect=nooptext
 ||gamefever.co/?action=insertlog$xmlhttprequest,important,redirect=nooptext
+||lcs.line.me/m?$image,important,redirect=1x1.gif
 ||pantip.com/ads.php$subdocument,important,redirect=noopframe
 ||shopee.co.th/__t__$xmlhttprequest,important,redirect=nooptext
 ||shopee.co.th/userstats_record$xmlhttprequest,important,redirect=nooptext
