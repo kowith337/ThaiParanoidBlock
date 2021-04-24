@@ -1,6 +1,6 @@
 [uBlock Origin 1.28.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202104162238
+! Version: 202104242108
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -346,9 +346,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! Strict blocking (also ignore bad whitelist rules)
 ! Note: Sometime I can't block those requests normally without the need of $important tag
 /plugins/google-analytics$domain=matichon.co.th|khaosod.co.th,important
-/plugins/udvideoplayer/*/videojs.ads.$domain=matichon.co.th|khaosod.co.th,important
-/plugins/udvideoplayer/*/videojs.ga.$domain=matichon.co.th|khaosod.co.th,important
-/plugins/udvideoplayer/*/videojs.ima.$domain=matichon.co.th|khaosod.co.th,important
+/plugins/udvideoplayer/*/videojs.ads.$important,domain=matichon.co.th|khaosod.co.th
+/plugins/udvideoplayer/*/videojs.ga.$important,domain=matichon.co.th|khaosod.co.th
+/plugins/udvideoplayer/*/videojs.ima.$important,domain=matichon.co.th|khaosod.co.th
 ||*-adnow.com$important
 ||110.164.252.137/wpwarn/monomax$important
 ||ads*.bangkokpost.co.th$important
@@ -386,6 +386,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||pantip.com/api/statistics-service/stream_click/send_data$important
 ||pantip.com/oppa.php$important
 ||pantipmarket.com/_data/ads$important
+||pstatic.net/tv-img/js/clickcr.js$script,important,domain=tv.line.me
 ||referrer.disqus.com$important
 ||services.trueinternet.co.th$document,important
 ||thairath.co.th/assets/js/firebase$important
@@ -2561,6 +2562,7 @@ pantip.com##+js(set, MozWebSocket, noopFunc)
 pantip.com##+js(set, WebSocket, noopFunc)
 pantip.com##+js(set, mySock, noopFunc)
 thairath.co.th##+js(cookie-remover, tr_bId)
+tv.line.me##+js(set, clickcr, noopFunc)
 webtoons.com##+js(acis, DFPHelper)
 
 ! [NanoResources Scriptlets Needed] These scriptlets rules below require to load extra snippets that you can found in
