@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202106242100
+! Version: 202107311932
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -211,6 +211,8 @@ today.line.me##.theContainer.foryou
 today.line.me##div[class^="midAdModule"][id^="ad-module"]
 upic.me###basic-modal-content
 upic.me##div[id^="simplemodal"]
+webtoons.com##.banner .detail_install_app
+webtoons.com##div[id^="layerNoticePopup"]
 zaapmak.com##iframe
 
 ! Multiple domains that shared same element names
@@ -2471,6 +2473,7 @@ thetechr.com##.rev-block:has(.adsbygoogle)
 thisisgamethailand.com##.module .item:has(a[href*="/index.php?/stats/clickAdd"])
 tnews.co.th##.hidden-sm.hidden-xs:has(div script[src^="//code.yengo.com/"])
 today.line.me##.bottom-window:has(.snackBar)
+webtoons.com##.main_banner_wrap div[class^=".main_banner_small"]:has(a[href*="/notice/detail?"])
 
 ! CSS Modify
 beartai.com###wallpaper:style(background: none !important; display: none !important)
