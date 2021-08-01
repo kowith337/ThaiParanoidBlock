@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202107311932
+! Version: 202108012033
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -207,6 +207,7 @@ tnews.co.th###myModal
 tnews.co.th###uniads
 tnews.co.th##.in.fade.modal-backdrop
 tnews.co.th##.modal
+today.line.me##.floatingBanner-root
 today.line.me##.theContainer.foryou
 today.line.me##div[class^="midAdModule"][id^="ad-module"]
 upic.me###basic-modal-content
