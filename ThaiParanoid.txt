@@ -1,6 +1,6 @@
 [uBlock Origin 1.37.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202108012037
+! Version: 202108131816
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -359,6 +359,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
 ||bloggang.com/truehitsstat.php?$important
+||cdn.vet$websocket,important
+||cdn.vet:*/live/track$important
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
@@ -2539,14 +2541,17 @@ webtoons.com##div[id^="layerNoticePopup"]:remove()
 !#endif
 
 ! [Script Injection] To inject script for cutting-off some third party connections and/or unbreak site that have antiuser function.
+adintrend.tv##+js(acs, initAdDisplayContainer)
+adintrend.tv##+js(acs, setInterval, function req())
+adintrend.tv##+js(acs, wrapperDiv)
 akibatan.com##+js(ra, td_more_articles_box.is_box_visible)
 akibatan.com##+js(set, OneSignal.push, noopFunc)
 akibatan.com##+js(set, _Hasync, noopFunc)
 akibatan.com##+js(set, __gaTracker, noopFunc)
 akibatan.com##+js(set, mi_track_user, false)
 akibatan.com##+js(set, tdAnalytics, noopFunc)
-gamefever.co##+js(cookie-remover, visited)
 gamefever.co##+js(acs, visited)
+gamefever.co##+js(cookie-remover, visited)
 liekr.com##+js(acs, $showLikePopup)
 m.webtoons.com##+js(acs, oSmartAppBanner)
 mthai.com##+js(acs, googletag)
@@ -2555,8 +2560,8 @@ online-station.net##+js(acs, PLISTA)
 online-station.net##+js(acs, googletag)
 online-station.net##+js(acs, ssPage)
 online-station.net##+js(acs, ssProtocol)
-pantip.com##+js(aopr, applicationId)
 pantip.com##+js(aeld, mySock)
+pantip.com##+js(aopr, applicationId)
 pantip.com##+js(json-prune, firebase)
 pantip.com##+js(json-prune, mobileTopBanner, false)
 pantip.com##+js(json-prune, tabloid, false)
@@ -2565,6 +2570,10 @@ pantip.com##+js(set, MozWebSocket, noopFunc)
 pantip.com##+js(set, WebSocket, noopFunc)
 pantip.com##+js(set, mySock, noopFunc)
 thairath.co.th##+js(cookie-remover, tr_bId)
+thisisgamethailand.com##+js(acs, window.NREUM)
+thisisgamethailand.com##+js(aopr, cbid)
+thisisgamethailand.com##+js(aopr, nbid)
+thisisgamethailand.com##+js(aopr, obid)
 tv.line.me##+js(set, clickcr, noopFunc)
 webtoons.com##+js(acs, DFPHelper)
 webtoons.com##+js(acs, ccsrv)
