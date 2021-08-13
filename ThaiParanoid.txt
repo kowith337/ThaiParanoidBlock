@@ -1,6 +1,6 @@
 [uBlock Origin 1.20.0]
 ! Title: Thai Paranoid Block
-! Version: 202108012033
+! Version: 202108131811
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock
@@ -330,6 +330,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||akamaihd.net/shopee/*TrackingRules$script,domain=shopee.co.th
 ||akibatan.com/?spu_action$xmlhttprequest
 ||atimemedia.com/js/jquery.supportUs.js$script
+||cdn.vet$websocket
 ||iwilldoforking.com/coverpage.js$script,third-party
 ||lcs.line.me/m?$image,important
 ||line-scdn.net/dist/*foryou$script,domain=liff.line.me|today.line.me
@@ -359,6 +360,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||becteroradio.com/2014/hidden-ad-inner.php?$important
 ||becteroradio.com/truehitsstat.php?$important
 ||bloggang.com/truehitsstat.php?$important
+||cdn.vet:*/live/track$important
 ||compgamer.com/mainpage/module/popupnews/$important
 ||compgamer.com/mario-ads$important
 ||disqusads.com$important
