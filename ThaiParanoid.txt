@@ -1,6 +1,6 @@
 [uBlock Origin 1.37.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202108131816
+! Version: 202108261830
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -2390,6 +2390,7 @@ lonely-rooyang.com##.entry-content center:has(div ins.adsbygoogle)
 lonely-rooyang.com##.sidebar aside:has(.textwidget figure.op-ad)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
 m.pantip.com###results .m-thumb:has(.counting-author:has-text(The Review Team))
+m.pantip.com##.m-block .m-block-inner:has(a.gtm-related-lead)
 matichon.co.th##div[class^="td-header-"]:has(div[id^="ud-dfp-ad-pos-"])
 mthai.com##div[id^="MT_HP_"]:has(.ads-rec-center)
 mthai.com##div[id^="MT_HP_"]:has(.banner)
@@ -2405,6 +2406,7 @@ notebookspec.com##.text-center.container:has(iframe[src*="openx."])
 online-station.net##section.box aside:has(.ad-box)
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
 oopsmobile.net##.textwidget:has(.adsbygoogle)
+pantip.com###related_post_lists .related-topic-interest:has(a.gtm-related-lead)
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(.pt-block-header a[href^="https://pantip.com/club"])
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(a[title="Bloggang"])
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(a[title="Pantip Market"])
