@@ -1,6 +1,6 @@
 [uBlock Origin 1.37.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202108261830
+! Version: 202109061433
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -177,14 +177,14 @@ techxcite.com###col_right .ads
 techxcite.com###skin-left
 techxcite.com###skin-right
 techxcite.com##.ads-feature
-tgpl.in.th##div a[href^="http://www.compgamer.com/mario-ads/"]
+tgpl.in.th##div a[href*="/mario-ads/"]
 thaijobsgov.com##.hidden-mobile
 thailandbestbeauty.com###divAdLeft
 thailandbestbeauty.com###divAdRight
 thaimobilecenter.com##.container.bn-a2
 thaimobilecenter.com##.container.hidden-xs div[class^="col-"][align="right"]
 thaimobilecenter.com##.visible-lg.visible-xl iframe
-thaimobilecenter.com##a[href^="http://www.thaimobilecenter.com/ad_click"]
+thaimobilecenter.com##a[href*="/ad_click"]
 thaimobilecenter.com##iframe[src^="../banner/google_adsense"]
 thaimobilecenter.com##iframe[src^="../includes/inc_banner"]
 thairath.co.th##.ad-box
@@ -410,9 +410,9 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||hellobar.com$important
 
 ! Baidu/Hao123/DesktopWeather
-! http://pantip.com/topic/30586979
-! http://pantip.com/topic/33939110
-! http://pantip.com/topic/34359052
+! https://pantip.com/topic/30586979
+! https://pantip.com/topic/33939110
+! https://pantip.com/topic/34359052
 ||360tools.org$important
 ||antivirus.baidu.com$important
 ||baidu.co.th$important
@@ -2305,8 +2305,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! ---------------------------------------------------- First party service ---------------------------------------------------- !
 ! ALERT: Block Facebook (3P, Messenger and Instagram also count)
 ! Why? Read! > Blognone (Thai): https://www.blognone.com/node/81520
-!              WSJ (Eng): http://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
-!              The Verge (Eng): http://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
+!              WSJ (Eng): https://www.wsj.com/articles/facebook-wants-to-help-sell-every-ad-on-the-web-1464321603
+!              The Verge (Eng): https://www.theverge.com/2016/5/27/11795248/facebook-ad-network-non-users-cookies-plug-ins
 ||facebook.com$third-party,domain=~fbsbx.com|~instagram.com|~messenger.com
 ||facebook.net$domain=~facebook.com|~fbsbx.com|~instagram.com|~messenger.com
 ||fbcdn.net$third-party,domain=~facebook.com|~messenger.com|~instagram.com
@@ -2356,7 +2356,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ! ------------------------------------------------------ uBlock0 section ------------------------------------------------------ !
 ! Procedural DOM - contains has(-text)/not/xpath parameter
 ! This use for improve accuracy of DOM hiding, but need at least uBO 1.8.0+, but 1.10.0+ for multiple chaining...
-4toom.com##.rightwidget div:has(a[href^="http://4toom.com/?p="])
+4toom.com##.rightwidget div:has(a[href*="4toom.com/?p="])
 4toom.com##.single .content div:has(.adsbygoogle)
 bbs.pramool.com###AutoNumber1:has(iframe)
 blognone.com###above_comments:has(.view-PremiumCompanies)
@@ -2390,7 +2390,9 @@ lonely-rooyang.com##.entry-content center:has(div ins.adsbygoogle)
 lonely-rooyang.com##.sidebar aside:has(.textwidget figure.op-ad)
 lonely-rooyang.com##.textwidget:has(.adsbygoogle)
 m.pantip.com###results .m-thumb:has(.counting-author:has-text(The Review Team))
-m.pantip.com##.m-block .m-block-inner:has(a.gtm-related-lead)
+m.pantip.com##.m-block-title:has(h3 img[src*="icon-header-badge4_heart"])
+m.pantip.com##.m-block-title:has(h3 img[src*="icon-header-badge4_heart"])
+m.pantip.com##center center:has(script,iframe[onload]):upward(2)
 matichon.co.th##div[class^="td-header-"]:has(div[id^="ud-dfp-ad-pos-"])
 mthai.com##div[id^="MT_HP_"]:has(.ads-rec-center)
 mthai.com##div[id^="MT_HP_"]:has(.banner)
@@ -2406,7 +2408,6 @@ notebookspec.com##.text-center.container:has(iframe[src*="openx."])
 online-station.net##section.box aside:has(.ad-box)
 oopsmobile.net##.td-post-content div:has(.adsbygoogle)
 oopsmobile.net##.textwidget:has(.adsbygoogle)
-pantip.com###related_post_lists .related-topic-interest:has(a.gtm-related-lead)
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(.pt-block-header a[href^="https://pantip.com/club"])
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(a[title="Bloggang"])
 pantip.com###sidebar-container #sidebar-fixed .pt-block:has(a[title="Pantip Market"])
@@ -2414,6 +2415,7 @@ pantip.com##.bg-box-allow:has(.box-allow-location)
 pantip.com##.bxslider li:has(a[href*="ads.pantip.com"])
 pantip.com##.doodle-banner a:has(div[style*="promote-app"])
 pantip.com##.event-datatable-item:has(a[href*="ads.pantip.com"])
+pantip.com##.m-block .m-block-inner,.m-block .m-thumb,.related-topic-interest:has(a.gtm-related-lead)
 pantip.com##.m-bxslider:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb div[class^="subject"]:has(a[href*="ads.pantip.com"])
 pantip.com##.m-thumb:has(.subject-ad)
