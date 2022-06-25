@@ -568,6 +568,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nr-data.net
 ||nuffnang.co.th
 ||nuffnang.com
+||nuffnang.com.sg
 ||nytive.com
 ||oclaserver.com
 ||oghub.io
