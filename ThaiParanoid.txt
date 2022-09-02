@@ -1,6 +1,6 @@
 [uBlock Origin 1.37.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202201232237
+! Version: 2022091323
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
@@ -478,6 +478,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||bumq.com$important
 ||byteark-analytics.thairath.co.th$important
 ||cauly.co.kr$important
+||clarity.ms$important
 ||clickadu.com$important
 ||clicksgear.com$important
 ||connexity.net$important
@@ -570,6 +571,8 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||nr-data.net$important
 ||nuffnang.co.th$important
 ||nuffnang.com$important
+||nuffnang.com.my$important
+||nuffnang.com.sg$important
 ||nytive.com$important
 ||oclaserver.com$important
 ||oghub.io$important
@@ -659,6 +662,7 @@ tna.mcot.net#@##fb-root:not(body):not(html)
 ||wmdstat.dev-sanook.com$important
 ||wt-eu02.net$important
 ||xm.com$important
+||yengo.asia$important
 ||yengo.com$important
 ||yieldmo.com$important
 ||yingza.com$important
