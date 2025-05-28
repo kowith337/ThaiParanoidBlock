@@ -2490,6 +2490,9 @@ today.line.me##.bottom-window:has(.snackBar)
 beartai.com###wallpaper:style(background: none !important; display: none !important)
 gamefever.co###home-web:style(padding-top: 0px !important)
 
+! Remove without leaving DOM nodes
+pantip.com##.pub-members-monetization:remove()
+
 ! Specific inline-script hiding
 ! For any Firefox version below than 56- (or aka. XUL Fork) and install uBlock0 Legacy
 ! e.g. Basilisk, Borealis (Soon?), Iceweasel, Pale Moon, Waterfox classic, etc.
