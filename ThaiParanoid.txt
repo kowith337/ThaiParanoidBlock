@@ -1,11 +1,10 @@
 [uBlock Origin 1.37.0]
 ! Title: Thai Paranoid Block ~Maximum~
-! Version: 202505282148
+! Version: 202510121213
 ! Expires: 2 days
 ! Author: kowith337
 ! Homepage: https://github.com/kowith337/ThaiParanoidBlock/tree/maximum
 ! Issues: https://github.com/kowith337/ThaiParanoidBlock/issues
-! Mirror: https://gitlab.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt
 
 ! ------------------------------------- Generic filters section (aka. DOM Element Hiding) ------------------------------------- !
 ! Shared filter rules (from ThaiAntiForceLike)
@@ -2429,6 +2428,7 @@ pantip.com##.post-item:has(a[href*="ads.pantip.com"])
 pantip.com##.post-list-wrapper .post-item:has(.post-item-by span.by-name:has-text(The Review Team))
 pantip.com##.post-list-wrapper .thumb-page .post-item:has(.post-item-by span.by-name:has-text(The Review Team))
 pantip.com##.pt-body .container .row:has(.pt-block .tooltipTagsOnTop)
+pantip.com##a[target]:remove-class(/^gtm\-/i)
 pantip.com##body:has(script[src*="serving-sys.com"])
 petmaya.com##.td-g-rec:has(.adsbygoogle)
 petmaya.com##td:has(.adsbygoogle)
